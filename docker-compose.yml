@@ -1,0 +1,28 @@
+services:
+  mongo:
+    image: mongo:7
+    container_name: medfaq-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data/mongo:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: medfaq
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: medfaq-qdrant
+    restart: unless-stopped
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - ./data/qdrant:/qdrant/storage
+
+  redis:
+    image: redis:7-alpine
+    container_name: medfaq-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"

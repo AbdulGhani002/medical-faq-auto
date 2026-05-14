@@ -1,0 +1,56 @@
+[
+  {
+    "specialty": "radiology",
+    "question": "Do I need to fast before my MRI scan?",
+    "answer": "For most MRI scans, fasting is not required. For abdominal or pelvic MRI with contrast, please avoid food and drink for 4 hours before. Check your appointment letter or call us if unsure.",
+    "approved": true
+  },
+  {
+    "specialty": "radiology",
+    "question": "Is the contrast injection safe?",
+    "answer": "Gadolinium contrast used in MRI is generally safe. Mild side effects can include warmth or a metallic taste. Please tell us if you have kidney problems or have had a previous reaction.",
+    "approved": true
+  },
+  {
+    "specialty": "radiology",
+    "question": "How long will my CT scan take?",
+    "answer": "A typical CT scan takes 10 to 20 minutes overall. The scan itself is under a minute. Positioning and contrast (if needed) add to the total time.",
+    "approved": true
+  },
+  {
+    "specialty": "physiotherapy",
+    "question": "How often should I do my home exercises?",
+    "answer": "Most home programmes work best when done once or twice a day, 4 to 5 days a week. Stick to the reps your physiotherapist gave you and stop if you feel sharp pain.",
+    "approved": true
+  },
+  {
+    "specialty": "physiotherapy",
+    "question": "Is it normal to feel sore after a session?",
+    "answer": "Mild soreness for 24 to 48 hours after a session is normal, especially in the first few weeks. Sharp or worsening pain is not. Contact us if pain is severe.",
+    "approved": true
+  },
+  {
+    "specialty": "physiotherapy",
+    "question": "How many sessions will I need?",
+    "answer": "It depends on the condition. Most patients see meaningful change within 6 to 12 sessions. Your physiotherapist will review your progress every 4 to 6 sessions and adjust the plan.",
+    "approved": true
+  },
+  {
+    "specialty": "cardiovascular",
+    "question": "When should I take my blood pressure medicine?",
+    "answer": "Most blood pressure medicines are taken once a day, in the morning. Some doctors prefer evening dosing for certain medicines. Take it at the same time each day and do not stop without consulting us.",
+    "approved": true
+  },
+  {
+    "specialty": "cardiovascular",
+    "question": "Can I exercise with high blood pressure?",
+    "answer": "Yes, moderate exercise such as brisk walking 30 minutes a day, 5 days a week, helps control blood pressure. Avoid heavy weight-lifting and very intense activity until cleared by your doctor.",
+    "approved": true
+  },
+  {
+    "specialty": "cardiovascular",
+    "question": "What foods should I avoid?",
+    "answer": "Limit salty foods (chips, pickles, processed snacks), deep-fried items, sugary drinks, and red meat to a small portion. Focus on vegetables, fruit, whole grains, fish, and pulses.",
+    "approved": true
+  }
+]
