@@ -11,10 +11,20 @@ export type FAQItem = {
 
 export type Candidate = FAQItem;
 
+export type Alternative = {
+  id: string;
+  question: string;
+  score: number;
+};
+
+export type ChatBucket = "confident" | "best_guess" | "none";
+
 export type ChatResponse = {
   answer: string;
   matched_faq_id?: string | null;
   confidence: number;
+  alternatives?: Alternative[];
+  bucket?: ChatBucket;
 };
 
 export type Msg = {
@@ -22,4 +32,6 @@ export type Msg = {
   text: string;
   ts?: number;
   confidence?: number;
+  bucket?: ChatBucket;
+  alternatives?: Alternative[];
 };

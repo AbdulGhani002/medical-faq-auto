@@ -1,6 +1,6 @@
 """Pydantic v2 models exchanged by the API."""
 from datetime import datetime
-from typing import Optional
+from typing import List, Optional
 
 from pydantic import BaseModel, Field
 
@@ -11,10 +11,18 @@ class ChatRequest(BaseModel):
     text: str
 
 
+class Alternative(BaseModel):
+    id: str
+    question: str
+    score: float
+
+
 class ChatResponse(BaseModel):
     answer: str
     matched_faq_id: Optional[str] = None
     confidence: float
+    alternatives: List[Alternative] = []
+    bucket: str = "none"
 
 
 class FAQItem(BaseModel):

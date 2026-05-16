@@ -12,13 +12,10 @@ router = APIRouter()
 @router.post("", response_model=ChatResponse)
 async def chat(req: ChatRequest):
     clean_text = scrub(req.text)
+    # Log the user turn FIRST so retrieval can see it as conversation history.
     await log_turn(req.session_id, req.specialty, "user", clean_text)
 
-    answer, faq_id, confidence = await retrieve_answer(req.specialty, clean_text)
-    await log_turn(req.session_id, req.specialty, "bot", answer)
+    result = await retrieve_answer(req.specialty, clean_text, req.session_id)
 
-    return ChatResponse(
-        answer=answer,
-        matched_faq_id=faq_id,
-        confidence=confidence,
-    )
+    await log_turn(req.session_id, req.specialty, "bot", result["answer"])
+    return ChatResponse(**result)

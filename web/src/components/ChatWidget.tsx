@@ -40,6 +40,8 @@ export default function ChatWidget({ specialty }: { specialty: string }) {
           role: "bot",
           text: r.answer,
           confidence: r.confidence,
+          bucket: r.bucket,
+          alternatives: r.alternatives,
           ts: Date.now(),
         },
       ]);
@@ -68,7 +70,7 @@ export default function ChatWidget({ specialty }: { specialty: string }) {
             {specialty} assistant
           </p>
           <p className="text-[11px] text-stone-500">
-            BM25 retrieval over approved FAQs
+            TF-IDF + BM25 + character n-grams, classical NLP only
           </p>
         </div>
         <span className="pill">
@@ -89,9 +91,9 @@ export default function ChatWidget({ specialty }: { specialty: string }) {
               </p>
               <p className="text-sm text-stone-800 leading-relaxed">
                 Hi, I am the <span className="capitalize">{specialty}</span>{" "}
-                assistant. Ask me about prep, recovery, medication timing,
-                or anything else. I will look up a clinician-reviewed
-                answer for you.
+                assistant. Ask me about prep, recovery, medication, or any
+                question on this topic. I look up clinician-reviewed answers
+                using a hybrid TF-IDF + BM25 retriever. No AI in the loop.
               </p>
             </div>
             <SuggestedQuestions specialty={specialty} onPick={ask} />
@@ -99,7 +101,7 @@ export default function ChatWidget({ specialty }: { specialty: string }) {
         )}
 
         {msgs.map((m, i) => (
-          <MessageBubble key={i} msg={m} />
+          <MessageBubble key={i} msg={m} onAltClick={ask} />
         ))}
 
         {loading && (
