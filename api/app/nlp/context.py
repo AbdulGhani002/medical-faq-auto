@@ -1,30 +1,32 @@
-"""Conversation context: detect follow-up questions and augment the query."""
+"""Conversation context: detect follow-up questions and augment the query.
+
+Heuristics are deliberately conservative. A query is only treated as a
+follow-up when there is little content of its own (a single question word,
+a pronoun-led short phrase, or an explicit 'tell me more' style cue). A
+specific question like 'what is sciatica' is never tagged as a follow-up.
+"""
 import re
 
 _FOLLOWUP_STARTS = {
     "why", "how", "what", "when", "where", "who", "which",
     "and", "but", "so", "or",
-    "more", "also", "again", "still", "even",
     "yes", "no", "ok", "okay",
 }
 
 _PRONOUNS = {"it", "that", "this", "those", "these", "they", "them"}
 
-_FOLLOWUP_PHRASES = {
-    "tell me more", "elaborate", "explain", "go on", "anything else",
-    "what about", "how about", "and what",
-}
+_MORE_WORDS = {"more", "elaborate", "explain", "again", "also", "still"}
+
+_FOLLOWUP_PHRASES = (
+    "tell me more", "tell me about", "go on", "anything else",
+    "what about", "how about", "and what", "and how",
+)
 
 
 def is_followup(text: str) -> bool:
-    """Return True if `text` looks like a short follow-up rather than a
-    standalone question. Heuristic, classical NLP only.
-    """
     t = (text or "").lower().strip().rstrip("?!.")
     if not t:
         return False
-
-    # Phrases first (cheap exact match).
     for phrase in _FOLLOWUP_PHRASES:
         if t.startswith(phrase):
             return True
@@ -33,16 +35,18 @@ def is_followup(text: str) -> bool:
     if not tokens:
         return False
 
-    # Very short queries are almost always follow-ups.
-    if len(tokens) <= 2:
+    # Single token like "why" or "more".
+    if len(tokens) == 1 and (
+        tokens[0] in _FOLLOWUP_STARTS or tokens[0] in _MORE_WORDS
+    ):
         return True
 
-    first = tokens[0]
-    if first in _FOLLOWUP_STARTS and len(tokens) <= 5:
+    # Pronoun-led very short query, e.g. "it hurts", "that one".
+    if tokens[0] in _PRONOUNS and len(tokens) <= 3:
         return True
 
-    # Pronoun-led queries: "it hurts when i", "that does not"
-    if first in _PRONOUNS:
+    # Contains a 'more / explain' cue word in a short query.
+    if len(tokens) <= 5 and any(t_ in _MORE_WORDS for t_ in tokens):
         return True
 
     return False
@@ -52,21 +56,13 @@ def augment_with_context(
     current: str,
     previous_user_text: str | None,
 ) -> str:
-    """If `current` is a follow-up and we have a previous user message,
-    return a combined query that gives the retriever the right context.
-    Otherwise return `current` unchanged.
-    """
     if not previous_user_text:
         return current
     if not is_followup(current):
         return current
-    # Mash them. The retriever will tokenise and expand.
     return f"{previous_user_text} {current}"
 
 
 def topic_words(text: str) -> list[str]:
-    """Pull capitalised or topic-like tokens out of `text` to use as
-    a slim context cue if augmentation is undesirable.
-    """
     raw = re.findall(r"[a-zA-Z]+", text or "")
     return [w for w in raw if len(w) >= 4][:5]

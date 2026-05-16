@@ -1,4 +1,5 @@
 import type { Msg } from "@/lib/types";
+import ScoreBreakdownPopover from "./ScoreBreakdown";
 
 export default function MessageBubble({
   msg,
@@ -32,7 +33,17 @@ export default function MessageBubble({
 
   const bucket = msg.bucket || "confident";
   const label =
-    bucket === "best_guess"
+    msg.intent && msg.intent !== "question"
+      ? msg.intent === "greeting"
+        ? "Greeting"
+        : msg.intent === "thanks"
+        ? "Reply"
+        : msg.intent === "frustration"
+        ? "Sorry"
+        : msg.intent === "help"
+        ? "Help"
+        : "Answer"
+      : bucket === "best_guess"
       ? "Closest match"
       : bucket === "none"
       ? "No good match"
@@ -44,24 +55,53 @@ export default function MessageBubble({
       ? "bg-stone-400"
       : "bg-emerald-600";
 
+  const hasCorrections = (msg.spell_corrections?.length ?? 0) > 0;
+  const hasAddedTerms = (msg.added_terms?.length ?? 0) > 0;
+
   return (
     <div className="fade-in flex justify-start">
-      <div className="max-w-[85%] rounded-2xl rounded-bl-md bg-white border border-stone-200 px-4 py-3 shadow-card">
+      <div className="max-w-[86%] rounded-2xl rounded-bl-md bg-white border border-stone-200 px-4 py-3 shadow-card">
         <div className="flex items-center gap-2 mb-1.5 text-[10px] tracking-[0.14em] uppercase text-stone-400">
           <span className={"inline-block h-1.5 w-1.5 rounded-full " + dotColor} />
           {label}
         </div>
+
+        {hasCorrections && (
+          <div className="mb-2 flex flex-wrap gap-1.5">
+            {msg.spell_corrections!.map((c, i) => (
+              <span key={i} className="pill !text-[10px] !py-0.5">
+                spell: {c.original} &rarr; {c.fixed}
+              </span>
+            ))}
+          </div>
+        )}
+
         <p className="text-[14px] leading-relaxed text-stone-900 whitespace-pre-line">
           {msg.text}
         </p>
-        <div className="mt-2 flex items-center justify-between text-[10px] text-stone-500">
+
+        <div className="mt-2 flex items-center justify-between gap-3 text-[10px] text-stone-500">
           <span>{time}</span>
-          {msg.confidence !== undefined && (
-            <span title="Hybrid TF-IDF + BM25 score" className="pill !py-0.5 !text-[10px]">
-              match&nbsp;{(msg.confidence * 100).toFixed(0)}%
-            </span>
-          )}
+          <div className="flex items-center gap-2">
+            <ScoreBreakdownPopover
+              breakdown={msg.score_breakdown}
+              corrections={msg.spell_corrections}
+              addedTerms={msg.added_terms}
+            />
+            {msg.confidence !== undefined && (
+              <span title="Blended TF-IDF + BM25 score" className="pill !py-0.5 !text-[10px]">
+                match&nbsp;{(msg.confidence * 100).toFixed(0)}%
+              </span>
+            )}
+          </div>
         </div>
+
+        {hasAddedTerms && (
+          <div className="mt-2 pt-2 border-t border-stone-200 text-[10px] text-stone-500">
+            <span className="uppercase tracking-[0.14em] mr-2">Expanded with</span>
+            <span className="italic">{msg.added_terms!.join(", ")}</span>
+          </div>
+        )}
 
         {msg.alternatives && msg.alternatives.length > 0 && (
           <div className="mt-3 pt-3 border-t border-stone-200">

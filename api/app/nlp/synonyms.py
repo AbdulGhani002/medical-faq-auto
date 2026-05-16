@@ -18,7 +18,9 @@ SYNONYMS: dict[str, list[str]] = {
     # Cardiology
     "bp": ["blood pressure"],
     "hbp": ["high blood pressure", "hypertension"],
-    "hypertension": ["high blood pressure", "hbp"],
+    "hypertension": ["high blood pressure", "hbp", "bp meds", "blood pressure medicine"],
+    "blood pressure": ["bp", "hypertension"],
+    "blood pressure medicine": ["hypertension", "bp medicine"],
     "ldl": ["bad cholesterol"],
     "hdl": ["good cholesterol"],
     "mi": ["heart attack", "myocardial infarction"],

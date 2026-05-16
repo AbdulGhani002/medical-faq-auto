@@ -42,6 +42,10 @@ export default function ChatWidget({ specialty }: { specialty: string }) {
           confidence: r.confidence,
           bucket: r.bucket,
           alternatives: r.alternatives,
+          intent: r.intent,
+          spell_corrections: r.spell_corrections,
+          added_terms: r.added_terms,
+          score_breakdown: r.score_breakdown ?? null,
           ts: Date.now(),
         },
       ]);
