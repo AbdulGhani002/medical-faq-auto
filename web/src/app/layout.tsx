@@ -1,8 +1,12 @@
 import "./globals.css";
 
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+
 export const metadata = {
-  title: "Medical FAQ",
-  description: "Auto-generated medical FAQs from chatbot logs.",
+  title: "MedFAQ - Clinician-reviewed answers, no AI in the loop",
+  description:
+    "Ask one of three specialty assistants. Retrieval-only, BM25 ranked over an approved FAQ index. No LLM, no AI model.",
 };
 
 export default function RootLayout({
@@ -12,23 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-white text-gray-900">
-        <header className="border-b border-gray-200 px-6 py-4">
-          <a href="/" className="font-semibold">
-            Medical FAQ
-          </a>
-          <a
-            href="/admin"
-            className="float-right text-sm text-gray-500 underline"
-          >
-            Admin
-          </a>
-        </header>
-        <main className="px-6 py-8">{children}</main>
-        <footer className="border-t border-gray-200 px-6 py-4 text-xs text-gray-500 mt-12">
-          Semester project. Retrieval-based, no LLM. Answers come from
-          clinician-reviewed sources.
-        </footer>
+      <body className="min-h-screen flex flex-col bg-stone-50 text-stone-950">
+        <Header />
+        <main className="flex-1 w-full">{children}</main>
+        <Footer />
       </body>
     </html>
   );

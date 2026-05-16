@@ -1,98 +1,83 @@
-"""Retrieval over the FAQ index. No LLM in the loop.
+"""Pure lexical retrieval using BM25. No neural model, no LLM, no AI.
 
-Embeds the user's question with the same model used by the pipeline and runs
-a nearest-neighbour search on the per-specialty Qdrant collection.
-
-Heavy deps (qdrant-client, sentence-transformers, torch) are imported lazily
-so the API can still boot if they are not installed.
+BM25 is a 1990s statistical IR algorithm based on term frequency and document
+length. It runs in pure Python on the FAQ corpus stored in MongoDB. Every
+answer the user sees is a real clinician-reviewed reply from mongo.faqs.
 """
-from typing import Any, Optional, Tuple
+import re
+from typing import Optional, Tuple
 
 from app.config import settings
+from app.db import get_db
 
-_client: Optional[Any] = None
-_model: Optional[Any] = None
-
-
-def _get_client():
-    global _client
-    if _client is None:
-        from qdrant_client import QdrantClient  # lazy
-        _client = QdrantClient(
-            host=settings.qdrant_host, port=settings.qdrant_port
-        )
-    return _client
+try:
+    from rank_bm25 import BM25Okapi
+    _HAVE_BM25 = True
+except ImportError:
+    _HAVE_BM25 = False
 
 
-def _get_model():
-    global _model
-    if _model is None:
-        from sentence_transformers import SentenceTransformer  # lazy
-        _model = SentenceTransformer(settings.embedding_model)
-    return _model
+_TOKEN_RE = re.compile(r"\w+")
+
+
+def _tokenize(text: str) -> list[str]:
+    return _TOKEN_RE.findall((text or "").lower())
+
+
+async def _load_corpus(specialty: str) -> list[dict]:
+    db = get_db()
+    cursor = db.faqs.find({"specialty": specialty, "approved": True})
+    docs: list[dict] = []
+    async for d in cursor:
+        docs.append(d)
+    return docs
 
 
 async def retrieve_answer(
     specialty: str, text: str
 ) -> Tuple[str, Optional[str], float]:
-    """Look up the closest stored answer for the user question.
+    """Return (answer, faq_id, normalized_confidence) for the user question.
 
-    Returns (answer, faq_id, confidence). If the top hit is below the
-    confidence threshold, returns a polite fallback message.
+    Uses BM25 against approved FAQs for this specialty. No neural model.
     """
-    try:
-        model = _get_model()
-        client = _get_client()
-    except Exception:
+    if not _HAVE_BM25:
         return (
-            "The retrieval service is starting up. Please try again in a moment.",
+            "The retrieval engine is not installed. Run "
+            "`pip install rank_bm25` and try again.",
             None,
             0.0,
         )
 
-    try:
-        vec = model.encode(text, normalize_embeddings=True).tolist()
-    except Exception:
+    query_tokens = _tokenize(text)
+    if not query_tokens:
+        return ("Please type a question.", None, 0.0)
+
+    docs = await _load_corpus(specialty)
+    if not docs:
         return (
-            "Unable to embed your question right now. Please try again later.",
+            "No FAQs are approved for this specialty yet. Please check back "
+            "soon or contact the clinic.",
             None,
             0.0,
         )
 
-    collection = f"faqs_{specialty}"
-    try:
-        hits = client.search(
-            collection_name=collection,
-            query_vector=vec,
-            limit=settings.retrieval_top_k,
-        )
-    except Exception:
+    # BM25 over question+answer text for slightly better recall.
+    corpus = [_tokenize(d["question"] + " " + d["answer"]) for d in docs]
+    bm25 = BM25Okapi(corpus)
+    scores = bm25.get_scores(query_tokens)
+    best_idx = int(scores.argmax())
+    best_score = float(scores[best_idx])
+
+    # Normalise BM25 (which is unbounded) into 0..1 for the UI.
+    confidence = best_score / (best_score + 1.0)
+
+    if best_score < settings.bm25_min_score:
         return (
-            "Sorry, the FAQ index is not ready yet. Please try again later.",
+            "I do not have a stored answer for that question. Please rephrase, "
+            "or contact the clinic directly.",
             None,
-            0.0,
+            confidence,
         )
 
-    if not hits:
-        return (
-            "I do not have a stored answer for that yet. Please contact the "
-            "clinic directly.",
-            None,
-            0.0,
-        )
-
-    top = hits[0]
-    if top.score < settings.confidence_threshold:
-        return (
-            "I am not confident about an answer for that question. Please "
-            "contact the clinic directly so a clinician can help.",
-            None,
-            float(top.score),
-        )
-
-    payload = top.payload or {}
-    return (
-        payload.get("answer", ""),
-        payload.get("faq_id"),
-        float(top.score),
-    )
+    top = docs[best_idx]
+    return top["answer"], str(top["_id"]), confidence

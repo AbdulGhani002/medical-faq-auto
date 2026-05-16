@@ -2,8 +2,117 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg: #fafaf9;
+  --surface: #ffffff;
+  --surface-2: #f5f5f4;
+  --border: #e7e5e4;
+  --border-strong: #d6d3d1;
+  --fg: #0c0a09;
+  --fg-2: #44403c;
+  --fg-3: #78716c;
+  --fg-muted: #a8a29e;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html,
 body {
-  background: #ffffff;
-  color: #111827;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+  letter-spacing: -0.005em;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.display {
+  letter-spacing: -0.035em;
+  font-weight: 600;
+}
+
+.hairline { border-color: var(--border); }
+.surface  { background: var(--surface); }
+
+/* Soft, premium shadow */
+.shadow-card {
+  box-shadow: 0 1px 0 rgba(12,10,9,0.04),
+              0 6px 18px -8px rgba(12,10,9,0.10);
+}
+
+.shadow-card-hover:hover {
+  box-shadow: 0 1px 0 rgba(12,10,9,0.05),
+              0 10px 28px -10px rgba(12,10,9,0.18);
+}
+
+/* Subtle dotted background, used in hero */
+.dotted-bg {
+  background-image: radial-gradient(rgba(12,10,9,0.07) 1px, transparent 1px);
+  background-size: 14px 14px;
+  background-position: 0 0;
+}
+
+/* Chat scrollbar */
+.chat-scroll::-webkit-scrollbar { width: 6px; }
+.chat-scroll::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 3px;
+}
+.chat-scroll::-webkit-scrollbar-thumb:hover { background: #a8a29e; }
+
+/* Typing dots */
+.typing-dot {
+  display: inline-block;
+  width: 6px; height: 6px;
+  background: #a8a29e;
+  border-radius: 50%;
+  margin: 0 1px;
+  animation: typing-bounce 1.2s infinite ease-in-out;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.15s; }
+.typing-dot:nth-child(3) { animation-delay: 0.30s; }
+@keyframes typing-bounce {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+  30% { transform: translateY(-4px); opacity: 1; }
+}
+
+/* Fade for new messages */
+.fade-in { animation: fade-in 0.22s ease-out; }
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Underline-on-hover for premium links */
+.link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.25s ease;
+}
+.link-underline:hover { background-size: 100% 1px; }
+
+/* Card grid divider */
+.divider-soft { border-top: 1px solid var(--border); }
+
+/* Pill */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 11px;
+  color: var(--fg-2);
+  background: var(--surface);
 }
