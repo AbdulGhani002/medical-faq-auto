@@ -60,3 +60,8 @@ api/intent_eval_results.json
 api/ablation_results.json
 data/faq_candidates.jsonl
 data/kg_triples.jsonl
+
+# Trained model checkpoints (regenerate via python api/train_transformer.py)
+api/app/myml/checkpoints/
+*.pt
+*.pth

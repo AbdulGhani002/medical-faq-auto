@@ -83,6 +83,19 @@ no `sentence-transformers`, no model downloads.
 | `word2vec.py` | Skip-gram with negative sampling (Mikolov 2013) |
 | `dual_encoder.py` | Siamese bi-encoder + in-batch InfoNCE contrastive loss |
 | `bpe.py` | Byte-pair encoding (Sennrich 2016) |
+| `torch_transformer.py` | **Trainable** transformer encoder + intent classifier in PyTorch. Every layer (attention, FFN, LayerNorm, pos enc) defined by us — no `nn.Transformer`, no pretrained weights. CPU + GPU. Train with `python api/train_transformer.py`. |
+
+### Trained models
+```bash
+# Train the transformer (uses GPU automatically if CUDA is available)
+cd api && python train_transformer.py --verbose
+# Auto-detects device → "cuda" or "cpu"
+# Runs ~60 epochs over data/intents.jsonl + data/intents_augmented.jsonl
+# Saves to api/app/myml/checkpoints/torch_intent.pt
+```
+
+After training, the API exposes `POST /nlp/torch_intent` which serves
+predictions from the saved checkpoint.
 
 ### NLP layer — `api/app/nlp/`
 Stem (Porter), lemmatise (rule-based), lexicon POS, HMM POS (Viterbi),

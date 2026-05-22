@@ -245,3 +245,14 @@ async def dual_encoder(req: NLPAnalyzeRequest, k: int = 5):
         "results": neural_retrieve(req.text, k=k),
         "model": dual_encoder_stats(),
     }
+
+
+@router.post("/torch_intent")
+async def torch_intent(req: NLPAnalyzeRequest):
+    """Intent classification via the PyTorch transformer trained from
+    scratch (every layer defined by us — no pretrained weights). The
+    checkpoint is produced by ``python api/train_transformer.py``.
+    """
+    from app.services.torch_intent import classify, stats
+    pred = classify(req.text)
+    return {"prediction": pred, "model": stats()}

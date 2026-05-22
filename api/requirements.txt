@@ -6,3 +6,8 @@ motor>=3.5.0
 pymongo>=4.8.0
 numpy>=1.26.0
 python-dotenv>=1.0.0
+# PyTorch only as a tensor/autograd backend for the transformer we
+# define ourselves. CPU wheel — install GPU wheel manually if you have
+# CUDA (pip install torch --index-url https://download.pytorch.org/whl/cu121).
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.1.0
