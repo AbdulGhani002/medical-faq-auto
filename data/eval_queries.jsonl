@@ -1,0 +1,87 @@
+{"id": "eval-0000", "specialty": "radiology", "query": "do i need to fast before mri", "expected_keyword": "fast"}
+{"id": "eval-0001", "specialty": "radiology", "query": "is contrast dye safe", "expected_keyword": "gadolinium"}
+{"id": "eval-0002", "specialty": "radiology", "query": "how long ct scan takes", "expected_keyword": "10 to 20"}
+{"id": "eval-0003", "specialty": "radiology", "query": "when will i get my scan results", "expected_keyword": "working days"}
+{"id": "eval-0004", "specialty": "radiology", "query": "can i mri with pacemaker", "expected_keyword": "pacemaker"}
+{"id": "eval-0005", "specialty": "radiology", "query": "will my tattoos be a problem", "expected_keyword": "tattoo"}
+{"id": "eval-0006", "specialty": "radiology", "query": "i feel claustrophobic", "expected_keyword": "claustrophobi"}
+{"id": "eval-0007", "specialty": "radiology", "query": "is the scan going to hurt", "expected_keyword": "painless"}
+{"id": "eval-0008", "specialty": "radiology", "query": "radiation from ct", "expected_keyword": "radiation"}
+{"id": "eval-0009", "specialty": "radiology", "query": "i am pregnant can i have a scan", "expected_keyword": "pregnan"}
+{"id": "eval-0010", "specialty": "radiology", "query": "what should i wear", "expected_keyword": "clothing"}
+{"id": "eval-0011", "specialty": "radiology", "query": "wat is mri vs ct", "expected_keyword": "magnetic"}
+{"id": "eval-0012", "specialty": "radiology", "query": "mri sound loud", "expected_keyword": "decibel"}
+{"id": "eval-0013", "specialty": "radiology", "query": "breastfeeding after contrast", "expected_keyword": "breast"}
+{"id": "eval-0014", "specialty": "radiology", "query": "pet scan", "expected_keyword": "positron"}
+{"id": "eval-0015", "specialty": "physiotherapy", "query": "how often should i exercise at home", "expected_keyword": "day"}
+{"id": "eval-0016", "specialty": "physiotherapy", "query": "sore after my session", "expected_keyword": "soreness"}
+{"id": "eval-0017", "specialty": "physiotherapy", "query": "how many sessions do i need", "expected_keyword": "sessions"}
+{"id": "eval-0018", "specialty": "physiotherapy", "query": "when can i return to running", "expected_keyword": "jog"}
+{"id": "eval-0019", "specialty": "physiotherapy", "query": "what to bring first appointment", "expected_keyword": "first"}
+{"id": "eval-0020", "specialty": "physiotherapy", "query": "heat or ice for an injury", "expected_keyword": "ice"}
+{"id": "eval-0021", "specialty": "physiotherapy", "query": "is bed rest okay for back pain", "expected_keyword": "bed rest"}
+{"id": "eval-0022", "specialty": "physiotherapy", "query": "what is sciatica", "expected_keyword": "sciatic"}
+{"id": "eval-0023", "specialty": "physiotherapy", "query": "my shoulder hurts can i still exercise", "expected_keyword": "shoulder"}
+{"id": "eval-0024", "specialty": "physiotherapy", "query": "prevent back pain at desk", "expected_keyword": "desk"}
+{"id": "eval-0025", "specialty": "physiotherapy", "query": "what is dry needling", "expected_keyword": "needling"}
+{"id": "eval-0026", "specialty": "physiotherapy", "query": "my knee makes clicking sound", "expected_keyword": "click"}
+{"id": "eval-0027", "specialty": "physiotherapy", "query": "best sleep position for lower back", "expected_keyword": "sleep"}
+{"id": "eval-0028", "specialty": "physiotherapy", "query": "what is a frozen shoulder", "expected_keyword": "frozen"}
+{"id": "eval-0029", "specialty": "physiotherapy", "query": "plantar fasciitis shoes", "expected_keyword": "plantar"}
+{"id": "eval-0030", "specialty": "cardiovascular", "query": "when to take bp meds", "expected_keyword": "once a day"}
+{"id": "eval-0031", "specialty": "cardiovascular", "query": "can i exercise with high blood pressure", "expected_keyword": "exercise"}
+{"id": "eval-0032", "specialty": "cardiovascular", "query": "foods to avoid for heart", "expected_keyword": "salt"}
+{"id": "eval-0033", "specialty": "cardiovascular", "query": "normal bp reading", "expected_keyword": "120"}
+{"id": "eval-0034", "specialty": "cardiovascular", "query": "what if i miss my hypertension dose", "expected_keyword": "miss"}
+{"id": "eval-0035", "specialty": "cardiovascular", "query": "is chest pain a heart attack", "expected_keyword": "chest"}
+{"id": "eval-0036", "specialty": "cardiovascular", "query": "what is angina", "expected_keyword": "angina"}
+{"id": "eval-0037", "specialty": "cardiovascular", "query": "signs of heart attack", "expected_keyword": "jaw"}
+{"id": "eval-0038", "specialty": "cardiovascular", "query": "fast stroke acronym", "expected_keyword": "face"}
+{"id": "eval-0039", "specialty": "cardiovascular", "query": "coffee and heart disease", "expected_keyword": "coffee"}
+{"id": "eval-0040", "specialty": "cardiovascular", "query": "is alcohol bad for heart", "expected_keyword": "alcohol"}
+{"id": "eval-0041", "specialty": "cardiovascular", "query": "how much exercise weekly", "expected_keyword": "150"}
+{"id": "eval-0042", "specialty": "cardiovascular", "query": "what are statins", "expected_keyword": "statin"}
+{"id": "eval-0043", "specialty": "cardiovascular", "query": "daily aspirin", "expected_keyword": "aspirin"}
+{"id": "eval-0044", "specialty": "cardiovascular", "query": "wat is afib", "expected_keyword": "atrial"}
+{"id": "eval-0045", "specialty": "cardiovascular", "query": "dash diet", "expected_keyword": "dash"}
+{"id": "eval-0046", "specialty": "cardiovascular", "query": "smoking and heart", "expected_keyword": "smoking"}
+{"id": "eval-0047", "specialty": "cardiovascular", "query": "sleep apnea heart", "expected_keyword": "apnea"}
+{"id": "eval-0048", "specialty": "cardiovascular", "query": "dizzy when i stand up", "expected_keyword": "orthostatic"}
+{"id": "eval-0049", "specialty": "cardiovascular", "query": "what is an ecg", "expected_keyword": "electrocardiogram"}
+{"id": "eval-0050", "specialty": "radiology", "query": "what is ultrasound", "expected_keyword": "sound waves"}
+{"id": "eval-0051", "specialty": "radiology", "query": "what does dexa measure", "expected_keyword": "dense"}
+{"id": "eval-0052", "specialty": "radiology", "query": "is pet ct safe with diabetes", "expected_keyword": "diabetes"}
+{"id": "eval-0053", "specialty": "radiology", "query": "incidental finding mean", "expected_keyword": "incidental"}
+{"id": "eval-0054", "specialty": "radiology", "query": "why no metal in mri", "expected_keyword": "magnet"}
+{"id": "eval-0055", "specialty": "radiology", "query": "drive after contrast", "expected_keyword": "drive"}
+{"id": "eval-0056", "specialty": "radiology", "query": "ct radiation dose", "expected_keyword": "mSv"}
+{"id": "eval-0057", "specialty": "radiology", "query": "fluoroscopy what is it", "expected_keyword": "real-time"}
+{"id": "eval-0058", "specialty": "radiology", "query": "interventional radiology procedures", "expected_keyword": "minimally invasive"}
+{"id": "eval-0059", "specialty": "radiology", "query": "breastfeed after gadolinium", "expected_keyword": "breast"}
+{"id": "eval-0060", "specialty": "radiology", "query": "child mri sedation", "expected_keyword": "sedation"}
+{"id": "eval-0061", "specialty": "radiology", "query": "hold breath during scan why", "expected_keyword": "movement"}
+{"id": "eval-0062", "specialty": "physiotherapy", "query": "heat or ice for sprain", "expected_keyword": "ice"}
+{"id": "eval-0063", "specialty": "physiotherapy", "query": "bed rest for back", "expected_keyword": "bed rest"}
+{"id": "eval-0064", "specialty": "physiotherapy", "query": "how long to hold a stretch", "expected_keyword": "20"}
+{"id": "eval-0065", "specialty": "physiotherapy", "query": "knee clicking pain", "expected_keyword": "click"}
+{"id": "eval-0066", "specialty": "physiotherapy", "query": "best sleep position back", "expected_keyword": "sleep"}
+{"id": "eval-0067", "specialty": "physiotherapy", "query": "frozen shoulder treatment", "expected_keyword": "frozen"}
+{"id": "eval-0068", "specialty": "physiotherapy", "query": "duration of physio session", "expected_keyword": "session"}
+{"id": "eval-0069", "specialty": "physiotherapy", "query": "exercise through pain ok", "expected_keyword": "pain"}
+{"id": "eval-0070", "specialty": "physiotherapy", "query": "sciatica recovery", "expected_keyword": "sciatic"}
+{"id": "eval-0071", "specialty": "physiotherapy", "query": "vertigo physio help", "expected_keyword": "vestibular"}
+{"id": "eval-0072", "specialty": "cardiovascular", "query": "what is a holter", "expected_keyword": "ECG"}
+{"id": "eval-0073", "specialty": "cardiovascular", "query": "stress test what to expect", "expected_keyword": "treadmill"}
+{"id": "eval-0074", "specialty": "cardiovascular", "query": "angiogram procedure", "expected_keyword": "dye"}
+{"id": "eval-0075", "specialty": "cardiovascular", "query": "what is a stent", "expected_keyword": "narrowed"}
+{"id": "eval-0076", "specialty": "cardiovascular", "query": "flying after heart attack", "expected_keyword": "fly"}
+{"id": "eval-0077", "specialty": "cardiovascular", "query": "rheumatic heart disease", "expected_keyword": "valve"}
+{"id": "eval-0078", "specialty": "cardiovascular", "query": "blood tests heart", "expected_keyword": "lipid"}
+{"id": "eval-0079", "specialty": "cardiovascular", "query": "heart rate variability", "expected_keyword": "variability"}
+{"id": "eval-0080", "specialty": "cardiovascular", "query": "home bp measurement method", "expected_keyword": "5 minutes"}
+{"id": "eval-0081", "specialty": "cardiovascular", "query": "salt limit per day", "expected_keyword": "5"}
+{"id": "eval-0082", "specialty": "cardiovascular", "query": "high cholesterol dangers", "expected_keyword": "plaque"}
+{"id": "eval-0083", "specialty": "cardiovascular", "query": "young person heart attack", "expected_keyword": "young"}
+{"id": "eval-0084", "specialty": "cardiovascular", "query": "preserved ejection fraction", "expected_keyword": "relax"}
+{"id": "eval-0085", "specialty": "cardiovascular", "query": "left bundle branch block", "expected_keyword": "electrical"}
+{"id": "eval-0086", "specialty": "cardiovascular", "query": "benefits of quitting smoking", "expected_keyword": "quit"}

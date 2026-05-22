@@ -1,6 +1,12 @@
-"""Text normalisation: lower-case, strip punctuation, tokenize, expand."""
+"""Text normalisation: lower-case, strip punctuation, tokenize, expand.
+
+Now also exposes `canonical_tokens` which adds rule-based lemmatisation +
+Porter stemming for terms that survive lemmatisation. This is what the
+retriever indexes on top of the raw tokens.
+"""
 import re
 
+from .lemmatize import canonical
 from .synonyms import SYNONYMS, expand_term
 
 _TOKEN_RE = re.compile(r"[a-z0-9]+")
@@ -30,6 +36,11 @@ def tokenize(text: str, drop_stopwords: bool = True) -> list[str]:
     return toks
 
 
+def canonical_tokens(text: str, drop_stopwords: bool = True) -> list[str]:
+    """Same as tokenize() but each token is lemmatised + porter-stem fallback."""
+    return [canonical(t) for t in tokenize(text, drop_stopwords=drop_stopwords)]
+
+
 def expand_query(text: str) -> str:
     """Return a query string with single-word synonyms appended for each
     in-vocabulary token. Multi-word phrases are also matched and expanded.
@@ -47,6 +58,10 @@ def expand_query(text: str) -> str:
         for alt in expand_term(t):
             if alt != t:
                 out.append(alt)
+        # Also append the lemma if different (improves recall for plurals).
+        lem = canonical(t)
+        if lem and lem != t:
+            out.append(lem)
     out.extend(phrase_adds)
     return " ".join(out)
 

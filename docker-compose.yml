@@ -1,3 +1,14 @@
+# One command brings up the full stack:
+#
+#   docker compose up --build
+#
+# Then visit http://localhost:3000 for the web UI and
+# http://localhost:8000/docs for the API swagger.
+#
+# Mongo, Qdrant and Redis are kept for the FAQ-mining pipeline. The
+# API itself runs fine without them — if Mongo isn't reachable it falls
+# back to an in-memory store seeded from data/faqs.jsonl.
+
 services:
   mongo:
     image: mongo:7
@@ -6,9 +17,15 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - ./data/mongo:/data/db
+      - mongo_data:/data/db
     environment:
       MONGO_INITDB_DATABASE: medfaq
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
 
   qdrant:
     image: qdrant/qdrant:latest
@@ -18,7 +35,7 @@ services:
       - "6333:6333"
       - "6334:6334"
     volumes:
-      - ./data/qdrant:/qdrant/storage
+      - qdrant_data:/qdrant/storage
 
   redis:
     image: redis:7-alpine
@@ -26,3 +43,50 @@ services:
     restart: unless-stopped
     ports:
       - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    image: medfaq-api
+    container_name: medfaq-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      MONGO_URI: mongodb://mongo:27017
+      MONGO_DB: medfaq
+      # Set to "1" to force the in-memory FAQ store even when Mongo
+      # is reachable. Useful for demos / development.
+      FAQ_FORCE_MEMORY: "0"
+    depends_on:
+      mongo:
+        condition: service_healthy
+    volumes:
+      # Mount data so JSONL edits are picked up without a rebuild.
+      - ./data:/opt/app/data:ro
+
+  web:
+    build:
+      context: .
+      dockerfile: web/Dockerfile
+      args:
+        # Compiled into the Next.js bundle. From the browser's POV the
+        # API is reachable on the host's published port.
+        NEXT_PUBLIC_API_URL: http://localhost:8000
+    image: medfaq-web
+    container_name: medfaq-web
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+
+volumes:
+  mongo_data:
+  qdrant_data:

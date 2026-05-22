@@ -1,0 +1,39 @@
+{
+  "files": [
+    {
+      "name": "faqs.jsonl",
+      "path": "data/faqs.jsonl",
+      "records": 139
+    },
+    {
+      "name": "intents.jsonl",
+      "path": "data/intents.jsonl",
+      "records": 258
+    },
+    {
+      "name": "eval_queries.jsonl",
+      "path": "data/eval_queries.jsonl",
+      "records": 87
+    },
+    {
+      "name": "chat_logs.jsonl",
+      "path": "data/chat_logs.jsonl",
+      "records": 18
+    },
+    {
+      "name": "ner_examples.jsonl",
+      "path": "data/ner_examples.jsonl",
+      "records": 32
+    },
+    {
+      "name": "sentiment_lexicon.jsonl",
+      "path": "data/sentiment_lexicon.jsonl",
+      "records": 96
+    },
+    {
+      "name": "kg_triples.jsonl",
+      "path": "data/kg_triples.jsonl",
+      "records": 428
+    }
+  ]
+}

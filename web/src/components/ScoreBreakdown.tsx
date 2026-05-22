@@ -50,6 +50,9 @@ export default function ScoreBreakdownPopover({
                 <Row label="TF-IDF (word)" value={breakdown.tfidf_word} />
                 <Row label="TF-IDF (char)" value={breakdown.tfidf_char} />
                 <Row label="BM25" value={breakdown.bm25} />
+                {typeof breakdown.lsa === "number" && (
+                  <Row label="LSA topic" value={breakdown.lsa} />
+                )}
                 <Row
                   label="Blended"
                   value={breakdown.blended}

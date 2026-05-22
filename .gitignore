@@ -41,3 +41,22 @@ data/embeddings/
 # Logs
 *.log
 logs/
+
+# Claude / local agent runtime
+.claude/
+.zed/
+.cursor/
+
+# Test artifacts / generated dumps
+*.html
+!docs_src/**/*.html
+eval_results.json
+e2e_results.json
+intent_eval_results.json
+ablation_results.json
+api/eval_results.json
+api/e2e_results.json
+api/intent_eval_results.json
+api/ablation_results.json
+data/faq_candidates.jsonl
+data/kg_triples.jsonl

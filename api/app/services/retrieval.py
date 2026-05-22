@@ -1,26 +1,48 @@
-"""Sophisticated lexical retrieval pipeline. No neural model, no LLM.
+"""Full NLP retrieval pipeline. No neural model, no LLM.
 
-For each request we run:
-  1. Intent classification (greeting / thanks / frustration / help / question).
-  2. Conversation context augmentation (follow-up detection).
-  3. Spell correction over the FAQ vocabulary.
-  4. Initial retrieval with TF-IDF word + TF-IDF char + BM25.
-  5. Pseudo-relevance feedback re-ranking.
-  6. Bucketing + alternatives + explainability returned to the client.
+For every chat request we run, in order:
+  1. PHI scrub (already done in the router)
+  2. Pull session state (last topic, last entities, slots)
+  3. Run the full NLP analyser (intent, qtype, sentiment, triage,
+     negation, NER, slots, keywords, POS)
+  4. Coreference resolution (substitute "it" / "that" with the last topic)
+  5. Context augmentation when the message is a short follow-up
+  6. Spell correction over the FAQ vocabulary
+  7. Multi-method scoring (TF-IDF word, TF-IDF char, BM25, LSA topic)
+  8. Pseudo-relevance feedback re-ranking
+  9. Dialog manager:
+       - empathetic opener
+       - triage banner if urgency >= 1
+       - clarifying question if confidence is low and slots are empty
+       - disambiguation card if several candidates are close
+       - highlight matched spans in the chosen FAQ answer
+  10. Persist updated session state.
+
+The retrieval function returns a rich JSON envelope that the frontend
+uses to build the chat bubble + the NLP debug panel.
 """
+from __future__ import annotations
+
 from typing import Optional
 
 from app.db import get_db
 from app.nlp import (
     Corrector, HybridIndex,
-    augment_with_context, best_match, canned, classify,
-    tokenize, to_confidence,
+    augment_with_context, best_match, canned, classify_rule_intent,
+    contains_roman_urdu, expand_roman_urdu,
+    highlight_text, multi_doc_summary, needs_clarification,
+    needs_disambiguation, primary_topic, resolve_pronouns,
+    to_confidence, tokenize, triage_banner, update_state,
 )
+from app.nlp.dialog import build_opener
 from app.nlp.normalize import _STOPWORDS  # noqa: WPS437 - intentional
+from app.services.analyzer import analyse as analyse_text
 
 _INDEX_CACHE: dict[str, HybridIndex] = {}
 _FAQS_CACHE: dict[str, list[dict]] = {}
 _CORRECTOR_CACHE: dict[str, Corrector] = {}
+_STATE_CACHE: dict[str, dict] = {}
+_LTR_CACHE: dict[str, "object"] = {}  # LTRReranker per specialty
 
 
 def invalidate_cache(specialty: str | None = None) -> None:
@@ -28,10 +50,59 @@ def invalidate_cache(specialty: str | None = None) -> None:
         _INDEX_CACHE.pop(specialty, None)
         _FAQS_CACHE.pop(specialty, None)
         _CORRECTOR_CACHE.pop(specialty, None)
+        _LTR_CACHE.pop(specialty, None)
         return
     _INDEX_CACHE.clear()
     _FAQS_CACHE.clear()
     _CORRECTOR_CACHE.clear()
+    _LTR_CACHE.clear()
+
+
+def _ltr_for(specialty: str, idx, faqs: list[dict]):
+    """Lazily train an LTR reranker per specialty using eval_queries.jsonl."""
+    if specialty in _LTR_CACHE:
+        return _LTR_CACHE[specialty]
+    try:
+        from pathlib import Path
+        import json
+        from app.nlp.ltr import LTRReranker
+
+        repo = Path(__file__).resolve().parents[3]
+        ep = repo / "data" / "eval_queries.jsonl"
+        if not ep.is_file():
+            _LTR_CACHE[specialty] = None
+            return None
+        queries: list[dict] = []
+        with ep.open("r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                q = json.loads(line)
+                if q.get("specialty") == specialty:
+                    queries.append(q)
+        if not queries:
+            _LTR_CACHE[specialty] = None
+            return None
+        r = LTRReranker()
+        info = r.train_from_eval_set(idx, faqs, queries, k_neg=4)
+        if not info.get("trained"):
+            _LTR_CACHE[specialty] = None
+            return None
+        _LTR_CACHE[specialty] = r
+        print(
+            f"[ltr] trained {specialty}: n={info['n']} "
+            f"train_acc={info['train_acc']:.3f}"
+        )
+        return r
+    except Exception as e:
+        print(f"[ltr] training skipped for {specialty}: {e!r}")
+        _LTR_CACHE[specialty] = None
+        return None
+
+
+def reset_state(session_id: str) -> None:
+    _STATE_CACHE.pop(session_id, None)
 
 
 async def _load_corpus(specialty: str) -> list[dict]:
@@ -45,7 +116,8 @@ async def _load_corpus(specialty: str) -> list[dict]:
 
 async def _ensure_index(specialty: str):
     if specialty in _INDEX_CACHE:
-        return _INDEX_CACHE[specialty], _FAQS_CACHE[specialty], _CORRECTOR_CACHE[specialty]
+        return (_INDEX_CACHE[specialty], _FAQS_CACHE[specialty],
+                _CORRECTOR_CACHE[specialty])
     faqs = await _load_corpus(specialty)
     if not faqs:
         return None, [], None
@@ -55,6 +127,14 @@ async def _ensure_index(specialty: str):
     _FAQS_CACHE[specialty] = faqs
     _CORRECTOR_CACHE[specialty] = corr
     return idx, faqs, corr
+
+
+def _get_state(session_id: str) -> dict:
+    return _STATE_CACHE.get(session_id, {})
+
+
+def _set_state(session_id: str, state: dict) -> None:
+    _STATE_CACHE[session_id] = state
 
 
 async def _previous_user_text(session_id: str, current: str) -> Optional[str]:
@@ -72,96 +152,79 @@ async def _previous_user_text(session_id: str, current: str) -> Optional[str]:
     return None
 
 
-def _empty_response(answer: str, intent: str = "question") -> dict:
-    return {
+def _empty_response(answer: str, **extra) -> dict:
+    base = {
         "answer": answer,
         "matched_faq_id": None,
         "confidence": 0.0,
         "alternatives": [],
         "bucket": "none",
-        "intent": intent,
+        "intent": "question",
         "spell_corrections": [],
         "expanded_query": "",
         "added_terms": [],
         "score_breakdown": None,
+        "highlighted": None,
+        "nlp": None,
+        "dialog": {},
+        "summary": None,
+        "matched_question": None,
     }
+    base.update(extra)
+    return base
 
 
-def _format(
-    bucket_info: dict, faqs: list[dict], intent: str,
-    fixes: list[tuple[str, str]], expanded: str, added: list[str],
-) -> dict:
-    if bucket_info["bucket"] == "none" or bucket_info["top"] is None:
-        body = _empty_response(
-            "I do not have a good match for that. Try rephrasing or pick "
-            "a suggested topic below.", intent=intent,
-        )
-        body["spell_corrections"] = [
-            {"original": o, "fixed": f} for o, f in fixes
-        ]
-        body["expanded_query"] = expanded
-        body["added_terms"] = added
-        return body
-    top = bucket_info["top"]
-    faq = faqs[top["idx"]]
-    intro = ""
-    if bucket_info["bucket"] == "best_guess":
-        intro = "I am not fully sure, but the closest match is:\n\n"
-    return {
-        "answer": intro + faq["answer"],
-        "matched_faq_id": str(faq["_id"]),
-        "confidence": to_confidence(top["score"]),
-        "alternatives": [
-            {
-                "id": str(faqs[a["idx"]]["_id"]),
-                "question": faqs[a["idx"]]["question"],
-                "score": round(a["score"], 3),
-            }
-            for a in bucket_info.get("alternatives", [])
-        ],
-        "bucket": bucket_info["bucket"],
-        "intent": intent,
-        "spell_corrections": [
-            {"original": o, "fixed": f} for o, f in fixes
-        ],
-        "expanded_query": expanded,
-        "added_terms": added,
-        "score_breakdown": {
-            "tfidf_word": round(top["per_method"]["tfidf_word"], 3),
-            "tfidf_char": round(top["per_method"]["tfidf_char"], 3),
-            "bm25": round(top["per_method"]["bm25"], 3),
-            "blended": round(top["score"], 3),
-            "matched_question": faq["question"],
-        },
-    }
+def _highlight_payload(text: str, query: str) -> list[dict]:
+    return highlight_text(text, query)
 
 
 async def retrieve_answer(
     specialty: str, text: str, session_id: str | None = None
 ) -> dict:
-    # 1. Intent classification (non-questions get canned replies).
-    intent = classify(text)
-    if intent != "question":
-        msg = canned(intent, specialty) or ""
-        return {**_empty_response(msg, intent=intent), "confidence": 1.0,
-                "bucket": "confident"}
+    sid = session_id or "anonymous"
 
-    # 2. Load (or build) per-specialty index and corrector.
+    # 1. Run full NLP analysis on the raw text.
+    analysis = analyse_text(text)
+
+    # 2. Rule-based intent (still kept for canned chitchat).
+    rule_intent = classify_rule_intent(text)
+
+    # Chitchat shortcut: prefer the rule-based mapping for canned replies.
+    if rule_intent != "question":
+        msg = canned(rule_intent, specialty) or ""
+        return _empty_response(
+            msg,
+            confidence=1.0,
+            bucket="confident",
+            intent=rule_intent,
+            nlp=analysis,
+            dialog={"chitchat": True},
+        )
+
+    # 3. Load (or build) per-specialty index and corrector.
     idx, faqs, corr = await _ensure_index(specialty)
     if idx is None or corr is None:
         return _empty_response(
             "No FAQs are approved for this specialty yet. Please check "
             "back soon or contact the clinic.",
+            nlp=analysis,
         )
 
-    # 3. Context augmentation.
-    prev_text = await _previous_user_text(session_id or "", text)
-    contextual = augment_with_context(text, prev_text)
+    state = _get_state(sid)
 
-    # 4. Spell correction against FAQ vocabulary.
-    # Skip stopwords entirely (they would be wrongly auto-corrected because
-    # they are not present in the indexed vocabulary) and skip tokens shorter
-    # than 4 characters where a single typo is hard to disambiguate.
+    # 4. Coreference: substitute pronouns with the last salient topic.
+    resolved_text, coref_edits = resolve_pronouns(text, state.get("last_topic"))
+
+    # 4a. Roman-Urdu phonetic expansion (Pakistan-friendly input).
+    ru_edits: list[dict] = []
+    if contains_roman_urdu(resolved_text):
+        resolved_text, ru_edits = expand_roman_urdu(resolved_text)
+
+    # 5. Context augmentation if the message is a short follow-up.
+    prev_text = await _previous_user_text(sid, text)
+    contextual = augment_with_context(resolved_text, prev_text)
+
+    # 6. Spell correction against FAQ vocabulary.
     raw_tokens = tokenize(contextual, drop_stopwords=False)
     fix_targets = [
         t for t in raw_tokens if t not in _STOPWORDS and len(t) >= 4
@@ -171,8 +234,149 @@ async def retrieve_answer(
     fixed_tokens = [fix_map.get(t, t) for t in raw_tokens]
     corrected = " ".join(fixed_tokens)
 
-    # 5. Two-pass retrieval with pseudo-relevance feedback.
-    scores, added_terms, expanded = idx.top_k_with_prf(corrected, k=5)
+    # 7. Two-pass retrieval with conditional PRF.
+    scores, added_terms, expanded = idx.top_k_with_prf(corrected, k=10)
+
+    # 7a. Optional LTR re-ranking. We only run it when the lexical
+    # retriever is uncertain (top blended score < threshold). When it
+    # fires we blend lexical and LR scores and adopt the new ordering.
+    ltr_used = False
+    LTR_GATE = 0.45  # lexical "very confident" threshold
+    if scores and scores[0][1] < LTR_GATE:
+        ltr = _ltr_for(specialty, idx, faqs)
+        if ltr is not None:
+            ranked = []
+            for i, s, per in scores:
+                doc_text = faqs[i]["question"] + " " + faqs[i]["answer"]
+                lr_score = ltr.score_one(corrected, doc_text, per)
+                ranked.append((i, s, per, lr_score))
+            # Blend: 0.55 * LR prob + 0.45 * lexical
+            ranked.sort(
+                key=lambda r: -(0.55 * r[3] + 0.45 * min(r[1], 1.0))
+            )
+            scores = [(i, s, per) for i, s, per, _ in ranked[:5]]
+            ltr_used = True
+
     info = best_match(scores)
 
-    return _format(info, faqs, intent, fixes, expanded, added_terms)
+    # 7b. Diversify alternatives with MMR so "Did you mean?" is varied.
+    if info.get("top") and len(scores) > 1:
+        mmr_picks = idx.top_k_with_mmr(corrected, k=4, lam=0.65)
+        if mmr_picks:
+            top_id = info["top"]["idx"]
+            mmr_alts = [
+                {"idx": i, "score": s} for i, s, _ in mmr_picks if i != top_id
+            ][:3]
+            if mmr_alts:
+                info["alternatives"] = mmr_alts
+
+    # 8. Dialog manager.
+    top_score = info["top"]["score"] if info.get("top") else 0.0
+    opener = build_opener(state, analysis)
+    banner = triage_banner(analysis["triage"]["level"])
+    clar = needs_clarification(analysis, top_score)
+    alt_payload = [
+        {
+            "id": str(faqs[a["idx"]]["_id"]),
+            "question": faqs[a["idx"]]["question"],
+            "score": round(a["score"], 3),
+        }
+        for a in info.get("alternatives", [])
+    ] if info.get("top") else []
+    disambig = needs_disambiguation(alt_payload, top_score)
+
+    # 9. Build the answer payload.
+    response: dict
+    if info["bucket"] == "none" or info["top"] is None:
+        body_text = clar or (
+            "I do not have a good match for that. Try rephrasing or pick "
+            "a suggested topic below."
+        )
+        response = _empty_response(
+            (banner + "\n\n" if banner else "") + opener + body_text,
+            intent="question",
+            spell_corrections=[{"original": o, "fixed": f} for o, f in fixes],
+            expanded_query=expanded,
+            added_terms=added_terms,
+        )
+    else:
+        top = info["top"]
+        faq = faqs[top["idx"]]
+        intro = ""
+        if info["bucket"] == "best_guess":
+            intro = "I am not fully sure, but the closest match is:\n\n"
+        prefix_parts: list[str] = []
+        if banner:
+            prefix_parts.append(banner)
+        if opener:
+            prefix_parts.append(opener.strip())
+        if intro:
+            prefix_parts.append(intro.strip())
+        prefix = ("\n\n".join(prefix_parts) + "\n\n") if prefix_parts else ""
+        answer_text = prefix + faq["answer"]
+        highlighted = _highlight_payload(faq["answer"], contextual)
+
+        # Optional cross-doc summary for the debug panel.
+        summary = None
+        if disambig:
+            doc_texts = [faqs[a["idx"]]["answer"]
+                         for a in info.get("alternatives", [])
+                         if a.get("idx") is not None]
+            if doc_texts:
+                summary = multi_doc_summary(doc_texts, n=2)
+
+        response = {
+            "answer": answer_text,
+            "matched_faq_id": str(faq["_id"]),
+            "matched_question": faq["question"],
+            "confidence": to_confidence(top["score"]),
+            "alternatives": alt_payload,
+            "bucket": info["bucket"],
+            "intent": "question",
+            "spell_corrections": [
+                {"original": o, "fixed": f} for o, f in fixes
+            ],
+            "expanded_query": expanded,
+            "added_terms": added_terms,
+            "score_breakdown": {
+                "tfidf_word": round(top["per_method"]["tfidf_word"], 3),
+                "tfidf_char": round(top["per_method"]["tfidf_char"], 3),
+                "bm25": round(top["per_method"]["bm25"], 3),
+                "lsa": round(top["per_method"].get("lsa", 0.0), 3),
+                "embed": round(top["per_method"].get("embed", 0.0), 3),
+                "blended": round(top["score"], 3),
+                "matched_question": faq["question"],
+            },
+            "highlighted": highlighted,
+            "nlp": analysis,
+            "dialog": {
+                "opener": opener,
+                "triage_level": analysis["triage"]["level"],
+                "triage_cues": analysis["triage"]["cues"],
+                "banner": banner,
+                "clarification": clar,
+                "coref": coref_edits,
+                "roman_urdu": ru_edits,
+                "disambiguation": disambig,
+                "active_topic": primary_topic(analysis["entities"])
+                                or state.get("last_topic"),
+                "ltr_used": ltr_used,
+            },
+            "summary": summary,
+        }
+
+    # 10. Persist updated session state.
+    matched_topic = primary_topic(analysis["entities"]) or state.get("last_topic")
+    if response.get("matched_question"):
+        # Use the matched FAQ's primary noun as a fallback topic.
+        from app.nlp.ner import extract_entities as _ee
+        fallback = primary_topic(_ee(response["matched_question"])) or matched_topic
+        matched_topic = matched_topic or fallback
+    _set_state(sid, update_state(state, analysis, matched_topic))
+
+    return response
+
+
+def state_snapshot(session_id: str) -> dict:
+    """Public helper used by the /chat/state endpoint."""
+    return _STATE_CACHE.get(session_id, {})

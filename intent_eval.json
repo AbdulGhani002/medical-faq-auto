@@ -1,0 +1,327 @@
+{
+  "train_size": 160,
+  "test_size": 39,
+  "macro_f1": 0.65,
+  "per_class": {
+    "ask_definition": {
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.889,
+      "support": 4
+    },
+    "ask_lifestyle": {
+      "precision": 0.5,
+      "recall": 0.667,
+      "f1": 0.571,
+      "support": 3
+    },
+    "ask_medication": {
+      "precision": 1.0,
+      "recall": 0.333,
+      "f1": 0.5,
+      "support": 3
+    },
+    "ask_preparation": {
+      "precision": 0.667,
+      "recall": 0.667,
+      "f1": 0.667,
+      "support": 3
+    },
+    "ask_procedure": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 3
+    },
+    "ask_recovery": {
+      "precision": 0.6,
+      "recall": 1.0,
+      "f1": 0.75,
+      "support": 3
+    },
+    "ask_symptom": {
+      "precision": 0.75,
+      "recall": 0.75,
+      "f1": 0.75,
+      "support": 4
+    },
+    "ask_warning": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+    },
+    "frustration": {
+      "precision": 0.667,
+      "recall": 0.667,
+      "f1": 0.667,
+      "support": 3
+    },
+    "greeting": {
+      "precision": 0.667,
+      "recall": 1.0,
+      "f1": 0.8,
+      "support": 4
+    },
+    "help": {
+      "precision": 1.0,
+      "recall": 0.667,
+      "f1": 0.8,
+      "support": 3
+    },
+    "thanks": {
+      "precision": 0.5,
+      "recall": 0.333,
+      "f1": 0.4,
+      "support": 3
+    }
+  },
+  "confusion": {
+    "labels": [
+      "ask_definition",
+      "ask_lifestyle",
+      "ask_medication",
+      "ask_preparation",
+      "ask_procedure",
+      "ask_recovery",
+      "ask_symptom",
+      "ask_warning",
+      "frustration",
+      "greeting",
+      "help",
+      "thanks"
+    ],
+    "matrix": {
+      "ask_definition": {
+        "ask_definition": 4,
+        "ask_lifestyle": 0,
+        "ask_medication": 0,
+        "ask_preparation": 0,
+        "ask_procedure": 0,
+        "ask_recovery": 0,
+        "ask_symptom": 0,
+        "ask_warning": 0,
+        "frustration": 0,
+        "greeting": 0,
+        "help": 0,
+        "thanks": 0
+      },
+      "ask_lifestyle": {
+        "ask_definition": 0,
+        "ask_lifestyle": 2,
+        "ask_medication": 0,
+        "ask_preparation": 0,
+        "ask_procedure": 0,
+        "ask_recovery": 0,
+        "ask_symptom": 1,
+        "ask_warning": 0,
+        "frustration": 0,
+        "greeting": 0,
+        "help": 0,
+        "thanks": 0
+      },
+      "ask_medication": {
+        "ask_definition": 0,
+        "ask_lifestyle": 2,
+        "ask_medication": 1,
+        "ask_preparation": 0,
+        "ask_procedure": 0,
+        "ask_recovery": 0,
+        "ask_symptom": 0,
+        "ask_warning": 0,
+        "frustration": 0,
+        "greeting": 0,
+        "help": 0,
+        "thanks": 0
+      },
+      "ask_preparation": {
+        "ask_definition": 0,
+        "ask_lifestyle": 0,
+        "ask_medication": 0,
+        "ask_preparation": 2,
+        "ask_procedure": 1,
+        "ask_recovery": 0,
+        "ask_symptom": 0,
+        "ask_warning": 0,
+        "frustration": 0,
+        "greeting": 0,
+        "help": 0,
+        "thanks": 0
+      },
+      "ask_procedure": {
+        "ask_definition": 1,
+        "ask_lifestyle": 0,
+        "ask_medication": 0,
+        "ask_preparation": 1,
+        "ask_procedure": 0,
+        "ask_recovery": 1,
+        "ask_symptom": 0,
+        "ask_warning": 0,
+        "frustration": 0,
+        "greeting": 0,
+        "help": 0,
+        "thanks": 0
+      },
+      "ask_recovery": {
+        "ask_definition": 0,
+        "ask_lifestyle": 0,
+        "ask_medication": 0,
+        "ask_preparation": 0,
+        "ask_procedure": 0,
+        "ask_recovery": 3,
+        "ask_symptom": 0,
+        "ask_warning": 0,
+        "frustration": 0,
+        "greeting": 0,
+        "help": 0,
+        "thanks": 0
+      },
+      "ask_symptom": {
+        "ask_definition": 0,
+        "ask_lifestyle": 0,
+        "ask_medication": 0,
+        "ask_preparation": 0,
+        "ask_procedure": 0,
+        "ask_recovery": 0,
+        "ask_symptom": 3,
+        "ask_warning": 0,
+        "frustration": 0,
+        "greeting": 1,
+        "help": 0,
+        "thanks": 0
+      },
+      "ask_warning": {
+        "ask_definition": 0,
+        "ask_lifestyle": 0,
+        "ask_medication": 0,
+        "ask_preparation": 0,
+        "ask_procedure": 0,
+        "ask_recovery": 0,
+        "ask_symptom": 0,
+        "ask_warning": 3,
+        "frustration": 0,
+        "greeting": 0,
+        "help": 0,
+        "thanks": 0
+      },
+      "frustration": {
+        "ask_definition": 0,
+        "ask_lifestyle": 0,
+        "ask_medication": 0,
+        "ask_preparation": 0,
+        "ask_procedure": 0,
+        "ask_recovery": 1,
+        "ask_symptom": 0,
+        "ask_warning": 0,
+        "frustration": 2,
+        "greeting": 0,
+        "help": 0,
+        "thanks": 0
+      },
+      "greeting": {
+        "ask_definition": 0,
+        "ask_lifestyle": 0,
+        "ask_medication": 0,
+        "ask_preparation": 0,
+        "ask_procedure": 0,
+        "ask_recovery": 0,
+        "ask_symptom": 0,
+        "ask_warning": 0,
+        "frustration": 0,
+        "greeting": 4,
+        "help": 0,
+        "thanks": 0
+      },
+      "help": {
+        "ask_definition": 0,
+        "ask_lifestyle": 0,
+        "ask_medication": 0,
+        "ask_preparation": 0,
+        "ask_procedure": 0,
+        "ask_recovery": 0,
+        "ask_symptom": 0,
+        "ask_warning": 0,
+        "frustration": 0,
+        "greeting": 0,
+        "help": 2,
+        "thanks": 1
+      },
+      "thanks": {
+        "ask_definition": 0,
+        "ask_lifestyle": 0,
+        "ask_medication": 0,
+        "ask_preparation": 0,
+        "ask_procedure": 0,
+        "ask_recovery": 0,
+        "ask_symptom": 0,
+        "ask_warning": 0,
+        "frustration": 1,
+        "greeting": 1,
+        "help": 0,
+        "thanks": 1
+      }
+    }
+  },
+  "errors": [
+    {
+      "text": "waste of time",
+      "true": "frustration",
+      "pred": "ask_recovery"
+    },
+    {
+      "text": "i feel tired all day",
+      "true": "ask_symptom",
+      "pred": "greeting"
+    },
+    {
+      "text": "super helpful",
+      "true": "thanks",
+      "pred": "frustration"
+    },
+    {
+      "text": "what does a physiotherapist do",
+      "true": "ask_procedure",
+      "pred": "ask_definition"
+    },
+    {
+      "text": "which painkiller is safe with my bp meds",
+      "true": "ask_medication",
+      "pred": "ask_lifestyle"
+    },
+    {
+      "text": "how long is the mri appointment",
+      "true": "ask_procedure",
+      "pred": "ask_recovery"
+    },
+    {
+      "text": "help",
+      "true": "help",
+      "pred": "thanks"
+    },
+    {
+      "text": "is coffee bad for my heart",
+      "true": "ask_lifestyle",
+      "pred": "ask_symptom"
+    },
+    {
+      "text": "how to prepare for a ct scan",
+      "true": "ask_preparation",
+      "pred": "ask_procedure"
+    },
+    {
+      "text": "steps of a stress test",
+      "true": "ask_procedure",
+      "pred": "ask_preparation"
+    },
+    {
+      "text": "shukria",
+      "true": "thanks",
+      "pred": "greeting"
+    },
+    {
+      "text": "painkillers safe with my heart",
+      "true": "ask_medication",
+      "pred": "ask_lifestyle"
+    }
+  ]
+}

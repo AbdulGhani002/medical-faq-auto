@@ -22,6 +22,21 @@ SOURCES = [
 
 def _load_all(repo_root: Path) -> list[dict]:
     items: list[dict] = []
+
+    # 1. Prefer JSONL if present (one record per line).
+    jsonl_path = repo_root / "data" / "faqs.jsonl"
+    if jsonl_path.exists():
+        with jsonl_path.open("r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                items.append(json.loads(line))
+        if items:
+            print(f"  loaded {len(items):3d} from faqs.jsonl")
+            return items
+
+    # 2. Fall back to per-specialty JSON files.
     for name in SOURCES:
         path = repo_root / "data" / name
         if not path.exists():
@@ -31,7 +46,8 @@ def _load_all(repo_root: Path) -> list[dict]:
             chunk = json.load(f)
         items.extend(chunk)
         print(f"  loaded {len(chunk):3d} from {name}")
-    # Back-compat with the old single-file seed.
+
+    # 3. Back-compat with the old single-file seed.
     legacy = repo_root / "data" / "seed_faqs.json"
     if legacy.exists() and not items:
         with legacy.open("r", encoding="utf-8") as f:

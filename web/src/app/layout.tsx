@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 export const metadata = {
-  title: "MedFAQ - Clinician-reviewed answers, no AI in the loop",
+  title: "MedFAQ - Clinician-reviewed answers, classical NLP only",
   description:
-    "Ask one of three specialty assistants. Retrieval-only, BM25 ranked over an approved FAQ index. No LLM, no AI model.",
+    "Three specialty assistants. Hybrid retrieval: TF-IDF + BM25 + LSA + PPMI embeddings, with Naive Bayes intent, medical NER, sentiment, triage, and multi-turn dialog. No LLM, no neural network.",
 };
 
 export default function RootLayout({

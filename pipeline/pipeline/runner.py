@@ -39,7 +39,7 @@ def run_once(specialty: str | None = None) -> int:
     print(f"      {len(clusters)} clusters")
 
     print("[6/8] Select best answer per cluster (extractive)")
-    selected = select.run(clusters, turns)
+    selected = select.run(clusters, turns, vectors=vectors)
 
     print("[7/8] Polish output (rule-based)")
     polished = polish.run(selected)

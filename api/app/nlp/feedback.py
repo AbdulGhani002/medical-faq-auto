@@ -8,7 +8,8 @@ the query for a second pass. This is a classical IR technique from the
 from __future__ import annotations
 
 import numpy as np
-from sklearn.feature_extraction.text import TfidfVectorizer
+
+from app.myml.tfidf import TfidfVectorizer
 
 from .normalize import tokenize
 

@@ -1,4 +1,6 @@
-import type { Candidate, ChatResponse, FAQItem } from "./types";
+import type {
+  Candidate, ChatResponse, FAQItem, NLPAnalysis,
+} from "./types";
 
 const API =
   process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
@@ -28,6 +30,19 @@ export function sendChat(
       specialty,
       text,
     }),
+  });
+}
+
+export function resetChat(sessionId: string) {
+  return jfetch<{ ok: boolean }>(`${API}/chat/reset/${sessionId}`, {
+    method: "POST",
+  });
+}
+
+export function analyzeText(text: string): Promise<NLPAnalysis> {
+  return jfetch<NLPAnalysis>(`${API}/nlp/analyze`, {
+    method: "POST",
+    body: JSON.stringify({ text }),
   });
 }
 

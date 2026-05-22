@@ -8,7 +8,8 @@ export default function Footer() {
           <BrandMark withText />
           <p className="mt-3 text-stone-600 max-w-xs leading-relaxed">
             A clinician-reviewed FAQ assistant for three specialties.
-            Retrieval-only, BM25 ranked, no AI model in the loop.
+            Hybrid TF-IDF + BM25 + LSA + PPMI retrieval, with classical
+            NLP throughout. No LLM in the loop.
           </p>
         </div>
 
@@ -55,7 +56,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-stone-200">
         <div className="mx-auto max-w-6xl px-6 py-4 text-xs text-stone-500 flex flex-wrap justify-between gap-2">
-          <p>Built without LLMs. Pure retrieval, BM25 over a curated index.</p>
+          <p>Built without LLMs. 5-channel hybrid retrieval over a curated index.</p>
           <p>
             &copy; {new Date().getFullYear()} MedFAQ. Clinical content for
             information only.

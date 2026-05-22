@@ -1,0 +1,258 @@
+{"id": "intent-0000", "text": "hi", "label": "greeting"}
+{"id": "intent-0001", "text": "hello", "label": "greeting"}
+{"id": "intent-0002", "text": "hey there", "label": "greeting"}
+{"id": "intent-0003", "text": "hi assistant", "label": "greeting"}
+{"id": "intent-0004", "text": "good morning", "label": "greeting"}
+{"id": "intent-0005", "text": "good afternoon", "label": "greeting"}
+{"id": "intent-0006", "text": "good evening", "label": "greeting"}
+{"id": "intent-0007", "text": "salaam", "label": "greeting"}
+{"id": "intent-0008", "text": "salam", "label": "greeting"}
+{"id": "intent-0009", "text": "assalam alaikum", "label": "greeting"}
+{"id": "intent-0010", "text": "thanks", "label": "thanks"}
+{"id": "intent-0011", "text": "thank you", "label": "thanks"}
+{"id": "intent-0012", "text": "much appreciated", "label": "thanks"}
+{"id": "intent-0013", "text": "appreciate it", "label": "thanks"}
+{"id": "intent-0014", "text": "thx", "label": "thanks"}
+{"id": "intent-0015", "text": "ty", "label": "thanks"}
+{"id": "intent-0016", "text": "shukria", "label": "thanks"}
+{"id": "intent-0017", "text": "this is useless", "label": "frustration"}
+{"id": "intent-0018", "text": "you are stupid", "label": "frustration"}
+{"id": "intent-0019", "text": "garbage answer", "label": "frustration"}
+{"id": "intent-0020", "text": "wtf is this", "label": "frustration"}
+{"id": "intent-0021", "text": "rubbish bot", "label": "frustration"}
+{"id": "intent-0022", "text": "this sucks", "label": "frustration"}
+{"id": "intent-0023", "text": "you are not helpful", "label": "frustration"}
+{"id": "intent-0024", "text": "help", "label": "help"}
+{"id": "intent-0025", "text": "what can you do", "label": "help"}
+{"id": "intent-0026", "text": "how do i use this", "label": "help"}
+{"id": "intent-0027", "text": "menu", "label": "help"}
+{"id": "intent-0028", "text": "show me options", "label": "help"}
+{"id": "intent-0029", "text": "list topics", "label": "help"}
+{"id": "intent-0030", "text": "what is angina", "label": "ask_definition"}
+{"id": "intent-0031", "text": "define hypertension", "label": "ask_definition"}
+{"id": "intent-0032", "text": "what is sciatica", "label": "ask_definition"}
+{"id": "intent-0033", "text": "explain heart failure", "label": "ask_definition"}
+{"id": "intent-0034", "text": "what does mri mean", "label": "ask_definition"}
+{"id": "intent-0035", "text": "what is an echocardiogram", "label": "ask_definition"}
+{"id": "intent-0036", "text": "tell me about cholesterol", "label": "ask_definition"}
+{"id": "intent-0037", "text": "what is afib", "label": "ask_definition"}
+{"id": "intent-0038", "text": "define stroke", "label": "ask_definition"}
+{"id": "intent-0039", "text": "what does dash diet stand for", "label": "ask_definition"}
+{"id": "intent-0040", "text": "do i need to fast before my mri", "label": "ask_preparation"}
+{"id": "intent-0041", "text": "how to prepare for a ct scan", "label": "ask_preparation"}
+{"id": "intent-0042", "text": "any prep before ultrasound", "label": "ask_preparation"}
+{"id": "intent-0043", "text": "should i stop eating before angiogram", "label": "ask_preparation"}
+{"id": "intent-0044", "text": "can i drink water before the scan", "label": "ask_preparation"}
+{"id": "intent-0045", "text": "what to wear for an mri", "label": "ask_preparation"}
+{"id": "intent-0046", "text": "preparation for blood test", "label": "ask_preparation"}
+{"id": "intent-0047", "text": "any preparation before physio", "label": "ask_preparation"}
+{"id": "intent-0048", "text": "when can i drive after surgery", "label": "ask_recovery"}
+{"id": "intent-0049", "text": "how long is recovery after a stent", "label": "ask_recovery"}
+{"id": "intent-0050", "text": "when can i return to work", "label": "ask_recovery"}
+{"id": "intent-0051", "text": "after the procedure how long until i feel better", "label": "ask_recovery"}
+{"id": "intent-0052", "text": "recovery time after knee surgery", "label": "ask_recovery"}
+{"id": "intent-0053", "text": "when can i exercise after physio session", "label": "ask_recovery"}
+{"id": "intent-0054", "text": "how long till the bruise heals", "label": "ask_recovery"}
+{"id": "intent-0055", "text": "when should i take my bp medicine", "label": "ask_medication"}
+{"id": "intent-0056", "text": "should i take aspirin every day", "label": "ask_medication"}
+{"id": "intent-0057", "text": "what are the side effects of statins", "label": "ask_medication"}
+{"id": "intent-0058", "text": "how to take my blood thinner", "label": "ask_medication"}
+{"id": "intent-0059", "text": "missed a dose of my medicine", "label": "ask_medication"}
+{"id": "intent-0060", "text": "can i double up on my blood pressure pill", "label": "ask_medication"}
+{"id": "intent-0061", "text": "painkillers safe with my heart", "label": "ask_medication"}
+{"id": "intent-0062", "text": "is chest tightness a warning sign", "label": "ask_symptom"}
+{"id": "intent-0063", "text": "are palpitations dangerous", "label": "ask_symptom"}
+{"id": "intent-0064", "text": "why do i feel dizzy when i stand up", "label": "ask_symptom"}
+{"id": "intent-0065", "text": "my knee feels stiff after running", "label": "ask_symptom"}
+{"id": "intent-0066", "text": "i feel sore after my physio session", "label": "ask_symptom"}
+{"id": "intent-0067", "text": "my heart races at night", "label": "ask_symptom"}
+{"id": "intent-0068", "text": "i feel breathless climbing stairs", "label": "ask_symptom"}
+{"id": "intent-0069", "text": "sharp pain in my chest", "label": "ask_symptom"}
+{"id": "intent-0070", "text": "my back hurts after sitting", "label": "ask_symptom"}
+{"id": "intent-0071", "text": "can i exercise with high blood pressure", "label": "ask_lifestyle"}
+{"id": "intent-0072", "text": "is alcohol safe with my heart condition", "label": "ask_lifestyle"}
+{"id": "intent-0073", "text": "is coffee bad for my heart", "label": "ask_lifestyle"}
+{"id": "intent-0074", "text": "can i lift weights with bp", "label": "ask_lifestyle"}
+{"id": "intent-0075", "text": "what diet for heart disease", "label": "ask_lifestyle"}
+{"id": "intent-0076", "text": "how much salt is too much", "label": "ask_lifestyle"}
+{"id": "intent-0077", "text": "can i sleep on my back after surgery", "label": "ask_lifestyle"}
+{"id": "intent-0078", "text": "smoking and the heart", "label": "ask_lifestyle"}
+{"id": "intent-0079", "text": "how long does a ct take", "label": "ask_procedure"}
+{"id": "intent-0080", "text": "how long is the mri appointment", "label": "ask_procedure"}
+{"id": "intent-0081", "text": "what happens during an ecg", "label": "ask_procedure"}
+{"id": "intent-0082", "text": "what is involved in an echo scan", "label": "ask_procedure"}
+{"id": "intent-0083", "text": "how does the holter monitor work", "label": "ask_procedure"}
+{"id": "intent-0084", "text": "will the angiogram hurt", "label": "ask_procedure"}
+{"id": "intent-0085", "text": "how long does a physio session take", "label": "ask_procedure"}
+{"id": "intent-0086", "text": "what are the signs of a stroke", "label": "ask_warning"}
+{"id": "intent-0087", "text": "warning signs of heart attack", "label": "ask_warning"}
+{"id": "intent-0088", "text": "when should i call an ambulance", "label": "ask_warning"}
+{"id": "intent-0089", "text": "red flags after heart surgery", "label": "ask_warning"}
+{"id": "intent-0090", "text": "when should i go to the er", "label": "ask_warning"}
+{"id": "intent-0091", "text": "danger signs in pregnancy", "label": "ask_warning"}
+{"id": "intent-0092", "text": "symptoms to watch for after a fall", "label": "ask_warning"}
+{"id": "intent-0093", "text": "hey doc", "label": "greeting"}
+{"id": "intent-0094", "text": "hi there assistant", "label": "greeting"}
+{"id": "intent-0095", "text": "good day", "label": "greeting"}
+{"id": "intent-0096", "text": "hello dr", "label": "greeting"}
+{"id": "intent-0097", "text": "hey", "label": "greeting"}
+{"id": "intent-0098", "text": "yo", "label": "greeting"}
+{"id": "intent-0099", "text": "morning doctor", "label": "greeting"}
+{"id": "intent-0100", "text": "hello there", "label": "greeting"}
+{"id": "intent-0101", "text": "good morning sir", "label": "greeting"}
+{"id": "intent-0102", "text": "hiya", "label": "greeting"}
+{"id": "intent-0103", "text": "hey medfaq", "label": "greeting"}
+{"id": "intent-0104", "text": "appreciate the help", "label": "thanks"}
+{"id": "intent-0105", "text": "thanks a lot", "label": "thanks"}
+{"id": "intent-0106", "text": "thank you very much", "label": "thanks"}
+{"id": "intent-0107", "text": "many thanks", "label": "thanks"}
+{"id": "intent-0108", "text": "cheers for that", "label": "thanks"}
+{"id": "intent-0109", "text": "super helpful", "label": "thanks"}
+{"id": "intent-0110", "text": "thanks doctor", "label": "thanks"}
+{"id": "intent-0111", "text": "thanks for explaining", "label": "thanks"}
+{"id": "intent-0112", "text": "thx so much", "label": "thanks"}
+{"id": "intent-0113", "text": "thanks i got it now", "label": "thanks"}
+{"id": "intent-0114", "text": "not helpful at all", "label": "frustration"}
+{"id": "intent-0115", "text": "this answer is wrong", "label": "frustration"}
+{"id": "intent-0116", "text": "you have no idea", "label": "frustration"}
+{"id": "intent-0117", "text": "terrible bot", "label": "frustration"}
+{"id": "intent-0118", "text": "waste of time", "label": "frustration"}
+{"id": "intent-0119", "text": "you are useless", "label": "frustration"}
+{"id": "intent-0120", "text": "nope this is wrong", "label": "frustration"}
+{"id": "intent-0121", "text": "rubbish", "label": "frustration"}
+{"id": "intent-0122", "text": "what topics can you answer", "label": "help"}
+{"id": "intent-0123", "text": "give me a list of things you can do", "label": "help"}
+{"id": "intent-0124", "text": "how do i use you", "label": "help"}
+{"id": "intent-0125", "text": "can you guide me", "label": "help"}
+{"id": "intent-0126", "text": "what kind of questions can i ask", "label": "help"}
+{"id": "intent-0127", "text": "show options", "label": "help"}
+{"id": "intent-0128", "text": "what areas you cover", "label": "help"}
+{"id": "intent-0129", "text": "can you list specialties", "label": "help"}
+{"id": "intent-0130", "text": "explain afib", "label": "ask_definition"}
+{"id": "intent-0131", "text": "what is bp", "label": "ask_definition"}
+{"id": "intent-0132", "text": "define dash diet", "label": "ask_definition"}
+{"id": "intent-0133", "text": "what does cardiac arrest mean", "label": "ask_definition"}
+{"id": "intent-0134", "text": "explain to me what diabetes is", "label": "ask_definition"}
+{"id": "intent-0135", "text": "tell me what high cholesterol is", "label": "ask_definition"}
+{"id": "intent-0136", "text": "what is a stent", "label": "ask_definition"}
+{"id": "intent-0137", "text": "what does ldl stand for", "label": "ask_definition"}
+{"id": "intent-0138", "text": "any prep before angiogram", "label": "ask_preparation"}
+{"id": "intent-0139", "text": "fast before contrast scan", "label": "ask_preparation"}
+{"id": "intent-0140", "text": "preparation for x ray", "label": "ask_preparation"}
+{"id": "intent-0141", "text": "any restriction before ecg", "label": "ask_preparation"}
+{"id": "intent-0142", "text": "what to do night before mri", "label": "ask_preparation"}
+{"id": "intent-0143", "text": "can i eat before the test", "label": "ask_preparation"}
+{"id": "intent-0144", "text": "instructions before holter monitor", "label": "ask_preparation"}
+{"id": "intent-0145", "text": "what to bring to my first physio", "label": "ask_preparation"}
+{"id": "intent-0146", "text": "when can i start lifting again", "label": "ask_recovery"}
+{"id": "intent-0147", "text": "how long until i can go back to work", "label": "ask_recovery"}
+{"id": "intent-0148", "text": "recovery period after stent", "label": "ask_recovery"}
+{"id": "intent-0149", "text": "how long for the bruise to clear", "label": "ask_recovery"}
+{"id": "intent-0150", "text": "when can i swim again", "label": "ask_recovery"}
+{"id": "intent-0151", "text": "how soon can i fly after a heart attack", "label": "ask_recovery"}
+{"id": "intent-0152", "text": "when can i resume gym", "label": "ask_recovery"}
+{"id": "intent-0153", "text": "recovery after rotator cuff repair", "label": "ask_recovery"}
+{"id": "intent-0154", "text": "how many weeks for the knee to heal", "label": "ask_recovery"}
+{"id": "intent-0155", "text": "can i skip my dose", "label": "ask_medication"}
+{"id": "intent-0156", "text": "which painkiller is safe with my bp meds", "label": "ask_medication"}
+{"id": "intent-0157", "text": "side effects of statins", "label": "ask_medication"}
+{"id": "intent-0158", "text": "is aspirin safe daily", "label": "ask_medication"}
+{"id": "intent-0159", "text": "what to do if i double dose", "label": "ask_medication"}
+{"id": "intent-0160", "text": "can i stop my blood thinner", "label": "ask_medication"}
+{"id": "intent-0161", "text": "ibuprofen safe with hypertension", "label": "ask_medication"}
+{"id": "intent-0162", "text": "when do i take my cholesterol pill", "label": "ask_medication"}
+{"id": "intent-0163", "text": "my shoulder hurts at night", "label": "ask_symptom"}
+{"id": "intent-0164", "text": "i feel dizzy on standing", "label": "ask_symptom"}
+{"id": "intent-0165", "text": "i get short of breath quickly", "label": "ask_symptom"}
+{"id": "intent-0166", "text": "my heart is racing", "label": "ask_symptom"}
+{"id": "intent-0167", "text": "i feel sick after my session", "label": "ask_symptom"}
+{"id": "intent-0168", "text": "there is a sharp pain in my chest", "label": "ask_symptom"}
+{"id": "intent-0169", "text": "my back is killing me", "label": "ask_symptom"}
+{"id": "intent-0170", "text": "my knee feels weak when i walk", "label": "ask_symptom"}
+{"id": "intent-0171", "text": "i cannot sleep because of leg cramps", "label": "ask_symptom"}
+{"id": "intent-0172", "text": "i feel tired all day", "label": "ask_symptom"}
+{"id": "intent-0173", "text": "how much salt is safe", "label": "ask_lifestyle"}
+{"id": "intent-0174", "text": "is walking good for the heart", "label": "ask_lifestyle"}
+{"id": "intent-0175", "text": "best diet for diabetes", "label": "ask_lifestyle"}
+{"id": "intent-0176", "text": "can i eat eggs with high cholesterol", "label": "ask_lifestyle"}
+{"id": "intent-0177", "text": "smoking and recovery", "label": "ask_lifestyle"}
+{"id": "intent-0178", "text": "alcohol with blood thinners", "label": "ask_lifestyle"}
+{"id": "intent-0179", "text": "how many hours of sleep", "label": "ask_lifestyle"}
+{"id": "intent-0180", "text": "yoga and back pain", "label": "ask_lifestyle"}
+{"id": "intent-0181", "text": "how does the echo work", "label": "ask_procedure"}
+{"id": "intent-0182", "text": "what happens in an mri", "label": "ask_procedure"}
+{"id": "intent-0183", "text": "how long does an angiogram take", "label": "ask_procedure"}
+{"id": "intent-0184", "text": "does dry needling hurt", "label": "ask_procedure"}
+{"id": "intent-0185", "text": "what to expect during ultrasound", "label": "ask_procedure"}
+{"id": "intent-0186", "text": "ecg explanation", "label": "ask_procedure"}
+{"id": "intent-0187", "text": "steps of a stress test", "label": "ask_procedure"}
+{"id": "intent-0188", "text": "what does a physiotherapist do", "label": "ask_procedure"}
+{"id": "intent-0189", "text": "danger signs for stroke", "label": "ask_warning"}
+{"id": "intent-0190", "text": "warning signs after cardiac stent", "label": "ask_warning"}
+{"id": "intent-0191", "text": "red flag symptoms after physio", "label": "ask_warning"}
+{"id": "intent-0192", "text": "when do i need er", "label": "ask_warning"}
+{"id": "intent-0193", "text": "symptoms i should never ignore", "label": "ask_warning"}
+{"id": "intent-0194", "text": "warning signs in chest pain", "label": "ask_warning"}
+{"id": "intent-0195", "text": "danger after a head injury", "label": "ask_warning"}
+{"id": "intent-0196", "text": "when to call ambulance for heart", "label": "ask_warning"}
+{"id": "intent-0197", "text": "salaam alaykum", "label": "greeting"}
+{"id": "intent-0198", "text": "how do you do", "label": "greeting"}
+{"id": "intent-0199", "text": "hi medfaq", "label": "greeting"}
+{"id": "intent-0200", "text": "hello there assistant", "label": "greeting"}
+{"id": "intent-0201", "text": "good evening doctor", "label": "greeting"}
+{"id": "intent-0202", "text": "jazak allah", "label": "thanks"}
+{"id": "intent-0203", "text": "really appreciate it", "label": "thanks"}
+{"id": "intent-0204", "text": "you saved my evening", "label": "thanks"}
+{"id": "intent-0205", "text": "thanks heaps", "label": "thanks"}
+{"id": "intent-0206", "text": "you are wrong", "label": "frustration"}
+{"id": "intent-0207", "text": "worst chatbot ever", "label": "frustration"}
+{"id": "intent-0208", "text": "not what i asked", "label": "frustration"}
+{"id": "intent-0209", "text": "what services do you provide", "label": "help"}
+{"id": "intent-0210", "text": "list of specialties please", "label": "help"}
+{"id": "intent-0211", "text": "what categories are there", "label": "help"}
+{"id": "intent-0212", "text": "what is rheumatic heart disease", "label": "ask_definition"}
+{"id": "intent-0213", "text": "define plantar fasciitis", "label": "ask_definition"}
+{"id": "intent-0214", "text": "what does interventional radiology mean", "label": "ask_definition"}
+{"id": "intent-0215", "text": "explain a stress test", "label": "ask_definition"}
+{"id": "intent-0216", "text": "define hfpef", "label": "ask_definition"}
+{"id": "intent-0217", "text": "what is dry needling", "label": "ask_definition"}
+{"id": "intent-0218", "text": "what does dexa scan stand for", "label": "ask_definition"}
+{"id": "intent-0219", "text": "define holter monitor", "label": "ask_definition"}
+{"id": "intent-0220", "text": "any prep for dexa", "label": "ask_preparation"}
+{"id": "intent-0221", "text": "do i fast before stress test", "label": "ask_preparation"}
+{"id": "intent-0222", "text": "preparation before ultrasound", "label": "ask_preparation"}
+{"id": "intent-0223", "text": "what to wear for pet ct", "label": "ask_preparation"}
+{"id": "intent-0224", "text": "can i drink water before angiogram", "label": "ask_preparation"}
+{"id": "intent-0225", "text": "how long bed rest after angiogram", "label": "ask_recovery"}
+{"id": "intent-0226", "text": "when can i go back to gym after stent", "label": "ask_recovery"}
+{"id": "intent-0227", "text": "recovery after rheumatic valve surgery", "label": "ask_recovery"}
+{"id": "intent-0228", "text": "how soon can i drive after sedation", "label": "ask_recovery"}
+{"id": "intent-0229", "text": "how to take dual antiplatelet", "label": "ask_medication"}
+{"id": "intent-0230", "text": "can i stop ticagrelor", "label": "ask_medication"}
+{"id": "intent-0231", "text": "any concern with paracetamol and blood thinner", "label": "ask_medication"}
+{"id": "intent-0232", "text": "missed two days of statin", "label": "ask_medication"}
+{"id": "intent-0233", "text": "safe painkiller in heart failure", "label": "ask_medication"}
+{"id": "intent-0234", "text": "my heel hurts in the morning", "label": "ask_symptom"}
+{"id": "intent-0235", "text": "i hear clicking in my knee", "label": "ask_symptom"}
+{"id": "intent-0236", "text": "my shoulder is frozen", "label": "ask_symptom"}
+{"id": "intent-0237", "text": "my legs go numb after walking", "label": "ask_symptom"}
+{"id": "intent-0238", "text": "dizzy when i bend down", "label": "ask_symptom"}
+{"id": "intent-0239", "text": "chest pain when i lie down", "label": "ask_symptom"}
+{"id": "intent-0240", "text": "breath gets short on stairs", "label": "ask_symptom"}
+{"id": "intent-0241", "text": "woke up at night with palpitations", "label": "ask_symptom"}
+{"id": "intent-0242", "text": "can heart patients fast in ramadan", "label": "ask_lifestyle"}
+{"id": "intent-0243", "text": "safe exercises after stent", "label": "ask_lifestyle"}
+{"id": "intent-0244", "text": "good diet for fatty liver", "label": "ask_lifestyle"}
+{"id": "intent-0245", "text": "can i drive long distance after surgery", "label": "ask_lifestyle"}
+{"id": "intent-0246", "text": "smoking quit support", "label": "ask_lifestyle"}
+{"id": "intent-0247", "text": "how does a fluoroscopy work", "label": "ask_procedure"}
+{"id": "intent-0248", "text": "what happens during a dexa", "label": "ask_procedure"}
+{"id": "intent-0249", "text": "how long does a holter take", "label": "ask_procedure"}
+{"id": "intent-0250", "text": "what is a tilt table test", "label": "ask_procedure"}
+{"id": "intent-0251", "text": "how is interventional radiology done", "label": "ask_procedure"}
+{"id": "intent-0252", "text": "when is chest pain a red flag", "label": "ask_warning"}
+{"id": "intent-0253", "text": "red flags after a stent", "label": "ask_warning"}
+{"id": "intent-0254", "text": "post procedure danger signs", "label": "ask_warning"}
+{"id": "intent-0255", "text": "emergency signs of stroke", "label": "ask_warning"}
+{"id": "intent-0256", "text": "signs of clot in leg", "label": "ask_warning"}
+{"id": "intent-0257", "text": "when to call ambulance for palpitations", "label": "ask_warning"}

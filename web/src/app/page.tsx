@@ -54,9 +54,10 @@ export default async function Home() {
             <span className="text-stone-500">not generated text.</span>
           </h1>
           <p className="text-stone-600 text-lg max-w-xl leading-relaxed mb-8">
-            Three specialty assistants ranked over an approved FAQ index using
-            BM25. Every reply is a real clinician-reviewed answer, never
-            machine-written.
+            Three specialty assistants. Hybrid TF-IDF + BM25 + LSA retrieval
+            with Naive Bayes intent, medical NER, sentiment, triage, and
+            multi-turn dialog management. Every reply is a real
+            clinician-reviewed answer, never machine-written.
           </p>
           <div className="flex flex-wrap gap-3">
             <a
@@ -99,7 +100,8 @@ export default async function Home() {
             Choose an assistant
           </h2>
           <p className="text-sm text-stone-500 hidden sm:block">
-            Each runs the same BM25 retrieval over its specialty&apos;s index.
+            Each runs the same hybrid TF-IDF + BM25 + LSA + PPMI retriever
+            over its specialty&apos;s index.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -125,8 +127,8 @@ export default async function Home() {
           />
           <Step
             num="02"
-            title="BM25 ranks"
-            body="Term frequency math over approved FAQs. Pure statistics, no embeddings, no neural model."
+            title="Classical NLP ranks"
+            body="TF-IDF (word + char) plus BM25 plus LSA topic similarity, with Naive Bayes intent, medical NER, negation, and sentiment all running locally."
           />
           <Step
             num="03"

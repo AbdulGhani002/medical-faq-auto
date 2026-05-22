@@ -51,8 +51,11 @@ export default async function ChatPage({
             {TITLES[specialty]} assistant
           </h1>
           <p className="text-stone-600">
-            Answers come from a clinician-reviewed FAQ index. Pure BM25
-            retrieval, no LLM or AI model.
+            Answers come from a clinician-reviewed FAQ index. Hybrid
+            classical NLP pipeline: TF-IDF (word + char n-grams) + BM25
+            + LSA topic + PPMI word embeddings, with Naive Bayes intent,
+            medical NER, negation, sentiment, and triage running locally.
+            No LLM, no neural network.
           </p>
         </div>
       </header>

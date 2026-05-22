@@ -1,4 +1,5 @@
 import AdminDashboard from "@/components/AdminDashboard";
+import DashboardCharts from "@/components/DashboardCharts";
 import Link from "next/link";
 
 export default function AdminPage() {
@@ -14,12 +15,22 @@ export default function AdminPage() {
       <header className="mb-8">
         <h1 className="display text-3xl mb-1">Admin dashboard</h1>
         <p className="text-stone-600 max-w-2xl">
-          Approve, edit, or reject candidate FAQs before they appear on the
-          public site. The pipeline writes candidates here for clinician
-          review.
+          Live analytics + candidate-FAQ review. Chart data is produced by
+          the NLP analyser running on the FastAPI backend over recent chat
+          turns. No data leaves the server.
         </p>
       </header>
-      <AdminDashboard />
+
+      <DashboardCharts />
+
+      <div className="mt-10 border-t border-stone-200 pt-8">
+        <h2 className="text-xl font-semibold mb-1">Candidate FAQs</h2>
+        <p className="text-sm text-stone-500 mb-5">
+          Approve, edit, or reject candidate FAQs before they appear on the
+          public site.
+        </p>
+        <AdminDashboard />
+      </div>
     </div>
   );
 }
