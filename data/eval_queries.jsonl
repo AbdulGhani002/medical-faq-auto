@@ -85,3 +85,32 @@
 {"id": "eval-0084", "specialty": "cardiovascular", "query": "preserved ejection fraction", "expected_keyword": "relax"}
 {"id": "eval-0085", "specialty": "cardiovascular", "query": "left bundle branch block", "expected_keyword": "electrical"}
 {"id": "eval-0086", "specialty": "cardiovascular", "query": "benefits of quitting smoking", "expected_keyword": "quit"}
+{"id": "eval-0087", "specialty": "radiology", "query": "mri with metal implants", "expected_keyword": "implant"}
+{"id": "eval-0088", "specialty": "radiology", "query": "is contrast injection painful", "expected_keyword": "warm"}
+{"id": "eval-0089", "specialty": "radiology", "query": "partner stay during scan", "expected_keyword": "wait"}
+{"id": "eval-0090", "specialty": "radiology", "query": "vq scan what is it", "expected_keyword": "ventilation"}
+{"id": "eval-0091", "specialty": "radiology", "query": "what is a lung nodule", "expected_keyword": "nodule"}
+{"id": "eval-0092", "specialty": "radiology", "query": "long wait for mri", "expected_keyword": "urgent"}
+{"id": "eval-0093", "specialty": "radiology", "query": "abdominal ultrasound prep", "expected_keyword": "fast"}
+{"id": "eval-0094", "specialty": "radiology", "query": "ct biopsy how", "expected_keyword": "needle"}
+{"id": "eval-0095", "specialty": "radiology", "query": "need chaperone for scan", "expected_keyword": "chaperone"}
+{"id": "eval-0096", "specialty": "physiotherapy", "query": "tens machine", "expected_keyword": "electrical"}
+{"id": "eval-0097", "specialty": "physiotherapy", "query": "lumbar back brace", "expected_keyword": "brace"}
+{"id": "eval-0098", "specialty": "physiotherapy", "query": "sprain vs strain", "expected_keyword": "ligament"}
+{"id": "eval-0099", "specialty": "physiotherapy", "query": "daily walking goal", "expected_keyword": "walking"}
+{"id": "eval-0100", "specialty": "physiotherapy", "query": "ankle gives way", "expected_keyword": "balance"}
+{"id": "eval-0101", "specialty": "physiotherapy", "query": "pregnancy massage safe", "expected_keyword": "pregnancy"}
+{"id": "eval-0102", "specialty": "physiotherapy", "query": "rotator cuff injury", "expected_keyword": "rotator"}
+{"id": "eval-0103", "specialty": "physiotherapy", "query": "desk neck pain", "expected_keyword": "desk"}
+{"id": "eval-0104", "specialty": "physiotherapy", "query": "exercise during migraine", "expected_keyword": "migraine"}
+{"id": "eval-0105", "specialty": "physiotherapy", "query": "prehab before knee surgery", "expected_keyword": "prehab"}
+{"id": "eval-0106", "specialty": "cardiovascular", "query": "coronary calcium score", "expected_keyword": "calcium"}
+{"id": "eval-0107", "specialty": "cardiovascular", "query": "remote pacemaker check", "expected_keyword": "remote"}
+{"id": "eval-0108", "specialty": "cardiovascular", "query": "what does inr mean", "expected_keyword": "INR"}
+{"id": "eval-0109", "specialty": "cardiovascular", "query": "leg swelling evening", "expected_keyword": "swelling"}
+{"id": "eval-0110", "specialty": "cardiovascular", "query": "intermittent fasting heart", "expected_keyword": "fast"}
+{"id": "eval-0111", "specialty": "cardiovascular", "query": "high cholesterol no symptoms", "expected_keyword": "symptom"}
+{"id": "eval-0112", "specialty": "cardiovascular", "query": "energy drinks heart", "expected_keyword": "energy"}
+{"id": "eval-0113", "specialty": "cardiovascular", "query": "sleep apnoea and afib", "expected_keyword": "apnoea"}
+{"id": "eval-0114", "specialty": "cardiovascular", "query": "heart murmur", "expected_keyword": "murmur"}
+{"id": "eval-0115", "specialty": "cardiovascular", "query": "broken heart syndrome", "expected_keyword": "takotsubo"}

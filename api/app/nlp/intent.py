@@ -1,19 +1,22 @@
 """Rule-based intent classifier.
 
-Distinguishes the four user-intent classes we handle: ``greeting``,
-``thanks``, ``frustration``, and ``question`` (the default).
+Recognises chitchat / meta intents we never want routed through the
+retrieval pipeline: ``greeting``, ``thanks``, ``frustration``,
+``help``, ``meta`` (questions about the assistant itself), and falls
+through to ``question`` for actual medical queries.
 """
 import re
 
 _GREETINGS = {
     "hi", "hello", "hey", "hiya", "yo", "salaam", "salam", "assalam",
     "good morning", "good afternoon", "good evening", "good night",
-    "hi there", "hey there",
+    "hi there", "hey there", "howdy", "greetings",
 }
 
 _THANKS = {
     "thanks", "thank you", "thx", "thankyou", "ty", "appreciate it",
     "appreciated", "much appreciated", "shukria", "shukriya", "cheers",
+    "jazak allah", "many thanks",
 }
 
 _FRUSTRATION = {
@@ -26,6 +29,22 @@ _HELP = {
     "help", "what can you do", "what do you do", "menu", "options",
     "topics", "categories",
 }
+
+# Questions about the assistant itself, not about medicine. The
+# retriever has no FAQ for "who are you" so without this guard it
+# matches the closest clinical question by similarity, which is
+# almost always wrong.
+_META_PHRASES = (
+    "who are you", "what are you", "what is medfaq", "what's medfaq",
+    "whats medfaq", "what is your name", "what's your name",
+    "whats your name", "your name", "who made you", "who built you",
+    "who created you", "who developed you", "who designed you",
+    "tell me about yourself", "introduce yourself", "are you a robot",
+    "are you a bot", "are you ai", "are you a human", "are you human",
+    "are you a doctor", "are you a real doctor", "are you real",
+    "what model are you", "are you chatgpt", "are you gpt",
+    "are you claude", "are you a language model",
+)
 
 
 def _normalise(text: str) -> str:
@@ -44,6 +63,8 @@ def classify(text: str) -> str:
         return "thanks"
     if any(t == g or g in t for g in _FRUSTRATION):
         return "frustration"
+    if any(phrase in t for phrase in _META_PHRASES):
+        return "meta"
     if any(t == g or t.startswith(g) for g in _HELP):
         return "help"
     return "question"
@@ -51,9 +72,9 @@ def classify(text: str) -> str:
 
 CANNED_REPLIES = {
     "greeting": (
-        "Hi. I am a {specialty} assistant. Ask me anything about "
-        "preparation, recovery, medications, or general care. I will "
-        "look up a clinician-reviewed answer for you."
+        "Hi. I am the MedFAQ {specialty} assistant. Ask me anything about "
+        "preparation, recovery, medications, or general care. I will look "
+        "up a clinician-reviewed answer for you."
     ),
     "thanks": (
         "You are welcome. If you have another question on {specialty}, "
@@ -66,10 +87,20 @@ CANNED_REPLIES = {
         "please contact the clinic directly."
     ),
     "help": (
-        "I can answer common {specialty} questions, for example: "
+        "I can answer common {specialty} questions — for example: "
         "preparation before procedures, what to expect, medication timing, "
         "warning signs, and recovery. Try a phrase like 'how long does it "
         "take' or 'what should I avoid'."
+    ),
+    "meta": (
+        "I'm MedFAQ — a {specialty} assistant built as a university "
+        "semester project. I do not use any large language model. Every "
+        "reply you see comes from an approved, clinician-reviewed FAQ "
+        "selected by an in-house classical-NLP retriever (TF-IDF + BM25 + "
+        "LSA + PPMI + Naive Bayes intent + medical NER, all written from "
+        "scratch in numpy). I am not a doctor and cannot give individual "
+        "medical advice — please contact a clinician for anything "
+        "specific to your case."
     ),
 }
 
