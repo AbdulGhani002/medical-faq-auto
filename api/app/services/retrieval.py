@@ -178,6 +178,34 @@ def _highlight_payload(text: str, query: str) -> list[dict]:
     return highlight_text(text, query)
 
 
+async def _bump_faq_count(faq: dict, specialty: str) -> None:
+    """Increment the matched FAQ's ``count`` field.
+
+    Works against both the Mongo Motor handle and the in-memory mock —
+    both implement ``update_one`` with ``$inc``. We also update the
+    cached list in-place so the next request reflects the new total
+    without a full cache rebuild.
+    """
+    try:
+        db = get_db()
+        oid = faq.get("_id")
+        if oid is None:
+            return
+        # Mongo stores ObjectId; the in-memory store uses hex strings.
+        await db.faqs.update_one(
+            {"_id": oid},
+            {"$inc": {"count": 1}, "$currentDate": {"last_used": True}},
+        )
+        # Keep the in-process cache in sync.
+        for f in _FAQS_CACHE.get(specialty, []):
+            if f.get("_id") == oid:
+                f["count"] = (f.get("count", 0) or 0) + 1
+                break
+    except Exception:
+        # Counts are best-effort — never fail a chat over a counter.
+        pass
+
+
 async def retrieve_answer(
     specialty: str, text: str, session_id: str | None = None
 ) -> dict:
@@ -373,6 +401,13 @@ async def retrieve_answer(
         fallback = primary_topic(_ee(response["matched_question"])) or matched_topic
         matched_topic = matched_topic or fallback
     _set_state(sid, update_state(state, analysis, matched_topic))
+
+    # 11. Live FAQ-usage counter. We only increment when retrieval found
+    # something useful so an unhelpful "no good match" turn does not
+    # inflate any FAQ's count.
+    if info.get("top") and info["bucket"] in ("confident", "best_guess"):
+        matched_faq = faqs[info["top"]["idx"]]
+        await _bump_faq_count(matched_faq, specialty)
 
     return response
 

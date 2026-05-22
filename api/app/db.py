@@ -99,12 +99,18 @@ class _Collection:
             if upsert:
                 base = {k: v for k, v in q.items() if not k.startswith("$")}
                 base.update(update.get("$set", {}))
+                for k, v in update.get("$inc", {}).items():
+                    base[k] = (base.get(k, 0) or 0) + v
                 await self.insert_one(base)
                 return type("R", (), {"matched_count": 0,
                                        "modified_count": 1})()
             return type("R", (), {"matched_count": 0, "modified_count": 0})()
         for k, v in update.get("$set", {}).items():
             match[k] = v
+        for k, v in update.get("$inc", {}).items():
+            match[k] = (match.get(k, 0) or 0) + v
+        for k, v in update.get("$currentDate", {}).items():
+            match[k] = datetime.utcnow()
         return type("R", (), {"matched_count": 1, "modified_count": 1})()
 
     async def delete_many(self, q: dict) -> Any:
@@ -169,7 +175,7 @@ def _seed_memory(db: _MemoryDB) -> None:
                     "specialty": item["specialty"],
                     "question": item["question"],
                     "answer": item["answer"],
-                    "count": item.get("count", 1),
+                    "count": item.get("count", 0),
                     "approved": item.get("approved", True),
                     "rejected": False,
                     "cluster_id": item.get("id") or f"mem-{item['specialty']}-{i}",
@@ -195,7 +201,7 @@ def _seed_memory(db: _MemoryDB) -> None:
                     "specialty": item["specialty"],
                     "question": item["question"],
                     "answer": item["answer"],
-                    "count": item.get("count", 1),
+                    "count": item.get("count", 0),
                     "approved": item.get("approved", True),
                     "rejected": False,
                     "cluster_id": f"mem-{item['specialty']}-{i}",
@@ -231,7 +237,7 @@ def _seed_mongo_from_jsonl(db) -> None:
                     "specialty": item["specialty"],
                     "question": item["question"],
                     "answer": item["answer"],
-                    "count": item.get("count", 1),
+                    "count": item.get("count", 0),
                     "approved": item.get("approved", True),
                     "rejected": False,
                     "cluster_id": item.get("id") or f"jsonl-{i}",
@@ -250,7 +256,7 @@ def _seed_mongo_from_jsonl(db) -> None:
                         "specialty": item["specialty"],
                         "question": item["question"],
                         "answer": item["answer"],
-                        "count": item.get("count", 1),
+                        "count": item.get("count", 0),
                         "approved": item.get("approved", True),
                         "rejected": False,
                         "cluster_id": f"json-{item['specialty']}-{i}",

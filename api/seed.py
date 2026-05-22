@@ -89,7 +89,7 @@ def main() -> int:
             "specialty": faq["specialty"],
             "question": faq["question"],
             "answer": faq["answer"],
-            "count": faq.get("count", 1),
+            "count": faq.get("count", 0),
             "approved": faq.get("approved", True),
             "rejected": False,
             "cluster_id": f"seed-{faq['specialty']}-{i}",
