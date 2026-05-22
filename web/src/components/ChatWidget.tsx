@@ -98,8 +98,8 @@ export default function ChatWidget({ specialty }: { specialty: string }) {
             {specialty} assistant
           </p>
           <p className="text-[11px] text-stone-500">
-            TF-IDF + BM25 + char n-grams + LSA + NB intent + NER + triage,
-            classical NLP only
+            TF-IDF + BM25 + LSA + PPMI + transformer / CRF / MLP — every
+            model trained from scratch
           </p>
         </div>
         {topic && (
@@ -137,7 +137,7 @@ export default function ChatWidget({ specialty }: { specialty: string }) {
                 Hi, I am the <span className="capitalize">{specialty}</span>{" "}
                 assistant. Ask me about prep, recovery, medication, or any
                 question on this topic. I look up clinician-reviewed answers
-                using a hybrid TF-IDF + BM25 + LSA retriever, with full NLP
+                using a hybrid TF-IDF + BM25 + LSA + PPMI retriever, with full NLP
                 analysis (NER, intent, sentiment, triage). No AI in the loop.
               </p>
             </div>

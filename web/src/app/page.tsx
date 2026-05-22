@@ -54,9 +54,9 @@ export default async function Home() {
             <span className="text-stone-500">not generated text.</span>
           </h1>
           <p className="text-stone-600 text-lg max-w-xl leading-relaxed mb-8">
-            Three specialty assistants. Hybrid TF-IDF + BM25 + LSA retrieval
-            with Naive Bayes intent, medical NER, sentiment, triage, and
-            multi-turn dialog management. Every reply is a real
+            Three specialty assistants. Hybrid TF-IDF + BM25 + LSA + PPMI
+            retrieval, plus a from-scratch MLP, CRF and PyTorch transformer
+            trained on our own corpus. Every reply is a real
             clinician-reviewed answer, never machine-written.
           </p>
           <div className="flex flex-wrap gap-3">
@@ -82,7 +82,7 @@ export default async function Home() {
           <dl className="mt-10 grid grid-cols-3 gap-6 max-w-md">
             <Stat label="Specialties" value="3" />
             <Stat label="Approved FAQs" value={String(total)} />
-            <Stat label="AI models used" value="0" />
+            <Stat label="In-house models" value="13" />
           </dl>
         </div>
 

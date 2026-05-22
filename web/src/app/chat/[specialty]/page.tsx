@@ -52,10 +52,11 @@ export default async function ChatPage({
           </h1>
           <p className="text-stone-600">
             Answers come from a clinician-reviewed FAQ index. Hybrid
-            classical NLP pipeline: TF-IDF (word + char n-grams) + BM25
-            + LSA topic + PPMI word embeddings, with Naive Bayes intent,
-            medical NER, negation, sentiment, and triage running locally.
-            No LLM, no neural network.
+            pipeline: TF-IDF (word + char n-grams) + BM25 + LSA topic +
+            PPMI word embeddings, with Naive Bayes / MLP / transformer
+            intent classifiers, dictionary + perceptron + CRF NER,
+            negation, sentiment, and triage — every model built from
+            scratch in numpy or PyTorch. No pretrained LLM.
           </p>
         </div>
       </header>
