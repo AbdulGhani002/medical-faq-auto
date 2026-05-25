@@ -306,901 +306,1212 @@
 {"id": "aug-00305", "text": "hello dr radiology", "label": "greeting"}
 {"id": "aug-00306", "text": "thanks i feel better", "label": "thanks"}
 {"id": "aug-00307", "text": "got it thanks", "label": "thanks"}
-{"id": "aug-00308", "text": "can you hi", "label": "greeting"}
-{"id": "aug-00309", "text": "hi :)", "label": "greeting"}
-{"id": "aug-00310", "text": "i want to know hello", "label": "greeting"}
-{"id": "aug-00311", "text": "please tell me hello please", "label": "greeting"}
-{"id": "aug-00312", "text": "could you hey there", "label": "greeting"}
-{"id": "aug-00313", "text": "hye there", "label": "greeting"}
-{"id": "aug-00314", "text": "can you hey there :)", "label": "greeting"}
-{"id": "aug-00315", "text": "hey assistant", "label": "greeting"}
-{"id": "aug-00316", "text": "can you hi assistant", "label": "greeting"}
-{"id": "aug-00317", "text": "hi asisstant", "label": "greeting"}
-{"id": "aug-00318", "text": "do you know hi assistant", "label": "greeting"}
-{"id": "aug-00319", "text": "ok morning", "label": "greeting"}
-{"id": "aug-00320", "text": "good mornign", "label": "greeting"}
-{"id": "aug-00321", "text": "can you good morning please", "label": "greeting"}
-{"id": "aug-00322", "text": "please tell me good afternoon", "label": "greeting"}
-{"id": "aug-00323", "text": "good faternoon", "label": "greeting"}
-{"id": "aug-00324", "text": "good afternoon ?", "label": "greeting"}
-{"id": "aug-00325", "text": "ok evening", "label": "greeting"}
-{"id": "aug-00326", "text": "please tell me good evening", "label": "greeting"}
-{"id": "aug-00327", "text": "godo evening", "label": "greeting"}
-{"id": "aug-00328", "text": "do you know good evening please", "label": "greeting"}
-{"id": "aug-00329", "text": "kindly tell me salaam", "label": "greeting"}
-{"id": "aug-00330", "text": "i want to know salaam...", "label": "greeting"}
-{"id": "aug-00331", "text": "could you salam :)", "label": "greeting"}
-{"id": "aug-00332", "text": "do you know assalam alaikum", "label": "greeting"}
-{"id": "aug-00333", "text": "asslaam alaikum", "label": "greeting"}
-{"id": "aug-00334", "text": "i need to know assalam alaikum kindly", "label": "greeting"}
-{"id": "aug-00335", "text": "could you thanks", "label": "thanks"}
-{"id": "aug-00336", "text": "please tell me thanks...", "label": "thanks"}
-{"id": "aug-00337", "text": "i need to know thank you", "label": "thanks"}
-{"id": "aug-00338", "text": "thnak you", "label": "thanks"}
-{"id": "aug-00339", "text": "can you thank you", "label": "thanks"}
-{"id": "aug-00340", "text": "do you know much appreciated", "label": "thanks"}
-{"id": "aug-00341", "text": "much apprecaited", "label": "thanks"}
-{"id": "aug-00342", "text": "can you much appreciated kindly", "label": "thanks"}
-{"id": "aug-00343", "text": "i need to know appreciate it", "label": "thanks"}
-{"id": "aug-00344", "text": "appreciaet it", "label": "thanks"}
-{"id": "aug-00345", "text": "i want to know appreciate it...", "label": "thanks"}
-{"id": "aug-00346", "text": "kindly tell me thx ?", "label": "thanks"}
-{"id": "aug-00347", "text": "can you ty", "label": "thanks"}
-{"id": "aug-00348", "text": "do you know ty", "label": "thanks"}
-{"id": "aug-00349", "text": "i want to know shukria", "label": "thanks"}
-{"id": "aug-00350", "text": "shkuria", "label": "thanks"}
-{"id": "aug-00351", "text": "i need to know shukria ?", "label": "thanks"}
-{"id": "aug-00352", "text": "please tell me this is useless", "label": "frustration"}
-{"id": "aug-00353", "text": "htis is useless", "label": "frustration"}
-{"id": "aug-00354", "text": "can you this is useless", "label": "frustration"}
-{"id": "aug-00355", "text": "please tell me you are stupid", "label": "frustration"}
-{"id": "aug-00356", "text": "you are sutpid", "label": "frustration"}
-{"id": "aug-00357", "text": "i want to know you are stupid", "label": "frustration"}
-{"id": "aug-00358", "text": "please tell me garbage answer", "label": "frustration"}
-{"id": "aug-00359", "text": "garbaeg answer", "label": "frustration"}
-{"id": "aug-00360", "text": "can you garbage answer thanks", "label": "frustration"}
-{"id": "aug-00361", "text": "i want to know wtf is this", "label": "frustration"}
-{"id": "aug-00362", "text": "wtf is htis", "label": "frustration"}
-{"id": "aug-00363", "text": "kindly tell me wtf is this :)", "label": "frustration"}
-{"id": "aug-00364", "text": "i need to know rubbish bot", "label": "frustration"}
-{"id": "aug-00365", "text": "rubibsh bot", "label": "frustration"}
-{"id": "aug-00366", "text": "could you rubbish bot kindly", "label": "frustration"}
-{"id": "aug-00367", "text": "i need to know this sucks", "label": "frustration"}
-{"id": "aug-00368", "text": "tihs sucks", "label": "frustration"}
-{"id": "aug-00369", "text": "please tell me this sucks :)", "label": "frustration"}
-{"id": "aug-00370", "text": "i want to know you are not helpful", "label": "frustration"}
-{"id": "aug-00371", "text": "you are ont helpful", "label": "frustration"}
-{"id": "aug-00372", "text": "can you you are not helpful ?", "label": "frustration"}
-{"id": "aug-00373", "text": "could you help", "label": "help"}
-{"id": "aug-00374", "text": "please tell me help please", "label": "help"}
-{"id": "aug-00375", "text": "kindly tell me what can you do", "label": "help"}
-{"id": "aug-00376", "text": "what can yuo do", "label": "help"}
-{"id": "aug-00377", "text": "do you know what can you do kindly", "label": "help"}
-{"id": "aug-00378", "text": "please tell me how do i use this", "label": "help"}
-{"id": "aug-00379", "text": "ohw do i use this", "label": "help"}
-{"id": "aug-00380", "text": "i need to know how do i use this...", "label": "help"}
-{"id": "aug-00381", "text": "please tell me menu...", "label": "help"}
-{"id": "aug-00382", "text": "sohw me options", "label": "help"}
-{"id": "aug-00383", "text": "i need to know show me options thanks", "label": "help"}
-{"id": "aug-00384", "text": "i want to know list topics", "label": "help"}
-{"id": "aug-00385", "text": "lsit topics", "label": "help"}
-{"id": "aug-00386", "text": "can you list topics please", "label": "help"}
-{"id": "aug-00387", "text": "i need to know what is angina", "label": "ask_definition"}
-{"id": "aug-00388", "text": "whta is angina", "label": "ask_definition"}
-{"id": "aug-00389", "text": "please tell me what is angina :)", "label": "ask_definition"}
-{"id": "aug-00390", "text": "kindly tell me define hypertension", "label": "ask_definition"}
-{"id": "aug-00391", "text": "define hypertesnion", "label": "ask_definition"}
-{"id": "aug-00392", "text": "do you know define hypertension :)", "label": "ask_definition"}
-{"id": "aug-00393", "text": "kindly tell me what is sciatica", "label": "ask_definition"}
-{"id": "aug-00394", "text": "waht is sciatica", "label": "ask_definition"}
-{"id": "aug-00395", "text": "could you what is sciatica kindly", "label": "ask_definition"}
-{"id": "aug-00396", "text": "could you explain heart failure", "label": "ask_definition"}
-{"id": "aug-00397", "text": "explain heart faiulre", "label": "ask_definition"}
-{"id": "aug-00398", "text": "please tell me explain heart failure :)", "label": "ask_definition"}
-{"id": "aug-00399", "text": "what does scan mean", "label": "ask_definition"}
-{"id": "aug-00400", "text": "i want to know what does mri mean", "label": "ask_definition"}
-{"id": "aug-00401", "text": "waht does mri mean", "label": "ask_definition"}
-{"id": "aug-00402", "text": "do you know what does mri mean ?", "label": "ask_definition"}
-{"id": "aug-00403", "text": "do you know what is an echocardiogram", "label": "ask_definition"}
-{"id": "aug-00404", "text": "what is an echocardiogarm", "label": "ask_definition"}
-{"id": "aug-00405", "text": "i need to know what is an echocardiogram please", "label": "ask_definition"}
-{"id": "aug-00406", "text": "could you tell me about cholesterol", "label": "ask_definition"}
-{"id": "aug-00407", "text": "tell me about cholestreol", "label": "ask_definition"}
-{"id": "aug-00408", "text": "kindly tell me tell me about cholesterol", "label": "ask_definition"}
-{"id": "aug-00409", "text": "what is faib", "label": "ask_definition"}
-{"id": "aug-00410", "text": "can you what is afib please", "label": "ask_definition"}
-{"id": "aug-00411", "text": "could you define stroke", "label": "ask_definition"}
-{"id": "aug-00412", "text": "define stroek", "label": "ask_definition"}
-{"id": "aug-00413", "text": "do you know define stroke ?", "label": "ask_definition"}
-{"id": "aug-00414", "text": "can you what does dash diet stand for", "label": "ask_definition"}
-{"id": "aug-00415", "text": "what does dash diet satnd for", "label": "ask_definition"}
-{"id": "aug-00416", "text": "do you know what does dash diet stand for thanks", "label": "ask_definition"}
-{"id": "aug-00417", "text": "do i need to avoid eating before my scan", "label": "ask_preparation"}
-{"id": "aug-00418", "text": "kindly tell me do i need to fast before my mri", "label": "ask_preparation"}
-{"id": "aug-00419", "text": "i want to know do i need to fast before my mri ?", "label": "ask_preparation"}
-{"id": "aug-00420", "text": "how to prepaer for a ct scan", "label": "ask_preparation"}
-{"id": "aug-00421", "text": "can you how to prepare for a ct scan :)", "label": "ask_preparation"}
-{"id": "aug-00422", "text": "i want to know any prep before ultrasound", "label": "ask_preparation"}
-{"id": "aug-00423", "text": "any prep bfeore ultrasound", "label": "ask_preparation"}
-{"id": "aug-00424", "text": "i need to know any prep before ultrasound", "label": "ask_preparation"}
-{"id": "aug-00425", "text": "i want to know should i stop eating before angiogram", "label": "ask_preparation"}
-{"id": "aug-00426", "text": "should i stop eating before angiogrma", "label": "ask_preparation"}
-{"id": "aug-00427", "text": "do you know should i stop eating before angiogram please", "label": "ask_preparation"}
-{"id": "aug-00428", "text": "kindly tell me can i drink water before the scan", "label": "ask_preparation"}
-{"id": "aug-00429", "text": "can i rdink water before the scan", "label": "ask_preparation"}
-{"id": "aug-00430", "text": "can i drink water before the scan :)", "label": "ask_preparation"}
-{"id": "aug-00431", "text": "what to wear for an imaging", "label": "ask_preparation"}
-{"id": "aug-00432", "text": "i want to know what to wear for an mri", "label": "ask_preparation"}
-{"id": "aug-00433", "text": "what to wear fro an mri", "label": "ask_preparation"}
-{"id": "aug-00434", "text": "could you what to wear for an mri ?", "label": "ask_preparation"}
-{"id": "aug-00435", "text": "can you preparation for blood test", "label": "ask_preparation"}
-{"id": "aug-00436", "text": "preparaiton for blood test", "label": "ask_preparation"}
-{"id": "aug-00437", "text": "i want to know preparation for blood test...", "label": "ask_preparation"}
-{"id": "aug-00438", "text": "please tell me any preparation before physio", "label": "ask_preparation"}
-{"id": "aug-00439", "text": "nay preparation before physio", "label": "ask_preparation"}
-{"id": "aug-00440", "text": "could you any preparation before physio kindly", "label": "ask_preparation"}
-{"id": "aug-00441", "text": "could you when can i drive after surgery", "label": "ask_recovery"}
-{"id": "aug-00442", "text": "when can i drive after surgrey", "label": "ask_recovery"}
-{"id": "aug-00443", "text": "when can i drive after surgery ?", "label": "ask_recovery"}
-{"id": "aug-00444", "text": "i need to know how long is recovery after a stent", "label": "ask_recovery"}
-{"id": "aug-00445", "text": "how long is recoveyr after a stent", "label": "ask_recovery"}
-{"id": "aug-00446", "text": "kindly tell me how long is recovery after a stent", "label": "ask_recovery"}
-{"id": "aug-00447", "text": "can you when can i return to work", "label": "ask_recovery"}
-{"id": "aug-00448", "text": "when can i return ot work", "label": "ask_recovery"}
-{"id": "aug-00449", "text": "i need to know when can i return to work...", "label": "ask_recovery"}
-{"id": "aug-00450", "text": "i want to know after the procedure how long until i feel better", "label": "ask_recovery"}
-{"id": "aug-00451", "text": "after the procedure how long until i fele better", "label": "ask_recovery"}
-{"id": "aug-00452", "text": "please tell me after the procedure how long until i feel better", "label": "ask_recovery"}
-{"id": "aug-00453", "text": "please tell me recovery time after knee surgery", "label": "ask_recovery"}
-{"id": "aug-00454", "text": "recovery time atfer knee surgery", "label": "ask_recovery"}
-{"id": "aug-00455", "text": "can you recovery time after knee surgery", "label": "ask_recovery"}
-{"id": "aug-00456", "text": "when can i workout after physio session", "label": "ask_recovery"}
-{"id": "aug-00457", "text": "kindly tell me when can i exercise after physio session", "label": "ask_recovery"}
-{"id": "aug-00458", "text": "when can i xeercise after physio session", "label": "ask_recovery"}
-{"id": "aug-00459", "text": "can you when can i exercise after physio session...", "label": "ask_recovery"}
-{"id": "aug-00460", "text": "could you how long till the bruise heals", "label": "ask_recovery"}
-{"id": "aug-00461", "text": "how long till the bruise heasl", "label": "ask_recovery"}
-{"id": "aug-00462", "text": "could you how long till the bruise heals :)", "label": "ask_recovery"}
-{"id": "aug-00463", "text": "when should i take my bp drug", "label": "ask_medication"}
-{"id": "aug-00464", "text": "kindly tell me when should i take my bp medicine", "label": "ask_medication"}
-{"id": "aug-00465", "text": "when sohuld i take my bp medicine", "label": "ask_medication"}
-{"id": "aug-00466", "text": "could you when should i take my bp medicine kindly", "label": "ask_medication"}
-{"id": "aug-00467", "text": "do you know should i take aspirin every day", "label": "ask_medication"}
-{"id": "aug-00468", "text": "should i take apsirin every day", "label": "ask_medication"}
-{"id": "aug-00469", "text": "please tell me should i take aspirin every day ?", "label": "ask_medication"}
-{"id": "aug-00470", "text": "please tell me what are the side effects of statins", "label": "ask_medication"}
-{"id": "aug-00471", "text": "what are hte side effects of statins", "label": "ask_medication"}
-{"id": "aug-00472", "text": "i want to know what are the side effects of statins thanks", "label": "ask_medication"}
-{"id": "aug-00473", "text": "i need to know how to take my blood thinner", "label": "ask_medication"}
-{"id": "aug-00474", "text": "hwo to take my blood thinner", "label": "ask_medication"}
-{"id": "aug-00475", "text": "kindly tell me how to take my blood thinner ?", "label": "ask_medication"}
-{"id": "aug-00476", "text": "missed a dose of my tablet", "label": "ask_medication"}
-{"id": "aug-00477", "text": "kindly tell me missed a dose of my medicine", "label": "ask_medication"}
-{"id": "aug-00478", "text": "missed a dsoe of my medicine", "label": "ask_medication"}
-{"id": "aug-00479", "text": "can you missed a dose of my medicine please", "label": "ask_medication"}
-{"id": "aug-00480", "text": "please tell me can i double up on my blood pressure pill", "label": "ask_medication"}
-{"id": "aug-00481", "text": "can i double up on my blood rpessure pill", "label": "ask_medication"}
-{"id": "aug-00482", "text": "can you can i double up on my blood pressure pill kindly", "label": "ask_medication"}
-{"id": "aug-00483", "text": "panikillers safe with my heart", "label": "ask_medication"}
-{"id": "aug-00484", "text": "please tell me painkillers safe with my heart ?", "label": "ask_medication"}
-{"id": "aug-00485", "text": "please tell me is chest tightness a warning sign", "label": "ask_symptom"}
-{"id": "aug-00486", "text": "is chest itghtness a warning sign", "label": "ask_symptom"}
-{"id": "aug-00487", "text": "are palpitations dagnerous", "label": "ask_symptom"}
-{"id": "aug-00488", "text": "please tell me are palpitations dangerous", "label": "ask_symptom"}
-{"id": "aug-00489", "text": "why do i fele dizzy when i stand up", "label": "ask_symptom"}
-{"id": "aug-00490", "text": "i need to know why do i feel dizzy when i stand up", "label": "ask_symptom"}
-{"id": "aug-00491", "text": "please tell me my knee feels stiff after running", "label": "ask_symptom"}
-{"id": "aug-00492", "text": "my knee feels stiff after rnuning", "label": "ask_symptom"}
-{"id": "aug-00493", "text": "i want to know my knee feels stiff after running :)", "label": "ask_symptom"}
-{"id": "aug-00494", "text": "kindly tell me i feel sore after my physio session", "label": "ask_symptom"}
-{"id": "aug-00495", "text": "i feel sore aftre my physio session", "label": "ask_symptom"}
-{"id": "aug-00496", "text": "please tell me i feel sore after my physio session ?", "label": "ask_symptom"}
-{"id": "aug-00497", "text": "could you my heart races at night", "label": "ask_symptom"}
-{"id": "aug-00498", "text": "my heart racse at night", "label": "ask_symptom"}
-{"id": "aug-00499", "text": "kindly tell me my heart races at night please", "label": "ask_symptom"}
-{"id": "aug-00500", "text": "kindly tell me i feel breathless climbing stairs", "label": "ask_symptom"}
-{"id": "aug-00501", "text": "i feel bretahless climbing stairs", "label": "ask_symptom"}
-{"id": "aug-00502", "text": "do you know i feel breathless climbing stairs please", "label": "ask_symptom"}
-{"id": "aug-00503", "text": "can you sharp pain in my chest", "label": "ask_symptom"}
-{"id": "aug-00504", "text": "shapr pain in my chest", "label": "ask_symptom"}
-{"id": "aug-00505", "text": "can you sharp pain in my chest :)", "label": "ask_symptom"}
-{"id": "aug-00506", "text": "do you know my back hurts after sitting", "label": "ask_symptom"}
-{"id": "aug-00507", "text": "my bakc hurts after sitting", "label": "ask_symptom"}
-{"id": "aug-00508", "text": "i need to know my back hurts after sitting thanks", "label": "ask_symptom"}
-{"id": "aug-00509", "text": "do you know can i exercise with high blood pressure", "label": "ask_lifestyle"}
-{"id": "aug-00510", "text": "can i exrecise with high blood pressure", "label": "ask_lifestyle"}
-{"id": "aug-00511", "text": "kindly tell me can i exercise with high blood pressure...", "label": "ask_lifestyle"}
-{"id": "aug-00512", "text": "is alcohol safe with my herat condition", "label": "ask_lifestyle"}
-{"id": "aug-00513", "text": "can you is alcohol safe with my heart condition", "label": "ask_lifestyle"}
-{"id": "aug-00514", "text": "is coffee terrible for my heart", "label": "ask_lifestyle"}
-{"id": "aug-00515", "text": "do you know is coffee bad for my heart", "label": "ask_lifestyle"}
-{"id": "aug-00516", "text": "is ocffee bad for my heart", "label": "ask_lifestyle"}
-{"id": "aug-00517", "text": "i need to know is coffee bad for my heart...", "label": "ask_lifestyle"}
-{"id": "aug-00518", "text": "can you can i lift weights with bp", "label": "ask_lifestyle"}
-{"id": "aug-00519", "text": "can i lift weights with pb", "label": "ask_lifestyle"}
-{"id": "aug-00520", "text": "please tell me can i lift weights with bp please", "label": "ask_lifestyle"}
-{"id": "aug-00521", "text": "please tell me what diet for heart disease", "label": "ask_lifestyle"}
-{"id": "aug-00522", "text": "waht diet for heart disease", "label": "ask_lifestyle"}
-{"id": "aug-00523", "text": "kindly tell me what diet for heart disease please", "label": "ask_lifestyle"}
-{"id": "aug-00524", "text": "do you know how much salt is too much", "label": "ask_lifestyle"}
-{"id": "aug-00525", "text": "how much satl is too much", "label": "ask_lifestyle"}
-{"id": "aug-00526", "text": "could you how much salt is too much kindly", "label": "ask_lifestyle"}
-{"id": "aug-00527", "text": "kindly tell me can i sleep on my back after surgery", "label": "ask_lifestyle"}
-{"id": "aug-00528", "text": "can i lseep on my back after surgery", "label": "ask_lifestyle"}
-{"id": "aug-00529", "text": "please tell me can i sleep on my back after surgery...", "label": "ask_lifestyle"}
-{"id": "aug-00530", "text": "can you smoking and the heart", "label": "ask_lifestyle"}
-{"id": "aug-00531", "text": "smoknig and the heart", "label": "ask_lifestyle"}
-{"id": "aug-00532", "text": "kindly tell me smoking and the heart...", "label": "ask_lifestyle"}
-{"id": "aug-00533", "text": "how long does a ct scan take", "label": "ask_procedure"}
-{"id": "aug-00534", "text": "can you how long does a ct take", "label": "ask_procedure"}
-{"id": "aug-00535", "text": "how long dose a ct take", "label": "ask_procedure"}
-{"id": "aug-00536", "text": "how long does a ct take :)", "label": "ask_procedure"}
-{"id": "aug-00537", "text": "how long is the scan appointment", "label": "ask_procedure"}
-{"id": "aug-00538", "text": "how long is the mir appointment", "label": "ask_procedure"}
-{"id": "aug-00539", "text": "can you how long is the mri appointment...", "label": "ask_procedure"}
-{"id": "aug-00540", "text": "please tell me what happens during an ecg", "label": "ask_procedure"}
-{"id": "aug-00541", "text": "waht happens during an ecg", "label": "ask_procedure"}
-{"id": "aug-00542", "text": "could you what happens during an ecg thanks", "label": "ask_procedure"}
-{"id": "aug-00543", "text": "what is involved in an echo test", "label": "ask_procedure"}
-{"id": "aug-00544", "text": "kindly tell me what is involved in an echo scan", "label": "ask_procedure"}
-{"id": "aug-00545", "text": "what is invovled in an echo scan", "label": "ask_procedure"}
-{"id": "aug-00546", "text": "kindly tell me what is involved in an echo scan please", "label": "ask_procedure"}
-{"id": "aug-00547", "text": "do you know how does the holter monitor work", "label": "ask_procedure"}
-{"id": "aug-00548", "text": "how deos the holter monitor work", "label": "ask_procedure"}
-{"id": "aug-00549", "text": "how does the holter monitor work please", "label": "ask_procedure"}
-{"id": "aug-00550", "text": "do you know will the angiogram hurt", "label": "ask_procedure"}
-{"id": "aug-00551", "text": "will the angigoram hurt", "label": "ask_procedure"}
-{"id": "aug-00552", "text": "will the angiogram hurt thanks", "label": "ask_procedure"}
-{"id": "aug-00553", "text": "i want to know how long does a physio session take", "label": "ask_procedure"}
-{"id": "aug-00554", "text": "how long does a physio sessoin take", "label": "ask_procedure"}
-{"id": "aug-00555", "text": "kindly tell me how long does a physio session take kindly", "label": "ask_procedure"}
-{"id": "aug-00556", "text": "do you know what are the signs of a stroke", "label": "ask_warning"}
-{"id": "aug-00557", "text": "what are the sgins of a stroke", "label": "ask_warning"}
-{"id": "aug-00558", "text": "kindly tell me what are the signs of a stroke please", "label": "ask_warning"}
-{"id": "aug-00559", "text": "please tell me warning signs of heart attack", "label": "ask_warning"}
-{"id": "aug-00560", "text": "warning signs fo heart attack", "label": "ask_warning"}
-{"id": "aug-00561", "text": "i want to know warning signs of heart attack please", "label": "ask_warning"}
-{"id": "aug-00562", "text": "when should i call an ambulnace", "label": "ask_warning"}
-{"id": "aug-00563", "text": "when should i call an ambulance :)", "label": "ask_warning"}
-{"id": "aug-00564", "text": "i need to know red flags after heart surgery", "label": "ask_warning"}
-{"id": "aug-00565", "text": "red lfags after heart surgery", "label": "ask_warning"}
-{"id": "aug-00566", "text": "kindly tell me when should i go to the er", "label": "ask_warning"}
-{"id": "aug-00567", "text": "when shuold i go to the er", "label": "ask_warning"}
-{"id": "aug-00568", "text": "could you when should i go to the er", "label": "ask_warning"}
-{"id": "aug-00569", "text": "can you danger signs in pregnancy", "label": "ask_warning"}
-{"id": "aug-00570", "text": "dangre signs in pregnancy", "label": "ask_warning"}
-{"id": "aug-00571", "text": "could you danger signs in pregnancy", "label": "ask_warning"}
-{"id": "aug-00572", "text": "can you symptoms to watch for after a fall", "label": "ask_warning"}
-{"id": "aug-00573", "text": "symptoms to watch for after a afll", "label": "ask_warning"}
-{"id": "aug-00574", "text": "please tell me symptoms to watch for after a fall thanks", "label": "ask_warning"}
-{"id": "aug-00575", "text": "can you hey doc", "label": "greeting"}
-{"id": "aug-00576", "text": "hye doc", "label": "greeting"}
-{"id": "aug-00577", "text": "please tell me hey doc ?", "label": "greeting"}
-{"id": "aug-00578", "text": "hi there asssitant", "label": "greeting"}
-{"id": "aug-00579", "text": "can you hi there assistant thanks", "label": "greeting"}
-{"id": "aug-00580", "text": "i need to know good day", "label": "greeting"}
-{"id": "aug-00581", "text": "i want to know good day please", "label": "greeting"}
-{"id": "aug-00582", "text": "hey there dr", "label": "greeting"}
-{"id": "aug-00583", "text": "i need to know hello dr", "label": "greeting"}
-{"id": "aug-00584", "text": "helol dr", "label": "greeting"}
-{"id": "aug-00585", "text": "please tell me hello dr kindly", "label": "greeting"}
-{"id": "aug-00586", "text": "do you know hey", "label": "greeting"}
-{"id": "aug-00587", "text": "could you hey :)", "label": "greeting"}
-{"id": "aug-00588", "text": "i want to know yo", "label": "greeting"}
-{"id": "aug-00589", "text": "kindly tell me yo kindly", "label": "greeting"}
-{"id": "aug-00590", "text": "morning physician", "label": "greeting"}
-{"id": "aug-00591", "text": "can you morning doctor", "label": "greeting"}
-{"id": "aug-00592", "text": "morning docotr", "label": "greeting"}
-{"id": "aug-00593", "text": "morning doctor thanks", "label": "greeting"}
-{"id": "aug-00594", "text": "hey there there", "label": "greeting"}
-{"id": "aug-00595", "text": "can you hello there", "label": "greeting"}
-{"id": "aug-00596", "text": "ehllo there", "label": "greeting"}
-{"id": "aug-00597", "text": "can you hello there ?", "label": "greeting"}
-{"id": "aug-00598", "text": "please tell me good morning sir", "label": "greeting"}
-{"id": "aug-00599", "text": "good morinng sir", "label": "greeting"}
-{"id": "aug-00600", "text": "i want to know good morning sir please", "label": "greeting"}
-{"id": "aug-00601", "text": "i need to know hiya", "label": "greeting"}
-{"id": "aug-00602", "text": "can you hiya please", "label": "greeting"}
-{"id": "aug-00603", "text": "i need to know hey medfaq", "label": "greeting"}
-{"id": "aug-00604", "text": "ehy medfaq", "label": "greeting"}
-{"id": "aug-00605", "text": "i want to know hey medfaq please", "label": "greeting"}
-{"id": "aug-00606", "text": "appreciate the assist", "label": "thanks"}
-{"id": "aug-00607", "text": "kindly tell me appreciate the help", "label": "thanks"}
-{"id": "aug-00608", "text": "apprecaite the help", "label": "thanks"}
-{"id": "aug-00609", "text": "i want to know appreciate the help ?", "label": "thanks"}
-{"id": "aug-00610", "text": "thx a plenty", "label": "thanks"}
-{"id": "aug-00611", "text": "thakns a lot", "label": "thanks"}
-{"id": "aug-00612", "text": "i want to know thanks a lot :)", "label": "thanks"}
-{"id": "aug-00613", "text": "can you thank you very much", "label": "thanks"}
-{"id": "aug-00614", "text": "thank you very mcuh", "label": "thanks"}
-{"id": "aug-00615", "text": "could you thank you very much kindly", "label": "thanks"}
-{"id": "aug-00616", "text": "many thank you", "label": "thanks"}
-{"id": "aug-00617", "text": "can you many thanks", "label": "thanks"}
-{"id": "aug-00618", "text": "many thansk", "label": "thanks"}
-{"id": "aug-00619", "text": "can you many thanks :)", "label": "thanks"}
-{"id": "aug-00620", "text": "could you cheers for that", "label": "thanks"}
-{"id": "aug-00621", "text": "hceers for that", "label": "thanks"}
-{"id": "aug-00622", "text": "i want to know cheers for that kindly", "label": "thanks"}
-{"id": "aug-00623", "text": "please tell me super helpful", "label": "thanks"}
-{"id": "aug-00624", "text": "spuer helpful", "label": "thanks"}
-{"id": "aug-00625", "text": "i need to know super helpful please", "label": "thanks"}
-{"id": "aug-00626", "text": "thank you clinician", "label": "thanks"}
-{"id": "aug-00627", "text": "i want to know thanks doctor", "label": "thanks"}
-{"id": "aug-00628", "text": "thanks doctro", "label": "thanks"}
-{"id": "aug-00629", "text": "kindly tell me thanks doctor kindly", "label": "thanks"}
-{"id": "aug-00630", "text": "thnaks for explaining", "label": "thanks"}
-{"id": "aug-00631", "text": "can you thanks for explaining :)", "label": "thanks"}
-{"id": "aug-00632", "text": "do you know thx so much", "label": "thanks"}
-{"id": "aug-00633", "text": "thx so umch", "label": "thanks"}
-{"id": "aug-00634", "text": "i want to know thx so much", "label": "thanks"}
-{"id": "aug-00635", "text": "thank you i got it now", "label": "thanks"}
-{"id": "aug-00636", "text": "thakns i got it now", "label": "thanks"}
-{"id": "aug-00637", "text": "i need to know thanks i got it now...", "label": "thanks"}
-{"id": "aug-00638", "text": "could you not helpful at all", "label": "frustration"}
-{"id": "aug-00639", "text": "not hlepful at all", "label": "frustration"}
-{"id": "aug-00640", "text": "i want to know not helpful at all please", "label": "frustration"}
-{"id": "aug-00641", "text": "kindly tell me this answer is wrong", "label": "frustration"}
-{"id": "aug-00642", "text": "this asnwer is wrong", "label": "frustration"}
-{"id": "aug-00643", "text": "do you know this answer is wrong ?", "label": "frustration"}
-{"id": "aug-00644", "text": "oyu have no idea", "label": "frustration"}
-{"id": "aug-00645", "text": "can you you have no idea", "label": "frustration"}
-{"id": "aug-00646", "text": "could you terrible bot", "label": "frustration"}
-{"id": "aug-00647", "text": "trerible bot", "label": "frustration"}
-{"id": "aug-00648", "text": "terrible bot...", "label": "frustration"}
-{"id": "aug-00649", "text": "i need to know waste of time", "label": "frustration"}
-{"id": "aug-00650", "text": "waste of tiem", "label": "frustration"}
-{"id": "aug-00651", "text": "could you waste of time thanks", "label": "frustration"}
-{"id": "aug-00652", "text": "could you you are useless", "label": "frustration"}
-{"id": "aug-00653", "text": "you are uselses", "label": "frustration"}
-{"id": "aug-00654", "text": "you are useless kindly", "label": "frustration"}
-{"id": "aug-00655", "text": "i need to know nope this is wrong", "label": "frustration"}
-{"id": "aug-00656", "text": "npoe this is wrong", "label": "frustration"}
-{"id": "aug-00657", "text": "nope this is wrong kindly", "label": "frustration"}
-{"id": "aug-00658", "text": "please tell me rubbish", "label": "frustration"}
-{"id": "aug-00659", "text": "urbbish", "label": "frustration"}
-{"id": "aug-00660", "text": "please tell me rubbish :)", "label": "frustration"}
-{"id": "aug-00661", "text": "can you what topics can you answer", "label": "help"}
-{"id": "aug-00662", "text": "what topics can you naswer", "label": "help"}
-{"id": "aug-00663", "text": "i need to know what topics can you answer...", "label": "help"}
-{"id": "aug-00664", "text": "do you know give me a list of things you can do", "label": "help"}
-{"id": "aug-00665", "text": "give em a list of things you can do", "label": "help"}
-{"id": "aug-00666", "text": "could you give me a list of things you can do please", "label": "help"}
-{"id": "aug-00667", "text": "could you how do i use you", "label": "help"}
-{"id": "aug-00668", "text": "how do i sue you", "label": "help"}
-{"id": "aug-00669", "text": "could you how do i use you thanks", "label": "help"}
-{"id": "aug-00670", "text": "cna you guide me", "label": "help"}
-{"id": "aug-00671", "text": "could you can you guide me :)", "label": "help"}
-{"id": "aug-00672", "text": "i need to know what kind of questions can i ask", "label": "help"}
-{"id": "aug-00673", "text": "what kind of qeustions can i ask", "label": "help"}
-{"id": "aug-00674", "text": "do you know what kind of questions can i ask...", "label": "help"}
-{"id": "aug-00675", "text": "please tell me show options", "label": "help"}
-{"id": "aug-00676", "text": "shwo options", "label": "help"}
-{"id": "aug-00677", "text": "i want to know show options please", "label": "help"}
-{"id": "aug-00678", "text": "can you what areas you cover", "label": "help"}
-{"id": "aug-00679", "text": "hwat areas you cover", "label": "help"}
-{"id": "aug-00680", "text": "do you know what areas you cover...", "label": "help"}
-{"id": "aug-00681", "text": "can you list specialteis", "label": "help"}
-{"id": "aug-00682", "text": "kindly tell me can you list specialties please", "label": "help"}
-{"id": "aug-00683", "text": "please tell me explain afib", "label": "ask_definition"}
-{"id": "aug-00684", "text": "exlpain afib", "label": "ask_definition"}
-{"id": "aug-00685", "text": "kindly tell me explain afib kindly", "label": "ask_definition"}
-{"id": "aug-00686", "text": "i want to know what is bp", "label": "ask_definition"}
-{"id": "aug-00687", "text": "what is pb", "label": "ask_definition"}
-{"id": "aug-00688", "text": "please tell me what is bp please", "label": "ask_definition"}
-{"id": "aug-00689", "text": "define dash dite", "label": "ask_definition"}
-{"id": "aug-00690", "text": "please tell me define dash diet thanks", "label": "ask_definition"}
-{"id": "aug-00691", "text": "i need to know what does cardiac arrest mean", "label": "ask_definition"}
-{"id": "aug-00692", "text": "what does cardiac arrest maen", "label": "ask_definition"}
-{"id": "aug-00693", "text": "i want to know what does cardiac arrest mean...", "label": "ask_definition"}
-{"id": "aug-00694", "text": "can you explain to me what diabetes is", "label": "ask_definition"}
-{"id": "aug-00695", "text": "xeplain to me what diabetes is", "label": "ask_definition"}
-{"id": "aug-00696", "text": "i want to know explain to me what diabetes is kindly", "label": "ask_definition"}
-{"id": "aug-00697", "text": "do you know tell me what high cholesterol is", "label": "ask_definition"}
-{"id": "aug-00698", "text": "tell me what high hcolesterol is", "label": "ask_definition"}
-{"id": "aug-00699", "text": "i need to know tell me what high cholesterol is", "label": "ask_definition"}
-{"id": "aug-00700", "text": "can you what is a stent", "label": "ask_definition"}
-{"id": "aug-00701", "text": "waht is a stent", "label": "ask_definition"}
-{"id": "aug-00702", "text": "i want to know what is a stent please", "label": "ask_definition"}
-{"id": "aug-00703", "text": "i want to know what does ldl stand for", "label": "ask_definition"}
-{"id": "aug-00704", "text": "what odes ldl stand for", "label": "ask_definition"}
-{"id": "aug-00705", "text": "do you know any prep before angiogram", "label": "ask_preparation"}
-{"id": "aug-00706", "text": "any prep before angiorgam", "label": "ask_preparation"}
-{"id": "aug-00707", "text": "i need to know any prep before angiogram :)", "label": "ask_preparation"}
-{"id": "aug-00708", "text": "i need to know fast before contrast scan", "label": "ask_preparation"}
-{"id": "aug-00709", "text": "fast before contrast csan", "label": "ask_preparation"}
-{"id": "aug-00710", "text": "do you know fast before contrast scan ?", "label": "ask_preparation"}
-{"id": "aug-00711", "text": "can you preparation for x ray", "label": "ask_preparation"}
-{"id": "aug-00712", "text": "preparation for x ary", "label": "ask_preparation"}
-{"id": "aug-00713", "text": "do you know preparation for x ray ?", "label": "ask_preparation"}
-{"id": "aug-00714", "text": "please tell me any restriction before ecg", "label": "ask_preparation"}
-{"id": "aug-00715", "text": "any retsriction before ecg", "label": "ask_preparation"}
-{"id": "aug-00716", "text": "i want to know any restriction before ecg", "label": "ask_preparation"}
-{"id": "aug-00717", "text": "do you know what to do night before mri", "label": "ask_preparation"}
-{"id": "aug-00718", "text": "what to od night before mri", "label": "ask_preparation"}
-{"id": "aug-00719", "text": "what to do night before mri ?", "label": "ask_preparation"}
-{"id": "aug-00720", "text": "please tell me can i eat before the test", "label": "ask_preparation"}
-{"id": "aug-00721", "text": "can i eat before the tets", "label": "ask_preparation"}
-{"id": "aug-00722", "text": "i need to know can i eat before the test thanks", "label": "ask_preparation"}
-{"id": "aug-00723", "text": "can you instructions before holter monitor", "label": "ask_preparation"}
-{"id": "aug-00724", "text": "insrtuctions before holter monitor", "label": "ask_preparation"}
-{"id": "aug-00725", "text": "i need to know instructions before holter monitor ?", "label": "ask_preparation"}
-{"id": "aug-00726", "text": "i need to know what to bring to my first physio", "label": "ask_preparation"}
-{"id": "aug-00727", "text": "what to bring to my frist physio", "label": "ask_preparation"}
-{"id": "aug-00728", "text": "can you what to bring to my first physio :)", "label": "ask_preparation"}
-{"id": "aug-00729", "text": "i want to know when can i start lifting again", "label": "ask_recovery"}
-{"id": "aug-00730", "text": "when cna i start lifting again", "label": "ask_recovery"}
-{"id": "aug-00731", "text": "i want to know when can i start lifting again :)", "label": "ask_recovery"}
-{"id": "aug-00732", "text": "do you know how long until i can go back to work", "label": "ask_recovery"}
-{"id": "aug-00733", "text": "how logn until i can go back to work", "label": "ask_recovery"}
-{"id": "aug-00734", "text": "i need to know how long until i can go back to work thanks", "label": "ask_recovery"}
-{"id": "aug-00735", "text": "i want to know recovery period after stent", "label": "ask_recovery"}
-{"id": "aug-00736", "text": "recovrey period after stent", "label": "ask_recovery"}
-{"id": "aug-00737", "text": "could you recovery period after stent please", "label": "ask_recovery"}
-{"id": "aug-00738", "text": "do you know how long for the bruise to clear", "label": "ask_recovery"}
-{"id": "aug-00739", "text": "ohw long for the bruise to clear", "label": "ask_recovery"}
-{"id": "aug-00740", "text": "do you know how long for the bruise to clear :)", "label": "ask_recovery"}
-{"id": "aug-00741", "text": "could you when can i swim again", "label": "ask_recovery"}
-{"id": "aug-00742", "text": "when can i swmi again", "label": "ask_recovery"}
-{"id": "aug-00743", "text": "i want to know when can i swim again thanks", "label": "ask_recovery"}
-{"id": "aug-00744", "text": "how soon can i fly after a haert attack", "label": "ask_recovery"}
-{"id": "aug-00745", "text": "i want to know how soon can i fly after a heart attack kindly", "label": "ask_recovery"}
-{"id": "aug-00746", "text": "please tell me when can i resume gym", "label": "ask_recovery"}
-{"id": "aug-00747", "text": "when can i resmue gym", "label": "ask_recovery"}
-{"id": "aug-00748", "text": "do you know when can i resume gym...", "label": "ask_recovery"}
-{"id": "aug-00749", "text": "i need to know recovery after rotator cuff repair", "label": "ask_recovery"}
-{"id": "aug-00750", "text": "recoveyr after rotator cuff repair", "label": "ask_recovery"}
-{"id": "aug-00751", "text": "kindly tell me recovery after rotator cuff repair thanks", "label": "ask_recovery"}
-{"id": "aug-00752", "text": "how many weeks for the knee joint to heal", "label": "ask_recovery"}
-{"id": "aug-00753", "text": "kindly tell me how many weeks for the knee to heal", "label": "ask_recovery"}
-{"id": "aug-00754", "text": "how many weeks fro the knee to heal", "label": "ask_recovery"}
-{"id": "aug-00755", "text": "please tell me how many weeks for the knee to heal ?", "label": "ask_recovery"}
-{"id": "aug-00756", "text": "kindly tell me can i skip my dose", "label": "ask_medication"}
-{"id": "aug-00757", "text": "can i ksip my dose", "label": "ask_medication"}
-{"id": "aug-00758", "text": "could you can i skip my dose :)", "label": "ask_medication"}
-{"id": "aug-00759", "text": "which painkiller is safe with my hypertension meds", "label": "ask_medication"}
-{"id": "aug-00760", "text": "can you which painkiller is safe with my bp meds", "label": "ask_medication"}
-{"id": "aug-00761", "text": "hwich painkiller is safe with my bp meds", "label": "ask_medication"}
-{"id": "aug-00762", "text": "i want to know which painkiller is safe with my bp meds ?", "label": "ask_medication"}
-{"id": "aug-00763", "text": "i need to know side effects of statins", "label": "ask_medication"}
-{"id": "aug-00764", "text": "side effects of statnis", "label": "ask_medication"}
-{"id": "aug-00765", "text": "can you side effects of statins...", "label": "ask_medication"}
-{"id": "aug-00766", "text": "please tell me is aspirin safe daily", "label": "ask_medication"}
-{"id": "aug-00767", "text": "is apsirin safe daily", "label": "ask_medication"}
-{"id": "aug-00768", "text": "i want to know is aspirin safe daily please", "label": "ask_medication"}
-{"id": "aug-00769", "text": "please tell me what to do if i double dose", "label": "ask_medication"}
-{"id": "aug-00770", "text": "waht to do if i double dose", "label": "ask_medication"}
-{"id": "aug-00771", "text": "could you what to do if i double dose", "label": "ask_medication"}
-{"id": "aug-00772", "text": "can i stop my blood htinner", "label": "ask_medication"}
-{"id": "aug-00773", "text": "please tell me can i stop my blood thinner thanks", "label": "ask_medication"}
-{"id": "aug-00774", "text": "can you ibuprofen safe with hypertension", "label": "ask_medication"}
-{"id": "aug-00775", "text": "ibuprofen asfe with hypertension", "label": "ask_medication"}
-{"id": "aug-00776", "text": "kindly tell me ibuprofen safe with hypertension thanks", "label": "ask_medication"}
-{"id": "aug-00777", "text": "please tell me when do i take my cholesterol pill", "label": "ask_medication"}
-{"id": "aug-00778", "text": "do you know when do i take my cholesterol pill thanks", "label": "ask_medication"}
-{"id": "aug-00779", "text": "do you know my shoulder hurts at night", "label": "ask_symptom"}
-{"id": "aug-00780", "text": "my shoulder hurts at nihgt", "label": "ask_symptom"}
-{"id": "aug-00781", "text": "please tell me my shoulder hurts at night please", "label": "ask_symptom"}
-{"id": "aug-00782", "text": "i feel idzzy on standing", "label": "ask_symptom"}
-{"id": "aug-00783", "text": "can you i feel dizzy on standing...", "label": "ask_symptom"}
-{"id": "aug-00784", "text": "do you know i get short of breath quickly", "label": "ask_symptom"}
-{"id": "aug-00785", "text": "i get hsort of breath quickly", "label": "ask_symptom"}
-{"id": "aug-00786", "text": "please tell me i get short of breath quickly please", "label": "ask_symptom"}
-{"id": "aug-00787", "text": "kindly tell me my heart is racing", "label": "ask_symptom"}
-{"id": "aug-00788", "text": "my heart is racnig", "label": "ask_symptom"}
-{"id": "aug-00789", "text": "my heart is racing ?", "label": "ask_symptom"}
-{"id": "aug-00790", "text": "please tell me i feel sick after my session", "label": "ask_symptom"}
-{"id": "aug-00791", "text": "i fele sick after my session", "label": "ask_symptom"}
-{"id": "aug-00792", "text": "can you i feel sick after my session thanks", "label": "ask_symptom"}
-{"id": "aug-00793", "text": "could you there is a sharp pain in my chest", "label": "ask_symptom"}
-{"id": "aug-00794", "text": "there si a sharp pain in my chest", "label": "ask_symptom"}
-{"id": "aug-00795", "text": "kindly tell me there is a sharp pain in my chest :)", "label": "ask_symptom"}
-{"id": "aug-00796", "text": "i need to know my back is killing me", "label": "ask_symptom"}
-{"id": "aug-00797", "text": "my back si killing me", "label": "ask_symptom"}
-{"id": "aug-00798", "text": "kindly tell me my back is killing me ?", "label": "ask_symptom"}
-{"id": "aug-00799", "text": "my knee joint feels weak when i walk", "label": "ask_symptom"}
-{"id": "aug-00800", "text": "do you know my knee feels weak when i walk", "label": "ask_symptom"}
-{"id": "aug-00801", "text": "my knee feels waek when i walk", "label": "ask_symptom"}
-{"id": "aug-00802", "text": "kindly tell me my knee feels weak when i walk please", "label": "ask_symptom"}
-{"id": "aug-00803", "text": "kindly tell me i cannot sleep because of leg cramps", "label": "ask_symptom"}
-{"id": "aug-00804", "text": "i cannot sleep because of leg crmaps", "label": "ask_symptom"}
-{"id": "aug-00805", "text": "kindly tell me i cannot sleep because of leg cramps kindly", "label": "ask_symptom"}
-{"id": "aug-00806", "text": "please tell me i feel tired all day", "label": "ask_symptom"}
-{"id": "aug-00807", "text": "i want to know i feel tired all day...", "label": "ask_symptom"}
-{"id": "aug-00808", "text": "kindly tell me how much salt is safe", "label": "ask_lifestyle"}
-{"id": "aug-00809", "text": "how umch salt is safe", "label": "ask_lifestyle"}
-{"id": "aug-00810", "text": "please tell me how much salt is safe kindly", "label": "ask_lifestyle"}
-{"id": "aug-00811", "text": "is walking ok for the heart", "label": "ask_lifestyle"}
-{"id": "aug-00812", "text": "kindly tell me is walking good for the heart", "label": "ask_lifestyle"}
-{"id": "aug-00813", "text": "is walking good for teh heart", "label": "ask_lifestyle"}
-{"id": "aug-00814", "text": "can you is walking good for the heart :)", "label": "ask_lifestyle"}
-{"id": "aug-00815", "text": "i want to know best diet for diabetes", "label": "ask_lifestyle"}
-{"id": "aug-00816", "text": "best diet for daibetes", "label": "ask_lifestyle"}
-{"id": "aug-00817", "text": "please tell me best diet for diabetes kindly", "label": "ask_lifestyle"}
-{"id": "aug-00818", "text": "i need to know can i eat eggs with high cholesterol", "label": "ask_lifestyle"}
-{"id": "aug-00819", "text": "can i eta eggs with high cholesterol", "label": "ask_lifestyle"}
-{"id": "aug-00820", "text": "i need to know can i eat eggs with high cholesterol ?", "label": "ask_lifestyle"}
-{"id": "aug-00821", "text": "can you smoking and recovery", "label": "ask_lifestyle"}
-{"id": "aug-00822", "text": "smkoing and recovery", "label": "ask_lifestyle"}
-{"id": "aug-00823", "text": "could you smoking and recovery please", "label": "ask_lifestyle"}
-{"id": "aug-00824", "text": "please tell me alcohol with blood thinners", "label": "ask_lifestyle"}
-{"id": "aug-00825", "text": "aclohol with blood thinners", "label": "ask_lifestyle"}
-{"id": "aug-00826", "text": "do you know alcohol with blood thinners :)", "label": "ask_lifestyle"}
-{"id": "aug-00827", "text": "could you how many hours of sleep", "label": "ask_lifestyle"}
-{"id": "aug-00828", "text": "how many housr of sleep", "label": "ask_lifestyle"}
-{"id": "aug-00829", "text": "please tell me how many hours of sleep", "label": "ask_lifestyle"}
-{"id": "aug-00830", "text": "do you know yoga and back pain", "label": "ask_lifestyle"}
-{"id": "aug-00831", "text": "oyga and back pain", "label": "ask_lifestyle"}
-{"id": "aug-00832", "text": "do you know yoga and back pain kindly", "label": "ask_lifestyle"}
-{"id": "aug-00833", "text": "kindly tell me how does the echo work", "label": "ask_procedure"}
-{"id": "aug-00834", "text": "hwo does the echo work", "label": "ask_procedure"}
-{"id": "aug-00835", "text": "do you know how does the echo work", "label": "ask_procedure"}
-{"id": "aug-00836", "text": "what happens in an scan", "label": "ask_procedure"}
-{"id": "aug-00837", "text": "please tell me what happens in an mri", "label": "ask_procedure"}
-{"id": "aug-00838", "text": "what happens in na mri", "label": "ask_procedure"}
-{"id": "aug-00839", "text": "do you know what happens in an mri thanks", "label": "ask_procedure"}
-{"id": "aug-00840", "text": "how long does an angiogram taek", "label": "ask_procedure"}
-{"id": "aug-00841", "text": "do you know how long does an angiogram take thanks", "label": "ask_procedure"}
-{"id": "aug-00842", "text": "does dyr needling hurt", "label": "ask_procedure"}
-{"id": "aug-00843", "text": "i need to know does dry needling hurt kindly", "label": "ask_procedure"}
-{"id": "aug-00844", "text": "do you know what to expect during ultrasound", "label": "ask_procedure"}
-{"id": "aug-00845", "text": "whta to expect during ultrasound", "label": "ask_procedure"}
-{"id": "aug-00846", "text": "do you know what to expect during ultrasound ?", "label": "ask_procedure"}
-{"id": "aug-00847", "text": "please tell me ecg explanation", "label": "ask_procedure"}
-{"id": "aug-00848", "text": "ecg exlpanation", "label": "ask_procedure"}
-{"id": "aug-00849", "text": "kindly tell me ecg explanation please", "label": "ask_procedure"}
-{"id": "aug-00850", "text": "i want to know steps of a stress test", "label": "ask_procedure"}
-{"id": "aug-00851", "text": "stpes of a stress test", "label": "ask_procedure"}
-{"id": "aug-00852", "text": "do you know steps of a stress test thanks", "label": "ask_procedure"}
-{"id": "aug-00853", "text": "what does a pt do", "label": "ask_procedure"}
-{"id": "aug-00854", "text": "whta does a physiotherapist do", "label": "ask_procedure"}
-{"id": "aug-00855", "text": "do you know what does a physiotherapist do kindly", "label": "ask_procedure"}
-{"id": "aug-00856", "text": "do you know danger signs for stroke", "label": "ask_warning"}
-{"id": "aug-00857", "text": "danger signs ofr stroke", "label": "ask_warning"}
-{"id": "aug-00858", "text": "could you danger signs for stroke...", "label": "ask_warning"}
-{"id": "aug-00859", "text": "kindly tell me warning signs after cardiac stent", "label": "ask_warning"}
-{"id": "aug-00860", "text": "wanring signs after cardiac stent", "label": "ask_warning"}
-{"id": "aug-00861", "text": "could you warning signs after cardiac stent ?", "label": "ask_warning"}
-{"id": "aug-00862", "text": "rde flag symptoms after physio", "label": "ask_warning"}
-{"id": "aug-00863", "text": "do you know red flag symptoms after physio ?", "label": "ask_warning"}
-{"id": "aug-00864", "text": "when do i ened er", "label": "ask_warning"}
-{"id": "aug-00865", "text": "can you when do i need er :)", "label": "ask_warning"}
-{"id": "aug-00866", "text": "do you know symptoms i should never ignore", "label": "ask_warning"}
-{"id": "aug-00867", "text": "symptoms i should never ignoer", "label": "ask_warning"}
-{"id": "aug-00868", "text": "could you symptoms i should never ignore...", "label": "ask_warning"}
-{"id": "aug-00869", "text": "warning signs in chest discomfort", "label": "ask_warning"}
-{"id": "aug-00870", "text": "kindly tell me warning signs in chest pain", "label": "ask_warning"}
-{"id": "aug-00871", "text": "warning sigsn in chest pain", "label": "ask_warning"}
-{"id": "aug-00872", "text": "could you warning signs in chest pain", "label": "ask_warning"}
-{"id": "aug-00873", "text": "i want to know danger after a head injury", "label": "ask_warning"}
-{"id": "aug-00874", "text": "adnger after a head injury", "label": "ask_warning"}
-{"id": "aug-00875", "text": "do you know danger after a head injury kindly", "label": "ask_warning"}
-{"id": "aug-00876", "text": "please tell me when to call ambulance for heart", "label": "ask_warning"}
-{"id": "aug-00877", "text": "when to call ambulacne for heart", "label": "ask_warning"}
-{"id": "aug-00878", "text": "kindly tell me when to call ambulance for heart kindly", "label": "ask_warning"}
-{"id": "aug-00879", "text": "i need to know salaam alaykum", "label": "greeting"}
-{"id": "aug-00880", "text": "salaam alayukm", "label": "greeting"}
-{"id": "aug-00881", "text": "do you know salaam alaykum kindly", "label": "greeting"}
-{"id": "aug-00882", "text": "do you know how do you do", "label": "greeting"}
-{"id": "aug-00883", "text": "ohw do you do", "label": "greeting"}
-{"id": "aug-00884", "text": "i want to know how do you do...", "label": "greeting"}
-{"id": "aug-00885", "text": "hello medfaq", "label": "greeting"}
-{"id": "aug-00886", "text": "can you hi medfaq", "label": "greeting"}
-{"id": "aug-00887", "text": "hi mdefaq", "label": "greeting"}
-{"id": "aug-00888", "text": "kindly tell me hi medfaq", "label": "greeting"}
-{"id": "aug-00889", "text": "hey there there assistant", "label": "greeting"}
-{"id": "aug-00890", "text": "i need to know hello there assistant please", "label": "greeting"}
-{"id": "aug-00891", "text": "ok evening clinician", "label": "greeting"}
-{"id": "aug-00892", "text": "can you good evening doctor", "label": "greeting"}
-{"id": "aug-00893", "text": "ogod evening doctor", "label": "greeting"}
-{"id": "aug-00894", "text": "good evening doctor...", "label": "greeting"}
-{"id": "aug-00895", "text": "ajzak allah", "label": "thanks"}
-{"id": "aug-00896", "text": "please tell me jazak allah please", "label": "thanks"}
-{"id": "aug-00897", "text": "really appreicate it", "label": "thanks"}
-{"id": "aug-00898", "text": "could you really appreciate it please", "label": "thanks"}
-{"id": "aug-00899", "text": "could you you saved my evening", "label": "thanks"}
-{"id": "aug-00900", "text": "you saved my veening", "label": "thanks"}
-{"id": "aug-00901", "text": "kindly tell me you saved my evening :)", "label": "thanks"}
-{"id": "aug-00902", "text": "thank you heaps", "label": "thanks"}
-{"id": "aug-00903", "text": "can you thanks heaps", "label": "thanks"}
-{"id": "aug-00904", "text": "thnaks heaps", "label": "thanks"}
-{"id": "aug-00905", "text": "please tell me thanks heaps thanks", "label": "thanks"}
-{"id": "aug-00906", "text": "i want to know you are wrong", "label": "frustration"}
-{"id": "aug-00907", "text": "you are worng", "label": "frustration"}
-{"id": "aug-00908", "text": "i need to know you are wrong please", "label": "frustration"}
-{"id": "aug-00909", "text": "can you worst chatbot ever", "label": "frustration"}
-{"id": "aug-00910", "text": "wrost chatbot ever", "label": "frustration"}
-{"id": "aug-00911", "text": "could you worst chatbot ever kindly", "label": "frustration"}
-{"id": "aug-00912", "text": "can you not what i asked", "label": "frustration"}
-{"id": "aug-00913", "text": "not what i asekd", "label": "frustration"}
-{"id": "aug-00914", "text": "not what i asked kindly", "label": "frustration"}
-{"id": "aug-00915", "text": "do you know what services do you provide", "label": "help"}
-{"id": "aug-00916", "text": "what services do you provdie", "label": "help"}
-{"id": "aug-00917", "text": "do you know what services do you provide :)", "label": "help"}
-{"id": "aug-00918", "text": "please tell me list of specialties please", "label": "help"}
-{"id": "aug-00919", "text": "lsit of specialties please", "label": "help"}
-{"id": "aug-00920", "text": "can you list of specialties please ?", "label": "help"}
-{"id": "aug-00921", "text": "please tell me what categories are there", "label": "help"}
-{"id": "aug-00922", "text": "what categroies are there", "label": "help"}
-{"id": "aug-00923", "text": "can you what categories are there :)", "label": "help"}
-{"id": "aug-00924", "text": "i want to know what is rheumatic heart disease", "label": "ask_definition"}
-{"id": "aug-00925", "text": "what is rheumatic heatr disease", "label": "ask_definition"}
-{"id": "aug-00926", "text": "can you what is rheumatic heart disease...", "label": "ask_definition"}
-{"id": "aug-00927", "text": "i need to know define plantar fasciitis ?", "label": "ask_definition"}
-{"id": "aug-00928", "text": "do you know what does interventional radiology mean", "label": "ask_definition"}
-{"id": "aug-00929", "text": "what does interventioanl radiology mean", "label": "ask_definition"}
-{"id": "aug-00930", "text": "i need to know what does interventional radiology mean", "label": "ask_definition"}
-{"id": "aug-00931", "text": "i need to know explain a stress test", "label": "ask_definition"}
-{"id": "aug-00932", "text": "explain a sterss test", "label": "ask_definition"}
-{"id": "aug-00933", "text": "explain a stress test...", "label": "ask_definition"}
-{"id": "aug-00934", "text": "do you know define hfpef", "label": "ask_definition"}
-{"id": "aug-00935", "text": "define hfepf", "label": "ask_definition"}
-{"id": "aug-00936", "text": "kindly tell me define hfpef", "label": "ask_definition"}
-{"id": "aug-00937", "text": "do you know what is dry needling", "label": "ask_definition"}
-{"id": "aug-00938", "text": "what is dry nedeling", "label": "ask_definition"}
-{"id": "aug-00939", "text": "i need to know what is dry needling :)", "label": "ask_definition"}
-{"id": "aug-00940", "text": "kindly tell me what does dexa scan stand for", "label": "ask_definition"}
-{"id": "aug-00941", "text": "what does dexa scna stand for", "label": "ask_definition"}
-{"id": "aug-00942", "text": "could you what does dexa scan stand for thanks", "label": "ask_definition"}
-{"id": "aug-00943", "text": "could you define holter monitor", "label": "ask_definition"}
-{"id": "aug-00944", "text": "define holetr monitor", "label": "ask_definition"}
-{"id": "aug-00945", "text": "i want to know define holter monitor ?", "label": "ask_definition"}
-{"id": "aug-00946", "text": "kindly tell me any prep for dexa", "label": "ask_preparation"}
-{"id": "aug-00947", "text": "any prpe for dexa", "label": "ask_preparation"}
-{"id": "aug-00948", "text": "kindly tell me any prep for dexa thanks", "label": "ask_preparation"}
-{"id": "aug-00949", "text": "i want to know do i fast before stress test", "label": "ask_preparation"}
-{"id": "aug-00950", "text": "do i afst before stress test", "label": "ask_preparation"}
-{"id": "aug-00951", "text": "i need to know do i fast before stress test...", "label": "ask_preparation"}
-{"id": "aug-00952", "text": "please tell me preparation before ultrasound", "label": "ask_preparation"}
-{"id": "aug-00953", "text": "prepaartion before ultrasound", "label": "ask_preparation"}
-{"id": "aug-00954", "text": "can you preparation before ultrasound kindly", "label": "ask_preparation"}
-{"id": "aug-00955", "text": "what to wear for pet ct scan", "label": "ask_preparation"}
-{"id": "aug-00956", "text": "kindly tell me what to wear for pet ct", "label": "ask_preparation"}
-{"id": "aug-00957", "text": "what ot wear for pet ct", "label": "ask_preparation"}
-{"id": "aug-00958", "text": "please tell me what to wear for pet ct...", "label": "ask_preparation"}
-{"id": "aug-00959", "text": "kindly tell me can i drink water before angiogram", "label": "ask_preparation"}
-{"id": "aug-00960", "text": "can i drink water before angigoram", "label": "ask_preparation"}
-{"id": "aug-00961", "text": "do you know can i drink water before angiogram kindly", "label": "ask_preparation"}
-{"id": "aug-00962", "text": "how long bed rest after agniogram", "label": "ask_recovery"}
-{"id": "aug-00963", "text": "kindly tell me how long bed rest after angiogram...", "label": "ask_recovery"}
-{"id": "aug-00964", "text": "i need to know when can i go back to gym after stent", "label": "ask_recovery"}
-{"id": "aug-00965", "text": "when can i go back to gym after stnet", "label": "ask_recovery"}
-{"id": "aug-00966", "text": "could you when can i go back to gym after stent thanks", "label": "ask_recovery"}
-{"id": "aug-00967", "text": "please tell me recovery after rheumatic valve surgery", "label": "ask_recovery"}
-{"id": "aug-00968", "text": "recovery after rheumatic vavle surgery", "label": "ask_recovery"}
-{"id": "aug-00969", "text": "i need to know recovery after rheumatic valve surgery...", "label": "ask_recovery"}
-{"id": "aug-00970", "text": "i want to know how soon can i drive after sedation", "label": "ask_recovery"}
-{"id": "aug-00971", "text": "how soon can i dirve after sedation", "label": "ask_recovery"}
-{"id": "aug-00972", "text": "i need to know how soon can i drive after sedation kindly", "label": "ask_recovery"}
-{"id": "aug-00973", "text": "i want to know how to take dual antiplatelet", "label": "ask_medication"}
-{"id": "aug-00974", "text": "how to take dual atniplatelet", "label": "ask_medication"}
-{"id": "aug-00975", "text": "how to take dual antiplatelet ?", "label": "ask_medication"}
-{"id": "aug-00976", "text": "please tell me can i stop ticagrelor", "label": "ask_medication"}
-{"id": "aug-00977", "text": "can i stop ticagreolr", "label": "ask_medication"}
-{"id": "aug-00978", "text": "can you can i stop ticagrelor please", "label": "ask_medication"}
-{"id": "aug-00979", "text": "do you know any concern with paracetamol and blood thinner", "label": "ask_medication"}
-{"id": "aug-00980", "text": "any concern with paracteamol and blood thinner", "label": "ask_medication"}
-{"id": "aug-00981", "text": "kindly tell me any concern with paracetamol and blood thinner ?", "label": "ask_medication"}
-{"id": "aug-00982", "text": "please tell me missed two days of statin", "label": "ask_medication"}
-{"id": "aug-00983", "text": "missed tow days of statin", "label": "ask_medication"}
-{"id": "aug-00984", "text": "kindly tell me missed two days of statin :)", "label": "ask_medication"}
-{"id": "aug-00985", "text": "kindly tell me safe painkiller in heart failure", "label": "ask_medication"}
-{"id": "aug-00986", "text": "safe piankiller in heart failure", "label": "ask_medication"}
-{"id": "aug-00987", "text": "kindly tell me safe painkiller in heart failure...", "label": "ask_medication"}
-{"id": "aug-00988", "text": "my heel hurts in the omrning", "label": "ask_symptom"}
-{"id": "aug-00989", "text": "can you my heel hurts in the morning kindly", "label": "ask_symptom"}
-{"id": "aug-00990", "text": "please tell me i hear clicking in my knee", "label": "ask_symptom"}
-{"id": "aug-00991", "text": "i hear clicking ni my knee", "label": "ask_symptom"}
-{"id": "aug-00992", "text": "do you know i hear clicking in my knee :)", "label": "ask_symptom"}
-{"id": "aug-00993", "text": "please tell me my shoulder is frozen", "label": "ask_symptom"}
-{"id": "aug-00994", "text": "my shoudler is frozen", "label": "ask_symptom"}
-{"id": "aug-00995", "text": "i want to know my shoulder is frozen :)", "label": "ask_symptom"}
-{"id": "aug-00996", "text": "i need to know my legs go numb after walking", "label": "ask_symptom"}
-{"id": "aug-00997", "text": "my legs go nubm after walking", "label": "ask_symptom"}
-{"id": "aug-00998", "text": "kindly tell me my legs go numb after walking ?", "label": "ask_symptom"}
-{"id": "aug-00999", "text": "i need to know dizzy when i bend down", "label": "ask_symptom"}
-{"id": "aug-01000", "text": "dizzy when i bedn down", "label": "ask_symptom"}
-{"id": "aug-01001", "text": "do you know dizzy when i bend down :)", "label": "ask_symptom"}
-{"id": "aug-01002", "text": "i need to know chest pain when i lie down", "label": "ask_symptom"}
-{"id": "aug-01003", "text": "chest pain when i lie odwn", "label": "ask_symptom"}
-{"id": "aug-01004", "text": "i need to know chest pain when i lie down :)", "label": "ask_symptom"}
-{"id": "aug-01005", "text": "kindly tell me breath gets short on stairs", "label": "ask_symptom"}
-{"id": "aug-01006", "text": "breath gtes short on stairs", "label": "ask_symptom"}
-{"id": "aug-01007", "text": "i want to know breath gets short on stairs kindly", "label": "ask_symptom"}
-{"id": "aug-01008", "text": "i want to know woke up at night with palpitations", "label": "ask_symptom"}
-{"id": "aug-01009", "text": "woek up at night with palpitations", "label": "ask_symptom"}
-{"id": "aug-01010", "text": "please tell me woke up at night with palpitations", "label": "ask_symptom"}
-{"id": "aug-01011", "text": "can heart patients avoid eating in ramadan", "label": "ask_lifestyle"}
-{"id": "aug-01012", "text": "please tell me can heart patients fast in ramadan", "label": "ask_lifestyle"}
-{"id": "aug-01013", "text": "can heart patients fast in armadan", "label": "ask_lifestyle"}
-{"id": "aug-01014", "text": "i need to know can heart patients fast in ramadan", "label": "ask_lifestyle"}
-{"id": "aug-01015", "text": "could you safe exercises after stent", "label": "ask_lifestyle"}
-{"id": "aug-01016", "text": "safe execrises after stent", "label": "ask_lifestyle"}
-{"id": "aug-01017", "text": "please tell me safe exercises after stent please", "label": "ask_lifestyle"}
-{"id": "aug-01018", "text": "kindly tell me good diet for fatty liver", "label": "ask_lifestyle"}
-{"id": "aug-01019", "text": "good idet for fatty liver", "label": "ask_lifestyle"}
-{"id": "aug-01020", "text": "i want to know good diet for fatty liver :)", "label": "ask_lifestyle"}
-{"id": "aug-01021", "text": "i want to know can i drive long distance after surgery", "label": "ask_lifestyle"}
-{"id": "aug-01022", "text": "can i drive logn distance after surgery", "label": "ask_lifestyle"}
-{"id": "aug-01023", "text": "can you can i drive long distance after surgery...", "label": "ask_lifestyle"}
-{"id": "aug-01024", "text": "please tell me smoking quit support", "label": "ask_lifestyle"}
-{"id": "aug-01025", "text": "smoknig quit support", "label": "ask_lifestyle"}
-{"id": "aug-01026", "text": "i want to know smoking quit support please", "label": "ask_lifestyle"}
-{"id": "aug-01027", "text": "i need to know how does a fluoroscopy work", "label": "ask_procedure"}
-{"id": "aug-01028", "text": "ohw does a fluoroscopy work", "label": "ask_procedure"}
-{"id": "aug-01029", "text": "could you how does a fluoroscopy work kindly", "label": "ask_procedure"}
-{"id": "aug-01030", "text": "what happens udring a dexa", "label": "ask_procedure"}
-{"id": "aug-01031", "text": "could you what happens during a dexa kindly", "label": "ask_procedure"}
-{"id": "aug-01032", "text": "how long does a holter tkae", "label": "ask_procedure"}
-{"id": "aug-01033", "text": "how long does a holter take ?", "label": "ask_procedure"}
-{"id": "aug-01034", "text": "i want to know what is a tilt table test", "label": "ask_procedure"}
-{"id": "aug-01035", "text": "whta is a tilt table test", "label": "ask_procedure"}
-{"id": "aug-01036", "text": "could you what is a tilt table test :)", "label": "ask_procedure"}
-{"id": "aug-01037", "text": "kindly tell me how is interventional radiology done", "label": "ask_procedure"}
-{"id": "aug-01038", "text": "how is interventional radiology odne", "label": "ask_procedure"}
-{"id": "aug-01039", "text": "can you how is interventional radiology done...", "label": "ask_procedure"}
-{"id": "aug-01040", "text": "when is tight chest a red flag", "label": "ask_warning"}
-{"id": "aug-01041", "text": "when is cehst pain a red flag", "label": "ask_warning"}
-{"id": "aug-01042", "text": "i want to know when is chest pain a red flag thanks", "label": "ask_warning"}
-{"id": "aug-01043", "text": "kindly tell me red flags after a stent", "label": "ask_warning"}
-{"id": "aug-01044", "text": "erd flags after a stent", "label": "ask_warning"}
-{"id": "aug-01045", "text": "kindly tell me red flags after a stent kindly", "label": "ask_warning"}
-{"id": "aug-01046", "text": "could you post procedure danger signs", "label": "ask_warning"}
-{"id": "aug-01047", "text": "post procedure dangre signs", "label": "ask_warning"}
-{"id": "aug-01048", "text": "post procedure danger signs kindly", "label": "ask_warning"}
-{"id": "aug-01049", "text": "kindly tell me emergency signs of stroke", "label": "ask_warning"}
-{"id": "aug-01050", "text": "emergency sigsn of stroke", "label": "ask_warning"}
-{"id": "aug-01051", "text": "can you emergency signs of stroke...", "label": "ask_warning"}
-{"id": "aug-01052", "text": "can you signs of clot in leg", "label": "ask_warning"}
-{"id": "aug-01053", "text": "signs of colt in leg", "label": "ask_warning"}
-{"id": "aug-01054", "text": "do you know signs of clot in leg thanks", "label": "ask_warning"}
-{"id": "aug-01055", "text": "can you when to call ambulance for palpitations", "label": "ask_warning"}
-{"id": "aug-01056", "text": "when to call ambulance ofr palpitations", "label": "ask_warning"}
-{"id": "aug-01057", "text": "when to call ambulance for palpitations please", "label": "ask_warning"}
-{"id": "aug-01058", "text": "could you who are you", "label": "meta"}
-{"id": "aug-01059", "text": "who rae you", "label": "meta"}
-{"id": "aug-01060", "text": "i want to know who are you", "label": "meta"}
-{"id": "aug-01061", "text": "please tell me what are you", "label": "meta"}
-{"id": "aug-01062", "text": "hwat are you", "label": "meta"}
-{"id": "aug-01063", "text": "can you what are you ?", "label": "meta"}
-{"id": "aug-01064", "text": "do you know what is medfaq", "label": "meta"}
-{"id": "aug-01065", "text": "what is medafq", "label": "meta"}
-{"id": "aug-01066", "text": "please tell me what is medfaq...", "label": "meta"}
-{"id": "aug-01067", "text": "do you know what is your name", "label": "meta"}
-{"id": "aug-01068", "text": "what is yoru name", "label": "meta"}
-{"id": "aug-01069", "text": "kindly tell me what is your name thanks", "label": "meta"}
-{"id": "aug-01070", "text": "i want to know are you a robot", "label": "meta"}
-{"id": "aug-01071", "text": "are yuo a robot", "label": "meta"}
-{"id": "aug-01072", "text": "do you know are you a robot kindly", "label": "meta"}
-{"id": "aug-01073", "text": "are you a obt", "label": "meta"}
-{"id": "aug-01074", "text": "can you are you a bot...", "label": "meta"}
-{"id": "aug-01075", "text": "please tell me are you a doctor", "label": "meta"}
-{"id": "aug-01076", "text": "are oyu a doctor", "label": "meta"}
-{"id": "aug-01077", "text": "please tell me are you a doctor kindly", "label": "meta"}
-{"id": "aug-01078", "text": "can you are you a human", "label": "meta"}
-{"id": "aug-01079", "text": "are you a huamn", "label": "meta"}
-{"id": "aug-01080", "text": "could you are you a human please", "label": "meta"}
-{"id": "aug-01081", "text": "could you are you chatgpt", "label": "meta"}
-{"id": "aug-01082", "text": "aer you chatgpt", "label": "meta"}
-{"id": "aug-01083", "text": "can you are you chatgpt please", "label": "meta"}
-{"id": "aug-01084", "text": "are you ia", "label": "meta"}
-{"id": "aug-01085", "text": "do you know are you ai thanks", "label": "meta"}
-{"id": "aug-01086", "text": "kindly tell me who built you", "label": "meta"}
-{"id": "aug-01087", "text": "who ubilt you", "label": "meta"}
-{"id": "aug-01088", "text": "i want to know who built you", "label": "meta"}
-{"id": "aug-01089", "text": "please tell me who made you", "label": "meta"}
-{"id": "aug-01090", "text": "who made yuo", "label": "meta"}
-{"id": "aug-01091", "text": "i want to know who made you :)", "label": "meta"}
-{"id": "aug-01092", "text": "i want to know tell me about yourself", "label": "meta"}
-{"id": "aug-01093", "text": "tell em about yourself", "label": "meta"}
-{"id": "aug-01094", "text": "kindly tell me tell me about yourself", "label": "meta"}
-{"id": "aug-01095", "text": "please tell me introduce yourself", "label": "meta"}
-{"id": "aug-01096", "text": "introduce yoursefl", "label": "meta"}
-{"id": "aug-01097", "text": "i want to know introduce yourself...", "label": "meta"}
-{"id": "aug-01098", "text": "please tell me what model are you", "label": "meta"}
-{"id": "aug-01099", "text": "what model rae you", "label": "meta"}
-{"id": "aug-01100", "text": "do you know what model are you", "label": "meta"}
-{"id": "aug-01101", "text": "please tell me are you a language model", "label": "meta"}
-{"id": "aug-01102", "text": "are you a language moedl", "label": "meta"}
-{"id": "aug-01103", "text": "could you are you a language model kindly", "label": "meta"}
-{"id": "aug-01104", "text": "could you what is a v q scan", "label": "ask_definition"}
-{"id": "aug-01105", "text": "hwat is a v q scan", "label": "ask_definition"}
-{"id": "aug-01106", "text": "can you what is a v q scan", "label": "ask_definition"}
-{"id": "aug-01107", "text": "could you what is takotsubo", "label": "ask_definition"}
-{"id": "aug-01108", "text": "what is takotsuob", "label": "ask_definition"}
-{"id": "aug-01109", "text": "i want to know what is takotsubo ?", "label": "ask_definition"}
-{"id": "aug-01110", "text": "i want to know what is coronary calcium score", "label": "ask_definition"}
-{"id": "aug-01111", "text": "whta is coronary calcium score", "label": "ask_definition"}
-{"id": "aug-01112", "text": "kindly tell me what is coronary calcium score", "label": "ask_definition"}
-{"id": "aug-01113", "text": "kindly tell me define inr", "label": "ask_definition"}
-{"id": "aug-01114", "text": "edfine inr", "label": "ask_definition"}
-{"id": "aug-01115", "text": "i want to know define inr :)", "label": "ask_definition"}
-{"id": "aug-01116", "text": "do you know what is a heart murmur", "label": "ask_definition"}
-{"id": "aug-01117", "text": "what is a haert murmur", "label": "ask_definition"}
-{"id": "aug-01118", "text": "i want to know what is a heart murmur ?", "label": "ask_definition"}
-{"id": "aug-01119", "text": "kindly tell me define rotator cuff", "label": "ask_definition"}
-{"id": "aug-01120", "text": "defnie rotator cuff", "label": "ask_definition"}
-{"id": "aug-01121", "text": "what is tens mahcine", "label": "ask_definition"}
-{"id": "aug-01122", "text": "do you know what is tens machine :)", "label": "ask_definition"}
-{"id": "aug-01123", "text": "i need to know can i drink water before abdominal ultrasound", "label": "ask_preparation"}
-{"id": "aug-01124", "text": "can i dirnk water before abdominal ultrasound", "label": "ask_preparation"}
-{"id": "aug-01125", "text": "i want to know can i drink water before abdominal ultrasound", "label": "ask_preparation"}
-{"id": "aug-01126", "text": "can you how to prepare for vq scan", "label": "ask_preparation"}
-{"id": "aug-01127", "text": "hwo to prepare for vq scan", "label": "ask_preparation"}
-{"id": "aug-01128", "text": "please tell me how to prepare for vq scan :)", "label": "ask_preparation"}
-{"id": "aug-01129", "text": "any prep before ct scan biopsy", "label": "ask_preparation"}
-{"id": "aug-01130", "text": "nay prep before ct biopsy", "label": "ask_preparation"}
-{"id": "aug-01131", "text": "i want to know any prep before ct biopsy ?", "label": "ask_preparation"}
-{"id": "aug-01132", "text": "ercovery after ct guided biopsy", "label": "ask_recovery"}
-{"id": "aug-01133", "text": "could you recovery after ct guided biopsy thanks", "label": "ask_recovery"}
-{"id": "aug-01134", "text": "kindly tell me recovery after rotator cuff surgery", "label": "ask_recovery"}
-{"id": "aug-01135", "text": "recovery after rotator ucff surgery", "label": "ask_recovery"}
-{"id": "aug-01136", "text": "i want to know recovery after rotator cuff surgery please", "label": "ask_recovery"}
-{"id": "aug-01137", "text": "do you know what does my inr result mean", "label": "ask_medication"}
-{"id": "aug-01138", "text": "what does my nir result mean", "label": "ask_medication"}
-{"id": "aug-01139", "text": "kindly tell me what does my inr result mean", "label": "ask_medication"}
-{"id": "aug-01140", "text": "kindly tell me are apixaban and rivaroxaban same", "label": "ask_medication"}
-{"id": "aug-01141", "text": "are apixaban and rivaroaxban same", "label": "ask_medication"}
-{"id": "aug-01142", "text": "i need to know are apixaban and rivaroxaban same thanks", "label": "ask_medication"}
-{"id": "aug-01143", "text": "can i stop my pacemaker pills", "label": "ask_medication"}
-{"id": "aug-01144", "text": "i need to know can i stop my pacemaker meds", "label": "ask_medication"}
-{"id": "aug-01145", "text": "can i stop my pacemaker mdes", "label": "ask_medication"}
-{"id": "aug-01146", "text": "i need to know can i stop my pacemaker meds :)", "label": "ask_medication"}
-{"id": "aug-01147", "text": "can you my legs swell every evening", "label": "ask_symptom"}
-{"id": "aug-01148", "text": "could you my legs swell every evening kindly", "label": "ask_symptom"}
-{"id": "aug-01149", "text": "do you know my ankle gives way often", "label": "ask_symptom"}
-{"id": "aug-01150", "text": "my ankle gvies way often", "label": "ask_symptom"}
-{"id": "aug-01151", "text": "kindly tell me my ankle gives way often kindly", "label": "ask_symptom"}
-{"id": "aug-01152", "text": "do you know i feel a fluttering in my chest at night", "label": "ask_symptom"}
-{"id": "aug-01153", "text": "i feel a fluttering in my chest at night thanks", "label": "ask_symptom"}
-{"id": "aug-01154", "text": "can you my neck hurts from the laptop", "label": "ask_symptom"}
-{"id": "aug-01155", "text": "my ncek hurts from the laptop", "label": "ask_symptom"}
-{"id": "aug-01156", "text": "i need to know my neck hurts from the laptop kindly", "label": "ask_symptom"}
-{"id": "aug-01157", "text": "i need to know recurrent migraine for two weeks", "label": "ask_symptom"}
-{"id": "aug-01158", "text": "recurrent imgraine for two weeks", "label": "ask_symptom"}
-{"id": "aug-01159", "text": "can you recurrent migraine for two weeks...", "label": "ask_symptom"}
-{"id": "aug-01160", "text": "do you know intermittent fasting and heart", "label": "ask_lifestyle"}
-{"id": "aug-01161", "text": "nitermittent fasting and heart", "label": "ask_lifestyle"}
-{"id": "aug-01162", "text": "intermittent fasting and heart :)", "label": "ask_lifestyle"}
-{"id": "aug-01163", "text": "are energy drinks awful for heart", "label": "ask_lifestyle"}
-{"id": "aug-01164", "text": "kindly tell me are energy drinks bad for heart", "label": "ask_lifestyle"}
-{"id": "aug-01165", "text": "are energy rdinks bad for heart", "label": "ask_lifestyle"}
-{"id": "aug-01166", "text": "do you know are energy drinks bad for heart", "label": "ask_lifestyle"}
-{"id": "aug-01167", "text": "please tell me safe massage during pregnancy", "label": "ask_lifestyle"}
-{"id": "aug-01168", "text": "sfae massage during pregnancy", "label": "ask_lifestyle"}
-{"id": "aug-01169", "text": "i need to know safe massage during pregnancy ?", "label": "ask_lifestyle"}
-{"id": "aug-01170", "text": "kindly tell me how much daily walking is enough", "label": "ask_lifestyle"}
-{"id": "aug-01171", "text": "ohw much daily walking is enough", "label": "ask_lifestyle"}
-{"id": "aug-01172", "text": "kindly tell me how much daily walking is enough...", "label": "ask_lifestyle"}
-{"id": "aug-01173", "text": "how does ct scan biopsy work", "label": "ask_procedure"}
-{"id": "aug-01174", "text": "hwo does ct biopsy work", "label": "ask_procedure"}
-{"id": "aug-01175", "text": "please tell me how does ct biopsy work kindly", "label": "ask_procedure"}
-{"id": "aug-01176", "text": "could you what is a coronary angiogram like", "label": "ask_procedure"}
-{"id": "aug-01177", "text": "what is a coronray angiogram like", "label": "ask_procedure"}
-{"id": "aug-01178", "text": "i want to know what is a coronary angiogram like thanks", "label": "ask_procedure"}
-{"id": "aug-01179", "text": "kindly tell me how is rotator cuff repair done", "label": "ask_procedure"}
-{"id": "aug-01180", "text": "how is rottaor cuff repair done", "label": "ask_procedure"}
-{"id": "aug-01181", "text": "can you how is rotator cuff repair done", "label": "ask_procedure"}
-{"id": "aug-01182", "text": "please tell me when is leg swelling dangerous", "label": "ask_warning"}
-{"id": "aug-01183", "text": "when is leg swleling dangerous", "label": "ask_warning"}
-{"id": "aug-01184", "text": "could you when is leg swelling dangerous kindly", "label": "ask_warning"}
-{"id": "aug-01185", "text": "when si a murmur serious", "label": "ask_warning"}
-{"id": "aug-01186", "text": "do you know when is a murmur serious", "label": "ask_warning"}
-{"id": "aug-01187", "text": "please tell me red flags after biopsy", "label": "ask_warning"}
-{"id": "aug-01188", "text": "red lfags after biopsy", "label": "ask_warning"}
-{"id": "aug-01189", "text": "can you red flags after biopsy thanks", "label": "ask_warning"}
-{"id": "aug-01190", "text": "hi can you guide me", "label": "greeting"}
-{"id": "aug-01191", "text": "can you hi can you help me", "label": "greeting"}
-{"id": "aug-01192", "text": "hi can you help em", "label": "greeting"}
-{"id": "aug-01193", "text": "could you hi can you help me thanks", "label": "greeting"}
-{"id": "aug-01194", "text": "hi dr radiology", "label": "greeting"}
-{"id": "aug-01195", "text": "i want to know hello dr radiology", "label": "greeting"}
-{"id": "aug-01196", "text": "hello dr radioolgy", "label": "greeting"}
-{"id": "aug-01197", "text": "i want to know hello dr radiology thanks", "label": "greeting"}
-{"id": "aug-01198", "text": "thank you i feel better", "label": "thanks"}
-{"id": "aug-01199", "text": "kindly tell me thanks i feel better", "label": "thanks"}
-{"id": "aug-01200", "text": "thnaks i feel better", "label": "thanks"}
-{"id": "aug-01201", "text": "kindly tell me thanks i feel better please", "label": "thanks"}
-{"id": "aug-01202", "text": "got it thx", "label": "thanks"}
-{"id": "aug-01203", "text": "kindly tell me got it thanks", "label": "thanks"}
-{"id": "aug-01204", "text": "got it thakns", "label": "thanks"}
-{"id": "aug-01205", "text": "could you got it thanks thanks", "label": "thanks"}
+{"id": "aug-00308", "text": "what is a mammogram", "label": "ask_definition"}
+{"id": "aug-00309", "text": "what is pulmonary hypertension", "label": "ask_definition"}
+{"id": "aug-00310", "text": "what is hfpef", "label": "ask_definition"}
+{"id": "aug-00311", "text": "what is acl", "label": "ask_definition"}
+{"id": "aug-00312", "text": "what is mrcp", "label": "ask_definition"}
+{"id": "aug-00313", "text": "what is bone scintigraphy", "label": "ask_definition"}
+{"id": "aug-00314", "text": "define gait analysis", "label": "ask_definition"}
+{"id": "aug-00315", "text": "what is hydrotherapy", "label": "ask_definition"}
+{"id": "aug-00316", "text": "what is hand therapy", "label": "ask_definition"}
+{"id": "aug-00317", "text": "define svt", "label": "ask_definition"}
+{"id": "aug-00318", "text": "what is a ct angiogram", "label": "ask_definition"}
+{"id": "aug-00319", "text": "what is post mi rehab", "label": "ask_definition"}
+{"id": "aug-00320", "text": "define paediatric mri sedation", "label": "ask_definition"}
+{"id": "aug-00321", "text": "what is a swallow study", "label": "ask_definition"}
+{"id": "aug-00322", "text": "what is thyroid ultrasound", "label": "ask_definition"}
+{"id": "aug-00323", "text": "what is shin splints", "label": "ask_definition"}
+{"id": "aug-00324", "text": "what is tennis elbow", "label": "ask_definition"}
+{"id": "aug-00325", "text": "what is golfer's elbow", "label": "ask_definition"}
+{"id": "aug-00326", "text": "do i fast before mrcp", "label": "ask_preparation"}
+{"id": "aug-00327", "text": "how to prepare for paediatric mri", "label": "ask_preparation"}
+{"id": "aug-00328", "text": "preparation for swallow study", "label": "ask_preparation"}
+{"id": "aug-00329", "text": "any prep before ct angiogram", "label": "ask_preparation"}
+{"id": "aug-00330", "text": "can i drink water before mammogram", "label": "ask_preparation"}
+{"id": "aug-00331", "text": "any prep for thyroid ultrasound", "label": "ask_preparation"}
+{"id": "aug-00332", "text": "preparation before bone scan", "label": "ask_preparation"}
+{"id": "aug-00333", "text": "recovery after meniscus repair", "label": "ask_recovery"}
+{"id": "aug-00334", "text": "when can i drive after cabg", "label": "ask_recovery"}
+{"id": "aug-00335", "text": "how long after stent placement before sex", "label": "ask_recovery"}
+{"id": "aug-00336", "text": "recovery after acl injury", "label": "ask_recovery"}
+{"id": "aug-00337", "text": "when can i run after calf strain", "label": "ask_recovery"}
+{"id": "aug-00338", "text": "recovery after pacemaker insertion", "label": "ask_recovery"}
+{"id": "aug-00339", "text": "how soon after svt ablation can i exercise", "label": "ask_recovery"}
+{"id": "aug-00340", "text": "herbal remedies with heart meds", "label": "ask_medication"}
+{"id": "aug-00341", "text": "is grapefruit safe with statins", "label": "ask_medication"}
+{"id": "aug-00342", "text": "which bp meds safe in pregnancy", "label": "ask_medication"}
+{"id": "aug-00343", "text": "can i take liquorice with bp medicine", "label": "ask_medication"}
+{"id": "aug-00344", "text": "ginkgo and blood thinner", "label": "ask_medication"}
+{"id": "aug-00345", "text": "breathlessness when climbing stairs", "label": "ask_symptom"}
+{"id": "aug-00346", "text": "my heel is sore in the morning", "label": "ask_symptom"}
+{"id": "aug-00347", "text": "knee gives way after acl tear", "label": "ask_symptom"}
+{"id": "aug-00348", "text": "my shoulder hurts during overhead lifts", "label": "ask_symptom"}
+{"id": "aug-00349", "text": "breath gets short after walking", "label": "ask_symptom"}
+{"id": "aug-00350", "text": "legs swell during pregnancy", "label": "ask_symptom"}
+{"id": "aug-00351", "text": "my back hurts after gardening", "label": "ask_symptom"}
+{"id": "aug-00352", "text": "ankle stiff in the morning", "label": "ask_symptom"}
+{"id": "aug-00353", "text": "palpitations come and go suddenly", "label": "ask_symptom"}
+{"id": "aug-00354", "text": "can i fast in ramadan with afib", "label": "ask_lifestyle"}
+{"id": "aug-00355", "text": "safe exercise after stent", "label": "ask_lifestyle"}
+{"id": "aug-00356", "text": "can i lift after cabg", "label": "ask_lifestyle"}
+{"id": "aug-00357", "text": "diet during pregnancy with high bp", "label": "ask_lifestyle"}
+{"id": "aug-00358", "text": "can i drink coffee on ramipril", "label": "ask_lifestyle"}
+{"id": "aug-00359", "text": "can children with cardiac disease play sport", "label": "ask_lifestyle"}
+{"id": "aug-00360", "text": "how is mammogram done", "label": "ask_procedure"}
+{"id": "aug-00361", "text": "what happens in cardiac mri", "label": "ask_procedure"}
+{"id": "aug-00362", "text": "how does ablation work", "label": "ask_procedure"}
+{"id": "aug-00363", "text": "how is hand therapy performed", "label": "ask_procedure"}
+{"id": "aug-00364", "text": "what does an ir drainage involve", "label": "ask_procedure"}
+{"id": "aug-00365", "text": "how is gait analysis done", "label": "ask_procedure"}
+{"id": "aug-00366", "text": "red flags during ramadan fasting", "label": "ask_warning"}
+{"id": "aug-00367", "text": "warning signs post cabg", "label": "ask_warning"}
+{"id": "aug-00368", "text": "when is leg swelling in pregnancy serious", "label": "ask_warning"}
+{"id": "aug-00369", "text": "when to worry about palpitations", "label": "ask_warning"}
+{"id": "aug-00370", "text": "red flags after meniscus surgery", "label": "ask_warning"}
+{"id": "aug-00371", "text": "dangerous symptoms after mri sedation", "label": "ask_warning"}
+{"id": "aug-00372", "text": "are you using openai", "label": "meta"}
+{"id": "aug-00373", "text": "what data do you have on me", "label": "meta"}
+{"id": "aug-00374", "text": "can you store my chat", "label": "meta"}
+{"id": "aug-00375", "text": "are you free", "label": "meta"}
+{"id": "aug-00376", "text": "what cant you answer", "label": "meta"}
+{"id": "aug-00377", "text": "salam doctor", "label": "greeting"}
+{"id": "aug-00378", "text": "aoa", "label": "greeting"}
+{"id": "aug-00379", "text": "good morning medfaq", "label": "greeting"}
+{"id": "aug-00380", "text": "hello again", "label": "greeting"}
+{"id": "aug-00381", "text": "thanks for the explanation", "label": "thanks"}
+{"id": "aug-00382", "text": "got it appreciate it", "label": "thanks"}
+{"id": "aug-00383", "text": "thank you so much", "label": "thanks"}
+{"id": "aug-00384", "text": "what can you help me with", "label": "help"}
+{"id": "aug-00385", "text": "show me topics", "label": "help"}
+{"id": "aug-00386", "text": "give me some sample questions", "label": "help"}
+{"id": "aug-00387", "text": "can you hi", "label": "greeting"}
+{"id": "aug-00388", "text": "hi :)", "label": "greeting"}
+{"id": "aug-00389", "text": "i want to know hello", "label": "greeting"}
+{"id": "aug-00390", "text": "please tell me hello please", "label": "greeting"}
+{"id": "aug-00391", "text": "could you hey there", "label": "greeting"}
+{"id": "aug-00392", "text": "hey theer", "label": "greeting"}
+{"id": "aug-00393", "text": "can you hey there :)", "label": "greeting"}
+{"id": "aug-00394", "text": "hey assistant", "label": "greeting"}
+{"id": "aug-00395", "text": "can you hi assistant", "label": "greeting"}
+{"id": "aug-00396", "text": "hi assitsant", "label": "greeting"}
+{"id": "aug-00397", "text": "do you know hi assistant", "label": "greeting"}
+{"id": "aug-00398", "text": "ok morning", "label": "greeting"}
+{"id": "aug-00399", "text": "can you good morning please", "label": "greeting"}
+{"id": "aug-00400", "text": "fine afternoon", "label": "greeting"}
+{"id": "aug-00401", "text": "please tell me good afternoon", "label": "greeting"}
+{"id": "aug-00402", "text": "good afternoon ?", "label": "greeting"}
+{"id": "aug-00403", "text": "please tell me good evening", "label": "greeting"}
+{"id": "aug-00404", "text": "good evneing", "label": "greeting"}
+{"id": "aug-00405", "text": "do you know good evening please", "label": "greeting"}
+{"id": "aug-00406", "text": "kindly tell me salaam", "label": "greeting"}
+{"id": "aug-00407", "text": "i want to know salaam...", "label": "greeting"}
+{"id": "aug-00408", "text": "could you salam :)", "label": "greeting"}
+{"id": "aug-00409", "text": "do you know assalam alaikum", "label": "greeting"}
+{"id": "aug-00410", "text": "assalma alaikum", "label": "greeting"}
+{"id": "aug-00411", "text": "i need to know assalam alaikum kindly", "label": "greeting"}
+{"id": "aug-00412", "text": "could you thanks", "label": "thanks"}
+{"id": "aug-00413", "text": "please tell me thanks...", "label": "thanks"}
+{"id": "aug-00414", "text": "i need to know thank you", "label": "thanks"}
+{"id": "aug-00415", "text": "thakn you", "label": "thanks"}
+{"id": "aug-00416", "text": "can you thank you", "label": "thanks"}
+{"id": "aug-00417", "text": "do you know much appreciated", "label": "thanks"}
+{"id": "aug-00418", "text": "much apprecaited", "label": "thanks"}
+{"id": "aug-00419", "text": "can you much appreciated kindly", "label": "thanks"}
+{"id": "aug-00420", "text": "i need to know appreciate it", "label": "thanks"}
+{"id": "aug-00421", "text": "appreciate ti", "label": "thanks"}
+{"id": "aug-00422", "text": "i want to know appreciate it...", "label": "thanks"}
+{"id": "aug-00423", "text": "kindly tell me thx ?", "label": "thanks"}
+{"id": "aug-00424", "text": "can you ty", "label": "thanks"}
+{"id": "aug-00425", "text": "do you know ty", "label": "thanks"}
+{"id": "aug-00426", "text": "i want to know shukria", "label": "thanks"}
+{"id": "aug-00427", "text": "shukira", "label": "thanks"}
+{"id": "aug-00428", "text": "i need to know shukria ?", "label": "thanks"}
+{"id": "aug-00429", "text": "please tell me this is useless", "label": "frustration"}
+{"id": "aug-00430", "text": "this is sueless", "label": "frustration"}
+{"id": "aug-00431", "text": "can you this is useless", "label": "frustration"}
+{"id": "aug-00432", "text": "please tell me you are stupid", "label": "frustration"}
+{"id": "aug-00433", "text": "you are stpuid", "label": "frustration"}
+{"id": "aug-00434", "text": "i want to know you are stupid", "label": "frustration"}
+{"id": "aug-00435", "text": "please tell me garbage answer", "label": "frustration"}
+{"id": "aug-00436", "text": "gabrage answer", "label": "frustration"}
+{"id": "aug-00437", "text": "can you garbage answer thanks", "label": "frustration"}
+{"id": "aug-00438", "text": "i want to know wtf is this", "label": "frustration"}
+{"id": "aug-00439", "text": "wft is this", "label": "frustration"}
+{"id": "aug-00440", "text": "kindly tell me wtf is this :)", "label": "frustration"}
+{"id": "aug-00441", "text": "i need to know rubbish bot", "label": "frustration"}
+{"id": "aug-00442", "text": "rubbihs bot", "label": "frustration"}
+{"id": "aug-00443", "text": "could you rubbish bot kindly", "label": "frustration"}
+{"id": "aug-00444", "text": "i need to know this sucks", "label": "frustration"}
+{"id": "aug-00445", "text": "tihs sucks", "label": "frustration"}
+{"id": "aug-00446", "text": "please tell me this sucks :)", "label": "frustration"}
+{"id": "aug-00447", "text": "i want to know you are not helpful", "label": "frustration"}
+{"id": "aug-00448", "text": "you rae not helpful", "label": "frustration"}
+{"id": "aug-00449", "text": "can you you are not helpful ?", "label": "frustration"}
+{"id": "aug-00450", "text": "guide", "label": "help"}
+{"id": "aug-00451", "text": "could you help", "label": "help"}
+{"id": "aug-00452", "text": "please tell me help please", "label": "help"}
+{"id": "aug-00453", "text": "kindly tell me what can you do", "label": "help"}
+{"id": "aug-00454", "text": "what cna you do", "label": "help"}
+{"id": "aug-00455", "text": "do you know what can you do kindly", "label": "help"}
+{"id": "aug-00456", "text": "please tell me how do i use this", "label": "help"}
+{"id": "aug-00457", "text": "ohw do i use this", "label": "help"}
+{"id": "aug-00458", "text": "i need to know how do i use this...", "label": "help"}
+{"id": "aug-00459", "text": "please tell me menu...", "label": "help"}
+{"id": "aug-00460", "text": "show me optiosn", "label": "help"}
+{"id": "aug-00461", "text": "i need to know show me options thanks", "label": "help"}
+{"id": "aug-00462", "text": "i want to know list topics", "label": "help"}
+{"id": "aug-00463", "text": "list tpoics", "label": "help"}
+{"id": "aug-00464", "text": "can you list topics please", "label": "help"}
+{"id": "aug-00465", "text": "i need to know what is angina", "label": "ask_definition"}
+{"id": "aug-00466", "text": "what is angnia", "label": "ask_definition"}
+{"id": "aug-00467", "text": "please tell me what is angina :)", "label": "ask_definition"}
+{"id": "aug-00468", "text": "kindly tell me define hypertension", "label": "ask_definition"}
+{"id": "aug-00469", "text": "edfine hypertension", "label": "ask_definition"}
+{"id": "aug-00470", "text": "do you know define hypertension :)", "label": "ask_definition"}
+{"id": "aug-00471", "text": "kindly tell me what is sciatica", "label": "ask_definition"}
+{"id": "aug-00472", "text": "what is scitaica", "label": "ask_definition"}
+{"id": "aug-00473", "text": "could you what is sciatica kindly", "label": "ask_definition"}
+{"id": "aug-00474", "text": "could you explain heart failure", "label": "ask_definition"}
+{"id": "aug-00475", "text": "expalin heart failure", "label": "ask_definition"}
+{"id": "aug-00476", "text": "please tell me explain heart failure :)", "label": "ask_definition"}
+{"id": "aug-00477", "text": "what does scan mean", "label": "ask_definition"}
+{"id": "aug-00478", "text": "i want to know what does mri mean", "label": "ask_definition"}
+{"id": "aug-00479", "text": "waht does mri mean", "label": "ask_definition"}
+{"id": "aug-00480", "text": "do you know what does mri mean ?", "label": "ask_definition"}
+{"id": "aug-00481", "text": "do you know what is an echocardiogram", "label": "ask_definition"}
+{"id": "aug-00482", "text": "what is an echocadriogram", "label": "ask_definition"}
+{"id": "aug-00483", "text": "i need to know what is an echocardiogram please", "label": "ask_definition"}
+{"id": "aug-00484", "text": "could you tell me about cholesterol", "label": "ask_definition"}
+{"id": "aug-00485", "text": "tlel me about cholesterol", "label": "ask_definition"}
+{"id": "aug-00486", "text": "kindly tell me tell me about cholesterol", "label": "ask_definition"}
+{"id": "aug-00487", "text": "what si afib", "label": "ask_definition"}
+{"id": "aug-00488", "text": "can you what is afib please", "label": "ask_definition"}
+{"id": "aug-00489", "text": "could you define stroke", "label": "ask_definition"}
+{"id": "aug-00490", "text": "deifne stroke", "label": "ask_definition"}
+{"id": "aug-00491", "text": "do you know define stroke ?", "label": "ask_definition"}
+{"id": "aug-00492", "text": "can you what does dash diet stand for", "label": "ask_definition"}
+{"id": "aug-00493", "text": "what does dash diet stadn for", "label": "ask_definition"}
+{"id": "aug-00494", "text": "do you know what does dash diet stand for thanks", "label": "ask_definition"}
+{"id": "aug-00495", "text": "do i need to fast before my scan", "label": "ask_preparation"}
+{"id": "aug-00496", "text": "kindly tell me do i need to fast before my mri", "label": "ask_preparation"}
+{"id": "aug-00497", "text": "do i need to fast before my rmi", "label": "ask_preparation"}
+{"id": "aug-00498", "text": "i want to know do i need to fast before my mri ?", "label": "ask_preparation"}
+{"id": "aug-00499", "text": "how to prepare for a computed tomography scan", "label": "ask_preparation"}
+{"id": "aug-00500", "text": "ohw to prepare for a ct scan", "label": "ask_preparation"}
+{"id": "aug-00501", "text": "can you how to prepare for a ct scan :)", "label": "ask_preparation"}
+{"id": "aug-00502", "text": "i want to know any prep before ultrasound", "label": "ask_preparation"}
+{"id": "aug-00503", "text": "any prep before ultrasuond", "label": "ask_preparation"}
+{"id": "aug-00504", "text": "i need to know any prep before ultrasound", "label": "ask_preparation"}
+{"id": "aug-00505", "text": "i want to know should i stop eating before angiogram", "label": "ask_preparation"}
+{"id": "aug-00506", "text": "should i stop eaitng before angiogram", "label": "ask_preparation"}
+{"id": "aug-00507", "text": "do you know should i stop eating before angiogram please", "label": "ask_preparation"}
+{"id": "aug-00508", "text": "kindly tell me can i drink water before the scan", "label": "ask_preparation"}
+{"id": "aug-00509", "text": "can i drink water bfeore the scan", "label": "ask_preparation"}
+{"id": "aug-00510", "text": "can i drink water before the scan :)", "label": "ask_preparation"}
+{"id": "aug-00511", "text": "i want to know what to wear for an mri", "label": "ask_preparation"}
+{"id": "aug-00512", "text": "what to waer for an mri", "label": "ask_preparation"}
+{"id": "aug-00513", "text": "could you what to wear for an mri ?", "label": "ask_preparation"}
+{"id": "aug-00514", "text": "can you preparation for blood test", "label": "ask_preparation"}
+{"id": "aug-00515", "text": "rpeparation for blood test", "label": "ask_preparation"}
+{"id": "aug-00516", "text": "i want to know preparation for blood test...", "label": "ask_preparation"}
+{"id": "aug-00517", "text": "please tell me any preparation before physio", "label": "ask_preparation"}
+{"id": "aug-00518", "text": "any prepraation before physio", "label": "ask_preparation"}
+{"id": "aug-00519", "text": "could you any preparation before physio kindly", "label": "ask_preparation"}
+{"id": "aug-00520", "text": "could you when can i drive after surgery", "label": "ask_recovery"}
+{"id": "aug-00521", "text": "when can i dirve after surgery", "label": "ask_recovery"}
+{"id": "aug-00522", "text": "when can i drive after surgery ?", "label": "ask_recovery"}
+{"id": "aug-00523", "text": "i need to know how long is recovery after a stent", "label": "ask_recovery"}
+{"id": "aug-00524", "text": "how long is recovery after a stetn", "label": "ask_recovery"}
+{"id": "aug-00525", "text": "kindly tell me how long is recovery after a stent", "label": "ask_recovery"}
+{"id": "aug-00526", "text": "can you when can i return to work", "label": "ask_recovery"}
+{"id": "aug-00527", "text": "when can i return ot work", "label": "ask_recovery"}
+{"id": "aug-00528", "text": "i need to know when can i return to work...", "label": "ask_recovery"}
+{"id": "aug-00529", "text": "i want to know after the procedure how long until i feel better", "label": "ask_recovery"}
+{"id": "aug-00530", "text": "after the procedure ohw long until i feel better", "label": "ask_recovery"}
+{"id": "aug-00531", "text": "please tell me after the procedure how long until i feel better", "label": "ask_recovery"}
+{"id": "aug-00532", "text": "recovery time after knee joint surgery", "label": "ask_recovery"}
+{"id": "aug-00533", "text": "please tell me recovery time after knee surgery", "label": "ask_recovery"}
+{"id": "aug-00534", "text": "recovery time after knee usrgery", "label": "ask_recovery"}
+{"id": "aug-00535", "text": "can you recovery time after knee surgery", "label": "ask_recovery"}
+{"id": "aug-00536", "text": "kindly tell me when can i exercise after physio session", "label": "ask_recovery"}
+{"id": "aug-00537", "text": "when can i exercise afetr physio session", "label": "ask_recovery"}
+{"id": "aug-00538", "text": "can you when can i exercise after physio session...", "label": "ask_recovery"}
+{"id": "aug-00539", "text": "could you how long till the bruise heals", "label": "ask_recovery"}
+{"id": "aug-00540", "text": "how long till the rbuise heals", "label": "ask_recovery"}
+{"id": "aug-00541", "text": "could you how long till the bruise heals :)", "label": "ask_recovery"}
+{"id": "aug-00542", "text": "when should i take my hypertension tablet", "label": "ask_medication"}
+{"id": "aug-00543", "text": "kindly tell me when should i take my bp medicine", "label": "ask_medication"}
+{"id": "aug-00544", "text": "hwen should i take my bp medicine", "label": "ask_medication"}
+{"id": "aug-00545", "text": "could you when should i take my bp medicine kindly", "label": "ask_medication"}
+{"id": "aug-00546", "text": "do you know should i take aspirin every day", "label": "ask_medication"}
+{"id": "aug-00547", "text": "should i take aspirin evrey day", "label": "ask_medication"}
+{"id": "aug-00548", "text": "please tell me should i take aspirin every day ?", "label": "ask_medication"}
+{"id": "aug-00549", "text": "please tell me what are the side effects of statins", "label": "ask_medication"}
+{"id": "aug-00550", "text": "i want to know what are the side effects of statins thanks", "label": "ask_medication"}
+{"id": "aug-00551", "text": "i need to know how to take my blood thinner", "label": "ask_medication"}
+{"id": "aug-00552", "text": "how to taek my blood thinner", "label": "ask_medication"}
+{"id": "aug-00553", "text": "kindly tell me how to take my blood thinner ?", "label": "ask_medication"}
+{"id": "aug-00554", "text": "missed a dose of my drug", "label": "ask_medication"}
+{"id": "aug-00555", "text": "kindly tell me missed a dose of my medicine", "label": "ask_medication"}
+{"id": "aug-00556", "text": "imssed a dose of my medicine", "label": "ask_medication"}
+{"id": "aug-00557", "text": "can you missed a dose of my medicine please", "label": "ask_medication"}
+{"id": "aug-00558", "text": "please tell me can i double up on my blood pressure pill", "label": "ask_medication"}
+{"id": "aug-00559", "text": "can you can i double up on my blood pressure pill kindly", "label": "ask_medication"}
+{"id": "aug-00560", "text": "painklilers safe with my heart", "label": "ask_medication"}
+{"id": "aug-00561", "text": "please tell me painkillers safe with my heart ?", "label": "ask_medication"}
+{"id": "aug-00562", "text": "please tell me is chest tightness a warning sign", "label": "ask_symptom"}
+{"id": "aug-00563", "text": "is hcest tightness a warning sign", "label": "ask_symptom"}
+{"id": "aug-00564", "text": "are palpitations adngerous", "label": "ask_symptom"}
+{"id": "aug-00565", "text": "please tell me are palpitations dangerous", "label": "ask_symptom"}
+{"id": "aug-00566", "text": "i need to know why do i feel dizzy when i stand up", "label": "ask_symptom"}
+{"id": "aug-00567", "text": "my knee joint feels stiff after running", "label": "ask_symptom"}
+{"id": "aug-00568", "text": "please tell me my knee feels stiff after running", "label": "ask_symptom"}
+{"id": "aug-00569", "text": "my knee feels stiff after runnnig", "label": "ask_symptom"}
+{"id": "aug-00570", "text": "i want to know my knee feels stiff after running :)", "label": "ask_symptom"}
+{"id": "aug-00571", "text": "kindly tell me i feel sore after my physio session", "label": "ask_symptom"}
+{"id": "aug-00572", "text": "i feel sore after my pyhsio session", "label": "ask_symptom"}
+{"id": "aug-00573", "text": "please tell me i feel sore after my physio session ?", "label": "ask_symptom"}
+{"id": "aug-00574", "text": "could you my heart races at night", "label": "ask_symptom"}
+{"id": "aug-00575", "text": "my heart races at nigth", "label": "ask_symptom"}
+{"id": "aug-00576", "text": "kindly tell me my heart races at night please", "label": "ask_symptom"}
+{"id": "aug-00577", "text": "kindly tell me i feel breathless climbing stairs", "label": "ask_symptom"}
+{"id": "aug-00578", "text": "i feel breathless clibming stairs", "label": "ask_symptom"}
+{"id": "aug-00579", "text": "do you know i feel breathless climbing stairs please", "label": "ask_symptom"}
+{"id": "aug-00580", "text": "can you sharp pain in my chest", "label": "ask_symptom"}
+{"id": "aug-00581", "text": "sharp pain in ym chest", "label": "ask_symptom"}
+{"id": "aug-00582", "text": "can you sharp pain in my chest :)", "label": "ask_symptom"}
+{"id": "aug-00583", "text": "do you know my back hurts after sitting", "label": "ask_symptom"}
+{"id": "aug-00584", "text": "i need to know my back hurts after sitting thanks", "label": "ask_symptom"}
+{"id": "aug-00585", "text": "do you know can i exercise with high blood pressure", "label": "ask_lifestyle"}
+{"id": "aug-00586", "text": "can i exercise with high blodo pressure", "label": "ask_lifestyle"}
+{"id": "aug-00587", "text": "kindly tell me can i exercise with high blood pressure...", "label": "ask_lifestyle"}
+{"id": "aug-00588", "text": "is alcohol saef with my heart condition", "label": "ask_lifestyle"}
+{"id": "aug-00589", "text": "can you is alcohol safe with my heart condition", "label": "ask_lifestyle"}
+{"id": "aug-00590", "text": "do you know is coffee bad for my heart", "label": "ask_lifestyle"}
+{"id": "aug-00591", "text": "is coffee bad for my herat", "label": "ask_lifestyle"}
+{"id": "aug-00592", "text": "i need to know is coffee bad for my heart...", "label": "ask_lifestyle"}
+{"id": "aug-00593", "text": "can you can i lift weights with bp", "label": "ask_lifestyle"}
+{"id": "aug-00594", "text": "can i ilft weights with bp", "label": "ask_lifestyle"}
+{"id": "aug-00595", "text": "please tell me can i lift weights with bp please", "label": "ask_lifestyle"}
+{"id": "aug-00596", "text": "please tell me what diet for heart disease", "label": "ask_lifestyle"}
+{"id": "aug-00597", "text": "what diet for heart disesae", "label": "ask_lifestyle"}
+{"id": "aug-00598", "text": "kindly tell me what diet for heart disease please", "label": "ask_lifestyle"}
+{"id": "aug-00599", "text": "do you know how much salt is too much", "label": "ask_lifestyle"}
+{"id": "aug-00600", "text": "how much satl is too much", "label": "ask_lifestyle"}
+{"id": "aug-00601", "text": "could you how much salt is too much kindly", "label": "ask_lifestyle"}
+{"id": "aug-00602", "text": "kindly tell me can i sleep on my back after surgery", "label": "ask_lifestyle"}
+{"id": "aug-00603", "text": "can i sleep on my back aftre surgery", "label": "ask_lifestyle"}
+{"id": "aug-00604", "text": "please tell me can i sleep on my back after surgery...", "label": "ask_lifestyle"}
+{"id": "aug-00605", "text": "can you smoking and the heart", "label": "ask_lifestyle"}
+{"id": "aug-00606", "text": "smoking and the herat", "label": "ask_lifestyle"}
+{"id": "aug-00607", "text": "kindly tell me smoking and the heart...", "label": "ask_lifestyle"}
+{"id": "aug-00608", "text": "how long does a ct scan take", "label": "ask_procedure"}
+{"id": "aug-00609", "text": "can you how long does a ct take", "label": "ask_procedure"}
+{"id": "aug-00610", "text": "how long odes a ct take", "label": "ask_procedure"}
+{"id": "aug-00611", "text": "how long does a ct take :)", "label": "ask_procedure"}
+{"id": "aug-00612", "text": "how long is the mri papointment", "label": "ask_procedure"}
+{"id": "aug-00613", "text": "can you how long is the mri appointment...", "label": "ask_procedure"}
+{"id": "aug-00614", "text": "please tell me what happens during an ecg", "label": "ask_procedure"}
+{"id": "aug-00615", "text": "what happens duirng an ecg", "label": "ask_procedure"}
+{"id": "aug-00616", "text": "could you what happens during an ecg thanks", "label": "ask_procedure"}
+{"id": "aug-00617", "text": "kindly tell me what is involved in an echo scan", "label": "ask_procedure"}
+{"id": "aug-00618", "text": "whta is involved in an echo scan", "label": "ask_procedure"}
+{"id": "aug-00619", "text": "kindly tell me what is involved in an echo scan please", "label": "ask_procedure"}
+{"id": "aug-00620", "text": "do you know how does the holter monitor work", "label": "ask_procedure"}
+{"id": "aug-00621", "text": "how dose the holter monitor work", "label": "ask_procedure"}
+{"id": "aug-00622", "text": "how does the holter monitor work please", "label": "ask_procedure"}
+{"id": "aug-00623", "text": "do you know will the angiogram hurt", "label": "ask_procedure"}
+{"id": "aug-00624", "text": "will the nagiogram hurt", "label": "ask_procedure"}
+{"id": "aug-00625", "text": "will the angiogram hurt thanks", "label": "ask_procedure"}
+{"id": "aug-00626", "text": "i want to know how long does a physio session take", "label": "ask_procedure"}
+{"id": "aug-00627", "text": "how long does a physio sesison take", "label": "ask_procedure"}
+{"id": "aug-00628", "text": "kindly tell me how long does a physio session take kindly", "label": "ask_procedure"}
+{"id": "aug-00629", "text": "do you know what are the signs of a stroke", "label": "ask_warning"}
+{"id": "aug-00630", "text": "what are teh signs of a stroke", "label": "ask_warning"}
+{"id": "aug-00631", "text": "kindly tell me what are the signs of a stroke please", "label": "ask_warning"}
+{"id": "aug-00632", "text": "please tell me warning signs of heart attack", "label": "ask_warning"}
+{"id": "aug-00633", "text": "i want to know warning signs of heart attack please", "label": "ask_warning"}
+{"id": "aug-00634", "text": "when should i call an abmulance", "label": "ask_warning"}
+{"id": "aug-00635", "text": "when should i call an ambulance :)", "label": "ask_warning"}
+{"id": "aug-00636", "text": "i need to know red flags after heart surgery", "label": "ask_warning"}
+{"id": "aug-00637", "text": "red flags fater heart surgery", "label": "ask_warning"}
+{"id": "aug-00638", "text": "kindly tell me when should i go to the er", "label": "ask_warning"}
+{"id": "aug-00639", "text": "wehn should i go to the er", "label": "ask_warning"}
+{"id": "aug-00640", "text": "could you when should i go to the er", "label": "ask_warning"}
+{"id": "aug-00641", "text": "can you danger signs in pregnancy", "label": "ask_warning"}
+{"id": "aug-00642", "text": "danger signs in pergnancy", "label": "ask_warning"}
+{"id": "aug-00643", "text": "could you danger signs in pregnancy", "label": "ask_warning"}
+{"id": "aug-00644", "text": "can you symptoms to watch for after a fall", "label": "ask_warning"}
+{"id": "aug-00645", "text": "sypmtoms to watch for after a fall", "label": "ask_warning"}
+{"id": "aug-00646", "text": "please tell me symptoms to watch for after a fall thanks", "label": "ask_warning"}
+{"id": "aug-00647", "text": "can you hey doc", "label": "greeting"}
+{"id": "aug-00648", "text": "hye doc", "label": "greeting"}
+{"id": "aug-00649", "text": "please tell me hey doc ?", "label": "greeting"}
+{"id": "aug-00650", "text": "hi there sasistant", "label": "greeting"}
+{"id": "aug-00651", "text": "can you hi there assistant thanks", "label": "greeting"}
+{"id": "aug-00652", "text": "i need to know good day", "label": "greeting"}
+{"id": "aug-00653", "text": "godo day", "label": "greeting"}
+{"id": "aug-00654", "text": "i want to know good day please", "label": "greeting"}
+{"id": "aug-00655", "text": "hey there dr", "label": "greeting"}
+{"id": "aug-00656", "text": "i need to know hello dr", "label": "greeting"}
+{"id": "aug-00657", "text": "hello rd", "label": "greeting"}
+{"id": "aug-00658", "text": "please tell me hello dr kindly", "label": "greeting"}
+{"id": "aug-00659", "text": "do you know hey", "label": "greeting"}
+{"id": "aug-00660", "text": "could you hey :)", "label": "greeting"}
+{"id": "aug-00661", "text": "i want to know yo", "label": "greeting"}
+{"id": "aug-00662", "text": "kindly tell me yo kindly", "label": "greeting"}
+{"id": "aug-00663", "text": "can you morning doctor", "label": "greeting"}
+{"id": "aug-00664", "text": "mroning doctor", "label": "greeting"}
+{"id": "aug-00665", "text": "morning doctor thanks", "label": "greeting"}
+{"id": "aug-00666", "text": "hi there", "label": "greeting"}
+{"id": "aug-00667", "text": "can you hello there", "label": "greeting"}
+{"id": "aug-00668", "text": "hello theer", "label": "greeting"}
+{"id": "aug-00669", "text": "can you hello there ?", "label": "greeting"}
+{"id": "aug-00670", "text": "please tell me good morning sir", "label": "greeting"}
+{"id": "aug-00671", "text": "good mroning sir", "label": "greeting"}
+{"id": "aug-00672", "text": "i want to know good morning sir please", "label": "greeting"}
+{"id": "aug-00673", "text": "i need to know hiya", "label": "greeting"}
+{"id": "aug-00674", "text": "can you hiya please", "label": "greeting"}
+{"id": "aug-00675", "text": "i need to know hey medfaq", "label": "greeting"}
+{"id": "aug-00676", "text": "hey mefdaq", "label": "greeting"}
+{"id": "aug-00677", "text": "i want to know hey medfaq please", "label": "greeting"}
+{"id": "aug-00678", "text": "kindly tell me appreciate the help", "label": "thanks"}
+{"id": "aug-00679", "text": "papreciate the help", "label": "thanks"}
+{"id": "aug-00680", "text": "i want to know appreciate the help ?", "label": "thanks"}
+{"id": "aug-00681", "text": "thank you a lot", "label": "thanks"}
+{"id": "aug-00682", "text": "thanks a olt", "label": "thanks"}
+{"id": "aug-00683", "text": "i want to know thanks a lot :)", "label": "thanks"}
+{"id": "aug-00684", "text": "can you thank you very much", "label": "thanks"}
+{"id": "aug-00685", "text": "htank you very much", "label": "thanks"}
+{"id": "aug-00686", "text": "could you thank you very much kindly", "label": "thanks"}
+{"id": "aug-00687", "text": "can you many thanks", "label": "thanks"}
+{"id": "aug-00688", "text": "mayn thanks", "label": "thanks"}
+{"id": "aug-00689", "text": "can you many thanks :)", "label": "thanks"}
+{"id": "aug-00690", "text": "could you cheers for that", "label": "thanks"}
+{"id": "aug-00691", "text": "cheesr for that", "label": "thanks"}
+{"id": "aug-00692", "text": "i want to know cheers for that kindly", "label": "thanks"}
+{"id": "aug-00693", "text": "please tell me super helpful", "label": "thanks"}
+{"id": "aug-00694", "text": "usper helpful", "label": "thanks"}
+{"id": "aug-00695", "text": "i need to know super helpful please", "label": "thanks"}
+{"id": "aug-00696", "text": "thx clinician", "label": "thanks"}
+{"id": "aug-00697", "text": "i want to know thanks doctor", "label": "thanks"}
+{"id": "aug-00698", "text": "htanks doctor", "label": "thanks"}
+{"id": "aug-00699", "text": "kindly tell me thanks doctor kindly", "label": "thanks"}
+{"id": "aug-00700", "text": "thakns for explaining", "label": "thanks"}
+{"id": "aug-00701", "text": "can you thanks for explaining :)", "label": "thanks"}
+{"id": "aug-00702", "text": "do you know thx so much", "label": "thanks"}
+{"id": "aug-00703", "text": "thx os much", "label": "thanks"}
+{"id": "aug-00704", "text": "i want to know thx so much", "label": "thanks"}
+{"id": "aug-00705", "text": "thx i got it now", "label": "thanks"}
+{"id": "aug-00706", "text": "thanks i ogt it now", "label": "thanks"}
+{"id": "aug-00707", "text": "i need to know thanks i got it now...", "label": "thanks"}
+{"id": "aug-00708", "text": "could you not helpful at all", "label": "frustration"}
+{"id": "aug-00709", "text": "i want to know not helpful at all please", "label": "frustration"}
+{"id": "aug-00710", "text": "kindly tell me this answer is wrong", "label": "frustration"}
+{"id": "aug-00711", "text": "this answer is wrnog", "label": "frustration"}
+{"id": "aug-00712", "text": "do you know this answer is wrong ?", "label": "frustration"}
+{"id": "aug-00713", "text": "oyu have no idea", "label": "frustration"}
+{"id": "aug-00714", "text": "can you you have no idea", "label": "frustration"}
+{"id": "aug-00715", "text": "could you terrible bot", "label": "frustration"}
+{"id": "aug-00716", "text": "terirble bot", "label": "frustration"}
+{"id": "aug-00717", "text": "terrible bot...", "label": "frustration"}
+{"id": "aug-00718", "text": "i need to know waste of time", "label": "frustration"}
+{"id": "aug-00719", "text": "watse of time", "label": "frustration"}
+{"id": "aug-00720", "text": "could you waste of time thanks", "label": "frustration"}
+{"id": "aug-00721", "text": "could you you are useless", "label": "frustration"}
+{"id": "aug-00722", "text": "you are usleess", "label": "frustration"}
+{"id": "aug-00723", "text": "you are useless kindly", "label": "frustration"}
+{"id": "aug-00724", "text": "i need to know nope this is wrong", "label": "frustration"}
+{"id": "aug-00725", "text": "npoe this is wrong", "label": "frustration"}
+{"id": "aug-00726", "text": "nope this is wrong kindly", "label": "frustration"}
+{"id": "aug-00727", "text": "please tell me rubbish", "label": "frustration"}
+{"id": "aug-00728", "text": "rubbsih", "label": "frustration"}
+{"id": "aug-00729", "text": "please tell me rubbish :)", "label": "frustration"}
+{"id": "aug-00730", "text": "can you what topics can you answer", "label": "help"}
+{"id": "aug-00731", "text": "what toipcs can you answer", "label": "help"}
+{"id": "aug-00732", "text": "i need to know what topics can you answer...", "label": "help"}
+{"id": "aug-00733", "text": "do you know give me a list of things you can do", "label": "help"}
+{"id": "aug-00734", "text": "give me a list of things oyu can do", "label": "help"}
+{"id": "aug-00735", "text": "could you give me a list of things you can do please", "label": "help"}
+{"id": "aug-00736", "text": "could you how do i use you", "label": "help"}
+{"id": "aug-00737", "text": "ohw do i use you", "label": "help"}
+{"id": "aug-00738", "text": "could you how do i use you thanks", "label": "help"}
+{"id": "aug-00739", "text": "can you ugide me", "label": "help"}
+{"id": "aug-00740", "text": "could you can you guide me :)", "label": "help"}
+{"id": "aug-00741", "text": "i need to know what kind of questions can i ask", "label": "help"}
+{"id": "aug-00742", "text": "what kind of qeustions can i ask", "label": "help"}
+{"id": "aug-00743", "text": "do you know what kind of questions can i ask...", "label": "help"}
+{"id": "aug-00744", "text": "please tell me show options", "label": "help"}
+{"id": "aug-00745", "text": "show opitons", "label": "help"}
+{"id": "aug-00746", "text": "i want to know show options please", "label": "help"}
+{"id": "aug-00747", "text": "can you what areas you cover", "label": "help"}
+{"id": "aug-00748", "text": "waht areas you cover", "label": "help"}
+{"id": "aug-00749", "text": "do you know what areas you cover...", "label": "help"}
+{"id": "aug-00750", "text": "acn you list specialties", "label": "help"}
+{"id": "aug-00751", "text": "kindly tell me can you list specialties please", "label": "help"}
+{"id": "aug-00752", "text": "please tell me explain afib", "label": "ask_definition"}
+{"id": "aug-00753", "text": "epxlain afib", "label": "ask_definition"}
+{"id": "aug-00754", "text": "kindly tell me explain afib kindly", "label": "ask_definition"}
+{"id": "aug-00755", "text": "what is hypertension", "label": "ask_definition"}
+{"id": "aug-00756", "text": "i want to know what is bp", "label": "ask_definition"}
+{"id": "aug-00757", "text": "what is pb", "label": "ask_definition"}
+{"id": "aug-00758", "text": "please tell me what is bp please", "label": "ask_definition"}
+{"id": "aug-00759", "text": "dfeine dash diet", "label": "ask_definition"}
+{"id": "aug-00760", "text": "please tell me define dash diet thanks", "label": "ask_definition"}
+{"id": "aug-00761", "text": "i need to know what does cardiac arrest mean", "label": "ask_definition"}
+{"id": "aug-00762", "text": "what does caridac arrest mean", "label": "ask_definition"}
+{"id": "aug-00763", "text": "i want to know what does cardiac arrest mean...", "label": "ask_definition"}
+{"id": "aug-00764", "text": "can you explain to me what diabetes is", "label": "ask_definition"}
+{"id": "aug-00765", "text": "explain to me what daibetes is", "label": "ask_definition"}
+{"id": "aug-00766", "text": "i want to know explain to me what diabetes is kindly", "label": "ask_definition"}
+{"id": "aug-00767", "text": "do you know tell me what high cholesterol is", "label": "ask_definition"}
+{"id": "aug-00768", "text": "etll me what high cholesterol is", "label": "ask_definition"}
+{"id": "aug-00769", "text": "i need to know tell me what high cholesterol is", "label": "ask_definition"}
+{"id": "aug-00770", "text": "can you what is a stent", "label": "ask_definition"}
+{"id": "aug-00771", "text": "what is a setnt", "label": "ask_definition"}
+{"id": "aug-00772", "text": "i want to know what is a stent please", "label": "ask_definition"}
+{"id": "aug-00773", "text": "i want to know what does ldl stand for", "label": "ask_definition"}
+{"id": "aug-00774", "text": "what dose ldl stand for", "label": "ask_definition"}
+{"id": "aug-00775", "text": "do you know any prep before angiogram", "label": "ask_preparation"}
+{"id": "aug-00776", "text": "any rpep before angiogram", "label": "ask_preparation"}
+{"id": "aug-00777", "text": "i need to know any prep before angiogram :)", "label": "ask_preparation"}
+{"id": "aug-00778", "text": "skip food before contrast scan", "label": "ask_preparation"}
+{"id": "aug-00779", "text": "i need to know fast before contrast scan", "label": "ask_preparation"}
+{"id": "aug-00780", "text": "fast bfeore contrast scan", "label": "ask_preparation"}
+{"id": "aug-00781", "text": "do you know fast before contrast scan ?", "label": "ask_preparation"}
+{"id": "aug-00782", "text": "can you preparation for x ray", "label": "ask_preparation"}
+{"id": "aug-00783", "text": "prepraation for x ray", "label": "ask_preparation"}
+{"id": "aug-00784", "text": "do you know preparation for x ray ?", "label": "ask_preparation"}
+{"id": "aug-00785", "text": "please tell me any restriction before ecg", "label": "ask_preparation"}
+{"id": "aug-00786", "text": "any restriction before ceg", "label": "ask_preparation"}
+{"id": "aug-00787", "text": "i want to know any restriction before ecg", "label": "ask_preparation"}
+{"id": "aug-00788", "text": "do you know what to do night before mri", "label": "ask_preparation"}
+{"id": "aug-00789", "text": "what to do night beofre mri", "label": "ask_preparation"}
+{"id": "aug-00790", "text": "what to do night before mri ?", "label": "ask_preparation"}
+{"id": "aug-00791", "text": "please tell me can i eat before the test", "label": "ask_preparation"}
+{"id": "aug-00792", "text": "can i eat bfeore the test", "label": "ask_preparation"}
+{"id": "aug-00793", "text": "i need to know can i eat before the test thanks", "label": "ask_preparation"}
+{"id": "aug-00794", "text": "can you instructions before holter monitor", "label": "ask_preparation"}
+{"id": "aug-00795", "text": "nistructions before holter monitor", "label": "ask_preparation"}
+{"id": "aug-00796", "text": "i need to know instructions before holter monitor ?", "label": "ask_preparation"}
+{"id": "aug-00797", "text": "i need to know what to bring to my first physio", "label": "ask_preparation"}
+{"id": "aug-00798", "text": "hwat to bring to my first physio", "label": "ask_preparation"}
+{"id": "aug-00799", "text": "can you what to bring to my first physio :)", "label": "ask_preparation"}
+{"id": "aug-00800", "text": "i want to know when can i start lifting again", "label": "ask_recovery"}
+{"id": "aug-00801", "text": "hwen can i start lifting again", "label": "ask_recovery"}
+{"id": "aug-00802", "text": "i want to know when can i start lifting again :)", "label": "ask_recovery"}
+{"id": "aug-00803", "text": "do you know how long until i can go back to work", "label": "ask_recovery"}
+{"id": "aug-00804", "text": "how long until i acn go back to work", "label": "ask_recovery"}
+{"id": "aug-00805", "text": "i need to know how long until i can go back to work thanks", "label": "ask_recovery"}
+{"id": "aug-00806", "text": "i want to know recovery period after stent", "label": "ask_recovery"}
+{"id": "aug-00807", "text": "recovery peirod after stent", "label": "ask_recovery"}
+{"id": "aug-00808", "text": "could you recovery period after stent please", "label": "ask_recovery"}
+{"id": "aug-00809", "text": "do you know how long for the bruise to clear", "label": "ask_recovery"}
+{"id": "aug-00810", "text": "how long for the bruise to celar", "label": "ask_recovery"}
+{"id": "aug-00811", "text": "do you know how long for the bruise to clear :)", "label": "ask_recovery"}
+{"id": "aug-00812", "text": "could you when can i swim again", "label": "ask_recovery"}
+{"id": "aug-00813", "text": "when can i swim agani", "label": "ask_recovery"}
+{"id": "aug-00814", "text": "i want to know when can i swim again thanks", "label": "ask_recovery"}
+{"id": "aug-00815", "text": "how soon can i fly after a haert attack", "label": "ask_recovery"}
+{"id": "aug-00816", "text": "i want to know how soon can i fly after a heart attack kindly", "label": "ask_recovery"}
+{"id": "aug-00817", "text": "please tell me when can i resume gym", "label": "ask_recovery"}
+{"id": "aug-00818", "text": "when can i rseume gym", "label": "ask_recovery"}
+{"id": "aug-00819", "text": "do you know when can i resume gym...", "label": "ask_recovery"}
+{"id": "aug-00820", "text": "i need to know recovery after rotator cuff repair", "label": "ask_recovery"}
+{"id": "aug-00821", "text": "recovery atfer rotator cuff repair", "label": "ask_recovery"}
+{"id": "aug-00822", "text": "kindly tell me recovery after rotator cuff repair thanks", "label": "ask_recovery"}
+{"id": "aug-00823", "text": "how many weeks for the knee joint to heal", "label": "ask_recovery"}
+{"id": "aug-00824", "text": "kindly tell me how many weeks for the knee to heal", "label": "ask_recovery"}
+{"id": "aug-00825", "text": "how many weeks fro the knee to heal", "label": "ask_recovery"}
+{"id": "aug-00826", "text": "please tell me how many weeks for the knee to heal ?", "label": "ask_recovery"}
+{"id": "aug-00827", "text": "kindly tell me can i skip my dose", "label": "ask_medication"}
+{"id": "aug-00828", "text": "can i ksip my dose", "label": "ask_medication"}
+{"id": "aug-00829", "text": "could you can i skip my dose :)", "label": "ask_medication"}
+{"id": "aug-00830", "text": "which painkiller is safe with my bp medicine", "label": "ask_medication"}
+{"id": "aug-00831", "text": "can you which painkiller is safe with my bp meds", "label": "ask_medication"}
+{"id": "aug-00832", "text": "which painkiller is sfae with my bp meds", "label": "ask_medication"}
+{"id": "aug-00833", "text": "i want to know which painkiller is safe with my bp meds ?", "label": "ask_medication"}
+{"id": "aug-00834", "text": "i need to know side effects of statins", "label": "ask_medication"}
+{"id": "aug-00835", "text": "side effects of tsatins", "label": "ask_medication"}
+{"id": "aug-00836", "text": "can you side effects of statins...", "label": "ask_medication"}
+{"id": "aug-00837", "text": "please tell me is aspirin safe daily", "label": "ask_medication"}
+{"id": "aug-00838", "text": "is apsirin safe daily", "label": "ask_medication"}
+{"id": "aug-00839", "text": "i want to know is aspirin safe daily please", "label": "ask_medication"}
+{"id": "aug-00840", "text": "please tell me what to do if i double dose", "label": "ask_medication"}
+{"id": "aug-00841", "text": "what to do if i doubel dose", "label": "ask_medication"}
+{"id": "aug-00842", "text": "could you what to do if i double dose", "label": "ask_medication"}
+{"id": "aug-00843", "text": "can i stop my blood tihnner", "label": "ask_medication"}
+{"id": "aug-00844", "text": "please tell me can i stop my blood thinner thanks", "label": "ask_medication"}
+{"id": "aug-00845", "text": "can you ibuprofen safe with hypertension", "label": "ask_medication"}
+{"id": "aug-00846", "text": "biuprofen safe with hypertension", "label": "ask_medication"}
+{"id": "aug-00847", "text": "kindly tell me ibuprofen safe with hypertension thanks", "label": "ask_medication"}
+{"id": "aug-00848", "text": "please tell me when do i take my cholesterol pill", "label": "ask_medication"}
+{"id": "aug-00849", "text": "hwen do i take my cholesterol pill", "label": "ask_medication"}
+{"id": "aug-00850", "text": "do you know when do i take my cholesterol pill thanks", "label": "ask_medication"}
+{"id": "aug-00851", "text": "do you know my shoulder hurts at night", "label": "ask_symptom"}
+{"id": "aug-00852", "text": "my shouledr hurts at night", "label": "ask_symptom"}
+{"id": "aug-00853", "text": "please tell me my shoulder hurts at night please", "label": "ask_symptom"}
+{"id": "aug-00854", "text": "i feel dizzy no standing", "label": "ask_symptom"}
+{"id": "aug-00855", "text": "can you i feel dizzy on standing...", "label": "ask_symptom"}
+{"id": "aug-00856", "text": "do you know i get short of breath quickly", "label": "ask_symptom"}
+{"id": "aug-00857", "text": "i gte short of breath quickly", "label": "ask_symptom"}
+{"id": "aug-00858", "text": "please tell me i get short of breath quickly please", "label": "ask_symptom"}
+{"id": "aug-00859", "text": "kindly tell me my heart is racing", "label": "ask_symptom"}
+{"id": "aug-00860", "text": "my haert is racing", "label": "ask_symptom"}
+{"id": "aug-00861", "text": "my heart is racing ?", "label": "ask_symptom"}
+{"id": "aug-00862", "text": "please tell me i feel sick after my session", "label": "ask_symptom"}
+{"id": "aug-00863", "text": "i feel sick fater my session", "label": "ask_symptom"}
+{"id": "aug-00864", "text": "can you i feel sick after my session thanks", "label": "ask_symptom"}
+{"id": "aug-00865", "text": "could you there is a sharp pain in my chest", "label": "ask_symptom"}
+{"id": "aug-00866", "text": "there is a shrap pain in my chest", "label": "ask_symptom"}
+{"id": "aug-00867", "text": "kindly tell me there is a sharp pain in my chest :)", "label": "ask_symptom"}
+{"id": "aug-00868", "text": "i need to know my back is killing me", "label": "ask_symptom"}
+{"id": "aug-00869", "text": "my back is kililng me", "label": "ask_symptom"}
+{"id": "aug-00870", "text": "kindly tell me my back is killing me ?", "label": "ask_symptom"}
+{"id": "aug-00871", "text": "do you know my knee feels weak when i walk", "label": "ask_symptom"}
+{"id": "aug-00872", "text": "my knee efels weak when i walk", "label": "ask_symptom"}
+{"id": "aug-00873", "text": "kindly tell me my knee feels weak when i walk please", "label": "ask_symptom"}
+{"id": "aug-00874", "text": "kindly tell me i cannot sleep because of leg cramps", "label": "ask_symptom"}
+{"id": "aug-00875", "text": "i cannot sleep bceause of leg cramps", "label": "ask_symptom"}
+{"id": "aug-00876", "text": "kindly tell me i cannot sleep because of leg cramps kindly", "label": "ask_symptom"}
+{"id": "aug-00877", "text": "please tell me i feel tired all day", "label": "ask_symptom"}
+{"id": "aug-00878", "text": "i feel tired lal day", "label": "ask_symptom"}
+{"id": "aug-00879", "text": "i want to know i feel tired all day...", "label": "ask_symptom"}
+{"id": "aug-00880", "text": "kindly tell me how much salt is safe", "label": "ask_lifestyle"}
+{"id": "aug-00881", "text": "how muhc salt is safe", "label": "ask_lifestyle"}
+{"id": "aug-00882", "text": "please tell me how much salt is safe kindly", "label": "ask_lifestyle"}
+{"id": "aug-00883", "text": "is walking fine for the heart", "label": "ask_lifestyle"}
+{"id": "aug-00884", "text": "kindly tell me is walking good for the heart", "label": "ask_lifestyle"}
+{"id": "aug-00885", "text": "is walking good for the heatr", "label": "ask_lifestyle"}
+{"id": "aug-00886", "text": "can you is walking good for the heart :)", "label": "ask_lifestyle"}
+{"id": "aug-00887", "text": "i want to know best diet for diabetes", "label": "ask_lifestyle"}
+{"id": "aug-00888", "text": "best diet fro diabetes", "label": "ask_lifestyle"}
+{"id": "aug-00889", "text": "please tell me best diet for diabetes kindly", "label": "ask_lifestyle"}
+{"id": "aug-00890", "text": "i need to know can i eat eggs with high cholesterol", "label": "ask_lifestyle"}
+{"id": "aug-00891", "text": "can i eat eggs with high chloesterol", "label": "ask_lifestyle"}
+{"id": "aug-00892", "text": "i need to know can i eat eggs with high cholesterol ?", "label": "ask_lifestyle"}
+{"id": "aug-00893", "text": "can you smoking and recovery", "label": "ask_lifestyle"}
+{"id": "aug-00894", "text": "smoking and rceovery", "label": "ask_lifestyle"}
+{"id": "aug-00895", "text": "could you smoking and recovery please", "label": "ask_lifestyle"}
+{"id": "aug-00896", "text": "please tell me alcohol with blood thinners", "label": "ask_lifestyle"}
+{"id": "aug-00897", "text": "do you know alcohol with blood thinners :)", "label": "ask_lifestyle"}
+{"id": "aug-00898", "text": "could you how many hours of sleep", "label": "ask_lifestyle"}
+{"id": "aug-00899", "text": "how many housr of sleep", "label": "ask_lifestyle"}
+{"id": "aug-00900", "text": "please tell me how many hours of sleep", "label": "ask_lifestyle"}
+{"id": "aug-00901", "text": "do you know yoga and back pain", "label": "ask_lifestyle"}
+{"id": "aug-00902", "text": "yoga and back pani", "label": "ask_lifestyle"}
+{"id": "aug-00903", "text": "do you know yoga and back pain kindly", "label": "ask_lifestyle"}
+{"id": "aug-00904", "text": "kindly tell me how does the echo work", "label": "ask_procedure"}
+{"id": "aug-00905", "text": "how does the echo owrk", "label": "ask_procedure"}
+{"id": "aug-00906", "text": "do you know how does the echo work", "label": "ask_procedure"}
+{"id": "aug-00907", "text": "what happens in an imaging", "label": "ask_procedure"}
+{"id": "aug-00908", "text": "please tell me what happens in an mri", "label": "ask_procedure"}
+{"id": "aug-00909", "text": "what hapepns in an mri", "label": "ask_procedure"}
+{"id": "aug-00910", "text": "do you know what happens in an mri thanks", "label": "ask_procedure"}
+{"id": "aug-00911", "text": "how long does na angiogram take", "label": "ask_procedure"}
+{"id": "aug-00912", "text": "do you know how long does an angiogram take thanks", "label": "ask_procedure"}
+{"id": "aug-00913", "text": "does dry needlign hurt", "label": "ask_procedure"}
+{"id": "aug-00914", "text": "i need to know does dry needling hurt kindly", "label": "ask_procedure"}
+{"id": "aug-00915", "text": "do you know what to expect during ultrasound", "label": "ask_procedure"}
+{"id": "aug-00916", "text": "what to expect during lutrasound", "label": "ask_procedure"}
+{"id": "aug-00917", "text": "do you know what to expect during ultrasound ?", "label": "ask_procedure"}
+{"id": "aug-00918", "text": "please tell me ecg explanation", "label": "ask_procedure"}
+{"id": "aug-00919", "text": "ecg explanatoin", "label": "ask_procedure"}
+{"id": "aug-00920", "text": "kindly tell me ecg explanation please", "label": "ask_procedure"}
+{"id": "aug-00921", "text": "i want to know steps of a stress test", "label": "ask_procedure"}
+{"id": "aug-00922", "text": "tseps of a stress test", "label": "ask_procedure"}
+{"id": "aug-00923", "text": "do you know steps of a stress test thanks", "label": "ask_procedure"}
+{"id": "aug-00924", "text": "what does a pt do", "label": "ask_procedure"}
+{"id": "aug-00925", "text": "what does a physiothreapist do", "label": "ask_procedure"}
+{"id": "aug-00926", "text": "do you know what does a physiotherapist do kindly", "label": "ask_procedure"}
+{"id": "aug-00927", "text": "do you know danger signs for stroke", "label": "ask_warning"}
+{"id": "aug-00928", "text": "dangre signs for stroke", "label": "ask_warning"}
+{"id": "aug-00929", "text": "could you danger signs for stroke...", "label": "ask_warning"}
+{"id": "aug-00930", "text": "kindly tell me warning signs after cardiac stent", "label": "ask_warning"}
+{"id": "aug-00931", "text": "warning signs after cardiac stnet", "label": "ask_warning"}
+{"id": "aug-00932", "text": "could you warning signs after cardiac stent ?", "label": "ask_warning"}
+{"id": "aug-00933", "text": "red flag ysmptoms after physio", "label": "ask_warning"}
+{"id": "aug-00934", "text": "do you know red flag symptoms after physio ?", "label": "ask_warning"}
+{"id": "aug-00935", "text": "hwen do i need er", "label": "ask_warning"}
+{"id": "aug-00936", "text": "can you when do i need er :)", "label": "ask_warning"}
+{"id": "aug-00937", "text": "do you know symptoms i should never ignore", "label": "ask_warning"}
+{"id": "aug-00938", "text": "symptoms i shoudl never ignore", "label": "ask_warning"}
+{"id": "aug-00939", "text": "could you symptoms i should never ignore...", "label": "ask_warning"}
+{"id": "aug-00940", "text": "kindly tell me warning signs in chest pain", "label": "ask_warning"}
+{"id": "aug-00941", "text": "warning signs ni chest pain", "label": "ask_warning"}
+{"id": "aug-00942", "text": "could you warning signs in chest pain", "label": "ask_warning"}
+{"id": "aug-00943", "text": "i want to know danger after a head injury", "label": "ask_warning"}
+{"id": "aug-00944", "text": "danger after a head injuyr", "label": "ask_warning"}
+{"id": "aug-00945", "text": "do you know danger after a head injury kindly", "label": "ask_warning"}
+{"id": "aug-00946", "text": "please tell me when to call ambulance for heart", "label": "ask_warning"}
+{"id": "aug-00947", "text": "when to call ambulance fro heart", "label": "ask_warning"}
+{"id": "aug-00948", "text": "kindly tell me when to call ambulance for heart kindly", "label": "ask_warning"}
+{"id": "aug-00949", "text": "i need to know salaam alaykum", "label": "greeting"}
+{"id": "aug-00950", "text": "salaam alyakum", "label": "greeting"}
+{"id": "aug-00951", "text": "do you know salaam alaykum kindly", "label": "greeting"}
+{"id": "aug-00952", "text": "do you know how do you do", "label": "greeting"}
+{"id": "aug-00953", "text": "how do yuo do", "label": "greeting"}
+{"id": "aug-00954", "text": "i want to know how do you do...", "label": "greeting"}
+{"id": "aug-00955", "text": "can you hi medfaq", "label": "greeting"}
+{"id": "aug-00956", "text": "hi mefdaq", "label": "greeting"}
+{"id": "aug-00957", "text": "kindly tell me hi medfaq", "label": "greeting"}
+{"id": "aug-00958", "text": "hello there asssitant", "label": "greeting"}
+{"id": "aug-00959", "text": "i need to know hello there assistant please", "label": "greeting"}
+{"id": "aug-00960", "text": "fine evening doctor", "label": "greeting"}
+{"id": "aug-00961", "text": "can you good evening doctor", "label": "greeting"}
+{"id": "aug-00962", "text": "good evenign doctor", "label": "greeting"}
+{"id": "aug-00963", "text": "good evening doctor...", "label": "greeting"}
+{"id": "aug-00964", "text": "ajzak allah", "label": "thanks"}
+{"id": "aug-00965", "text": "please tell me jazak allah please", "label": "thanks"}
+{"id": "aug-00966", "text": "really appreicate it", "label": "thanks"}
+{"id": "aug-00967", "text": "could you really appreciate it please", "label": "thanks"}
+{"id": "aug-00968", "text": "could you you saved my evening", "label": "thanks"}
+{"id": "aug-00969", "text": "you saved my evennig", "label": "thanks"}
+{"id": "aug-00970", "text": "kindly tell me you saved my evening :)", "label": "thanks"}
+{"id": "aug-00971", "text": "can you thanks heaps", "label": "thanks"}
+{"id": "aug-00972", "text": "thanks hepas", "label": "thanks"}
+{"id": "aug-00973", "text": "please tell me thanks heaps thanks", "label": "thanks"}
+{"id": "aug-00974", "text": "i want to know you are wrong", "label": "frustration"}
+{"id": "aug-00975", "text": "you are rwong", "label": "frustration"}
+{"id": "aug-00976", "text": "i need to know you are wrong please", "label": "frustration"}
+{"id": "aug-00977", "text": "can you worst chatbot ever", "label": "frustration"}
+{"id": "aug-00978", "text": "worst chatbot eevr", "label": "frustration"}
+{"id": "aug-00979", "text": "could you worst chatbot ever kindly", "label": "frustration"}
+{"id": "aug-00980", "text": "can you not what i asked", "label": "frustration"}
+{"id": "aug-00981", "text": "not hwat i asked", "label": "frustration"}
+{"id": "aug-00982", "text": "not what i asked kindly", "label": "frustration"}
+{"id": "aug-00983", "text": "do you know what services do you provide", "label": "help"}
+{"id": "aug-00984", "text": "what srevices do you provide", "label": "help"}
+{"id": "aug-00985", "text": "do you know what services do you provide :)", "label": "help"}
+{"id": "aug-00986", "text": "please tell me list of specialties please", "label": "help"}
+{"id": "aug-00987", "text": "list of specailties please", "label": "help"}
+{"id": "aug-00988", "text": "can you list of specialties please ?", "label": "help"}
+{"id": "aug-00989", "text": "please tell me what categories are there", "label": "help"}
+{"id": "aug-00990", "text": "what ctaegories are there", "label": "help"}
+{"id": "aug-00991", "text": "can you what categories are there :)", "label": "help"}
+{"id": "aug-00992", "text": "i want to know what is rheumatic heart disease", "label": "ask_definition"}
+{"id": "aug-00993", "text": "what is rheumatic herat disease", "label": "ask_definition"}
+{"id": "aug-00994", "text": "can you what is rheumatic heart disease...", "label": "ask_definition"}
+{"id": "aug-00995", "text": "defien plantar fasciitis", "label": "ask_definition"}
+{"id": "aug-00996", "text": "i need to know define plantar fasciitis ?", "label": "ask_definition"}
+{"id": "aug-00997", "text": "do you know what does interventional radiology mean", "label": "ask_definition"}
+{"id": "aug-00998", "text": "what does interventioanl radiology mean", "label": "ask_definition"}
+{"id": "aug-00999", "text": "i need to know what does interventional radiology mean", "label": "ask_definition"}
+{"id": "aug-01000", "text": "i need to know explain a stress test", "label": "ask_definition"}
+{"id": "aug-01001", "text": "explain a stress tset", "label": "ask_definition"}
+{"id": "aug-01002", "text": "explain a stress test...", "label": "ask_definition"}
+{"id": "aug-01003", "text": "do you know define hfpef", "label": "ask_definition"}
+{"id": "aug-01004", "text": "deifne hfpef", "label": "ask_definition"}
+{"id": "aug-01005", "text": "kindly tell me define hfpef", "label": "ask_definition"}
+{"id": "aug-01006", "text": "do you know what is dry needling", "label": "ask_definition"}
+{"id": "aug-01007", "text": "what is dry needilng", "label": "ask_definition"}
+{"id": "aug-01008", "text": "i need to know what is dry needling :)", "label": "ask_definition"}
+{"id": "aug-01009", "text": "kindly tell me what does dexa scan stand for", "label": "ask_definition"}
+{"id": "aug-01010", "text": "what does dexa scan stnad for", "label": "ask_definition"}
+{"id": "aug-01011", "text": "could you what does dexa scan stand for thanks", "label": "ask_definition"}
+{"id": "aug-01012", "text": "could you define holter monitor", "label": "ask_definition"}
+{"id": "aug-01013", "text": "defien holter monitor", "label": "ask_definition"}
+{"id": "aug-01014", "text": "i want to know define holter monitor ?", "label": "ask_definition"}
+{"id": "aug-01015", "text": "kindly tell me any prep for dexa", "label": "ask_preparation"}
+{"id": "aug-01016", "text": "any prep for dxea", "label": "ask_preparation"}
+{"id": "aug-01017", "text": "kindly tell me any prep for dexa thanks", "label": "ask_preparation"}
+{"id": "aug-01018", "text": "do i skip food before stress test", "label": "ask_preparation"}
+{"id": "aug-01019", "text": "i want to know do i fast before stress test", "label": "ask_preparation"}
+{"id": "aug-01020", "text": "od i fast before stress test", "label": "ask_preparation"}
+{"id": "aug-01021", "text": "i need to know do i fast before stress test...", "label": "ask_preparation"}
+{"id": "aug-01022", "text": "please tell me preparation before ultrasound", "label": "ask_preparation"}
+{"id": "aug-01023", "text": "perparation before ultrasound", "label": "ask_preparation"}
+{"id": "aug-01024", "text": "can you preparation before ultrasound kindly", "label": "ask_preparation"}
+{"id": "aug-01025", "text": "what to wear for pet ct scan", "label": "ask_preparation"}
+{"id": "aug-01026", "text": "kindly tell me what to wear for pet ct", "label": "ask_preparation"}
+{"id": "aug-01027", "text": "what to waer for pet ct", "label": "ask_preparation"}
+{"id": "aug-01028", "text": "please tell me what to wear for pet ct...", "label": "ask_preparation"}
+{"id": "aug-01029", "text": "kindly tell me can i drink water before angiogram", "label": "ask_preparation"}
+{"id": "aug-01030", "text": "can i drink water before angiogrma", "label": "ask_preparation"}
+{"id": "aug-01031", "text": "do you know can i drink water before angiogram kindly", "label": "ask_preparation"}
+{"id": "aug-01032", "text": "how long bed rest after nagiogram", "label": "ask_recovery"}
+{"id": "aug-01033", "text": "kindly tell me how long bed rest after angiogram...", "label": "ask_recovery"}
+{"id": "aug-01034", "text": "i need to know when can i go back to gym after stent", "label": "ask_recovery"}
+{"id": "aug-01035", "text": "wehn can i go back to gym after stent", "label": "ask_recovery"}
+{"id": "aug-01036", "text": "could you when can i go back to gym after stent thanks", "label": "ask_recovery"}
+{"id": "aug-01037", "text": "please tell me recovery after rheumatic valve surgery", "label": "ask_recovery"}
+{"id": "aug-01038", "text": "recoveyr after rheumatic valve surgery", "label": "ask_recovery"}
+{"id": "aug-01039", "text": "i need to know recovery after rheumatic valve surgery...", "label": "ask_recovery"}
+{"id": "aug-01040", "text": "i want to know how soon can i drive after sedation", "label": "ask_recovery"}
+{"id": "aug-01041", "text": "how soon can i drive after sedatino", "label": "ask_recovery"}
+{"id": "aug-01042", "text": "i need to know how soon can i drive after sedation kindly", "label": "ask_recovery"}
+{"id": "aug-01043", "text": "i want to know how to take dual antiplatelet", "label": "ask_medication"}
+{"id": "aug-01044", "text": "how to take dula antiplatelet", "label": "ask_medication"}
+{"id": "aug-01045", "text": "how to take dual antiplatelet ?", "label": "ask_medication"}
+{"id": "aug-01046", "text": "please tell me can i stop ticagrelor", "label": "ask_medication"}
+{"id": "aug-01047", "text": "can i stop ticagreolr", "label": "ask_medication"}
+{"id": "aug-01048", "text": "can you can i stop ticagrelor please", "label": "ask_medication"}
+{"id": "aug-01049", "text": "do you know any concern with paracetamol and blood thinner", "label": "ask_medication"}
+{"id": "aug-01050", "text": "nay concern with paracetamol and blood thinner", "label": "ask_medication"}
+{"id": "aug-01051", "text": "kindly tell me any concern with paracetamol and blood thinner ?", "label": "ask_medication"}
+{"id": "aug-01052", "text": "please tell me missed two days of statin", "label": "ask_medication"}
+{"id": "aug-01053", "text": "missed two days fo statin", "label": "ask_medication"}
+{"id": "aug-01054", "text": "kindly tell me missed two days of statin :)", "label": "ask_medication"}
+{"id": "aug-01055", "text": "kindly tell me safe painkiller in heart failure", "label": "ask_medication"}
+{"id": "aug-01056", "text": "safe painkiller in ehart failure", "label": "ask_medication"}
+{"id": "aug-01057", "text": "kindly tell me safe painkiller in heart failure...", "label": "ask_medication"}
+{"id": "aug-01058", "text": "my heel hurts in the mroning", "label": "ask_symptom"}
+{"id": "aug-01059", "text": "can you my heel hurts in the morning kindly", "label": "ask_symptom"}
+{"id": "aug-01060", "text": "please tell me i hear clicking in my knee", "label": "ask_symptom"}
+{"id": "aug-01061", "text": "i hear clickign in my knee", "label": "ask_symptom"}
+{"id": "aug-01062", "text": "do you know i hear clicking in my knee :)", "label": "ask_symptom"}
+{"id": "aug-01063", "text": "please tell me my shoulder is frozen", "label": "ask_symptom"}
+{"id": "aug-01064", "text": "my shuolder is frozen", "label": "ask_symptom"}
+{"id": "aug-01065", "text": "i want to know my shoulder is frozen :)", "label": "ask_symptom"}
+{"id": "aug-01066", "text": "i need to know my legs go numb after walking", "label": "ask_symptom"}
+{"id": "aug-01067", "text": "my legs go numb atfer walking", "label": "ask_symptom"}
+{"id": "aug-01068", "text": "kindly tell me my legs go numb after walking ?", "label": "ask_symptom"}
+{"id": "aug-01069", "text": "i need to know dizzy when i bend down", "label": "ask_symptom"}
+{"id": "aug-01070", "text": "idzzy when i bend down", "label": "ask_symptom"}
+{"id": "aug-01071", "text": "do you know dizzy when i bend down :)", "label": "ask_symptom"}
+{"id": "aug-01072", "text": "i need to know chest pain when i lie down", "label": "ask_symptom"}
+{"id": "aug-01073", "text": "chest pain when i lie odwn", "label": "ask_symptom"}
+{"id": "aug-01074", "text": "i need to know chest pain when i lie down :)", "label": "ask_symptom"}
+{"id": "aug-01075", "text": "kindly tell me breath gets short on stairs", "label": "ask_symptom"}
+{"id": "aug-01076", "text": "breath gets short on staris", "label": "ask_symptom"}
+{"id": "aug-01077", "text": "i want to know breath gets short on stairs kindly", "label": "ask_symptom"}
+{"id": "aug-01078", "text": "i want to know woke up at night with palpitations", "label": "ask_symptom"}
+{"id": "aug-01079", "text": "woke up at night with aplpitations", "label": "ask_symptom"}
+{"id": "aug-01080", "text": "please tell me woke up at night with palpitations", "label": "ask_symptom"}
+{"id": "aug-01081", "text": "please tell me can heart patients fast in ramadan", "label": "ask_lifestyle"}
+{"id": "aug-01082", "text": "can heart ptaients fast in ramadan", "label": "ask_lifestyle"}
+{"id": "aug-01083", "text": "i need to know can heart patients fast in ramadan", "label": "ask_lifestyle"}
+{"id": "aug-01084", "text": "could you safe exercises after stent", "label": "ask_lifestyle"}
+{"id": "aug-01085", "text": "safe exercises after stetn", "label": "ask_lifestyle"}
+{"id": "aug-01086", "text": "please tell me safe exercises after stent please", "label": "ask_lifestyle"}
+{"id": "aug-01087", "text": "fine diet for fatty liver", "label": "ask_lifestyle"}
+{"id": "aug-01088", "text": "kindly tell me good diet for fatty liver", "label": "ask_lifestyle"}
+{"id": "aug-01089", "text": "i want to know good diet for fatty liver :)", "label": "ask_lifestyle"}
+{"id": "aug-01090", "text": "i want to know can i drive long distance after surgery", "label": "ask_lifestyle"}
+{"id": "aug-01091", "text": "can i dirve long distance after surgery", "label": "ask_lifestyle"}
+{"id": "aug-01092", "text": "can you can i drive long distance after surgery...", "label": "ask_lifestyle"}
+{"id": "aug-01093", "text": "please tell me smoking quit support", "label": "ask_lifestyle"}
+{"id": "aug-01094", "text": "smokign quit support", "label": "ask_lifestyle"}
+{"id": "aug-01095", "text": "i want to know smoking quit support please", "label": "ask_lifestyle"}
+{"id": "aug-01096", "text": "i need to know how does a fluoroscopy work", "label": "ask_procedure"}
+{"id": "aug-01097", "text": "how does a fluorocsopy work", "label": "ask_procedure"}
+{"id": "aug-01098", "text": "could you how does a fluoroscopy work kindly", "label": "ask_procedure"}
+{"id": "aug-01099", "text": "what happens during a edxa", "label": "ask_procedure"}
+{"id": "aug-01100", "text": "could you what happens during a dexa kindly", "label": "ask_procedure"}
+{"id": "aug-01101", "text": "ohw long does a holter take", "label": "ask_procedure"}
+{"id": "aug-01102", "text": "how long does a holter take ?", "label": "ask_procedure"}
+{"id": "aug-01103", "text": "i want to know what is a tilt table test", "label": "ask_procedure"}
+{"id": "aug-01104", "text": "what si a tilt table test", "label": "ask_procedure"}
+{"id": "aug-01105", "text": "could you what is a tilt table test :)", "label": "ask_procedure"}
+{"id": "aug-01106", "text": "kindly tell me how is interventional radiology done", "label": "ask_procedure"}
+{"id": "aug-01107", "text": "how is intervenitonal radiology done", "label": "ask_procedure"}
+{"id": "aug-01108", "text": "can you how is interventional radiology done...", "label": "ask_procedure"}
+{"id": "aug-01109", "text": "when is chest pain a rde flag", "label": "ask_warning"}
+{"id": "aug-01110", "text": "i want to know when is chest pain a red flag thanks", "label": "ask_warning"}
+{"id": "aug-01111", "text": "kindly tell me red flags after a stent", "label": "ask_warning"}
+{"id": "aug-01112", "text": "red flags afetr a stent", "label": "ask_warning"}
+{"id": "aug-01113", "text": "kindly tell me red flags after a stent kindly", "label": "ask_warning"}
+{"id": "aug-01114", "text": "could you post procedure danger signs", "label": "ask_warning"}
+{"id": "aug-01115", "text": "psot procedure danger signs", "label": "ask_warning"}
+{"id": "aug-01116", "text": "post procedure danger signs kindly", "label": "ask_warning"}
+{"id": "aug-01117", "text": "kindly tell me emergency signs of stroke", "label": "ask_warning"}
+{"id": "aug-01118", "text": "emergency sgins of stroke", "label": "ask_warning"}
+{"id": "aug-01119", "text": "can you emergency signs of stroke...", "label": "ask_warning"}
+{"id": "aug-01120", "text": "can you signs of clot in leg", "label": "ask_warning"}
+{"id": "aug-01121", "text": "signs of clot in elg", "label": "ask_warning"}
+{"id": "aug-01122", "text": "do you know signs of clot in leg thanks", "label": "ask_warning"}
+{"id": "aug-01123", "text": "can you when to call ambulance for palpitations", "label": "ask_warning"}
+{"id": "aug-01124", "text": "when to call ambulacne for palpitations", "label": "ask_warning"}
+{"id": "aug-01125", "text": "when to call ambulance for palpitations please", "label": "ask_warning"}
+{"id": "aug-01126", "text": "could you who are you", "label": "meta"}
+{"id": "aug-01127", "text": "who aer you", "label": "meta"}
+{"id": "aug-01128", "text": "i want to know who are you", "label": "meta"}
+{"id": "aug-01129", "text": "please tell me what are you", "label": "meta"}
+{"id": "aug-01130", "text": "what aer you", "label": "meta"}
+{"id": "aug-01131", "text": "can you what are you ?", "label": "meta"}
+{"id": "aug-01132", "text": "do you know what is medfaq", "label": "meta"}
+{"id": "aug-01133", "text": "what is mefdaq", "label": "meta"}
+{"id": "aug-01134", "text": "please tell me what is medfaq...", "label": "meta"}
+{"id": "aug-01135", "text": "do you know what is your name", "label": "meta"}
+{"id": "aug-01136", "text": "what is yuor name", "label": "meta"}
+{"id": "aug-01137", "text": "kindly tell me what is your name thanks", "label": "meta"}
+{"id": "aug-01138", "text": "i want to know are you a robot", "label": "meta"}
+{"id": "aug-01139", "text": "aer you a robot", "label": "meta"}
+{"id": "aug-01140", "text": "do you know are you a robot kindly", "label": "meta"}
+{"id": "aug-01141", "text": "rae you a bot", "label": "meta"}
+{"id": "aug-01142", "text": "can you are you a bot...", "label": "meta"}
+{"id": "aug-01143", "text": "are you a clinician", "label": "meta"}
+{"id": "aug-01144", "text": "please tell me are you a doctor", "label": "meta"}
+{"id": "aug-01145", "text": "are oyu a doctor", "label": "meta"}
+{"id": "aug-01146", "text": "please tell me are you a doctor kindly", "label": "meta"}
+{"id": "aug-01147", "text": "can you are you a human", "label": "meta"}
+{"id": "aug-01148", "text": "are you a hmuan", "label": "meta"}
+{"id": "aug-01149", "text": "could you are you a human please", "label": "meta"}
+{"id": "aug-01150", "text": "could you are you chatgpt", "label": "meta"}
+{"id": "aug-01151", "text": "are you cahtgpt", "label": "meta"}
+{"id": "aug-01152", "text": "can you are you chatgpt please", "label": "meta"}
+{"id": "aug-01153", "text": "are you ia", "label": "meta"}
+{"id": "aug-01154", "text": "do you know are you ai thanks", "label": "meta"}
+{"id": "aug-01155", "text": "kindly tell me who built you", "label": "meta"}
+{"id": "aug-01156", "text": "who bulit you", "label": "meta"}
+{"id": "aug-01157", "text": "i want to know who built you", "label": "meta"}
+{"id": "aug-01158", "text": "please tell me who made you", "label": "meta"}
+{"id": "aug-01159", "text": "woh made you", "label": "meta"}
+{"id": "aug-01160", "text": "i want to know who made you :)", "label": "meta"}
+{"id": "aug-01161", "text": "i want to know tell me about yourself", "label": "meta"}
+{"id": "aug-01162", "text": "tlel me about yourself", "label": "meta"}
+{"id": "aug-01163", "text": "kindly tell me tell me about yourself", "label": "meta"}
+{"id": "aug-01164", "text": "please tell me introduce yourself", "label": "meta"}
+{"id": "aug-01165", "text": "intrdouce yourself", "label": "meta"}
+{"id": "aug-01166", "text": "i want to know introduce yourself...", "label": "meta"}
+{"id": "aug-01167", "text": "please tell me what model are you", "label": "meta"}
+{"id": "aug-01168", "text": "what model are oyu", "label": "meta"}
+{"id": "aug-01169", "text": "do you know what model are you", "label": "meta"}
+{"id": "aug-01170", "text": "please tell me are you a language model", "label": "meta"}
+{"id": "aug-01171", "text": "rae you a language model", "label": "meta"}
+{"id": "aug-01172", "text": "could you are you a language model kindly", "label": "meta"}
+{"id": "aug-01173", "text": "what is a v q imaging", "label": "ask_definition"}
+{"id": "aug-01174", "text": "could you what is a v q scan", "label": "ask_definition"}
+{"id": "aug-01175", "text": "waht is a v q scan", "label": "ask_definition"}
+{"id": "aug-01176", "text": "can you what is a v q scan", "label": "ask_definition"}
+{"id": "aug-01177", "text": "could you what is takotsubo", "label": "ask_definition"}
+{"id": "aug-01178", "text": "what is takotsbuo", "label": "ask_definition"}
+{"id": "aug-01179", "text": "i want to know what is takotsubo ?", "label": "ask_definition"}
+{"id": "aug-01180", "text": "i want to know what is coronary calcium score", "label": "ask_definition"}
+{"id": "aug-01181", "text": "what is coornary calcium score", "label": "ask_definition"}
+{"id": "aug-01182", "text": "kindly tell me what is coronary calcium score", "label": "ask_definition"}
+{"id": "aug-01183", "text": "kindly tell me define inr", "label": "ask_definition"}
+{"id": "aug-01184", "text": "defien inr", "label": "ask_definition"}
+{"id": "aug-01185", "text": "i want to know define inr :)", "label": "ask_definition"}
+{"id": "aug-01186", "text": "do you know what is a heart murmur", "label": "ask_definition"}
+{"id": "aug-01187", "text": "what is a heart murumr", "label": "ask_definition"}
+{"id": "aug-01188", "text": "i want to know what is a heart murmur ?", "label": "ask_definition"}
+{"id": "aug-01189", "text": "kindly tell me define rotator cuff", "label": "ask_definition"}
+{"id": "aug-01190", "text": "define roattor cuff", "label": "ask_definition"}
+{"id": "aug-01191", "text": "hwat is tens machine", "label": "ask_definition"}
+{"id": "aug-01192", "text": "do you know what is tens machine :)", "label": "ask_definition"}
+{"id": "aug-01193", "text": "i need to know can i drink water before abdominal ultrasound", "label": "ask_preparation"}
+{"id": "aug-01194", "text": "can i drink water before abdomianl ultrasound", "label": "ask_preparation"}
+{"id": "aug-01195", "text": "i want to know can i drink water before abdominal ultrasound", "label": "ask_preparation"}
+{"id": "aug-01196", "text": "how to prepare for vq test", "label": "ask_preparation"}
+{"id": "aug-01197", "text": "can you how to prepare for vq scan", "label": "ask_preparation"}
+{"id": "aug-01198", "text": "hwo to prepare for vq scan", "label": "ask_preparation"}
+{"id": "aug-01199", "text": "please tell me how to prepare for vq scan :)", "label": "ask_preparation"}
+{"id": "aug-01200", "text": "any prep before ct scan biopsy", "label": "ask_preparation"}
+{"id": "aug-01201", "text": "any prpe before ct biopsy", "label": "ask_preparation"}
+{"id": "aug-01202", "text": "i want to know any prep before ct biopsy ?", "label": "ask_preparation"}
+{"id": "aug-01203", "text": "recovery atfer ct guided biopsy", "label": "ask_recovery"}
+{"id": "aug-01204", "text": "could you recovery after ct guided biopsy thanks", "label": "ask_recovery"}
+{"id": "aug-01205", "text": "kindly tell me recovery after rotator cuff surgery", "label": "ask_recovery"}
+{"id": "aug-01206", "text": "recovery after ortator cuff surgery", "label": "ask_recovery"}
+{"id": "aug-01207", "text": "i want to know recovery after rotator cuff surgery please", "label": "ask_recovery"}
+{"id": "aug-01208", "text": "do you know what does my inr result mean", "label": "ask_medication"}
+{"id": "aug-01209", "text": "what does my inr resutl mean", "label": "ask_medication"}
+{"id": "aug-01210", "text": "kindly tell me what does my inr result mean", "label": "ask_medication"}
+{"id": "aug-01211", "text": "kindly tell me are apixaban and rivaroxaban same", "label": "ask_medication"}
+{"id": "aug-01212", "text": "are apixaban and rivaroxbaan same", "label": "ask_medication"}
+{"id": "aug-01213", "text": "i need to know are apixaban and rivaroxaban same thanks", "label": "ask_medication"}
+{"id": "aug-01214", "text": "can i stop my pacemaker tablets", "label": "ask_medication"}
+{"id": "aug-01215", "text": "i need to know can i stop my pacemaker meds", "label": "ask_medication"}
+{"id": "aug-01216", "text": "can i stop my pacmeaker meds", "label": "ask_medication"}
+{"id": "aug-01217", "text": "i need to know can i stop my pacemaker meds :)", "label": "ask_medication"}
+{"id": "aug-01218", "text": "can you my legs swell every evening", "label": "ask_symptom"}
+{"id": "aug-01219", "text": "my legs wsell every evening", "label": "ask_symptom"}
+{"id": "aug-01220", "text": "could you my legs swell every evening kindly", "label": "ask_symptom"}
+{"id": "aug-01221", "text": "do you know my ankle gives way often", "label": "ask_symptom"}
+{"id": "aug-01222", "text": "my ankle gives way foten", "label": "ask_symptom"}
+{"id": "aug-01223", "text": "kindly tell me my ankle gives way often kindly", "label": "ask_symptom"}
+{"id": "aug-01224", "text": "do you know i feel a fluttering in my chest at night", "label": "ask_symptom"}
+{"id": "aug-01225", "text": "i feel a fluttering in my chest at ngiht", "label": "ask_symptom"}
+{"id": "aug-01226", "text": "i feel a fluttering in my chest at night thanks", "label": "ask_symptom"}
+{"id": "aug-01227", "text": "can you my neck hurts from the laptop", "label": "ask_symptom"}
+{"id": "aug-01228", "text": "my neck hurst from the laptop", "label": "ask_symptom"}
+{"id": "aug-01229", "text": "i need to know my neck hurts from the laptop kindly", "label": "ask_symptom"}
+{"id": "aug-01230", "text": "i need to know recurrent migraine for two weeks", "label": "ask_symptom"}
+{"id": "aug-01231", "text": "reucrrent migraine for two weeks", "label": "ask_symptom"}
+{"id": "aug-01232", "text": "can you recurrent migraine for two weeks...", "label": "ask_symptom"}
+{"id": "aug-01233", "text": "do you know intermittent fasting and heart", "label": "ask_lifestyle"}
+{"id": "aug-01234", "text": "intermitetnt fasting and heart", "label": "ask_lifestyle"}
+{"id": "aug-01235", "text": "intermittent fasting and heart :)", "label": "ask_lifestyle"}
+{"id": "aug-01236", "text": "kindly tell me are energy drinks bad for heart", "label": "ask_lifestyle"}
+{"id": "aug-01237", "text": "are energy drinks bad for ehart", "label": "ask_lifestyle"}
+{"id": "aug-01238", "text": "do you know are energy drinks bad for heart", "label": "ask_lifestyle"}
+{"id": "aug-01239", "text": "please tell me safe massage during pregnancy", "label": "ask_lifestyle"}
+{"id": "aug-01240", "text": "safe massage during pregnacny", "label": "ask_lifestyle"}
+{"id": "aug-01241", "text": "i need to know safe massage during pregnancy ?", "label": "ask_lifestyle"}
+{"id": "aug-01242", "text": "kindly tell me how much daily walking is enough", "label": "ask_lifestyle"}
+{"id": "aug-01243", "text": "how much daily walknig is enough", "label": "ask_lifestyle"}
+{"id": "aug-01244", "text": "kindly tell me how much daily walking is enough...", "label": "ask_lifestyle"}
+{"id": "aug-01245", "text": "how does ct biopsy owrk", "label": "ask_procedure"}
+{"id": "aug-01246", "text": "please tell me how does ct biopsy work kindly", "label": "ask_procedure"}
+{"id": "aug-01247", "text": "could you what is a coronary angiogram like", "label": "ask_procedure"}
+{"id": "aug-01248", "text": "what is a coronary angiorgam like", "label": "ask_procedure"}
+{"id": "aug-01249", "text": "i want to know what is a coronary angiogram like thanks", "label": "ask_procedure"}
+{"id": "aug-01250", "text": "kindly tell me how is rotator cuff repair done", "label": "ask_procedure"}
+{"id": "aug-01251", "text": "how is rotator cuff erpair done", "label": "ask_procedure"}
+{"id": "aug-01252", "text": "can you how is rotator cuff repair done", "label": "ask_procedure"}
+{"id": "aug-01253", "text": "please tell me when is leg swelling dangerous", "label": "ask_warning"}
+{"id": "aug-01254", "text": "when si leg swelling dangerous", "label": "ask_warning"}
+{"id": "aug-01255", "text": "could you when is leg swelling dangerous kindly", "label": "ask_warning"}
+{"id": "aug-01256", "text": "when is a murmur seriosu", "label": "ask_warning"}
+{"id": "aug-01257", "text": "do you know when is a murmur serious", "label": "ask_warning"}
+{"id": "aug-01258", "text": "please tell me red flags after biopsy", "label": "ask_warning"}
+{"id": "aug-01259", "text": "red flags afetr biopsy", "label": "ask_warning"}
+{"id": "aug-01260", "text": "can you red flags after biopsy thanks", "label": "ask_warning"}
+{"id": "aug-01261", "text": "hello can you guide me", "label": "greeting"}
+{"id": "aug-01262", "text": "can you hi can you help me", "label": "greeting"}
+{"id": "aug-01263", "text": "hi cna you help me", "label": "greeting"}
+{"id": "aug-01264", "text": "could you hi can you help me thanks", "label": "greeting"}
+{"id": "aug-01265", "text": "i want to know hello dr radiology", "label": "greeting"}
+{"id": "aug-01266", "text": "hello dr ardiology", "label": "greeting"}
+{"id": "aug-01267", "text": "i want to know hello dr radiology thanks", "label": "greeting"}
+{"id": "aug-01268", "text": "thx i feel better", "label": "thanks"}
+{"id": "aug-01269", "text": "kindly tell me thanks i feel better", "label": "thanks"}
+{"id": "aug-01270", "text": "kindly tell me thanks i feel better please", "label": "thanks"}
+{"id": "aug-01271", "text": "got it thx", "label": "thanks"}
+{"id": "aug-01272", "text": "kindly tell me got it thanks", "label": "thanks"}
+{"id": "aug-01273", "text": "got it thnaks", "label": "thanks"}
+{"id": "aug-01274", "text": "could you got it thanks thanks", "label": "thanks"}
+{"id": "aug-01275", "text": "please tell me what is a mammogram", "label": "ask_definition"}
+{"id": "aug-01276", "text": "waht is a mammogram", "label": "ask_definition"}
+{"id": "aug-01277", "text": "could you what is a mammogram...", "label": "ask_definition"}
+{"id": "aug-01278", "text": "can you what is pulmonary hypertension", "label": "ask_definition"}
+{"id": "aug-01279", "text": "what is pulmonary hpyertension", "label": "ask_definition"}
+{"id": "aug-01280", "text": "i want to know what is pulmonary hypertension...", "label": "ask_definition"}
+{"id": "aug-01281", "text": "do you know what is hfpef", "label": "ask_definition"}
+{"id": "aug-01282", "text": "what is hpfef", "label": "ask_definition"}
+{"id": "aug-01283", "text": "i need to know what is hfpef...", "label": "ask_definition"}
+{"id": "aug-01284", "text": "i want to know what is acl", "label": "ask_definition"}
+{"id": "aug-01285", "text": "what si acl", "label": "ask_definition"}
+{"id": "aug-01286", "text": "what is acl kindly", "label": "ask_definition"}
+{"id": "aug-01287", "text": "i want to know what is mrcp", "label": "ask_definition"}
+{"id": "aug-01288", "text": "waht is mrcp", "label": "ask_definition"}
+{"id": "aug-01289", "text": "kindly tell me what is mrcp...", "label": "ask_definition"}
+{"id": "aug-01290", "text": "could you what is bone scintigraphy", "label": "ask_definition"}
+{"id": "aug-01291", "text": "what is obne scintigraphy", "label": "ask_definition"}
+{"id": "aug-01292", "text": "kindly tell me what is bone scintigraphy ?", "label": "ask_definition"}
+{"id": "aug-01293", "text": "kindly tell me define gait analysis", "label": "ask_definition"}
+{"id": "aug-01294", "text": "deifne gait analysis", "label": "ask_definition"}
+{"id": "aug-01295", "text": "i need to know define gait analysis kindly", "label": "ask_definition"}
+{"id": "aug-01296", "text": "do you know what is hydrotherapy", "label": "ask_definition"}
+{"id": "aug-01297", "text": "what is hdyrotherapy", "label": "ask_definition"}
+{"id": "aug-01298", "text": "kindly tell me what is hydrotherapy kindly", "label": "ask_definition"}
+{"id": "aug-01299", "text": "please tell me what is hand therapy", "label": "ask_definition"}
+{"id": "aug-01300", "text": "hwat is hand therapy", "label": "ask_definition"}
+{"id": "aug-01301", "text": "please tell me what is hand therapy ?", "label": "ask_definition"}
+{"id": "aug-01302", "text": "do you know define svt", "label": "ask_definition"}
+{"id": "aug-01303", "text": "define stv", "label": "ask_definition"}
+{"id": "aug-01304", "text": "please tell me define svt...", "label": "ask_definition"}
+{"id": "aug-01305", "text": "what is a computed tomography angiogram", "label": "ask_definition"}
+{"id": "aug-01306", "text": "do you know what is a ct angiogram", "label": "ask_definition"}
+{"id": "aug-01307", "text": "whta is a ct angiogram", "label": "ask_definition"}
+{"id": "aug-01308", "text": "what is a ct angiogram kindly", "label": "ask_definition"}
+{"id": "aug-01309", "text": "kindly tell me what is post mi rehab", "label": "ask_definition"}
+{"id": "aug-01310", "text": "what is post mi rheab", "label": "ask_definition"}
+{"id": "aug-01311", "text": "do you know what is post mi rehab thanks", "label": "ask_definition"}
+{"id": "aug-01312", "text": "define paediatric scan sedation", "label": "ask_definition"}
+{"id": "aug-01313", "text": "could you define paediatric mri sedation", "label": "ask_definition"}
+{"id": "aug-01314", "text": "define paediatric mri esdation", "label": "ask_definition"}
+{"id": "aug-01315", "text": "kindly tell me define paediatric mri sedation", "label": "ask_definition"}
+{"id": "aug-01316", "text": "could you what is a swallow study", "label": "ask_definition"}
+{"id": "aug-01317", "text": "what is a swlalow study", "label": "ask_definition"}
+{"id": "aug-01318", "text": "i need to know what is a swallow study...", "label": "ask_definition"}
+{"id": "aug-01319", "text": "can you what is thyroid ultrasound", "label": "ask_definition"}
+{"id": "aug-01320", "text": "what is thyroid ulrtasound", "label": "ask_definition"}
+{"id": "aug-01321", "text": "kindly tell me what is thyroid ultrasound", "label": "ask_definition"}
+{"id": "aug-01322", "text": "kindly tell me what is shin splints", "label": "ask_definition"}
+{"id": "aug-01323", "text": "what is shin splitns", "label": "ask_definition"}
+{"id": "aug-01324", "text": "what is shin splints :)", "label": "ask_definition"}
+{"id": "aug-01325", "text": "could you what is tennis elbow", "label": "ask_definition"}
+{"id": "aug-01326", "text": "what is tennis elbwo", "label": "ask_definition"}
+{"id": "aug-01327", "text": "do you know what is tennis elbow...", "label": "ask_definition"}
+{"id": "aug-01328", "text": "could you what is golfer's elbow", "label": "ask_definition"}
+{"id": "aug-01329", "text": "what si golfer's elbow", "label": "ask_definition"}
+{"id": "aug-01330", "text": "can you what is golfer's elbow thanks", "label": "ask_definition"}
+{"id": "aug-01331", "text": "i want to know do i fast before mrcp", "label": "ask_preparation"}
+{"id": "aug-01332", "text": "do i fast befroe mrcp", "label": "ask_preparation"}
+{"id": "aug-01333", "text": "i need to know do i fast before mrcp ?", "label": "ask_preparation"}
+{"id": "aug-01334", "text": "how to prepare for paediatric scan", "label": "ask_preparation"}
+{"id": "aug-01335", "text": "do you know how to prepare for paediatric mri", "label": "ask_preparation"}
+{"id": "aug-01336", "text": "how ot prepare for paediatric mri", "label": "ask_preparation"}
+{"id": "aug-01337", "text": "can you how to prepare for paediatric mri...", "label": "ask_preparation"}
+{"id": "aug-01338", "text": "i need to know preparation for swallow study", "label": "ask_preparation"}
+{"id": "aug-01339", "text": "preapration for swallow study", "label": "ask_preparation"}
+{"id": "aug-01340", "text": "do you know preparation for swallow study kindly", "label": "ask_preparation"}
+{"id": "aug-01341", "text": "kindly tell me any prep before ct angiogram", "label": "ask_preparation"}
+{"id": "aug-01342", "text": "any prep before ct angiogrma", "label": "ask_preparation"}
+{"id": "aug-01343", "text": "any prep before ct angiogram ?", "label": "ask_preparation"}
+{"id": "aug-01344", "text": "can you can i drink water before mammogram", "label": "ask_preparation"}
+{"id": "aug-01345", "text": "can i drink water befoer mammogram", "label": "ask_preparation"}
+{"id": "aug-01346", "text": "please tell me can i drink water before mammogram :)", "label": "ask_preparation"}
+{"id": "aug-01347", "text": "i want to know any prep for thyroid ultrasound", "label": "ask_preparation"}
+{"id": "aug-01348", "text": "any rpep for thyroid ultrasound", "label": "ask_preparation"}
+{"id": "aug-01349", "text": "please tell me any prep for thyroid ultrasound :)", "label": "ask_preparation"}
+{"id": "aug-01350", "text": "preparation before bone imaging", "label": "ask_preparation"}
+{"id": "aug-01351", "text": "can you preparation before bone scan", "label": "ask_preparation"}
+{"id": "aug-01352", "text": "preparation before bnoe scan", "label": "ask_preparation"}
+{"id": "aug-01353", "text": "do you know preparation before bone scan", "label": "ask_preparation"}
+{"id": "aug-01354", "text": "can you recovery after meniscus repair", "label": "ask_recovery"}
+{"id": "aug-01355", "text": "recovery after meniscus repiar", "label": "ask_recovery"}
+{"id": "aug-01356", "text": "kindly tell me recovery after meniscus repair please", "label": "ask_recovery"}
+{"id": "aug-01357", "text": "i want to know when can i drive after cabg", "label": "ask_recovery"}
+{"id": "aug-01358", "text": "when can i driev after cabg", "label": "ask_recovery"}
+{"id": "aug-01359", "text": "i need to know how long after stent placement before sex", "label": "ask_recovery"}
+{"id": "aug-01360", "text": "how long after stent placement befoer sex", "label": "ask_recovery"}
+{"id": "aug-01361", "text": "how long after stent placement before sex kindly", "label": "ask_recovery"}
+{"id": "aug-01362", "text": "i need to know recovery after acl injury", "label": "ask_recovery"}
+{"id": "aug-01363", "text": "recovery after acl inujry", "label": "ask_recovery"}
+{"id": "aug-01364", "text": "i need to know recovery after acl injury thanks", "label": "ask_recovery"}
+{"id": "aug-01365", "text": "could you when can i run after calf strain", "label": "ask_recovery"}
+{"id": "aug-01366", "text": "when cna i run after calf strain", "label": "ask_recovery"}
+{"id": "aug-01367", "text": "please tell me when can i run after calf strain ?", "label": "ask_recovery"}
+{"id": "aug-01368", "text": "do you know recovery after pacemaker insertion", "label": "ask_recovery"}
+{"id": "aug-01369", "text": "recovery after pacemaker inseriton", "label": "ask_recovery"}
+{"id": "aug-01370", "text": "could you recovery after pacemaker insertion please", "label": "ask_recovery"}
+{"id": "aug-01371", "text": "could you how soon after svt ablation can i exercise", "label": "ask_recovery"}
+{"id": "aug-01372", "text": "how soon after svt albation can i exercise", "label": "ask_recovery"}
+{"id": "aug-01373", "text": "can you how soon after svt ablation can i exercise ?", "label": "ask_recovery"}
+{"id": "aug-01374", "text": "herbal remedies with heart pills", "label": "ask_medication"}
+{"id": "aug-01375", "text": "do you know herbal remedies with heart meds", "label": "ask_medication"}
+{"id": "aug-01376", "text": "herbal remedies wiht heart meds", "label": "ask_medication"}
+{"id": "aug-01377", "text": "please tell me herbal remedies with heart meds thanks", "label": "ask_medication"}
+{"id": "aug-01378", "text": "could you is grapefruit safe with statins", "label": "ask_medication"}
+{"id": "aug-01379", "text": "is rgapefruit safe with statins", "label": "ask_medication"}
+{"id": "aug-01380", "text": "please tell me is grapefruit safe with statins thanks", "label": "ask_medication"}
+{"id": "aug-01381", "text": "i want to know which bp meds safe in pregnancy", "label": "ask_medication"}
+{"id": "aug-01382", "text": "whihc bp meds safe in pregnancy", "label": "ask_medication"}
+{"id": "aug-01383", "text": "kindly tell me which bp meds safe in pregnancy kindly", "label": "ask_medication"}
+{"id": "aug-01384", "text": "can i take liquorice with bp tablet", "label": "ask_medication"}
+{"id": "aug-01385", "text": "can i take liquoriec with bp medicine", "label": "ask_medication"}
+{"id": "aug-01386", "text": "kindly tell me can i take liquorice with bp medicine kindly", "label": "ask_medication"}
+{"id": "aug-01387", "text": "could you ginkgo and blood thinner", "label": "ask_medication"}
+{"id": "aug-01388", "text": "ginkgo and blood thniner", "label": "ask_medication"}
+{"id": "aug-01389", "text": "can you ginkgo and blood thinner thanks", "label": "ask_medication"}
+{"id": "aug-01390", "text": "i need to know breathlessness when climbing stairs", "label": "ask_symptom"}
+{"id": "aug-01391", "text": "breathlessness hwen climbing stairs", "label": "ask_symptom"}
+{"id": "aug-01392", "text": "i want to know breathlessness when climbing stairs :)", "label": "ask_symptom"}
+{"id": "aug-01393", "text": "do you know my heel is sore in the morning", "label": "ask_symptom"}
+{"id": "aug-01394", "text": "my heel is sroe in the morning", "label": "ask_symptom"}
+{"id": "aug-01395", "text": "i want to know my heel is sore in the morning thanks", "label": "ask_symptom"}
+{"id": "aug-01396", "text": "knee joint gives way after acl tear", "label": "ask_symptom"}
+{"id": "aug-01397", "text": "i want to know knee gives way after acl tear", "label": "ask_symptom"}
+{"id": "aug-01398", "text": "kene gives way after acl tear", "label": "ask_symptom"}
+{"id": "aug-01399", "text": "please tell me knee gives way after acl tear thanks", "label": "ask_symptom"}
+{"id": "aug-01400", "text": "kindly tell me my shoulder hurts during overhead lifts", "label": "ask_symptom"}
+{"id": "aug-01401", "text": "my shoulder hurts during overheda lifts", "label": "ask_symptom"}
+{"id": "aug-01402", "text": "can you my shoulder hurts during overhead lifts please", "label": "ask_symptom"}
+{"id": "aug-01403", "text": "do you know breath gets short after walking", "label": "ask_symptom"}
+{"id": "aug-01404", "text": "braeth gets short after walking", "label": "ask_symptom"}
+{"id": "aug-01405", "text": "i need to know breath gets short after walking ?", "label": "ask_symptom"}
+{"id": "aug-01406", "text": "i want to know legs swell during pregnancy", "label": "ask_symptom"}
+{"id": "aug-01407", "text": "lges swell during pregnancy", "label": "ask_symptom"}
+{"id": "aug-01408", "text": "do you know my back hurts after gardening", "label": "ask_symptom"}
+{"id": "aug-01409", "text": "my back hurts after garedning", "label": "ask_symptom"}
+{"id": "aug-01410", "text": "i want to know my back hurts after gardening", "label": "ask_symptom"}
+{"id": "aug-01411", "text": "ankle stiff ni the morning", "label": "ask_symptom"}
+{"id": "aug-01412", "text": "kindly tell me ankle stiff in the morning...", "label": "ask_symptom"}
+{"id": "aug-01413", "text": "i want to know palpitations come and go suddenly", "label": "ask_symptom"}
+{"id": "aug-01414", "text": "palpitations come and go sudednly", "label": "ask_symptom"}
+{"id": "aug-01415", "text": "please tell me palpitations come and go suddenly ?", "label": "ask_symptom"}
+{"id": "aug-01416", "text": "i need to know can i fast in ramadan with afib", "label": "ask_lifestyle"}
+{"id": "aug-01417", "text": "can i fast ni ramadan with afib", "label": "ask_lifestyle"}
+{"id": "aug-01418", "text": "please tell me can i fast in ramadan with afib :)", "label": "ask_lifestyle"}
+{"id": "aug-01419", "text": "safe activity after stent", "label": "ask_lifestyle"}
+{"id": "aug-01420", "text": "please tell me safe exercise after stent", "label": "ask_lifestyle"}
+{"id": "aug-01421", "text": "safe exercise aftre stent", "label": "ask_lifestyle"}
+{"id": "aug-01422", "text": "i want to know safe exercise after stent :)", "label": "ask_lifestyle"}
+{"id": "aug-01423", "text": "could you can i lift after cabg", "label": "ask_lifestyle"}
+{"id": "aug-01424", "text": "can i lift afetr cabg", "label": "ask_lifestyle"}
+{"id": "aug-01425", "text": "can you can i lift after cabg :)", "label": "ask_lifestyle"}
+{"id": "aug-01426", "text": "diet during pregnancy with hihg bp", "label": "ask_lifestyle"}
+{"id": "aug-01427", "text": "i want to know diet during pregnancy with high bp...", "label": "ask_lifestyle"}
+{"id": "aug-01428", "text": "kindly tell me can i drink coffee on ramipril", "label": "ask_lifestyle"}
+{"id": "aug-01429", "text": "can i drnik coffee on ramipril", "label": "ask_lifestyle"}
+{"id": "aug-01430", "text": "can i drink coffee on ramipril ?", "label": "ask_lifestyle"}
+{"id": "aug-01431", "text": "i need to know can children with cardiac disease play sport", "label": "ask_lifestyle"}
+{"id": "aug-01432", "text": "can chlidren with cardiac disease play sport", "label": "ask_lifestyle"}
+{"id": "aug-01433", "text": "could you can children with cardiac disease play sport", "label": "ask_lifestyle"}
+{"id": "aug-01434", "text": "i want to know how is mammogram done", "label": "ask_procedure"}
+{"id": "aug-01435", "text": "how is mammogarm done", "label": "ask_procedure"}
+{"id": "aug-01436", "text": "i need to know how is mammogram done :)", "label": "ask_procedure"}
+{"id": "aug-01437", "text": "what happens in cardiac imaging", "label": "ask_procedure"}
+{"id": "aug-01438", "text": "do you know what happens in cardiac mri", "label": "ask_procedure"}
+{"id": "aug-01439", "text": "what happens in cardica mri", "label": "ask_procedure"}
+{"id": "aug-01440", "text": "could you what happens in cardiac mri please", "label": "ask_procedure"}
+{"id": "aug-01441", "text": "could you how does ablation work", "label": "ask_procedure"}
+{"id": "aug-01442", "text": "how does ablation wokr", "label": "ask_procedure"}
+{"id": "aug-01443", "text": "i need to know how does ablation work ?", "label": "ask_procedure"}
+{"id": "aug-01444", "text": "i want to know how is hand therapy performed", "label": "ask_procedure"}
+{"id": "aug-01445", "text": "how is hand tehrapy performed", "label": "ask_procedure"}
+{"id": "aug-01446", "text": "could you how is hand therapy performed kindly", "label": "ask_procedure"}
+{"id": "aug-01447", "text": "kindly tell me what does an ir drainage involve", "label": "ask_procedure"}
+{"id": "aug-01448", "text": "what does an ir drainage ivnolve", "label": "ask_procedure"}
+{"id": "aug-01449", "text": "i want to know what does an ir drainage involve :)", "label": "ask_procedure"}
+{"id": "aug-01450", "text": "i need to know how is gait analysis done", "label": "ask_procedure"}
+{"id": "aug-01451", "text": "how is gait anaylsis done", "label": "ask_procedure"}
+{"id": "aug-01452", "text": "can you how is gait analysis done thanks", "label": "ask_procedure"}
+{"id": "aug-01453", "text": "can you red flags during ramadan fasting", "label": "ask_warning"}
+{"id": "aug-01454", "text": "red flags during ramadan fastnig", "label": "ask_warning"}
+{"id": "aug-01455", "text": "could you red flags during ramadan fasting...", "label": "ask_warning"}
+{"id": "aug-01456", "text": "please tell me warning signs post cabg", "label": "ask_warning"}
+{"id": "aug-01457", "text": "warning signs psot cabg", "label": "ask_warning"}
+{"id": "aug-01458", "text": "do you know warning signs post cabg...", "label": "ask_warning"}
+{"id": "aug-01459", "text": "i need to know when is leg swelling in pregnancy serious", "label": "ask_warning"}
+{"id": "aug-01460", "text": "when is leg swelling in pregnancy seriuos", "label": "ask_warning"}
+{"id": "aug-01461", "text": "can you when is leg swelling in pregnancy serious...", "label": "ask_warning"}
+{"id": "aug-01462", "text": "do you know when to worry about palpitations", "label": "ask_warning"}
+{"id": "aug-01463", "text": "when to worry about palpitatinos", "label": "ask_warning"}
+{"id": "aug-01464", "text": "when to worry about palpitations kindly", "label": "ask_warning"}
+{"id": "aug-01465", "text": "can you red flags after meniscus surgery", "label": "ask_warning"}
+{"id": "aug-01466", "text": "red flags fater meniscus surgery", "label": "ask_warning"}
+{"id": "aug-01467", "text": "kindly tell me red flags after meniscus surgery kindly", "label": "ask_warning"}
+{"id": "aug-01468", "text": "dangerous symptoms after imaging sedation", "label": "ask_warning"}
+{"id": "aug-01469", "text": "i want to know dangerous symptoms after mri sedation", "label": "ask_warning"}
+{"id": "aug-01470", "text": "dangerous symptoms after mir sedation", "label": "ask_warning"}
+{"id": "aug-01471", "text": "do you know dangerous symptoms after mri sedation...", "label": "ask_warning"}
+{"id": "aug-01472", "text": "i need to know are you using openai", "label": "meta"}
+{"id": "aug-01473", "text": "are you uisng openai", "label": "meta"}
+{"id": "aug-01474", "text": "can you are you using openai :)", "label": "meta"}
+{"id": "aug-01475", "text": "please tell me what data do you have on me", "label": "meta"}
+{"id": "aug-01476", "text": "what data do you hvae on me", "label": "meta"}
+{"id": "aug-01477", "text": "kindly tell me what data do you have on me", "label": "meta"}
+{"id": "aug-01478", "text": "i need to know can you store my chat", "label": "meta"}
+{"id": "aug-01479", "text": "can you store ym chat", "label": "meta"}
+{"id": "aug-01480", "text": "please tell me can you store my chat :)", "label": "meta"}
+{"id": "aug-01481", "text": "can you are you free", "label": "meta"}
+{"id": "aug-01482", "text": "kindly tell me are you free :)", "label": "meta"}
+{"id": "aug-01483", "text": "i want to know what cant you answer", "label": "meta"}
+{"id": "aug-01484", "text": "what cnat you answer", "label": "meta"}
+{"id": "aug-01485", "text": "do you know what cant you answer", "label": "meta"}
+{"id": "aug-01486", "text": "salam dr", "label": "greeting"}
+{"id": "aug-01487", "text": "could you salam doctor", "label": "greeting"}
+{"id": "aug-01488", "text": "salam dotcor", "label": "greeting"}
+{"id": "aug-01489", "text": "i want to know aoa", "label": "greeting"}
+{"id": "aug-01490", "text": "kindly tell me aoa", "label": "greeting"}
+{"id": "aug-01491", "text": "ok morning medfaq", "label": "greeting"}
+{"id": "aug-01492", "text": "can you good morning medfaq", "label": "greeting"}
+{"id": "aug-01493", "text": "good omrning medfaq", "label": "greeting"}
+{"id": "aug-01494", "text": "please tell me good morning medfaq ?", "label": "greeting"}
+{"id": "aug-01495", "text": "could you hello again", "label": "greeting"}
+{"id": "aug-01496", "text": "hello gaain", "label": "greeting"}
+{"id": "aug-01497", "text": "do you know hello again thanks", "label": "greeting"}
+{"id": "aug-01498", "text": "i need to know thanks for the explanation", "label": "thanks"}
+{"id": "aug-01499", "text": "thanks fro the explanation", "label": "thanks"}
+{"id": "aug-01500", "text": "do you know thanks for the explanation ?", "label": "thanks"}
+{"id": "aug-01501", "text": "could you got it appreciate it", "label": "thanks"}
+{"id": "aug-01502", "text": "ogt it appreciate it", "label": "thanks"}
+{"id": "aug-01503", "text": "do you know got it appreciate it :)", "label": "thanks"}
+{"id": "aug-01504", "text": "can you thank you so much", "label": "thanks"}
+{"id": "aug-01505", "text": "thank you so muhc", "label": "thanks"}
+{"id": "aug-01506", "text": "kindly tell me thank you so much ?", "label": "thanks"}
+{"id": "aug-01507", "text": "what can you assist me with", "label": "help"}
+{"id": "aug-01508", "text": "do you know what can you help me with", "label": "help"}
+{"id": "aug-01509", "text": "what acn you help me with", "label": "help"}
+{"id": "aug-01510", "text": "i want to know what can you help me with", "label": "help"}
+{"id": "aug-01511", "text": "i need to know show me topics", "label": "help"}
+{"id": "aug-01512", "text": "hsow me topics", "label": "help"}
+{"id": "aug-01513", "text": "please tell me show me topics thanks", "label": "help"}
+{"id": "aug-01514", "text": "kindly tell me give me some sample questions", "label": "help"}
+{"id": "aug-01515", "text": "give me smoe sample questions", "label": "help"}
+{"id": "aug-01516", "text": "please tell me give me some sample questions...", "label": "help"}

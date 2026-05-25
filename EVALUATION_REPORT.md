@@ -2,21 +2,21 @@
 
 | Metric | Value |
 |---|---:|
-| Precision@1 | **0.931** |
-| MRR | **0.938** |
-| Recall@5 | **0.948** |
-| Median latency | 22.0 ms |
-| p95 latency | 36.0 ms |
-| Queries | 116 |
+| Precision@1 | **0.923** |
+| MRR | **0.934** |
+| Recall@5 | **0.949** |
+| Median latency | 34.0 ms |
+| p95 latency | 48.0 ms |
+| Queries | 156 |
 
 
 ## Per-specialty breakdown
 
 | Specialty | n | P@1 | Recall@5 | MRR |
 |---|---:|---:|---:|---:|
-| cardiovascular | 45 | 0.956 | 0.978 | 0.967 |
-| physiotherapy | 35 | 0.971 | 0.971 | 0.971 |
-| radiology | 36 | 0.861 | 0.889 | 0.870 |
+| cardiovascular | 60 | 0.917 | 0.950 | 0.933 |
+| physiotherapy | 50 | 0.980 | 0.980 | 0.980 |
+| radiology | 46 | 0.870 | 0.913 | 0.886 |
 
 ## Failed queries (rank > 1)
 
@@ -28,5 +28,9 @@
 | what if i miss my hypertension dose | `miss` | What is white coat hypertension? | 2 |
 | hold breath during scan why | `movement` | Why do I have to hold my breath during a scan? | — |
 | exercise through pain ok | `pain` | — | — |
-| vq scan what is it | `ventilation` | What is a PET scan? | 3 |
+| flying after heart attack | `fly` | What is post-MI rehabilitation? | 2 |
+| home bp measurement method | `5 minutes` | What is white coat hypertension? | — |
+| vq scan what is it | `ventilation` | What is a PET scan? | 4 |
 | abdominal ultrasound prep | `fast` | Can I have a scan if I am pregnant? | — |
+| mrcp duration | `MRCP` | How long does an MRI take? | 2 |
+| herbs interfere with heart meds | `interact` | What is pulmonary hypertension? | — |

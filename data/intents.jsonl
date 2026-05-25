@@ -306,3 +306,82 @@
 {"id": "intent-0305", "text": "hello dr radiology", "label": "greeting"}
 {"id": "intent-0306", "text": "thanks i feel better", "label": "thanks"}
 {"id": "intent-0307", "text": "got it thanks", "label": "thanks"}
+{"id": "intent-0308", "text": "what is a mammogram", "label": "ask_definition"}
+{"id": "intent-0309", "text": "what is pulmonary hypertension", "label": "ask_definition"}
+{"id": "intent-0310", "text": "what is hfpef", "label": "ask_definition"}
+{"id": "intent-0311", "text": "what is acl", "label": "ask_definition"}
+{"id": "intent-0312", "text": "what is mrcp", "label": "ask_definition"}
+{"id": "intent-0313", "text": "what is bone scintigraphy", "label": "ask_definition"}
+{"id": "intent-0314", "text": "define gait analysis", "label": "ask_definition"}
+{"id": "intent-0315", "text": "what is hydrotherapy", "label": "ask_definition"}
+{"id": "intent-0316", "text": "what is hand therapy", "label": "ask_definition"}
+{"id": "intent-0317", "text": "define svt", "label": "ask_definition"}
+{"id": "intent-0318", "text": "what is a ct angiogram", "label": "ask_definition"}
+{"id": "intent-0319", "text": "what is post mi rehab", "label": "ask_definition"}
+{"id": "intent-0320", "text": "define paediatric mri sedation", "label": "ask_definition"}
+{"id": "intent-0321", "text": "what is a swallow study", "label": "ask_definition"}
+{"id": "intent-0322", "text": "what is thyroid ultrasound", "label": "ask_definition"}
+{"id": "intent-0323", "text": "what is shin splints", "label": "ask_definition"}
+{"id": "intent-0324", "text": "what is tennis elbow", "label": "ask_definition"}
+{"id": "intent-0325", "text": "what is golfer's elbow", "label": "ask_definition"}
+{"id": "intent-0326", "text": "do i fast before mrcp", "label": "ask_preparation"}
+{"id": "intent-0327", "text": "how to prepare for paediatric mri", "label": "ask_preparation"}
+{"id": "intent-0328", "text": "preparation for swallow study", "label": "ask_preparation"}
+{"id": "intent-0329", "text": "any prep before ct angiogram", "label": "ask_preparation"}
+{"id": "intent-0330", "text": "can i drink water before mammogram", "label": "ask_preparation"}
+{"id": "intent-0331", "text": "any prep for thyroid ultrasound", "label": "ask_preparation"}
+{"id": "intent-0332", "text": "preparation before bone scan", "label": "ask_preparation"}
+{"id": "intent-0333", "text": "recovery after meniscus repair", "label": "ask_recovery"}
+{"id": "intent-0334", "text": "when can i drive after cabg", "label": "ask_recovery"}
+{"id": "intent-0335", "text": "how long after stent placement before sex", "label": "ask_recovery"}
+{"id": "intent-0336", "text": "recovery after acl injury", "label": "ask_recovery"}
+{"id": "intent-0337", "text": "when can i run after calf strain", "label": "ask_recovery"}
+{"id": "intent-0338", "text": "recovery after pacemaker insertion", "label": "ask_recovery"}
+{"id": "intent-0339", "text": "how soon after svt ablation can i exercise", "label": "ask_recovery"}
+{"id": "intent-0340", "text": "herbal remedies with heart meds", "label": "ask_medication"}
+{"id": "intent-0341", "text": "is grapefruit safe with statins", "label": "ask_medication"}
+{"id": "intent-0342", "text": "which bp meds safe in pregnancy", "label": "ask_medication"}
+{"id": "intent-0343", "text": "can i take liquorice with bp medicine", "label": "ask_medication"}
+{"id": "intent-0344", "text": "ginkgo and blood thinner", "label": "ask_medication"}
+{"id": "intent-0345", "text": "breathlessness when climbing stairs", "label": "ask_symptom"}
+{"id": "intent-0346", "text": "my heel is sore in the morning", "label": "ask_symptom"}
+{"id": "intent-0347", "text": "knee gives way after acl tear", "label": "ask_symptom"}
+{"id": "intent-0348", "text": "my shoulder hurts during overhead lifts", "label": "ask_symptom"}
+{"id": "intent-0349", "text": "breath gets short after walking", "label": "ask_symptom"}
+{"id": "intent-0350", "text": "legs swell during pregnancy", "label": "ask_symptom"}
+{"id": "intent-0351", "text": "my back hurts after gardening", "label": "ask_symptom"}
+{"id": "intent-0352", "text": "ankle stiff in the morning", "label": "ask_symptom"}
+{"id": "intent-0353", "text": "palpitations come and go suddenly", "label": "ask_symptom"}
+{"id": "intent-0354", "text": "can i fast in ramadan with afib", "label": "ask_lifestyle"}
+{"id": "intent-0355", "text": "safe exercise after stent", "label": "ask_lifestyle"}
+{"id": "intent-0356", "text": "can i lift after cabg", "label": "ask_lifestyle"}
+{"id": "intent-0357", "text": "diet during pregnancy with high bp", "label": "ask_lifestyle"}
+{"id": "intent-0358", "text": "can i drink coffee on ramipril", "label": "ask_lifestyle"}
+{"id": "intent-0359", "text": "can children with cardiac disease play sport", "label": "ask_lifestyle"}
+{"id": "intent-0360", "text": "how is mammogram done", "label": "ask_procedure"}
+{"id": "intent-0361", "text": "what happens in cardiac mri", "label": "ask_procedure"}
+{"id": "intent-0362", "text": "how does ablation work", "label": "ask_procedure"}
+{"id": "intent-0363", "text": "how is hand therapy performed", "label": "ask_procedure"}
+{"id": "intent-0364", "text": "what does an ir drainage involve", "label": "ask_procedure"}
+{"id": "intent-0365", "text": "how is gait analysis done", "label": "ask_procedure"}
+{"id": "intent-0366", "text": "red flags during ramadan fasting", "label": "ask_warning"}
+{"id": "intent-0367", "text": "warning signs post cabg", "label": "ask_warning"}
+{"id": "intent-0368", "text": "when is leg swelling in pregnancy serious", "label": "ask_warning"}
+{"id": "intent-0369", "text": "when to worry about palpitations", "label": "ask_warning"}
+{"id": "intent-0370", "text": "red flags after meniscus surgery", "label": "ask_warning"}
+{"id": "intent-0371", "text": "dangerous symptoms after mri sedation", "label": "ask_warning"}
+{"id": "intent-0372", "text": "are you using openai", "label": "meta"}
+{"id": "intent-0373", "text": "what data do you have on me", "label": "meta"}
+{"id": "intent-0374", "text": "can you store my chat", "label": "meta"}
+{"id": "intent-0375", "text": "are you free", "label": "meta"}
+{"id": "intent-0376", "text": "what cant you answer", "label": "meta"}
+{"id": "intent-0377", "text": "salam doctor", "label": "greeting"}
+{"id": "intent-0378", "text": "aoa", "label": "greeting"}
+{"id": "intent-0379", "text": "good morning medfaq", "label": "greeting"}
+{"id": "intent-0380", "text": "hello again", "label": "greeting"}
+{"id": "intent-0381", "text": "thanks for the explanation", "label": "thanks"}
+{"id": "intent-0382", "text": "got it appreciate it", "label": "thanks"}
+{"id": "intent-0383", "text": "thank you so much", "label": "thanks"}
+{"id": "intent-0384", "text": "what can you help me with", "label": "help"}
+{"id": "intent-0385", "text": "show me topics", "label": "help"}
+{"id": "intent-0386", "text": "give me some sample questions", "label": "help"}

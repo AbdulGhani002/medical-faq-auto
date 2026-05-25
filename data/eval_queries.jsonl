@@ -114,3 +114,43 @@
 {"id": "eval-0113", "specialty": "cardiovascular", "query": "sleep apnoea and afib", "expected_keyword": "apnoea"}
 {"id": "eval-0114", "specialty": "cardiovascular", "query": "heart murmur", "expected_keyword": "murmur"}
 {"id": "eval-0115", "specialty": "cardiovascular", "query": "broken heart syndrome", "expected_keyword": "takotsubo"}
+{"id": "eval-0116", "specialty": "radiology", "query": "mammogram who needs one", "expected_keyword": "screen"}
+{"id": "eval-0117", "specialty": "radiology", "query": "paediatric mri sedation prep", "expected_keyword": "sedation"}
+{"id": "eval-0118", "specialty": "radiology", "query": "mri during period", "expected_keyword": "menstruation"}
+{"id": "eval-0119", "specialty": "radiology", "query": "warm rush during contrast", "expected_keyword": "flush"}
+{"id": "eval-0120", "specialty": "radiology", "query": "barium swallow study", "expected_keyword": "barium"}
+{"id": "eval-0121", "specialty": "radiology", "query": "ct angiogram", "expected_keyword": "iodine"}
+{"id": "eval-0122", "specialty": "radiology", "query": "thyroid ultrasound", "expected_keyword": "neck"}
+{"id": "eval-0123", "specialty": "radiology", "query": "interventional drainage", "expected_keyword": "drainage"}
+{"id": "eval-0124", "specialty": "radiology", "query": "mrcp duration", "expected_keyword": "MRCP"}
+{"id": "eval-0125", "specialty": "radiology", "query": "bone scintigraphy tracer", "expected_keyword": "tracer"}
+{"id": "eval-0126", "specialty": "physiotherapy", "query": "acl rehab without surgery", "expected_keyword": "rehab"}
+{"id": "eval-0127", "specialty": "physiotherapy", "query": "shin splints fix", "expected_keyword": "shin"}
+{"id": "eval-0128", "specialty": "physiotherapy", "query": "tennis elbow exercises", "expected_keyword": "eccentric"}
+{"id": "eval-0129", "specialty": "physiotherapy", "query": "golfers elbow treatment", "expected_keyword": "medial"}
+{"id": "eval-0130", "specialty": "physiotherapy", "query": "what is hydrotherapy", "expected_keyword": "buoyancy"}
+{"id": "eval-0131", "specialty": "physiotherapy", "query": "postural assessment what for", "expected_keyword": "postur"}
+{"id": "eval-0132", "specialty": "physiotherapy", "query": "breathing physio copd", "expected_keyword": "pulmonary"}
+{"id": "eval-0133", "specialty": "physiotherapy", "query": "meniscus surgery rehab time", "expected_keyword": "meniscus"}
+{"id": "eval-0134", "specialty": "physiotherapy", "query": "balance training elderly", "expected_keyword": "balance"}
+{"id": "eval-0135", "specialty": "physiotherapy", "query": "manual therapy vs chiropractic", "expected_keyword": "manipulation"}
+{"id": "eval-0136", "specialty": "physiotherapy", "query": "osteoarthritis exercise safe", "expected_keyword": "arthritis"}
+{"id": "eval-0137", "specialty": "physiotherapy", "query": "gait analysis why", "expected_keyword": "walk"}
+{"id": "eval-0138", "specialty": "physiotherapy", "query": "what is hand therapy", "expected_keyword": "hand"}
+{"id": "eval-0139", "specialty": "physiotherapy", "query": "flat feet in children", "expected_keyword": "flat feet"}
+{"id": "eval-0140", "specialty": "physiotherapy", "query": "return to running calf strain", "expected_keyword": "calf"}
+{"id": "eval-0141", "specialty": "cardiovascular", "query": "what is pulmonary hypertension", "expected_keyword": "lungs"}
+{"id": "eval-0142", "specialty": "cardiovascular", "query": "hfpef definition", "expected_keyword": "ejection"}
+{"id": "eval-0143", "specialty": "cardiovascular", "query": "ramadan fasting heart patient", "expected_keyword": "Ramadan"}
+{"id": "eval-0144", "specialty": "cardiovascular", "query": "congenital heart disease", "expected_keyword": "birth"}
+{"id": "eval-0145", "specialty": "cardiovascular", "query": "women heart symptoms different", "expected_keyword": "atypical"}
+{"id": "eval-0146", "specialty": "cardiovascular", "query": "post mi rehab", "expected_keyword": "rehab"}
+{"id": "eval-0147", "specialty": "cardiovascular", "query": "post bypass recovery", "expected_keyword": "bypass"}
+{"id": "eval-0148", "specialty": "cardiovascular", "query": "herbs interfere with heart meds", "expected_keyword": "interact"}
+{"id": "eval-0149", "specialty": "cardiovascular", "query": "child heart disease", "expected_keyword": "congenital"}
+{"id": "eval-0150", "specialty": "cardiovascular", "query": "what is svt", "expected_keyword": "supraventricular"}
+{"id": "eval-0151", "specialty": "cardiovascular", "query": "bp meds in pregnancy", "expected_keyword": "pregnancy"}
+{"id": "eval-0152", "specialty": "cardiovascular", "query": "best lifestyle for heart risk", "expected_keyword": "smoking"}
+{"id": "eval-0153", "specialty": "cardiovascular", "query": "cardiac mri", "expected_keyword": "MRI"}
+{"id": "eval-0154", "specialty": "cardiovascular", "query": "icd prevent sudden death", "expected_keyword": "ICD"}
+{"id": "eval-0155", "specialty": "cardiovascular", "query": "afib ablation success", "expected_keyword": "ablation"}

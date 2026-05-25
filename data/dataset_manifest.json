@@ -3,17 +3,17 @@
     {
       "name": "faqs.jsonl",
       "path": "data/faqs.jsonl",
-      "records": 169
+      "records": 214
     },
     {
       "name": "intents.jsonl",
       "path": "data/intents.jsonl",
-      "records": 308
+      "records": 387
     },
     {
       "name": "eval_queries.jsonl",
       "path": "data/eval_queries.jsonl",
-      "records": 116
+      "records": 156
     },
     {
       "name": "chat_logs.jsonl",
@@ -33,7 +33,7 @@
     {
       "name": "kg_triples.jsonl",
       "path": "data/kg_triples.jsonl",
-      "records": 518
+      "records": 634
     }
   ]
 }

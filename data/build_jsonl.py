@@ -217,7 +217,12 @@ def build_intents() -> list[dict]:
         from expand_corpus_v2 import NEW_INTENTS as NEW_INTENTS_V2  # noqa: WPS433
     except ImportError:
         NEW_INTENTS_V2 = []
-    combined = list(_TRAIN) + extra + NEW_INTENTS + NEW_INTENTS_V2
+    try:
+        from expand_corpus_v3 import NEW_INTENTS as NEW_INTENTS_V3  # noqa: WPS433
+    except ImportError:
+        NEW_INTENTS_V3 = []
+    combined = (list(_TRAIN) + extra + NEW_INTENTS
+                + NEW_INTENTS_V2 + NEW_INTENTS_V3)
     seen: set[str] = set()
     deduped: list[tuple[str, str]] = []
     for text, label in combined:
@@ -241,11 +246,15 @@ def build_eval_queries() -> list[dict]:
         from expand_corpus_v2 import NEW_EVAL as NEW_EVAL_V2  # noqa: WPS433
     except ImportError:
         NEW_EVAL_V2 = []
+    try:
+        from expand_corpus_v3 import NEW_EVAL as NEW_EVAL_V3  # noqa: WPS433
+    except ImportError:
+        NEW_EVAL_V3 = []
     out: list[dict] = []
     base = read_json(HERE / "eval_queries.json")
     seen = {(q["query"] or "").strip().lower() for q in base}
     combined = list(base)
-    for q in list(NEW_EVAL) + list(NEW_EVAL_V2):
+    for q in list(NEW_EVAL) + list(NEW_EVAL_V2) + list(NEW_EVAL_V3):
         key = (q["query"] or "").strip().lower()
         if key in seen:
             continue
