@@ -109,7 +109,32 @@ async def stats(specialty: str):
         "rejected": await db.faqs.count_documents(
             {"specialty": specialty, "rejected": True}
         ),
+        "auto_generated_pending": await db.faqs.count_documents(
+            {"specialty": specialty, "approved": False,
+             "rejected": {"$ne": True}, "auto_generated": True}
+        ),
         "chat_turns": await db.chat_turns.count_documents(
             {"specialty": specialty}
         ),
     }
+
+
+# -------------- auto-FAQ mining --------------
+
+
+@router.get("/mining/status")
+async def mining_status():
+    from app.services.auto_faq import queue_status
+    return await queue_status()
+
+
+@router.post("/mining/run/{specialty}")
+async def mining_run(specialty: str):
+    from app.services.auto_faq import force_cluster
+    return await force_cluster(specialty)
+
+
+@router.get("/generator/stats")
+async def generator_stats():
+    from app.services.generator import stats
+    return stats()

@@ -154,6 +154,17 @@ class DialogMeta(BaseModel):
     ltr_used: bool = False
 
 
+class GenerationInfo(BaseModel):
+    mode: str
+    text: Optional[str] = None
+    generated_text: Optional[str] = None
+    retrieved_text: Optional[str] = None
+    grounding_similarity: Optional[float] = None
+    overlap: Optional[float] = None
+    reason: Optional[str] = None
+    model: Any = None
+
+
 class ChatResponse(BaseModel):
     answer: str
     matched_faq_id: Optional[str] = None
@@ -170,6 +181,7 @@ class ChatResponse(BaseModel):
     nlp: Optional[NLPAnalysis] = None
     dialog: DialogMeta = Field(default_factory=DialogMeta)
     summary: Optional[str] = None
+    generation: Optional[GenerationInfo] = None
 
 
 class FAQItem(BaseModel):

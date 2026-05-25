@@ -2,11 +2,11 @@
 
 | Metric | Value |
 |---|---:|
-| Precision@1 | **0.923** |
-| MRR | **0.934** |
-| Recall@5 | **0.949** |
-| Median latency | 34.0 ms |
-| p95 latency | 48.0 ms |
+| Precision@1 | **0.929** |
+| MRR | **0.941** |
+| Recall@5 | **0.955** |
+| Median latency | 101.0 ms |
+| p95 latency | 136.0 ms |
 | Queries | 156 |
 
 
@@ -16,13 +16,12 @@
 |---|---:|---:|---:|---:|
 | cardiovascular | 60 | 0.917 | 0.950 | 0.933 |
 | physiotherapy | 50 | 0.980 | 0.980 | 0.980 |
-| radiology | 46 | 0.870 | 0.913 | 0.886 |
+| radiology | 46 | 0.891 | 0.935 | 0.908 |
 
 ## Failed queries (rank > 1)
 
 | Query | Expected | Matched | Rank |
 |---|---|---|---:|
-| wat is mri vs ct | `magnetic` | What is the difference between an MRI and a CT scan? | — |
 | pet scan | `positron` | What is a PET-CT scan? | — |
 | when to take bp meds | `once a day` | What is white coat hypertension? | — |
 | what if i miss my hypertension dose | `miss` | What is white coat hypertension? | 2 |

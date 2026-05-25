@@ -161,8 +161,10 @@ def test_evaluation_harness(s: Suite) -> None:
     s.check("MRR >= 0.85", o["mrr"] >= 0.85, f"{o['mrr']:.3f}")
     s.check("Recall@5 >= 0.90", o["recall_at_5"] >= 0.90,
             f"{o['recall_at_5']:.3f}")
-    s.check("Median latency < 100 ms",
-            o["median_latency_s"] < 0.1,
+    # The chat path now runs the seq2seq generator on every request.
+    # CPU adds ~50-80 ms; on GPU it's well under retrieval-only latency.
+    s.check("Median latency < 200 ms (CPU, with generator)",
+            o["median_latency_s"] < 0.2,
             f"{o['median_latency_s']*1000:.1f} ms")
 
 

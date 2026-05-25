@@ -315,6 +315,17 @@ async def retrieve_answer(
 
     # 9. Build the answer payload.
     response: dict
+    # Auto-FAQ mining queue: feed both genuine misses and weak matches.
+    # Threshold of 0.45 catches off-topic / out-of-distribution queries
+    # while letting legitimate eval-set queries (0.6+) flow to retrieval.
+    top_score_for_mining = info["top"]["score"] if info.get("top") else 0.0
+    if info["bucket"] == "none" or top_score_for_mining < 0.45:
+        try:
+            from app.services.auto_faq import enqueue_unmatched
+            await enqueue_unmatched(specialty, text)
+        except Exception:
+            pass
+
     if info["bucket"] == "none" or info["top"] is None:
         body_text = clar or (
             "I do not have a good match for that. Try rephrasing or pick "
@@ -341,8 +352,20 @@ async def retrieve_answer(
         if intro:
             prefix_parts.append(intro.strip())
         prefix = ("\n\n".join(prefix_parts) + "\n\n") if prefix_parts else ""
-        answer_text = prefix + faq["answer"]
-        highlighted = _highlight_payload(faq["answer"], contextual)
+
+        # Machine-write the answer via the from-scratch seq2seq. The
+        # generator is grounded by the retrieved FAQ — if its output
+        # diverges from the retrieved text we fall back to retrieval.
+        try:
+            from app.services.generator import grounded_generate
+            gen_payload = grounded_generate(text, faq["answer"])
+        except Exception:
+            gen_payload = {"mode": "retrieval_only",
+                           "text": faq["answer"],
+                           "grounding_similarity": None}
+        body_text = gen_payload.get("text", faq["answer"])
+        answer_text = prefix + body_text
+        highlighted = _highlight_payload(body_text, contextual)
 
         # Optional cross-doc summary for the debug panel.
         summary = None
@@ -376,6 +399,7 @@ async def retrieve_answer(
                 "matched_question": faq["question"],
             },
             "highlighted": highlighted,
+            "generation": gen_payload,
             "nlp": analysis,
             "dialog": {
                 "opener": opener,
