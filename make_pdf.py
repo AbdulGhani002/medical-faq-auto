@@ -597,9 +597,80 @@ def make_pdf() -> None:
         "Add audit and rollback for the FAQ approval workflow.",
     ]))
 
+    # ---------- chapter: team split ----------
+    story.append(PageBreak())
+    story.append(head("13. Who built what (4 NLP-heavy roles)"))
+    story.append(p(
+        "The project was split four ways. Every member owns at least "
+        "one trainable model or classifier plus a slice of the "
+        "classical NLP stack. Full breakdown in TEAM_ROLES.md."
+    ))
+
+    story.append(sub("Member 1: Abdul Ghani (F23607005). Token + Retrieval NLP"))
+    story.append(p(
+        "Owns everything that turns a raw user message into a vector "
+        "matched against the FAQ index."
+    ))
+    story.extend(bullets([
+        "Tokeniser, Porter stemmer, rule-based lemmatiser",
+        "POS tagger (lexicon plus suffix heuristics) and HMM POS tagger with Viterbi decoding",
+        "Damerau-Levenshtein spell corrector, synonym expansion, Roman-Urdu phonetic normaliser",
+        "TF-IDF vectoriser (word and char n-grams), BM25 Okapi, randomised truncated SVD for LSA",
+        "PPMI word embeddings, Word2Vec skip-gram with negative sampling, BPE tokenizer",
+        "Interpolated Kneser-Ney n-gram language model, Word Mover's Distance, PRF query expansion",
+        "5-channel hybrid retrieval blender that mixes TF-IDF (word and char) plus BM25 plus LSA plus PPMI",
+        "Chat widget UI, score breakdown popover, /playground page for live NLP visualisation",
+    ]))
+
+    story.append(sub("Member 2: Anas Bhatti (F23607044). Extraction + Classification NLP"))
+    story.append(p(
+        "Owns every classifier and tagger that turns the message into "
+        "labels, entities, sentiment, intent."
+    ))
+    story.extend(bullets([
+        "Medical NER: dictionary longest match, structured perceptron, linear-chain CRF with forward backward plus Viterbi (from scratch)",
+        "Negation scope detector (NegEx style), sentiment analyser (lexicon plus intensifiers plus negation flip), triage and urgency detector",
+        "Question type classifier, slot extractor, TextRank keyword extractor, TextRank summariser",
+        "Knowledge-graph subject verb object triple extractor",
+        "Three intent classifiers: Naive Bayes (myml), MLP with backprop (myml), Transformer in PyTorch (every layer hand written)",
+        "Final NLP debug panel on the chat reply, /architecture page write-up and SVG diagram",
+        "Intent classifier evaluation with held out F1 and confusion matrix",
+    ]))
+
+    story.append(sub("Member 3: Muhammad Salman (F23607037). Generation + Dialog NLP"))
+    story.append(p(
+        "Owns the two heaviest neural models in the project plus the "
+        "real time auto FAQ pipeline."
+    ))
+    story.extend(bullets([
+        "Seq2seq encoder decoder with Bahdanau attention, every layer (bi LSTM encoder, additive attention, LSTM decoder, output head) written from scratch in PyTorch",
+        "Grounded generation service that picks generated text only when its cosine similarity to the retrieved FAQ is high enough",
+        "MLP with backprop, dual encoder bi encoder (Siamese towers plus InfoNCE), K Means clustering",
+        "Real time auto FAQ miner: unmatched questions go into a queue, clustered every 5 turns, clusters of size 3 or more become candidate FAQs",
+        "Dialog manager: empathic openers, triage banners, clarification prompts, disambiguation cards, span highlighter",
+        "MMR diversification, learning to rank reranker, pronoun coreference",
+        "Live FAQ count tracker that uses MongoDB increment so popular FAQs surface to the top automatically",
+    ]))
+
+    story.append(sub("Member 4: Data + Evaluation + Deploy"))
+    story.append(p(
+        "Owns the corpus, the evaluation, and the path from a fresh "
+        "laptop to a running stack."
+    ))
+    story.extend(bullets([
+        "214 hand written clinician style FAQs across the three specialties",
+        "Three rounds of corpus expansion plus 6 way intent augmentation (387 curated to 1517 examples)",
+        "14,357 synthetic chat sessions generated with paraphrase rules and follow up turns",
+        "PHI scrub for CNIC, phone, email, dates. Mongo schema and auto seeding from JSONL on first boot",
+        "The offline chat log to FAQ candidate pipeline (ingest, segment, normalise, embed using TF-IDF, cluster using K-Means, select, polish, publish)",
+        "Evaluation harness with Precision at 1, MRR, Recall at 5, latency, per specialty breakdown",
+        "62 test integration suite, end to end test, ablation study, pytest unit tests",
+        "Docker setup with healthchecks and auto seeding, slide deck, this PDF, RAR archive",
+    ]))
+
     # ---------- final page: file index ----------
     story.append(PageBreak())
-    story.append(head("13. Quick file index"))
+    story.append(head("14. Quick file index"))
     story.append(three_col_table(
         ["Path", "Kind", "What it does"],
         [

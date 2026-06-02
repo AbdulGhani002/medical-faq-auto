@@ -13,7 +13,17 @@ A semester project that builds a clinician-grade chatbot for
 Radiology, Physiotherapy and Cardiology without using any pretrained
 LLM. Every model is trained from scratch in numpy or PyTorch.
 
-NUTECH, 6th semester · Group: Abdul Ghani · Anas Bhatti · Muhammad Salman · +2
+NUTECH, 6th semester · Group: Abdul Ghani · Anas Bhatti · Muhammad Salman · 5th member
+
+Roles are split 4 ways so every member owns substantial NLP work. Full
+breakdown in [TEAM_ROLES.md](TEAM_ROLES.md). Summary:
+
+| Member | NLP ownership |
+|---|---|
+| Abdul Ghani | Token + Retrieval: tokeniser, stemmer, lemmatiser, POS (lexicon + HMM), spell correct, Roman-Urdu, TF-IDF, BM25, LSA, PPMI, Word2Vec, BPE, Kneser-Ney LM, WMD, PRF, hybrid blender |
+| Anas Bhatti | Extraction + Classification: NER (dict + perceptron + CRF), negation, sentiment, triage, question type, slots, TextRank, KG triples, NB + MLP + Transformer intent |
+| Muhammad Salman | Generation + Dialog: seq2seq with Bahdanau attention, grounded generator, MLP, dual encoder, K-Means, real-time auto-FAQ miner, dialog manager, MMR, LTR, coref |
+| 5th member | Data + Eval + Deploy: 214 hand-written FAQs, 6-way augmentation (1517 examples), 14k synthetic sessions, PHI scrub, mining pipeline, eval harness, integration suite, Docker |
 
 ---
 

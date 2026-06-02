@@ -137,7 +137,7 @@ _add_text(s, 0.7, 3.8, 12.0, 0.6,
           "Retrieval-only chatbot · no LLM · every model built from scratch",
           size=18, color=MUTED)
 _add_text(s, 0.7, 5.4, 12.0, 0.45,
-          "Abdul Ghani · Anas Bhatti · Muhammad Salman · 2 teammates",
+          "Abdul Ghani · Anas Bhatti · Muhammad Salman · 5th member",
           size=14, color=INK)
 _add_text(s, 0.7, 5.95, 12.0, 0.45,
           "NUTECH · 6th semester · github.com/AbdulGhani002/medical-faq-auto",
@@ -337,7 +337,36 @@ _add_bullets(s, 0.6, 1.4, 12.4, 5.7,
              ], size=15)
 
 
-# -------- Slide 10: Demo --------
+# -------- Slide 10: Team split (4 NLP-heavy roles) --------
+s = new_slide()
+_add_text(s, 0.5, 0.4, 12, 0.7,
+          "Team — 4 NLP-heavy roles",
+          size=32, bold=True, color=INK)
+_add_text(s, 0.5, 1.25, 12, 0.5,
+          "Every member owns trained models or classical NLP modules.",
+          size=14, color=MUTED)
+_add_bullets(s, 0.6, 1.95, 12.4, 5.2,
+             [
+              ("Member 1 — Abdul Ghani (F23607005). Token + Retrieval NLP",
+               "tokeniser, Porter stemmer, lemmatiser, lexicon + HMM POS, spell correct, "
+               "Roman-Urdu, TF-IDF (word + char), BM25, LSA, PPMI, Word2Vec, BPE, "
+               "Kneser-Ney LM, WMD, PRF, 5-channel blender + chat UI + /playground"),
+              ("Member 2 — Anas Bhatti (F23607044). Extraction + Classification NLP",
+               "Medical NER (dict + perceptron + linear-chain CRF), negation, sentiment, "
+               "triage, question type, slot extractor, TextRank keywords + summary, KG "
+               "triples, Naive Bayes + MLP + Transformer intent classifier, /architecture"),
+              ("Member 3 — Muhammad Salman (F23607037). Generation + Dialog NLP",
+               "Seq2seq encoder-decoder with Bahdanau attention, grounded generator, "
+               "MLP, dual encoder, K-Means, real-time auto-FAQ miner, dialog manager, "
+               "MMR diversification, LTR reranker, coreference, live FAQ counters"),
+              ("Member 4 — Data + Eval + Deploy",
+               "214 hand-written FAQs, 6-way intent augmentation (1517 examples), "
+               "14,357 synthetic chat sessions, PHI scrub, offline mining pipeline, "
+               "eval harness (P@1, MRR, Recall@5), 62-test integration suite, Docker"),
+             ], size=12)
+
+
+# -------- Slide 11: Demo --------
 s = new_slide()
 _add_text(s, 0.5, 0.4, 12, 0.7,
           "Live demo · how to run",

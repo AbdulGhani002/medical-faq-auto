@@ -164,12 +164,13 @@ python api/eval.py
 #   p50 latency : 20 ms
 ```
 
-## Group members
+## Group members (4 people, every role owns NLP)
 
-| # | Member | Focus area |
-|---|---|---|
-| 1 | Abdul Ghani (F23607005) | Frontend and UI |
-| 2 | Anas Bhatti (F23607044)  | Conversation processing |
-| 3 | Muhammad Salman (F23607037) | Embedding and clustering |
-| 4 | [Member 4] | Backend, APIs, data |
-| 5 | [Member 5] | Selection, issues, eval |
+| # | Member | Focus area | Owns |
+|---|---|---|---|
+| 1 | Abdul Ghani (F23607005) | Token + Retrieval NLP | tokeniser, stemmer, lemmatiser, POS (lexicon + HMM), spell correct, Roman-Urdu, TF-IDF, BM25, LSA, PPMI, Word2Vec, BPE, Kneser-Ney LM, WMD, PRF, hybrid blender, chat UI, /playground |
+| 2 | Anas Bhatti (F23607044) | Extraction + Classification NLP | NER (dictionary + perceptron + CRF), negation, sentiment, triage, question type, slots, TextRank keywords + summary, KG triples, NB + MLP + Transformer intent, /architecture page |
+| 3 | Muhammad Salman (F23607037) | Generation + Dialog NLP | seq2seq with Bahdanau attention, grounded generator, MLP, dual encoder, K-Means, real-time auto-FAQ miner, dialog manager, MMR, LTR, coref, live FAQ counters |
+| 4 | (5th group member) | Data + Evaluation + Deploy | 214 curated FAQs, 6-way intent augmentation, 14k synthetic chat sessions, PHI scrub, offline mining pipeline, eval harness, integration suite, MongoDB + Docker, slides + PDF |
+
+Full role descriptions in [`TEAM_ROLES.md`](TEAM_ROLES.md).
