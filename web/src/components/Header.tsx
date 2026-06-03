@@ -1,5 +1,6 @@
 import Link from "next/link";
 import BrandMark from "./BrandMark";
+import StartChattingMenu from "./StartChattingMenu";
 
 const NAV = [
   { href: "/", label: "Home" },
@@ -33,25 +34,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <Link
-          href="/chat/radiology"
-          className="hidden sm:inline-flex items-center gap-2 bg-stone-950 text-white text-[13px] font-medium px-4 py-2 rounded-full hover:bg-stone-800 transition shadow-card"
-        >
-          Start chatting
-          <svg
-            width="12"
-            height="12"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2.4"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden
-          >
-            <path d="M5 12h14M13 5l7 7-7 7" />
-          </svg>
-        </Link>
+        <StartChattingMenu />
       </div>
     </header>
   );
