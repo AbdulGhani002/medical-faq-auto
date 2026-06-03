@@ -47,12 +47,6 @@ def _load_all(repo_root: Path) -> list[dict]:
         items.extend(chunk)
         print(f"  loaded {len(chunk):3d} from {name}")
 
-    # 3. Back-compat with the old single-file seed.
-    legacy = repo_root / "data" / "seed_faqs.json"
-    if legacy.exists() and not items:
-        with legacy.open("r", encoding="utf-8") as f:
-            items = json.load(f)
-        print(f"  loaded {len(items)} from legacy seed_faqs.json")
     return items
 
 

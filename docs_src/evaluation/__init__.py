@@ -1,1 +1,0 @@
-"""Evaluation methodology document modules."""

@@ -47,12 +47,12 @@ logs/
 .zed/
 .cursor/
 
-# Test artifacts / generated dumps
+# Test artifacts / generated dumps (regenerable via eval.py / ablate.py / etc.)
 *.html
-!docs_src/**/*.html
 eval_results.json
 e2e_results.json
 intent_eval_results.json
+intent_eval.json
 ablation_results.json
 api/eval_results.json
 api/e2e_results.json
@@ -60,6 +60,12 @@ api/intent_eval_results.json
 api/ablation_results.json
 data/faq_candidates.jsonl
 data/kg_triples.jsonl
+
+# Auto-generated markdown reports (regenerable via the matching script)
+EVALUATION_REPORT.md
+INTENT_EVAL.md
+ABLATION_REPORT.md
+NLP_UPGRADE_REPORT.md
 
 # Trained model checkpoints (regenerate via python api/train_transformer.py)
 api/app/myml/checkpoints/

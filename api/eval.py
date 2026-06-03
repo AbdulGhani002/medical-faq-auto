@@ -45,10 +45,6 @@ def _post(path: str, body: dict) -> dict:
 
 def _load_eval() -> list[dict]:
     path = ROOT / "data" / "eval_queries.jsonl"
-    if not path.is_file():
-        legacy = ROOT / "data" / "eval_queries.json"
-        with legacy.open("r", encoding="utf-8") as f:
-            return json.load(f)
     out: list[dict] = []
     with path.open("r", encoding="utf-8") as f:
         for line in f:
