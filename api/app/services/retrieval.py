@@ -229,6 +229,21 @@ async def retrieve_answer(
             dialog={"chitchat": True},
         )
 
+    # 2a. Scope guard. If the message is clearly out of scope (sexual
+    # health, sports, finance, recipes, etc.) we deflect politely
+    # instead of returning the closest medical FAQ by accident.
+    from app.nlp.scope import looks_out_of_scope, deflection_message
+    is_oos, oos_hits = looks_out_of_scope(text)
+    if is_oos:
+        return _empty_response(
+            deflection_message(specialty),
+            confidence=1.0,
+            bucket="confident",
+            intent="out_of_scope",
+            nlp=analysis,
+            dialog={"chitchat": True, "out_of_scope_cues": oos_hits},
+        )
+
     # 3. Load (or build) per-specialty index and corrector.
     idx, faqs, corr = await _ensure_index(specialty)
     if idx is None or corr is None:
@@ -245,17 +260,25 @@ async def retrieve_answer(
 
     # 4a. Roman-Urdu phonetic expansion (Pakistan-friendly input).
     ru_edits: list[dict] = []
-    if contains_roman_urdu(resolved_text):
+    has_roman_urdu = contains_roman_urdu(resolved_text)
+    if has_roman_urdu:
         resolved_text, ru_edits = expand_roman_urdu(resolved_text)
 
     # 5. Context augmentation if the message is a short follow-up.
     prev_text = await _previous_user_text(sid, text)
     contextual = augment_with_context(resolved_text, prev_text)
 
-    # 6. Spell correction against FAQ vocabulary.
+    # 6. Spell correction against FAQ vocabulary. We deliberately skip
+    # tokens that look like Roman-Urdu so the corrector does not
+    # silently turn "mere" into "more" or "masla" into "mask".
+    from app.nlp.roman_urdu import URDU_TO_EN
     raw_tokens = tokenize(contextual, drop_stopwords=False)
     fix_targets = [
-        t for t in raw_tokens if t not in _STOPWORDS and len(t) >= 4
+        t for t in raw_tokens
+        if t not in _STOPWORDS
+        and len(t) >= 4
+        and t not in URDU_TO_EN
+        and not (has_roman_urdu and t.endswith(("i", "a", "ay", "ein")))
     ]
     fixed_subset, fixes = corr.correct(fix_targets)
     fix_map = {orig: fixed for orig, fixed in zip(fix_targets, fixed_subset)}
@@ -344,11 +367,18 @@ async def retrieve_answer(
         intro = ""
         if info["bucket"] == "best_guess":
             intro = "I am not fully sure, but the closest match is:\n\n"
+        # The banner is delivered separately in dialog.banner and the
+        # frontend renders it as its own coloured card; don't repeat
+        # the same text inside the answer body.
         prefix_parts: list[str] = []
-        if banner:
-            prefix_parts.append(banner)
         if opener:
             prefix_parts.append(opener.strip())
+        # Cross-specialty hint: e.g. asking about chest pain inside the
+        # radiology assistant suggests trying the cardiology one.
+        from app.nlp.specialty_router import maybe_suggest_switch
+        switch_hint = maybe_suggest_switch(text, specialty, top["score"])
+        if switch_hint:
+            prefix_parts.append(switch_hint)
         if intro:
             prefix_parts.append(intro.strip())
         prefix = ("\n\n".join(prefix_parts) + "\n\n") if prefix_parts else ""

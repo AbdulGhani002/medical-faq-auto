@@ -104,6 +104,25 @@ URDU_TO_EN: dict[str, list[str]] = {
     "salaam": ["hello"], "salam": ["hello"],
     "assalam": ["hello"], "assalamoalaikum": ["hello"],
     "shukria": ["thanks"], "shukriya": ["thanks"], "mehrbani": ["thanks"],
+
+    # Possessives + connectives. Kept in the dictionary so the spell
+    # corrector skips them instead of force-fitting to nonsense words.
+    "mera": [], "meri": [], "mere": [], "mujhe": [],
+    "aap": [], "tum": [], "apne": [], "apni": [], "apna": [],
+    "ka": [], "ki": [], "ke": [],
+    "mein": [], "se": [], "par": [], "kuch": [],
+
+    # General medical complaint words.
+    "masla": ["problem"], "maslay": ["problem"], "masail": ["problems"],
+    "takleef": ["pain", "discomfort"],
+    "tabiat": ["health"], "tabyat": ["health"],
+    "halat": ["condition"],
+    "shikayat": ["complaint"], "shikayet": ["complaint"],
+    "ilaaj": ["treatment"], "ilaj": ["treatment"],
+    "dawai": ["medicine"], "dawa": ["medicine"], "goli": ["tablet"],
+    "operation": ["surgery"],
+    "behtar": ["better"], "kamzori": ["weakness"], "thakaan": ["fatigue"],
+    "ghabrahat": ["anxiety"], "ghabraahat": ["anxiety"],
 }
 
 

@@ -52,20 +52,62 @@ def _normalise(text: str) -> str:
     return re.sub(r"\s+", " ", t)
 
 
+# Medical keywords that, if they appear ANYWHERE in the message, mean
+# the user is asking a real medical question and the greeting / thanks /
+# help shortcuts must not fire. Otherwise "hi i am feeling pain in my
+# heart" matches greeting and the user never gets a real reply.
+_MEDICAL_HINTS = {
+    "pain", "ache", "hurt", "hurts", "hurting", "sore", "sick", "ill",
+    "fever", "cough", "blood", "swelling", "swollen", "dizzy",
+    "vomit", "vomiting", "nausea", "breath", "breathless", "breathing",
+    "rash", "wound", "burn", "bleed", "bleeding", "numb",
+    "heart", "chest", "head", "back", "knee", "leg", "arm", "stomach",
+    "neck", "shoulder", "hip", "ankle", "wrist", "throat", "eye",
+    "ear", "tooth", "ribs", "lung", "kidney", "liver", "skin",
+    "mri", "ct", "scan", "x-ray", "xray", "ultrasound", "ecg", "ekg",
+    "echo", "biopsy", "stent", "angiogram", "physio", "rehab",
+    "bp", "cholesterol", "diabetes", "hypertension", "stroke",
+    "afib", "angina", "asthma",
+    "medicine", "medication", "drug", "tablet", "pill", "dose",
+    "appointment", "report",
+    # Roman-Urdu
+    "dard", "dil", "sar", "kamar", "pet", "khansi", "bukhar",
+    "ghutna", "ghutne", "seenay", "saans", "kharish",
+}
+
+
+def _has_medical_hint(text: str) -> bool:
+    toks = set(re.findall(r"[a-z]+", text.lower()))
+    return bool(toks & _MEDICAL_HINTS)
+
+
 def classify(text: str) -> str:
     t = _normalise(text)
     if not t:
         return "question"
 
-    if any(t == g or t.startswith(g + " ") for g in _GREETINGS):
+    # Meta questions about the bot itself never get suppressed.
+    if any(phrase in t for phrase in _META_PHRASES):
+        return "meta"
+
+    # If the message contains any medical hint, route to retrieval no
+    # matter how it starts. "hi i am feeling pain in my heart" must
+    # never be filed as a greeting.
+    if _has_medical_hint(t):
+        return "question"
+
+    # Greeting / thanks / help only fire on short messages that are
+    # truly nothing more than that greeting plus optional politeness.
+    tokens = re.findall(r"[a-z]+", t)
+    short = len(tokens) <= 5
+
+    if short and any(t == g or t.startswith(g + " ") for g in _GREETINGS):
         return "greeting"
-    if any(t == g or t.startswith(g + " ") for g in _THANKS):
+    if short and any(t == g or t.startswith(g + " ") for g in _THANKS):
         return "thanks"
     if any(t == g or g in t for g in _FRUSTRATION):
         return "frustration"
-    if any(phrase in t for phrase in _META_PHRASES):
-        return "meta"
-    if any(t == g or t.startswith(g) for g in _HELP):
+    if short and any(t == g or t.startswith(g) for g in _HELP):
         return "help"
     return "question"
 

@@ -45,7 +45,14 @@ _SEVERE_PATTERNS = [
 
 _MODERATE_PATTERNS = [
     r"\bchest pain\b",
+    r"\bpain in (my |the )?chest\b",         # "pain in my chest"
+    r"\bchest hurts?\b",
     r"\bchest tightness\b",
+    r"\bchest tight\b",
+    r"\bheart pain\b",
+    r"\bpain in (my |the )?heart\b",         # "pain in my heart"
+    r"\bheart hurts?\b",
+    r"\bheart problem\b",
     r"\bsevere headache\b",
     r"\bshortness of breath\b",
     r"\bvery breathless\b",
@@ -61,6 +68,10 @@ _MODERATE_PATTERNS = [
     r"\bsudden weight loss\b",
     r"\bhigh fever\b",
     r"\b40 ?degrees\b",
+    # Roman-Urdu equivalents
+    r"\bdil (mein|ka) dard\b",               # "dil mein/ka dard"
+    r"\bdil ka masla\b",                     # "dil ka masla"
+    r"\bseenay mein dard\b",                 # "seenay mein dard"
 ]
 
 _MILD_PATTERNS = [
