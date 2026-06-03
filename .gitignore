@@ -67,6 +67,9 @@ INTENT_EVAL.md
 ABLATION_REPORT.md
 NLP_UPGRADE_REPORT.md
 
+# Office lock files (created when Word / PowerPoint has the doc open)
+~$*
+
 # Trained model checkpoints (regenerate via python api/train_transformer.py)
 api/app/myml/checkpoints/
 *.pt
