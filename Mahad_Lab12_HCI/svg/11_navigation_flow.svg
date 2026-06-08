@@ -1,0 +1,103 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1280' height='720' viewBox='0 0 1280 720'>
+<rect x='0' y='0' width='1280' height='720' rx='0' ry='0' fill='#EEF3F5' stroke='none' stroke-width='1' opacity='1'/>
+<text x='40' y='50' font-size='28' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Navigation &amp; Interaction Flow</text>
+<text x='40' y='76' font-size='14' fill='#64748B' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Screen transitions, decision points &amp; error-handling paths (Step 9)</text>
+<rect x='60' y='150' width='150' height='64' rx='12' ry='12' fill='#FFFFFF' stroke='#94A3B8' stroke-width='2' opacity='1'/>
+<text x='135.0' y='176.0' font-size='14' fill='#0F172A' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Splash</text>
+<text x='135.0' y='196.0' font-size='10.5' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>auto check</text>
+<rect x='60' y='320' width='150' height='64' rx='12' ry='12' fill='#FFFFFF' stroke='#0F8B8D' stroke-width='2' opacity='1'/>
+<text x='135.0' y='346.0' font-size='14' fill='#0F172A' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Login</text>
+<text x='135.0' y='366.0' font-size='10.5' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Screen 1</text>
+<polygon points='420,307.0 495.0,352 420,397.0 345.0,352' fill='#FFF7ED' stroke='#F59E0B' stroke-width='2'/><text x='420' y='356' font-size='12' fill='#92400E' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Valid?</text>
+<rect x='330' y='470' width='180' height='60' rx='12' ry='12' fill='#FEF2F2' stroke='#E11D48' stroke-width='2' opacity='1'/>
+<text x='420.0' y='494.0' font-size='14' fill='#991B1B' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Error state</text>
+<text x='420.0' y='514.0' font-size='10.5' fill='#991B1B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>inline message</text>
+<rect x='560' y='150' width='170' height='64' rx='12' ry='12' fill='#FFFFFF' stroke='#0F8B8D' stroke-width='2' opacity='1'/>
+<text x='645.0' y='176.0' font-size='14' fill='#0F172A' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Dashboard</text>
+<text x='645.0' y='196.0' font-size='10.5' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Screen 2</text>
+<rect x='800' y='150' width='170' height='64' rx='12' ry='12' fill='#FFFFFF' stroke='#0F8B8D' stroke-width='2' opacity='1'/>
+<text x='885.0' y='176.0' font-size='14' fill='#0F172A' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Doctor Search</text>
+<text x='885.0' y='196.0' font-size='10.5' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Screen 3</text>
+<rect x='800' y='300' width='170' height='64' rx='12' ry='12' fill='#FFFFFF' stroke='#0F8B8D' stroke-width='2' opacity='1'/>
+<text x='885.0' y='326.0' font-size='14' fill='#0F172A' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Appointment</text>
+<text x='885.0' y='346.0' font-size='10.5' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Screen 4</text>
+<polygon points='1090,287.0 1165.0,332 1090,377.0 1015.0,332' fill='#FFF7ED' stroke='#F59E0B' stroke-width='2'/><text x='1090' y='336' font-size='12' fill='#92400E' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Confirm?</text>
+<rect x='1020' y='470' width='180' height='60' rx='12' ry='12' fill='#F1F5F9' stroke='#94A3B8' stroke-width='2' opacity='1'/>
+<text x='1110.0' y='494.0' font-size='14' fill='#0F172A' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Back to list</text>
+<text x='1110.0' y='514.0' font-size='10.5' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>re-select</text>
+<rect x='800' y='470' width='170' height='64' rx='12' ry='12' fill='#FFFFFF' stroke='#0F8B8D' stroke-width='2' opacity='1'/>
+<text x='885.0' y='496.0' font-size='14' fill='#0F172A' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Payment</text>
+<text x='885.0' y='516.0' font-size='10.5' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Screen 5</text>
+<rect x='560' y='470' width='170' height='64' rx='12' ry='12' fill='#ECFDF5' stroke='#16A34A' stroke-width='2' opacity='1'/>
+<text x='645.0' y='496.0' font-size='14' fill='#15803D' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Success</text>
+<text x='645.0' y='516.0' font-size='10.5' fill='#15803D' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Screen 6</text>
+<rect x='560' y='300' width='170' height='64' rx='12' ry='12' fill='#FFFFFF' stroke='#0F8B8D' stroke-width='2' opacity='1'/>
+<text x='645.0' y='326.0' font-size='14' fill='#0F172A' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Profile / Records</text>
+<text x='645.0' y='346.0' font-size='10.5' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>side nav</text>
+<line x1='135' y1='214' x2='135' y2='320' stroke='#0F8B8D' stroke-width='2.2'/>
+<polygon points='135,320 131,311 139,311' fill='#0F8B8D'/>
+<line x1='210' y1='352' x2='345' y2='352' stroke='#0F8B8D' stroke-width='2.2'/>
+<polygon points='345,352 336,356 336,348' fill='#0F8B8D'/>
+<rect x='257.1' y='330.0' width='40.8' height='18' rx='4' ry='4' fill='#FFFFFF' stroke='#0F8B8D' stroke-width='1' opacity='1'/>
+<text x='277.5' y='343.0' font-size='10' fill='#0F8B8D' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>submit</text>
+<line x1='420' y1='397' x2='420' y2='470' stroke='#E11D48' stroke-width='2.2'/>
+<polygon points='420,470 416,461 424,461' fill='#E11D48'/>
+<rect x='413.2' y='411.5' width='13.6' height='18' rx='4' ry='4' fill='#FFFFFF' stroke='#E11D48' stroke-width='1' opacity='1'/>
+<text x='420.0' y='424.5' font-size='10' fill='#E11D48' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>No</text>
+<line x1='330' y1='500' x2='210' y2='360' stroke='#E11D48' stroke-width='2.2' stroke-dasharray='6 5'/>
+<polygon points='210,360 219,364 213,370' fill='#E11D48'/>
+<rect x='253.0' y='408.0' width='34.0' height='18' rx='4' ry='4' fill='#FFFFFF' stroke='#E11D48' stroke-width='1' opacity='1'/>
+<text x='270.0' y='421.0' font-size='10' fill='#E11D48' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>retry</text>
+<line x1='495' y1='352' x2='560' y2='200' stroke='#16A34A' stroke-width='2.2'/>
+<polygon points='560,200 560,210 553,207' fill='#16A34A'/>
+<rect x='486.7' y='254.0' width='81.6' height='18' rx='4' ry='4' fill='#FFFFFF' stroke='#16A34A' stroke-width='1' opacity='1'/>
+<text x='527.5' y='267.0' font-size='10' fill='#16A34A' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Yes  auth ok</text>
+<line x1='730' y1='182' x2='800' y2='182' stroke='#0F8B8D' stroke-width='2.2'/>
+<polygon points='800,182 791,186 791,178' fill='#0F8B8D'/>
+<rect x='744.6' y='160.0' width='40.8' height='18' rx='4' ry='4' fill='#FFFFFF' stroke='#0F8B8D' stroke-width='1' opacity='1'/>
+<text x='765.0' y='173.0' font-size='10' fill='#0F8B8D' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>search</text>
+<line x1='885' y1='214' x2='885' y2='300' stroke='#0F8B8D' stroke-width='2.2'/>
+<polygon points='885,300 881,291 889,291' fill='#0F8B8D'/>
+<rect x='864.6' y='235.0' width='40.8' height='18' rx='4' ry='4' fill='#FFFFFF' stroke='#0F8B8D' stroke-width='1' opacity='1'/>
+<text x='885.0' y='248.0' font-size='10' fill='#0F8B8D' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>select</text>
+<line x1='970' y1='332' x2='1015' y2='332' stroke='#0F8B8D' stroke-width='2.2'/>
+<polygon points='1015,332 1006,336 1006,328' fill='#0F8B8D'/>
+<rect x='978.9' y='310.0' width='27.2' height='18' rx='4' ry='4' fill='#FFFFFF' stroke='#0F8B8D' stroke-width='1' opacity='1'/>
+<text x='992.5' y='323.0' font-size='10' fill='#0F8B8D' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>book</text>
+<line x1='1090' y1='377' x2='1090' y2='470' stroke='#F59E0B' stroke-width='2.2'/>
+<polygon points='1090,470 1086,461 1094,461' fill='#F59E0B'/>
+<rect x='1083.2' y='401.5' width='13.6' height='18' rx='4' ry='4' fill='#FFFFFF' stroke='#F59E0B' stroke-width='1' opacity='1'/>
+<text x='1090.0' y='414.5' font-size='10' fill='#F59E0B' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>No</text>
+<line x1='1020' y1='490' x2='970' y2='332' stroke='#F59E0B' stroke-width='2.2' stroke-dasharray='6 5'/>
+<polygon points='970,332 976,340 969,342' fill='#F59E0B'/>
+<rect x='981.4' y='389.0' width='27.2' height='18' rx='4' ry='4' fill='#FFFFFF' stroke='#F59E0B' stroke-width='1' opacity='1'/>
+<text x='995.0' y='402.0' font-size='10' fill='#F59E0B' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>edit</text>
+<line x1='1060' y1='362' x2='940' y2='478' stroke='#16A34A' stroke-width='2.2'/>
+<polygon points='940,478 944,469 949,474' fill='#16A34A'/>
+<rect x='1001.8' y='386.4' width='20.4' height='18' rx='4' ry='4' fill='#FFFFFF' stroke='#16A34A' stroke-width='1' opacity='1'/>
+<text x='1012.0' y='399.4' font-size='10' fill='#16A34A' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Yes</text>
+<line x1='800' y1='502' x2='730' y2='502' stroke='#16A34A' stroke-width='2.2'/>
+<polygon points='730,502 739,498 739,506' fill='#16A34A'/>
+<rect x='751.4' y='480.0' width='27.2' height='18' rx='4' ry='4' fill='#FFFFFF' stroke='#16A34A' stroke-width='1' opacity='1'/>
+<text x='765.0' y='493.0' font-size='10' fill='#16A34A' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>paid</text>
+<line x1='645' y1='214' x2='645' y2='300' stroke='#94A3B8' stroke-width='2.2' stroke-dasharray='6 5'/>
+<polygon points='645,300 641,291 649,291' fill='#94A3B8'/>
+<rect x='631.4' y='235.0' width='27.2' height='18' rx='4' ry='4' fill='#FFFFFF' stroke='#94A3B8' stroke-width='1' opacity='1'/>
+<text x='645.0' y='248.0' font-size='10' fill='#94A3B8' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>menu</text>
+<line x1='560' y1='502' x2='300' y2='360' stroke='#94A3B8' stroke-width='2.2' stroke-dasharray='6 5'/>
+<polygon points='300,360 310,361 306,368' fill='#94A3B8'/>
+<rect x='494.4' y='451.6' width='27.2' height='18' rx='4' ry='4' fill='#FFFFFF' stroke='#94A3B8' stroke-width='1' opacity='1'/>
+<text x='508.0' y='464.6' font-size='10' fill='#94A3B8' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>home</text>
+<rect x='60' y='600' width='1160' height='80' rx='12' ry='12' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<text x='80' y='628' font-size='11' fill='#64748B' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif' letter-spacing='1'>LEGEND</text>
+<line x1='80' y1='656' x2='110' y2='656' stroke='#0F8B8D' stroke-width='3'/>
+<text x='118' y='660' font-size='12' fill='#0F172A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Primary path</text>
+<line x1='310' y1='656' x2='340' y2='656' stroke='#16A34A' stroke-width='3'/>
+<text x='348' y='660' font-size='12' fill='#0F172A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Success transition</text>
+<line x1='540' y1='656' x2='570' y2='656' stroke='#E11D48' stroke-width='3'/>
+<text x='578' y='660' font-size='12' fill='#0F172A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Error / recovery</text>
+<line x1='770' y1='656' x2='800' y2='656' stroke='#F59E0B' stroke-width='3'/>
+<text x='808' y='660' font-size='12' fill='#0F172A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Decision branch</text>
+<line x1='1000' y1='656' x2='1030' y2='656' stroke='#94A3B8' stroke-width='3'/>
+<text x='1038' y='660' font-size='12' fill='#0F172A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Secondary nav</text>
+</svg>

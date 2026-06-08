@@ -1,0 +1,80 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1000' height='640' viewBox='0 0 1000 640'>
+<rect x='0' y='0' width='1000' height='640' rx='0' ry='0' fill='#EEF3F5' stroke='none' stroke-width='1' opacity='1'/>
+<rect x='40' y='30' width='920' height='60' rx='12' ry='12' fill='#0F8B8D' stroke='none' stroke-width='1' opacity='1'/>
+<text x='64' y='68' font-size='24' fill='#FFFFFF' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif' letter-spacing='2'>USER PERSONA</text>
+<text x='936' y='68' font-size='13' fill='#CFFAF5' font-weight='end' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>MediCare+  |  Online Hospital Management</text>
+<rect x='40' y='110' width='300' height='500' rx='14' ry='14' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<circle cx='190' cy='215' r='70' fill='#F1F5F9' stroke='#0F8B8D' stroke-width='2' opacity='1'/>
+<circle cx='190' cy='201' r='5' fill='none' stroke='#0F8B8D' stroke-width='4' opacity='1'/><path d='M 182 214 C 182 205 198 205 198 214' fill='none' stroke='#0F8B8D' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/>
+<text x='190' y='320' font-size='26' fill='#0F172A' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Sara Ahmed</text>
+<text x='190' y='348' font-size='15' fill='#0F8B8D' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>University Student</text>
+<text x='64' y='380' font-size='10.5' fill='#64748B' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif' letter-spacing='1'>AGE</text>
+<text x='64' y='398' font-size='14' fill='#0F172A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>22</text>
+<text x='64' y='418' font-size='10.5' fill='#64748B' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif' letter-spacing='1'>OCCUPATION</text>
+<text x='64' y='436' font-size='14' fill='#0F172A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>BS Student</text>
+<text x='64' y='456' font-size='10.5' fill='#64748B' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif' letter-spacing='1'>LOCATION</text>
+<text x='64' y='474' font-size='14' fill='#0F172A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Islamabad, PK</text>
+<text x='64' y='494' font-size='10.5' fill='#64748B' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif' letter-spacing='1'>DEVICES</text>
+<text x='64' y='512' font-size='14' fill='#0F172A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Mobile (primary), Laptop</text>
+<text x='64' y='532' font-size='10.5' fill='#64748B' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif' letter-spacing='1'>TECH SKILL</text>
+<text x='64' y='550' font-size='14' fill='#0F172A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Intermediate</text>
+<text x='64' y='570' font-size='10.5' fill='#64748B' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif' letter-spacing='1'>PERSONALITY</text>
+<text x='64' y='588' font-size='14' fill='#0F172A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Busy, impatient, goal-driven</text>
+<rect x='366' y='110' width='290' height='195' rx='12' ry='12' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<rect x='366' y='110' width='6' height='195' rx='12' ry='12' fill='#16A34A' stroke='none' stroke-width='1' opacity='1'/>
+<text x='388' y='140' font-size='15' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>GOALS</text>
+<circle cx='392' cy='164' r='3' fill='#16A34A' stroke='none' stroke-width='1' opacity='1'/>
+<text x='406' y='168' font-size='12.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Book a doctor appointment in under 2 min</text>
+<circle cx='392' cy='188' r='3' fill='#16A34A' stroke='none' stroke-width='1' opacity='1'/>
+<text x='406' y='192' font-size='12.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>View prescriptions &amp; lab reports anytime</text>
+<circle cx='392' cy='212' r='3' fill='#16A34A' stroke='none' stroke-width='1' opacity='1'/>
+<text x='406' y='216' font-size='12.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Get reminders before each visit</text>
+<circle cx='392' cy='236' r='3' fill='#16A34A' stroke='none' stroke-width='1' opacity='1'/>
+<text x='406' y='240' font-size='12.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Pay consultation fees online safely</text>
+<rect x='674' y='110' width='286' height='195' rx='12' ry='12' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<rect x='674' y='110' width='6' height='195' rx='12' ry='12' fill='#E11D48' stroke='none' stroke-width='1' opacity='1'/>
+<text x='696' y='140' font-size='15' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>FRUSTRATIONS</text>
+<circle cx='700' cy='164' r='3' fill='#E11D48' stroke='none' stroke-width='1' opacity='1'/>
+<text x='714' y='168' font-size='12.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Confusing, cluttered navigation</text>
+<circle cx='700' cy='188' r='3' fill='#E11D48' stroke='none' stroke-width='1' opacity='1'/>
+<text x='714' y='192' font-size='12.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Long manual queues at reception</text>
+<circle cx='700' cy='212' r='3' fill='#E11D48' stroke='none' stroke-width='1' opacity='1'/>
+<text x='714' y='216' font-size='12.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>No clear feedback after booking</text>
+<circle cx='700' cy='236' r='3' fill='#E11D48' stroke='none' stroke-width='1' opacity='1'/>
+<text x='714' y='240' font-size='12.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Tiny tap targets on small screens</text>
+<rect x='366' y='320' width='290' height='175' rx='12' ry='12' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<rect x='366' y='320' width='6' height='175' rx='12' ry='12' fill='#F59E0B' stroke='none' stroke-width='1' opacity='1'/>
+<text x='388' y='350' font-size='15' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>ACCESSIBILITY NEEDS</text>
+<circle cx='392' cy='374' r='3' fill='#F59E0B' stroke='none' stroke-width='1' opacity='1'/>
+<text x='406' y='378' font-size='12.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Mild colour-blindness (red/green)</text>
+<circle cx='392' cy='398' r='3' fill='#F59E0B' stroke='none' stroke-width='1' opacity='1'/>
+<text x='406' y='402' font-size='12.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Prefers large, high-contrast text</text>
+<circle cx='392' cy='422' r='3' fill='#F59E0B' stroke='none' stroke-width='1' opacity='1'/>
+<text x='406' y='426' font-size='12.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Often one-handed phone use</text>
+<circle cx='392' cy='446' r='3' fill='#F59E0B' stroke='none' stroke-width='1' opacity='1'/>
+<text x='406' y='450' font-size='12.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Needs keyboard / screen-reader paths</text>
+<rect x='674' y='320' width='286' height='175' rx='12' ry='12' fill='#0F8B8D' stroke='none' stroke-width='1' opacity='1'/>
+<text x='696' y='360' font-size='60' fill='#CFFAF5' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>“</text>
+<text x='696' y='392' font-size='16' fill='#FFFFFF' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>I just want to book a</text>
+<text x='696' y='416' font-size='16' fill='#FFFFFF' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>doctor and get on with</text>
+<text x='696' y='440' font-size='16' fill='#FFFFFF' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>my day  no fuss.”</text>
+<text x='696' y='474' font-size='12.5' fill='#CFFAF5' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>  Sara, primary user</text>
+<rect x='366' y='510' width='594' height='100' rx='12' ry='12' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<text x='388' y='540' font-size='12' fill='#64748B' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif' letter-spacing='1'>TECHNOLOGY COMFORT</text>
+<text x='388' y='568' font-size='11.5' fill='#0F172A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Smartphone apps</text>
+<rect x='388' y='578' width='130' height='9' rx='5' ry='5' fill='#E2E8F0' stroke='none' stroke-width='1' opacity='1'/>
+<rect x='388' y='578' width='117' height='9' rx='5' ry='5' fill='#0F8B8D' stroke='none' stroke-width='1' opacity='1'/>
+<text x='526' y='587' font-size='11' fill='#64748B' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>90%</text>
+<text x='536' y='568' font-size='11.5' fill='#0F172A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Online payments</text>
+<rect x='536' y='578' width='130' height='9' rx='5' ry='5' fill='#E2E8F0' stroke='none' stroke-width='1' opacity='1'/>
+<rect x='536' y='578' width='97' height='9' rx='5' ry='5' fill='#0F8B8D' stroke='none' stroke-width='1' opacity='1'/>
+<text x='674' y='587' font-size='11' fill='#64748B' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>75%</text>
+<text x='684' y='568' font-size='11.5' fill='#0F172A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Web forms</text>
+<rect x='684' y='578' width='130' height='9' rx='5' ry='5' fill='#E2E8F0' stroke='none' stroke-width='1' opacity='1'/>
+<rect x='684' y='578' width='84' height='9' rx='5' ry='5' fill='#0F8B8D' stroke='none' stroke-width='1' opacity='1'/>
+<text x='822' y='587' font-size='11' fill='#64748B' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>65%</text>
+<text x='832' y='568' font-size='11.5' fill='#0F172A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>New software</text>
+<rect x='832' y='578' width='130' height='9' rx='5' ry='5' fill='#E2E8F0' stroke='none' stroke-width='1' opacity='1'/>
+<rect x='832' y='578' width='65' height='9' rx='5' ry='5' fill='#0F8B8D' stroke='none' stroke-width='1' opacity='1'/>
+<text x='970' y='587' font-size='11' fill='#64748B' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>50%</text>
+</svg>

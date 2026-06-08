@@ -1,0 +1,11 @@
+HCI Lab 12 - Figma Prototype Link
+Student: Mahad
+Scenario: Online Hospital Management System (MediCare+)
+
+Paste your viewable Figma prototype link below
+(Share -> "Anyone with the link can view" -> Copy link):
+
+PROTOTYPE LINK: ______________________________________________
+
+Tip: import the SVG files from the /svg folder into a new Figma file,
+then connect the screens to build the interactive prototype.

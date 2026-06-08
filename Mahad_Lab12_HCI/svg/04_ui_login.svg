@@ -1,0 +1,44 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='1000' viewBox='0 0 900 1000'>
+<rect x='0' y='0' width='900' height='1000' rx='0' ry='0' fill='#EEF3F5' stroke='none' stroke-width='1' opacity='1'/>
+<g transform='translate(60,60) scale(1.0)'>
+<rect x='-6' y='-6' width='402' height='856' rx='46' ry='46' fill='#0B1220' stroke='none' stroke-width='1' opacity='1'/>
+<rect x='0' y='0' width='390' height='844' rx='40' ry='40' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<rect x='0' y='0' width='390' height='44' rx='40' ry='40' fill='#FFFFFF' stroke='none' stroke-width='1' opacity='1'/>
+<rect x='0' y='24' width='390' height='20' rx='0' ry='0' fill='#FFFFFF' stroke='none' stroke-width='1' opacity='1'/>
+<text x='22' y='28' font-size='13' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>9:41</text>
+<rect x='150.0' y='8' width='90' height='22' rx='11' ry='11' fill='#0B1220' stroke='none' stroke-width='1' opacity='1'/>
+<rect x='320' y='16' width='14' height='11' rx='2' ry='2' fill='#0F172A' stroke='none' stroke-width='1' opacity='1'/>
+<rect x='340' y='14' width='16' height='13' rx='3' ry='3' fill='none' stroke='#0F172A' stroke-width='1.5' opacity='1'/><rect x='343' y='17' width='9' height='7' rx='1' ry='1' fill='#0F172A' stroke='none' stroke-width='1' opacity='1'/>
+<circle cx='304' cy='22' r='5' fill='#0F172A' stroke='none' stroke-width='1' opacity='1'/>
+<rect x='0' y='44' width='390' height='800' rx='0' ry='0' fill='#0F8B8D' stroke='none' stroke-width='1' opacity='1'/>
+<rect x='0' y='300' width='390' height='544' rx='0' ry='0' fill='#FFFFFF' stroke='none' stroke-width='1' opacity='1'/>
+<rect x='0' y='300' width='390' height='60' rx='30' ry='30' fill='#FFFFFF' stroke='none' stroke-width='1' opacity='1'/>
+<circle cx='300' cy='150' r='80' fill='#FFFFFF' stroke='none' stroke-width='1' opacity='0.1'/>
+<circle cx='70' cy='240' r='50' fill='#FFFFFF' stroke='none' stroke-width='1' opacity='0.08'/>
+<circle cx='195' cy='140' r='38' fill='#FFFFFF' stroke='none' stroke-width='1' opacity='1'/>
+<path d='M 195 147 C 185 137, 189 129, 195 135 C 201 129, 205 137, 195 147 Z' fill='#0F8B8D' stroke='#0F8B8D' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'/>
+<text x='195' y='215' font-size='30' fill='#FFFFFF' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>MediCare+</text>
+<text x='195' y='242' font-size='13' fill='#CFFAF5' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Your hospital, in your pocket</text>
+<text x='40' y='355' font-size='24' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Welcome back</text>
+<text x='40' y='382' font-size='14' fill='#64748B' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Sign in to continue</text>
+<text x='40' y='425' font-size='11' fill='#64748B' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif' letter-spacing='1'>EMAIL</text>
+<rect x='40' y='435' width='310' height='52' rx='12' ry='12' fill='#F8FAFC' stroke='#E2E8F0' stroke-width='1.5' opacity='1'/>
+<circle cx='64' cy='457' r='5' fill='none' stroke='#64748B' stroke-width='1.8' opacity='1'/><path d='M 56 470 C 56 461 72 461 72 470' fill='none' stroke='#64748B' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/>
+<text x='86' y='466' font-size='14' fill='#0F172A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>sara.ahmed@email.com</text>
+<text x='40' y='515' font-size='11' fill='#64748B' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif' letter-spacing='1'>PASSWORD</text>
+<rect x='40' y='525' width='310' height='52' rx='12' ry='12' fill='#F8FAFC' stroke='#0F8B8D' stroke-width='2' opacity='1'/>
+<text x='64' y='556' font-size='16' fill='#0F172A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>• • • • • • • •</text>
+<text x='326' y='558' font-size='14' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>👁</text>
+<text x='310' y='605' font-size='12.5' fill='#0F8B8D' font-weight='bold' text-anchor='end' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Forgot password?</text>
+<rect x='40' y='630' width='310' height='54' rx='14' ry='14' fill='#0F8B8D' stroke='none' stroke-width='1.5' opacity='1'/><text x='195.0' y='662.76' font-size='16' fill='#FFFFFF' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Sign In</text>
+<line x1='40' y1='715' x2='160' y2='715' stroke='#E2E8F0' stroke-width='1'/>
+<line x1='230' y1='715' x2='350' y2='715' stroke='#E2E8F0' stroke-width='1'/>
+<text x='195' y='719' font-size='12' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>or</text>
+<rect x='40' y='735' width='310' height='50' rx='12' ry='12' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1.5' opacity='1'/>
+<text x='195' y='766' font-size='14' fill='#0F172A' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Continue as Guest</text>
+<text x='195' y='815' font-size='13' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>New here?  Create account</text>
+<rect x='140.0' y='828' width='110' height='5' rx='3' ry='3' fill='#0B1220' stroke='none' stroke-width='1' opacity='0.85'/>
+</g>
+<text x='255.0' y='938.0' font-size='17' fill='#0F172A' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Screen 1  Login</text>
+<text x='255.0' y='960.0' font-size='13' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Branded, single-column, large tap targets</text>
+</svg>
