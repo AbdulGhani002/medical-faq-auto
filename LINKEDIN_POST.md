@@ -1,147 +1,97 @@
 # MedFAQ — LinkedIn launch
 
-Pick whichever version fits your voice. Each one ends with the GitHub
-link and a small hashtag set.
+Two ready-to-paste versions. Each one ends with the GitHub link and a
+small hashtag set. The pipeline carousel image is the lead visual.
 
 ---
 
-## Version A — short and punchy (recommended)
+## Version A — pipeline + results (recommended)
 
-We spent our 6th-semester project building a medical FAQ chatbot
-from absolute scratch.
+MedFAQ is a medical FAQ chatbot for Radiology, Physiotherapy, and
+Cardiovascular questions.
 
-No pretrained LLM.
-No HuggingFace.
-No sklearn, no rank_bm25, no sentence-transformers.
+How a question flows through the system:
 
-Every single ML model is written by us in numpy or PyTorch.
+1. The input is normalised. Roman-Urdu is mapped to English, personal
+   health information is scrubbed, and the language is detected.
 
-13 from-scratch models including:
-• TF-IDF (word + char) and BM25 Okapi
-• Naive Bayes, Logistic Regression, Truncated SVD, K-Means
-• MLP with backprop
-• Multi-head self-attention transformer
-• Linear-chain CRF (forward-backward + Viterbi)
-• Word2Vec skip-gram + negative sampling
-• Dual encoder with in-batch InfoNCE
-• Byte-Pair Encoding
-• Encoder-decoder seq2seq with Bahdanau attention
+2. A transformer intent classifier reads the cleaned text. A triage
+   guard fires if the message looks like an emergency, for example
+   chest pain or heavy bleeding.
 
-5-channel hybrid retrieval (TF-IDF word, TF-IDF char, BM25, LSA topic,
-PPMI embeddings) → grounded generation → real-time auto-FAQ mining
-from chat traffic → MongoDB with live counters → Docker compose for
-the whole stack.
+3. Five retrieval channels search the FAQ corpus in parallel:
+   TF-IDF over words, TF-IDF over character n-grams for typo
+   tolerance, BM25 Okapi, LSA topic similarity, and PPMI word
+   embeddings.
 
-Numbers on 156 held-out queries:
-Precision@1: 0.93
-MRR: 0.94
-Recall@5: 0.95
+4. A learning-to-rank reranker scores the candidates. MMR removes
+   near-duplicates.
+
+5. An encoder-decoder seq2seq with Bahdanau attention writes the
+   answer.
+
+6. The generated answer is cosine-checked against the retrieved FAQ.
+   If it drifts off topic, the original FAQ text is returned instead.
+
+7. Unmatched questions feed a K-Means clusterer. Clusters of three
+   or more become candidate FAQs in the admin dashboard, so the
+   system grows its own knowledge base over time.
+
+Results on 156 held-out medical queries:
+Precision at 1: 0.93
+Mean Reciprocal Rank: 0.94
+Recall at 5: 0.95
 Median latency: 53 ms
-Transformer accuracy after training: 1.00
 
-Team of 4. Built across the semester. Roles split so every member
-owns substantial NLP work plus their own trainable model.
+The full stack is one command: docker compose up --build.
 
 GitHub: https://github.com/AbdulGhani002/medical-faq-auto
 
-#NLP #MachineLearning #DeepLearning #PyTorch #ComputerScience #NUTECH
-#SemesterProject #FromScratch #InformationRetrieval #Transformer
+#NLP #MachineLearning #InformationRetrieval #Transformer #PyTorch
+#NextJS #FastAPI #MongoDB
 
 ---
 
-## Version B — longer story format
+## Version B — short one-liner with metrics
 
-When our NLP professor asked for a semester project, we picked the
-hardest possible constraint we could think of: build a real medical
-chatbot, but use no pretrained language model, no third-party ML
-library, nothing pulled from HuggingFace.
+MedFAQ. A medical FAQ chatbot with a 5-channel hybrid retriever
+(TF-IDF word, TF-IDF char, BM25, LSA, PPMI), a learning-to-rank
+reranker, an attention-based seq2seq generator with a cosine
+grounding check, and live auto-FAQ mining from unmatched chats.
 
-Everything had to be written by us. Every model had to train on our
-own corpus.
+P@1 0.93, MRR 0.94, Recall@5 0.95, median latency 53 ms on 156
+held-out queries.
 
-Three months later we have MedFAQ. It is a retrieval-based medical
-chatbot for Radiology, Physiotherapy, and Cardiology, with a real
-transformer + a real encoder-decoder seq2seq trained from scratch.
-
-What we built:
-
-13 from-scratch ML models. TF-IDF, BM25, Naive Bayes, Logistic
-Regression, K-Means, randomised SVD, MLP with backprop, multi-head
-self-attention, linear-chain CRF with forward-backward and Viterbi,
-Word2Vec, dual encoder with InfoNCE, BPE, and a sequence-to-sequence
-encoder-decoder with Bahdanau attention.
-
-A 5-channel hybrid retriever that blends TF-IDF (word + character
-n-grams), BM25 Okapi, LSA topic similarity, and PPMI word embeddings.
-
-A trained transformer intent classifier with 2 encoder blocks, 4
-heads, d_model 64. Train accuracy 1.00 after 40 epochs on our 1517
-augmented intent examples.
-
-Real-time auto-FAQ mining. Every unmatched chat message goes into a
-queue. K-Means clusters them, and clusters of 3 or more become
-candidate FAQs in the admin dashboard. The original project goal
-realised.
-
-Roman-Urdu phonetic input for Pakistani patients. PHI scrub at
-ingest. Triage banner for emergency phrases. Multi-turn dialog with
-coreference and slot tracking.
-
-Docker compose for the full stack. One command brings up the web
-app, the API, MongoDB, plus Qdrant and Redis for the pipeline.
-
-Evaluation on 156 held-out queries: P@1 0.926, MRR 0.940, Recall@5
-0.955, median latency 53 ms.
-
-The repo also ships a 30-page project documentation PDF, a 10-slide
-deck, a 9 MB JSONL corpus, and a 14k synthetic patient session set
-for training.
-
-Team of 4. Every member owns substantial NLP work + their own
-trainable model. Roles split into Token + Retrieval, Information
-Extraction + Classification, Generation + Dialog + Auto-FAQ, and
-Data + Evaluation + Deploy.
+One command brings the full stack up: docker compose up --build.
 
 GitHub: https://github.com/AbdulGhani002/medical-faq-auto
 
-#NLP #MachineLearning #DeepLearning #PyTorch #InformationRetrieval
-#Transformer #FromScratch #ComputerScience #NUTECH #SemesterProject
-#OpenSource #Python #NextJS #FastAPI #MongoDB
-
----
-
-## Version C — one-liner with images
-
-Built a medical FAQ chatbot from scratch in numpy + PyTorch with
-13 hand-written ML models. No LLM. No HuggingFace. No sklearn.
-
-P@1 0.93, MRR 0.94, on 156 held-out medical queries.
-
-GitHub: https://github.com/AbdulGhani002/medical-faq-auto
-
-#NLP #FromScratch #PyTorch #NUTECH
+#NLP #InformationRetrieval #Transformer #PyTorch
 
 ---
 
 ## Image suggestions
 
-Carousel of 4 square images in this order:
-1. Cover with the headline metric and the GitHub URL
-2. The 13 models grid
-3. The 4-person team split
-4. The eval numbers + how-to-run
+Carousel of 5 square images in this order:
 
-Generated by `python make_linkedin_images.py`. Output files live in
-`linkedin_assets/` and are also copied to the Desktop.
+1. 05_pipeline.png — the end-to-end question flow (lead image)
+2. 01_cover.png — headline metrics + GitHub URL
+3. 02_models.png — every model that runs in the stack
+4. 04_run.png — one-command Docker setup + URLs
+5. 03_team.png — optional, drop if you want the post to read system-first
+
+Pipeline image is generated by `python make_pipeline_image.py`.
+The other four are generated by `python make_linkedin_images.py`.
+Outputs live in `linkedin_assets/` and are also copied to the
+Desktop.
 
 ---
 
 ## Posting checklist
 
 Before clicking Post:
-- Tag your teammates so they get notified
-- Tag NUTECH if you have a uni page
+- Lead the carousel with the pipeline image
 - Add the GitHub repo link
 - Pin to your profile so visitors see it first
 - After posting, comment with a follow-up like
-  "Happy to walk anyone through how the retrieval pipeline is wired."
+  "Happy to walk through how the retrieval pipeline is wired."
