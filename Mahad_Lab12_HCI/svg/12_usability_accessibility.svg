@@ -1,0 +1,118 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1280' height='860' viewBox='0 0 1280 860'>
+<rect x='0' y='0' width='1280' height='860' rx='0' ry='0' fill='#EEF3F5' stroke='none' stroke-width='1' opacity='1'/>
+<text x='40' y='50' font-size='28' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Usability &amp; Accessibility Evaluation</text>
+<text x='40' y='76' font-size='14' fill='#64748B' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Nielsen heuristics + WCAG 2.1 checks (Steps 11–13)</text>
+<rect x='40' y='110' width='390' height='132' rx='12' ry='12' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<rect x='40' y='110' width='6' height='132' rx='12' ry='12' fill='#0F8B8D' stroke='none' stroke-width='1' opacity='1'/>
+<text x='64' y='140' font-size='16' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Learnability</text>
+<text x='64' y='164' font-size='11.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Familiar patterns (bottom nav, cards) let first-time</text>
+<text x='64' y='180' font-size='11.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>users book a visit without training. Icons paired</text>
+<text x='64' y='196' font-size='11.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>with labels.</text>
+<rect x='64' y='218' width='250' height='8' rx='4' ry='4' fill='#E2E8F0' stroke='none' stroke-width='1' opacity='1'/>
+<rect x='64' y='218' width='225' height='8' rx='4' ry='4' fill='#0F8B8D' stroke='none' stroke-width='1' opacity='1'/>
+<text x='326' y='224' font-size='12' fill='#0F8B8D' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>90/100</text>
+<rect x='450' y='110' width='390' height='132' rx='12' ry='12' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<rect x='450' y='110' width='6' height='132' rx='12' ry='12' fill='#0F8B8D' stroke='none' stroke-width='1' opacity='1'/>
+<text x='474' y='140' font-size='16' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Efficiency</text>
+<text x='474' y='164' font-size='11.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Quick-action tiles + persistent search cut the core</text>
+<text x='474' y='180' font-size='11.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>task to 4 taps. Smart defaults pre-fill date/time.</text>
+<rect x='474' y='218' width='250' height='8' rx='4' ry='4' fill='#E2E8F0' stroke='none' stroke-width='1' opacity='1'/>
+<rect x='474' y='218' width='212' height='8' rx='4' ry='4' fill='#0F8B8D' stroke='none' stroke-width='1' opacity='1'/>
+<text x='736' y='224' font-size='12' fill='#0F8B8D' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>85/100</text>
+<rect x='860' y='110' width='390' height='132' rx='12' ry='12' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<rect x='860' y='110' width='6' height='132' rx='12' ry='12' fill='#0F8B8D' stroke='none' stroke-width='1' opacity='1'/>
+<text x='884' y='140' font-size='16' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Memorability</text>
+<text x='884' y='164' font-size='11.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Consistent layout &amp; colour roles mean returning</text>
+<text x='884' y='180' font-size='11.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>users instantly recall where things live.</text>
+<rect x='884' y='218' width='250' height='8' rx='4' ry='4' fill='#E2E8F0' stroke='none' stroke-width='1' opacity='1'/>
+<rect x='884' y='218' width='200' height='8' rx='4' ry='4' fill='#0F8B8D' stroke='none' stroke-width='1' opacity='1'/>
+<text x='1146' y='224' font-size='12' fill='#0F8B8D' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>80/100</text>
+<rect x='40' y='260' width='390' height='132' rx='12' ry='12' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<rect x='40' y='260' width='6' height='132' rx='12' ry='12' fill='#0F8B8D' stroke='none' stroke-width='1' opacity='1'/>
+<text x='64' y='290' font-size='16' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Error prevention</text>
+<text x='64' y='314' font-size='11.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Disabled unavailable slots, input masking, and a</text>
+<text x='64' y='330' font-size='11.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>confirm dialog before payment stop costly mistakes.</text>
+<rect x='64' y='368' width='250' height='8' rx='4' ry='4' fill='#E2E8F0' stroke='none' stroke-width='1' opacity='1'/>
+<rect x='64' y='368' width='220' height='8' rx='4' ry='4' fill='#0F8B8D' stroke='none' stroke-width='1' opacity='1'/>
+<text x='326' y='374' font-size='12' fill='#0F8B8D' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>88/100</text>
+<rect x='450' y='260' width='390' height='132' rx='12' ry='12' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<rect x='450' y='260' width='6' height='132' rx='12' ry='12' fill='#0F8B8D' stroke='none' stroke-width='1' opacity='1'/>
+<text x='474' y='290' font-size='16' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Feedback</text>
+<text x='474' y='314' font-size='11.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Every action gives a visible response: spinners,</text>
+<text x='474' y='330' font-size='11.5' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>inline errors, success toast &amp; e-ticket.</text>
+<rect x='474' y='368' width='250' height='8' rx='4' ry='4' fill='#E2E8F0' stroke='none' stroke-width='1' opacity='1'/>
+<rect x='474' y='368' width='230' height='8' rx='4' ry='4' fill='#0F8B8D' stroke='none' stroke-width='1' opacity='1'/>
+<text x='736' y='374' font-size='12' fill='#0F8B8D' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>92/100</text>
+<rect x='40' y='420' width='590' height='410' rx='12' ry='12' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<text x='64' y='454' font-size='18' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Accessibility (WCAG 2.1)</text>
+<circle cx='76' cy='484' r='11' fill='none' stroke='#16A34A' stroke-width='2.2' opacity='1'/>
+<path d='M 71 484 L 75 488 L 82 479' fill='none' stroke='#16A34A' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/>
+<text x='100' y='482' font-size='13.5' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Contrast ratio</text>
+<text x='100' y='499' font-size='11.5' fill='#64748B' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Body text 7.4:1, buttons 5.1:1  passes AA/AAA</text>
+<circle cx='76' cy='540' r='11' fill='none' stroke='#16A34A' stroke-width='2.2' opacity='1'/>
+<path d='M 71 540 L 75 544 L 82 535' fill='none' stroke='#16A34A' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/>
+<text x='100' y='538' font-size='13.5' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Readable fonts</text>
+<text x='100' y='555' font-size='11.5' fill='#64748B' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>16px base, 1.4 line-height, scalable to 200%</text>
+<circle cx='76' cy='596' r='11' fill='none' stroke='#16A34A' stroke-width='2.2' opacity='1'/>
+<path d='M 71 596 L 75 600 L 82 591' fill='none' stroke='#16A34A' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/>
+<text x='100' y='594' font-size='13.5' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Tap targets</text>
+<text x='100' y='611' font-size='11.5' fill='#64748B' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>All interactive areas ≥ 44×44px</text>
+<circle cx='76' cy='652' r='11' fill='none' stroke='#16A34A' stroke-width='2.2' opacity='1'/>
+<path d='M 71 652 L 75 656 L 82 647' fill='none' stroke='#16A34A' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/>
+<text x='100' y='650' font-size='13.5' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Keyboard access</text>
+<text x='100' y='667' font-size='11.5' fill='#64748B' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Logical focus order + visible focus ring</text>
+<circle cx='76' cy='708' r='11' fill='none' stroke='#16A34A' stroke-width='2.2' opacity='1'/>
+<path d='M 71 708 L 75 712 L 82 703' fill='none' stroke='#16A34A' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/>
+<text x='100' y='706' font-size='13.5' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Screen reader</text>
+<text x='100' y='723' font-size='11.5' fill='#64748B' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Labelled icons, alt text, ARIA roles</text>
+<circle cx='76' cy='764' r='11' fill='none' stroke='#16A34A' stroke-width='2.2' opacity='1'/>
+<path d='M 71 764 L 75 768 L 82 759' fill='none' stroke='#16A34A' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/>
+<text x='100' y='762' font-size='13.5' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Colour-blind safe</text>
+<text x='100' y='779' font-size='11.5' fill='#64748B' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Status uses icon + text, never colour alone</text>
+<text x='360' y='484' font-size='10' fill='#64748B' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif' letter-spacing='1'>CONTRAST SAMPLES</text>
+<rect x='360' y='500' width='240' height='64' rx='10' ry='10' fill='#0F8B8D' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<text x='380' y='530' font-size='16' fill='#FFFFFF' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Aa Book now</text>
+<text x='380' y='550' font-size='11' fill='#FFFFFF' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Ratio 5.1:1  PASS</text>
+<rect x='360' y='578' width='240' height='64' rx='10' ry='10' fill='#0F172A' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<text x='380' y='608' font-size='16' fill='#FFFFFF' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Aa Book now</text>
+<text x='380' y='628' font-size='11' fill='#FFFFFF' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Ratio 16:1  PASS</text>
+<rect x='360' y='656' width='240' height='64' rx='10' ry='10' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<text x='380' y='686' font-size='16' fill='#0F8B8D' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Aa Book now</text>
+<text x='380' y='706' font-size='11' fill='#0F8B8D' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Ratio 5.1:1  PASS</text>
+<rect x='360' y='734' width='240' height='64' rx='10' ry='10' fill='#F59E0B' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<text x='380' y='764' font-size='16' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Aa Book now</text>
+<text x='380' y='784' font-size='11' fill='#0F172A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Ratio 8.2:1  PASS</text>
+<rect x='650' y='420' width='590' height='410' rx='12' ry='12' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<text x='674' y='454' font-size='18' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Design Consistency Check</text>
+<text x='674' y='486' font-size='10' fill='#64748B' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif' letter-spacing='1'>COLOUR PALETTE</text>
+<rect x='674' y='498' width='56' height='40' rx='8' ry='8' fill='#0F8B8D' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<text x='702' y='554' font-size='9.5' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Primary</text>
+<rect x='742' y='498' width='56' height='40' rx='8' ry='8' fill='#0A6E70' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<text x='770' y='554' font-size='9.5' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Dark</text>
+<rect x='810' y='498' width='56' height='40' rx='8' ry='8' fill='#14B8A6' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<text x='838' y='554' font-size='9.5' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Accent</text>
+<rect x='878' y='498' width='56' height='40' rx='8' ry='8' fill='#16A34A' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<text x='906' y='554' font-size='9.5' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Success</text>
+<rect x='946' y='498' width='56' height='40' rx='8' ry='8' fill='#F59E0B' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<text x='974' y='554' font-size='9.5' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Warn</text>
+<rect x='1014' y='498' width='56' height='40' rx='8' ry='8' fill='#E11D48' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<text x='1042' y='554' font-size='9.5' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Error</text>
+<rect x='1082' y='498' width='56' height='40' rx='8' ry='8' fill='#0F172A' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<text x='1110' y='554' font-size='9.5' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Ink</text>
+<rect x='1150' y='498' width='56' height='40' rx='8' ry='8' fill='#64748B' stroke='#E2E8F0' stroke-width='1' opacity='1'/>
+<text x='1178' y='554' font-size='9.5' fill='#64748B' font-weight='normal' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Muted</text>
+<text x='674' y='590' font-size='10' fill='#64748B' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif' letter-spacing='1'>TYPOGRAPHY SCALE</text>
+<text x='674' y='616' font-size='22' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Heading  24/700</text>
+<text x='674' y='642' font-size='16' fill='#0F172A' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Subhead  16/700</text>
+<text x='674' y='664' font-size='14' fill='#334155' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Body  14/400</text>
+<text x='674' y='684' font-size='11' fill='#64748B' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Caption  11/600</text>
+<text x='950' y='590' font-size='10' fill='#64748B' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif' letter-spacing='1'>COMPONENTS</text>
+<rect x='950' y='602' width='120' height='38' rx='10' ry='10' fill='#0F8B8D' stroke='none' stroke-width='1.5' opacity='1'/><text x='1010.0' y='625.68' font-size='13' fill='#FFFFFF' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Primary</text>
+<rect x='950' y='648' width='120' height='38' rx='10' ry='10' fill='#FFFFFF' stroke='#0F8B8D' stroke-width='1.5' opacity='1'/><text x='1010' y='672' font-size='13' fill='#0F8B8D' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Secondary</text>
+<rect x='1082' y='602' width='120' height='38' rx='10' ry='10' fill='#F1F5F9' stroke='#E2E8F0' stroke-width='1' opacity='1'/><text x='1142' y='626' font-size='13' fill='#94A3B8' font-weight='bold' text-anchor='middle' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Disabled</text>
+<rect x='1082' y='648' width='56' height='38' rx='19' ry='19' fill='#0F8B8D' stroke='none' stroke-width='1' opacity='1'/><rect x='1118' y='652' width='30' height='30' rx='15' ry='15' fill='#FFFFFF' stroke='none' stroke-width='1' opacity='1'/>
+<rect x='674' y='716' width='528' height='92' rx='10' ry='10' fill='#F0FDFA' stroke='#14B8A6' stroke-width='1' opacity='1'/>
+<text x='694' y='742' font-size='12.5' fill='#0F766E' font-weight='bold' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>8-pt spacing grid • 16px screen margins • 12px card radius</text>
+<text x='694' y='766' font-size='12' fill='#134E4A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Same button styles, icon set &amp; elevation across all 6 screens.</text>
+<text x='694' y='788' font-size='12' fill='#134E4A' font-weight='normal' text-anchor='start' font-family='Segoe UI, Roboto, Helvetica, Arial, sans-serif'>Single source of truth = predictable, trustworthy interface.</text>
+</svg>
